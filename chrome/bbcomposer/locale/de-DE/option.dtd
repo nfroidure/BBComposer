@@ -1,0 +1,51 @@
+<!ENTITY bbcomp.opt.dialog.title "BBComposer - Einstellungen">
+<!ENTITY bbcomp.opt.gnr.label "Allgemein">
+<!ENTITY bbcomp.opt.lng.label "Sprache">
+<!ENTITY bbcomp.opt.upd.label "Upload">
+<!ENTITY bbcomp.opt.rsp.label "Response">
+<!ENTITY bbcomp.opt.avd.label "Erweitert">
+<!ENTITY bbcomp.opt.fld.label "Felder">
+<!ENTITY bbcomp.opt.gnr.caption "Allgemeine Einstellungen">
+<!ENTITY bbcomp.opt.gnr.site.css.label "Ordner für CSS-Datei (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "Standard-CSS verwenden">
+<!ENTITY bbcomp.opt.cmp.automode.label "Automatisch in den Bearbeitungsmodus wechseln">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "Immer die Rechtschreibprüfung aktivieren">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "Im Editor-Modus die Sidebar öffnen">
+<!ENTITY bbcomp.opt.lng.default.label "Vorgegebene Code-Sprache:">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (Semantischer BBCode)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "Normaler BBCode">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki-Syntax">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (no blocks)">
+<!ENTITY bbcomp.opt.lng.remember.label "Ausgewählte Code-Sprache merken">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML-Einstellungen">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Zeileneinzug verwenden">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Nicht-ASCII-Zeichen in HTML-Entities umwandeln">
+<!ENTITY bbcomp.opt.upd.caption "Erweiterte Optionen">
+<!ENTITY bbcomp.opt.upd.description "Diese Einstellungen erlauben eine Anpassung der Upload-Parameter.">
+<!ENTITY bbcomp.opt.upd.on.label "Upload aktivieren">
+<!ENTITY bbcomp.opt.upd.site.label "Upload-Site (Host)">
+<!ENTITY bbcomp.opt.upd.folder.label "Upload-Ordner">
+<!ENTITY bbcomp.opt.upd.url.label "Upload-Adresse">
+<!ENTITY bbcomp.opt.upd.postname.label "Feldname der Datei">
+<!ENTITY bbcomp.opt.upd.postparams.label "POST-Parameter">
+<!ENTITY bbcomp.opt.upd.unique.label "Der Dateiname darf nur einmal vorkommen">
+<!ENTITY bbcomp.opt.rsp.caption "Response">
+<!ENTITY bbcomp.opt.rsp.description "Parameter zur Response-Behandlung.">
+<!ENTITY bbcomp.opt.rsp.type.label "Response type">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "Text">
+<!ENTITY bbcomp.opt.rsp.error.label "Error recognizer">
+<!ENTITY bbcomp.opt.rsp.notice.label "Notice recognizer">
+<!ENTITY bbcomp.opt.rsp.filename.label "Filename recognizer">
+<!ENTITY bbcomp.opt.avd.caption "Erweiterte Einstellungen">
+<!ENTITY bbcomp.opt.avd.description "Ändern Sie diese Einstellungen nur, wenn Sie wissen, was sie bewirken!">
+<!ENTITY bbcomp.opt.avd.save.label "Intervall für automatisches Speichern">
+<!ENTITY bbcomp.opt.avd.defcont.label "Standard-Inhaltselement des Editors">
+<!ENTITY bbcomp.opt.fld.caption.label "Gespeicherte Felder">
+<!ENTITY bbcomp.opt.fld.site.label "URL-Filter">
+<!ENTITY bbcomp.opt.fld.id.label "ID-Filter">
+<!ENTITY bbcomp.opt.fld.language.label "Code-Sprache">
+<!ENTITY bbcomp.opt.fld.target.label "Editor-Ziel">
+<!ENTITY bbcomp.opt.fld.delete.label "Löschen">
+<!ENTITY bbcomp.opt.fld.add.label "Hinzufügen">

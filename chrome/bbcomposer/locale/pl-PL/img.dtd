@@ -1,0 +1,8 @@
+<!ENTITY bbcomp.img.dialog.title "Obraz">
+<!ENTITY bbcomp.img.src.label "Katalog">
+<!ENTITY bbcomp.img.browse.label "Przeglądaj">
+<!ENTITY bbcomp.img.alt.label "Tekst alternatywny">
+<!ENTITY bbcomp.img.align.label "Wyrównanie">
+<!ENTITY bbcomp.img.align.normal.label "Normalne">
+<!ENTITY bbcomp.img.align.left.label "Do lewej">
+<!ENTITY bbcomp.img.align.right.label "Do prawej">

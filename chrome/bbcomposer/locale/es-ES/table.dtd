@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Tabla">
+<!ENTITY bbcomp.tbl.caption.label "Título">
+<!ENTITY bbcomp.tbl.summary.label "Sumario">
+<!ENTITY bbcomp.tbl.hrows.label "Filas de cabecera">
+<!ENTITY bbcomp.tbl.rows.label "Filas">
+<!ENTITY bbcomp.tbl.frows.label "Filas de píe">
+<!ENTITY bbcomp.tbl.cols.label "Columnas">

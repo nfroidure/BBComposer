@@ -1,0 +1,51 @@
+<!ENTITY bbcomp.opt.dialog.title "BBComposer : Opciones">
+<!ENTITY bbcomp.opt.gnr.label "General">
+<!ENTITY bbcomp.opt.lng.label "Idioma">
+<!ENTITY bbcomp.opt.upd.label "Cargar">
+<!ENTITY bbcomp.opt.rsp.label "Respuesta">
+<!ENTITY bbcomp.opt.avd.label "Avanzado">
+<!ENTITY bbcomp.opt.fld.label "Campos">
+<!ENTITY bbcomp.opt.gnr.caption "Opciones generales">
+<!ENTITY bbcomp.opt.gnr.site.css.label "Directorio de ficheros CSS (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "Utilizar CSS por defecto">
+<!ENTITY bbcomp.opt.cmp.automode.label "Entrar en modo edición automáticamente">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "Siempre activo el analizador ortográfico">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "Abrir barra lateral en modo de edición">
+<!ENTITY bbcomp.opt.lng.default.label "Idioma por defecto:">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (BBCodes semántico)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "BBCodes habituales">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Sintaxis Mediawiki">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (no blocks)">
+<!ENTITY bbcomp.opt.lng.remember.label "Recordar el idioma seleccionado">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "Opciones XHTML">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indentación">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Convertir caracteres no ASCII en entidades HTML">
+<!ENTITY bbcomp.opt.upd.caption "Opciones avanzadas">
+<!ENTITY bbcomp.opt.upd.description "No modificar las opciones avanzadas si no se sabe como hacerlo.">
+<!ENTITY bbcomp.opt.upd.on.label "Activar carga">
+<!ENTITY bbcomp.opt.upd.site.label "Subir site">
+<!ENTITY bbcomp.opt.upd.folder.label "Carpeta de carga">
+<!ENTITY bbcomp.opt.upd.url.label "Cargar URL">
+<!ENTITY bbcomp.opt.upd.postname.label "Campo nombre del fichero">
+<!ENTITY bbcomp.opt.upd.postparams.label "Parámetros POST">
+<!ENTITY bbcomp.opt.upd.unique.label "El nombre de fichero ha de ser único">
+<!ENTITY bbcomp.opt.rsp.caption "Respuesta">
+<!ENTITY bbcomp.opt.rsp.description "Parámetros de tratamiento de respuesta.">
+<!ENTITY bbcomp.opt.rsp.type.label "Tipo de Respuesta">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "Texto">
+<!ENTITY bbcomp.opt.rsp.error.label "Reconocimiento de Error">
+<!ENTITY bbcomp.opt.rsp.notice.label "Reconocedor de noticias">
+<!ENTITY bbcomp.opt.rsp.filename.label "Reconocedor de nombre de fichero">
+<!ENTITY bbcomp.opt.avd.caption "Opciones avanzadas">
+<!ENTITY bbcomp.opt.avd.description "No modificar las opciones avanzadas si no se sabe como hacerlo.">
+<!ENTITY bbcomp.opt.avd.save.label "Retraso de la grabación automática">
+<!ENTITY bbcomp.opt.avd.defcont.label "Contenido por defecto del editor">
+<!ENTITY bbcomp.opt.fld.caption.label "Campos grabados">
+<!ENTITY bbcomp.opt.fld.site.label "Filtro URL">
+<!ENTITY bbcomp.opt.fld.id.label "Filtro ID">
+<!ENTITY bbcomp.opt.fld.language.label "Idioma">
+<!ENTITY bbcomp.opt.fld.target.label "Objetivo">
+<!ENTITY bbcomp.opt.fld.delete.label "Borrar">
+<!ENTITY bbcomp.opt.fld.add.label "Añadir">

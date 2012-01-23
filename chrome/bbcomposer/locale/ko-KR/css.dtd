@@ -1,0 +1,160 @@
+<!ENTITY bbcomp.css.dialog.title "CSS 편집기">
+<!ENTITY bbcomp.css.lockon.label "고정">
+<!ENTITY bbcomp.css.lockon.all "모든 요소">
+<!ENTITY bbcomp.css.lockon.block "블록">
+<!ENTITY bbcomp.css.lockon.superblock "슈퍼블록">
+<!ENTITY bbcomp.css.apply.label "적용">
+<!ENTITY bbcomp.css.apply.tooltiptext "변경내용 적용">
+<!ENTITY bbcomp.css.cancel.label "취소">
+<!ENTITY bbcomp.css.cancel.tooltiptext "변경내용 취소">
+<!ENTITY bbcomp.css.reset.label "재설정">
+<!ENTITY bbcomp.css.reset.tooltiptext "요소 스타일 재설정">
+<!ENTITY bbcomp.css.text.label "문자">
+<!ENTITY bbcomp.css.more.label "더 보기">
+<!ENTITY bbcomp.css.space.label "여백">
+<!ENTITY bbcomp.css.style.label "표현">
+<!ENTITY bbcomp.css.position.label "위치">
+<!ENTITY bbcomp.css.color.label "색상">
+<!ENTITY bbcomp.css.color.none.label "없음">
+<!ENTITY bbcomp.css.font.family.label "글꼴">
+<!ENTITY bbcomp.css.font.size.label "크기">
+<!ENTITY bbcomp.css.font.weight.label "굵기">
+<!ENTITY bbcomp.css.font.weight.default.label "기본">
+<!ENTITY bbcomp.css.font.weight.normal.label "일반">
+<!ENTITY bbcomp.css.font.weight.bold.label "굵게">
+<!ENTITY bbcomp.css.font.weight.bolder.label "더 굵게">
+<!ENTITY bbcomp.css.font.weight.lighter.label "얇게">
+<!ENTITY bbcomp.css.font.style.label "모양">
+<!ENTITY bbcomp.css.font.style.default.label "기본">
+<!ENTITY bbcomp.css.font.style.normal.label "일반">
+<!ENTITY bbcomp.css.font.style.italic.label "이탤릭">
+<!ENTITY bbcomp.css.font.style.oblique.label "기울임">
+<!ENTITY bbcomp.css.text.decoration.label "장식">
+<!ENTITY bbcomp.css.text.decoration.default.label "기본">
+<!ENTITY bbcomp.css.text.decoration.none.label "없음">
+<!ENTITY bbcomp.css.text.decoration.underline.label "밑줄">
+<!ENTITY bbcomp.css.text.decoration.overline.label "윗줄">
+<!ENTITY bbcomp.css.text.decoration.line.through.label "취소선">
+<!ENTITY bbcomp.css.text.decoration.blink.label "깜빡임">
+<!ENTITY bbcomp.css.text.transform.label "변환">
+<!ENTITY bbcomp.css.text.transform.default.label "기본">
+<!ENTITY bbcomp.css.text.transform.none.label "없음">
+<!ENTITY bbcomp.css.text.transform.capitalize.label "대문자화">
+<!ENTITY bbcomp.css.text.transform.uppercase.label "대문자">
+<!ENTITY bbcomp.css.text.transform.lowercase.label "소문자">
+<!ENTITY bbcomp.css.font.stretch.label "늘리기">
+<!ENTITY bbcomp.css.font.stretch.default.label "기본">
+<!ENTITY bbcomp.css.font.stretch.normal.label "일반">
+<!ENTITY bbcomp.css.font.stretch.wider.label "넓게">
+<!ENTITY bbcomp.css.font.stretch.narrower.label "좁게">
+<!ENTITY bbcomp.css.font.stretch.ultra.condensed.label "극도로 좁은">
+<!ENTITY bbcomp.css.font.stretch.extra.condensed.label "매우 좁은">
+<!ENTITY bbcomp.css.font.stretch.condensed.label "좁은">
+<!ENTITY bbcomp.css.font.stretch.semi.condensed.label "조금 좁은">
+<!ENTITY bbcomp.css.font.stretch.semi.expanded.label "조금 넓은">
+<!ENTITY bbcomp.css.font.stretch.expanded.label "넓은">
+<!ENTITY bbcomp.css.font.stretch.extra.expanded.label "매우 넓은">
+<!ENTITY bbcomp.css.font.stretch.ultra.expanded.label "극도로 넓은">
+<!ENTITY bbcomp.css.font.variant.label "가변">
+<!ENTITY bbcomp.css.font.variant.default.label "기본">
+<!ENTITY bbcomp.css.font.variant.normal.label "일반">
+<!ENTITY bbcomp.css.font.variant.small.caps.label "작은 대문자">
+<!ENTITY bbcomp.css.text.align.label "정렬">
+<!ENTITY bbcomp.css.text.align.default.label "기본">
+<!ENTITY bbcomp.css.text.align.center.label "중앙">
+<!ENTITY bbcomp.css.text.align.right.label "오른쪽">
+<!ENTITY bbcomp.css.text.align.left.label "왼쪽">
+<!ENTITY bbcomp.css.text.align.justify.label "배분">
+<!ENTITY bbcomp.css.font.size.adjust.label "크기 조정">
+<!ENTITY bbcomp.css.line.height.label "줄 높이">
+<!ENTITY bbcomp.css.text.indent.label "들여쓰기">
+<!ENTITY bbcomp.css.word.spacing.label "자간">
+<!ENTITY bbcomp.css.letter.spacing.label "장평">
+<!ENTITY bbcomp.css.white.space.label "공백">
+<!ENTITY bbcomp.css.white.space.default.label "기본">
+<!ENTITY bbcomp.css.white.space.normal.label "일반">
+<!ENTITY bbcomp.css.white.space.pre.label "서식 보존">
+<!ENTITY bbcomp.css.white.space.nowrap.label "단어잘림 방지">
+<!ENTITY bbcomp.css.direction.label "방향">
+<!ENTITY bbcomp.css.direction.default.label "기본">
+<!ENTITY bbcomp.css.direction.ltr.label "왼쪽에서 오른쪽으로">
+<!ENTITY bbcomp.css.direction.rtl.label "오른쪽에서 왼쪽으로">
+<!ENTITY bbcomp.css.unicode.bidi.label "양방향 기준">
+<!ENTITY bbcomp.css.unicode.bidi.default.label "기본">
+<!ENTITY bbcomp.css.unicode.bidi.normal.label "일반">
+<!ENTITY bbcomp.css.unicode.bidi.embed.label "내장">
+<!ENTITY bbcomp.css.unicode.bidi.bidi.override.label "무시">
+<!ENTITY bbcomp.css.text.shadow.label "그림자">
+<!ENTITY bbcomp.css.padding.label "채워 넣기">
+<!ENTITY bbcomp.css.padding.left.label "왼쪽">
+<!ENTITY bbcomp.css.padding.right.label "오른쪽">
+<!ENTITY bbcomp.css.padding.top.label "상단">
+<!ENTITY bbcomp.css.padding.bottom.label "하단">
+<!ENTITY bbcomp.css.margin.label "여백">
+<!ENTITY bbcomp.css.margin.left.label "왼쪽">
+<!ENTITY bbcomp.css.margin.right.label "오른쪽">
+<!ENTITY bbcomp.css.margin.top.label "상단">
+<!ENTITY bbcomp.css.margin.bottom.label "하단">
+<!ENTITY bbcomp.css.padding.all "모두 정의">
+<!ENTITY bbcomp.css.background.label "배경">
+<!ENTITY bbcomp.css.background.color.label "색상">
+<!ENTITY bbcomp.css.background.color.none.label "없음">
+<!ENTITY bbcomp.css.background.color.transparent.label "투명">
+<!ENTITY bbcomp.css.background.image.label "그림">
+<!ENTITY bbcomp.css.background.position.label "위치">
+<!ENTITY bbcomp.css.background.repeat.label "반복">
+<!ENTITY bbcomp.css.background.repeat.default.label "기본">
+<!ENTITY bbcomp.css.background.repeat.repeat.label "반복">
+<!ENTITY bbcomp.css.background.repeat.repeat.x.label "수평">
+<!ENTITY bbcomp.css.background.repeat.repeat.y.label "수직">
+<!ENTITY bbcomp.css.background.repeat.no.repeat.label "반복 없음">
+<!ENTITY bbcomp.css.background.attachment.label "첨부">
+<!ENTITY bbcomp.css.background.attachment.default.label "기본">
+<!ENTITY bbcomp.css.background.attachment.scroll.label "두루마리">
+<!ENTITY bbcomp.css.background.attachment.fixed.label "고정">
+<!ENTITY bbcomp.css.border.label "더 굵게">
+<!ENTITY bbcomp.css.border.color.label "색상">
+<!ENTITY bbcomp.css.border.color.none.label "없음">
+<!ENTITY bbcomp.css.border.width.label "넓이">
+<!ENTITY bbcomp.css.border.style.label "스타일">
+<!ENTITY bbcomp.css.border.style.none.label "없음">
+<!ENTITY bbcomp.css.border.style.hidden.label "숨김">
+<!ENTITY bbcomp.css.border.style.dotted.label "Dotted">
+<!ENTITY bbcomp.css.border.style.dashed.label "Dashed">
+<!ENTITY bbcomp.css.border.style.solid.label "Solid">
+<!ENTITY bbcomp.css.border.style.double.label "두배">
+<!ENTITY bbcomp.css.border.style.groove.label "Groove">
+<!ENTITY bbcomp.css.border.style.ridge.label "Ridge">
+<!ENTITY bbcomp.css.border.style.inset.label "Inset">
+<!ENTITY bbcomp.css.border.style.outset.label "Outset">
+<!ENTITY bbcomp.css.width.label "폭">
+<!ENTITY bbcomp.css.height.label "높이">
+<!ENTITY bbcomp.css.clear.label "정리">
+<!ENTITY bbcomp.css.clear.default.label "없음">
+<!ENTITY bbcomp.css.clear.left.label "왼쪽">
+<!ENTITY bbcomp.css.clear.right.label "오른쪽">
+<!ENTITY bbcomp.css.clear.both.label "양쪽">
+<!ENTITY bbcomp.css.clear.none.label "없음">
+<!ENTITY bbcomp.css.float.label "분리">
+<!ENTITY bbcomp.css.float.default.label "기본값">
+<!ENTITY bbcomp.css.float.left.label "왼쪽">
+<!ENTITY bbcomp.css.float.right.label "오른쪽">
+<!ENTITY bbcomp.css.float.none.label "없음">
+<!ENTITY bbcomp.css.position.default.label "기본값">
+<!ENTITY bbcomp.css.position.static.label "정적좌표">
+<!ENTITY bbcomp.css.position.absolute.label "절대좌표">
+<!ENTITY bbcomp.css.position.fixed.label "고정좌표">
+<!ENTITY bbcomp.css.position.relative.label "상대좌표">
+<!ENTITY bbcomp.css.position.inherit.label "상속">
+<!ENTITY bbcomp.css.visibility.label "가시성">
+<!ENTITY bbcomp.css.visibility.default.label "기본값">
+<!ENTITY bbcomp.css.visibility.visible.label "보임">
+<!ENTITY bbcomp.css.visibility.hidden.label "숨김">
+<!ENTITY bbcomp.css.visibility.collapse.label "축소">
+<!ENTITY bbcomp.css.visibility.inherit.label "상속">
+<!ENTITY bbcomp.css.top.label "위">
+<!ENTITY bbcomp.css.right.label "오른쪽">
+<!ENTITY bbcomp.css.bottom.label "아래">
+<!ENTITY bbcomp.css.left.label "왼쪽">
+<!ENTITY bbcomp.css.z-index.label "Z-Index">
+<!ENTITY bbcomp.css.display.label "표시">

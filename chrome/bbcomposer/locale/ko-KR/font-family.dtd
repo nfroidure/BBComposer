@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.font.family.dialog.title "글자체">
+<!ENTITY bbcomp.font.family.usual.label "일반 글꼴">
+<!ENTITY bbcomp.font.family.add.label "추가">
+<!ENTITY bbcomp.font.family.selected.label "선택된 글꼴">
+<!ENTITY bbcomp.font.family.up.label "위로">
+<!ENTITY bbcomp.font.family.down.label "아래로">
+<!ENTITY bbcomp.font.family.remove.label "제거">

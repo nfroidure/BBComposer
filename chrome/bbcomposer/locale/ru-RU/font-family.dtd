@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.font.family.dialog.title "Шрифты">
+<!ENTITY bbcomp.font.family.usual.label "Используемые шрифты">
+<!ENTITY bbcomp.font.family.add.label "Добавить">
+<!ENTITY bbcomp.font.family.selected.label "Выбранные шрифты">
+<!ENTITY bbcomp.font.family.up.label "Вверх">
+<!ENTITY bbcomp.font.family.down.label "Вниз">
+<!ENTITY bbcomp.font.family.remove.label "Удалить">

@@ -1,0 +1,831 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* TOOLBAR */
+/* #bbcomposer-toolbar[mode="icons"]>toolbarbutton { padding-right:0; } */
+.bbcomposer-toolbar-button
+	{
+	list-style-image: url("chrome://bbcomposer/skin/format-buttons.png");
+	}
+
+/* Font-size */
+#bbcomposer-font-size-decrease-button
+	{
+	-moz-image-region: rect(0 16px 16px 0);
+	}
+#bbcomposer-font-size-decrease-button:hover, #bbcomposer-font-size-decrease-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 16px 32px 0);
+	}
+#bbcomposer-font-size-decrease-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 16px 48px 0) !important;
+	}
+#bbcomposer-font-size-increase-button
+	{
+	-moz-image-region: rect(0 32px 16px 16px);
+	}
+#bbcomposer-font-size-increase-button:hover, #bbcomposer-font-size-increase-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 32px 32px 16px);
+	}
+#bbcomposer-font-size-increase-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 32px 48px 16px) !important;
+	}
+
+/* I */
+#bbcomposer-i-button
+	{
+	-moz-image-region: rect(0 64px 16px 48px);
+	}
+#bbcomposer-i-button:hover, #bbcomposer-i-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 64px 32px 48px);
+	}
+#bbcomposer-i-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 64px 48px 48px) !important;
+	}
+
+/* B */
+#bbcomposer-b-button
+	{
+	-moz-image-region: rect(0 48px 16px 32px);
+	}
+#bbcomposer-b-button:hover, #bbcomposer-b-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 48px 32px 32px);
+	}
+#bbcomposer-b-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 48px 48px 32px) !important;
+	}
+
+/* U */
+#bbcomposer-u-button
+	{
+	-moz-image-region: rect(0 80px 16px 64px);
+	}
+#bbcomposer-u-button:hover, #bbcomposer-u-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 80px 32px 64px);
+	}
+#bbcomposer-u-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 80px 48px 64px) !important;
+	}
+
+/* DEINDENT */
+#bbcomposer-deindent-button
+	{
+	-moz-image-region: rect(0 128px 16px 112px);
+	}
+#bbcomposer-deindent-button:hover, #bbcomposer-deindent-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 128px 32px 112px);
+	}
+#bbcomposer-deindent-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 128px 48px 112px) !important;
+	}
+
+/* INDENT */
+#bbcomposer-indent-button
+	{
+	-moz-image-region: rect(0 144px 16px 128px);
+	}
+#bbcomposer-indent-button:hover, #bbcomposer-indent-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 144px 32px 128px);
+	}
+#bbcomposer-indent-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 144px 48px 128px) !important;
+	}
+
+/* ALIGN LEFT */
+#bbcomposer-align-left-button
+	{
+	-moz-image-region: rect(0 160px 16px 144px);
+	}
+#bbcomposer-align-left-button:hover, #bbcomposer-align-left-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 160px 32px 144px);
+	}
+#bbcomposer-align-left-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 160px 48px 144px) !important;
+	}
+
+/* ALIGN CENTER */
+#bbcomposer-align-center-button
+	{
+	-moz-image-region: rect(0 176px 16px 160px);
+	}
+#bbcomposer-align-center-button:hover, #bbcomposer-align-center-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 176px 32px 160px);
+	}
+#bbcomposer-align-center-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 176px 48px 160px) !important;
+	}
+
+/* ALIGN RIGHT */
+#bbcomposer-align-right-button
+	{
+	-moz-image-region: rect(0 192px 16px 176px);
+	}
+#bbcomposer-align-right-button:hover, #bbcomposer-align-right-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 192px 32px 176px);
+	}
+#bbcomposer-align-right-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 192px 48px 176px) !important;
+	}
+
+/* ALIGN JUSTIFY */
+#bbcomposer-align-justify-button
+	{
+	-moz-image-region: rect(0 208px 16px 192px);
+	}
+#bbcomposer-align-justify-button:hover, #bbcomposer-align-justify-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 208px 32px 192px);
+	}
+#bbcomposer-align-justify-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 208px 48px 192px) !important;
+	}
+
+/* LINK */
+#bbcomposer-a-button
+	{
+	-moz-image-region: rect(0 224px 16px 208px);
+	}
+#bbcomposer-a-button:hover, #bbcomposer-a-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 224px 32px 208px);
+	}
+#bbcomposer-a-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 224px 48px 208px) !important;
+	}
+
+/* IMAGE */
+#bbcomposer-img-button
+	{
+	-moz-image-region: rect(0 256px 16px 240px);
+	}
+#bbcomposer-img-button:hover, #bbcomposer-img-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 256px 32px 240px);
+	}
+#bbcomposer-img-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 256px 48px 240px) !important;
+	}
+
+/* TABLE */
+#bbcomposer-table-button
+	{
+	-moz-image-region: rect(0 288px 16px 272px);
+	}
+#bbcomposer-table-button:hover, #bbcomposer-table-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 288px 32px 272px);
+	}
+#bbcomposer-table-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 288px 48px 272px) !important;
+	}
+
+/* HR */
+#bbcomposer-hr-button
+	{
+	-moz-image-region: rect(0 272px 16px 256px);
+	}
+#bbcomposer-hr-button:hover, #bbcomposer-hr-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 272px 32px 256px);
+	}
+#bbcomposer-hr-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 272px 48px 256px) !important;
+	}
+
+/* SUP */
+#bbcomposer-sup-button
+	{
+	-moz-image-region: rect(0 320px 16px 304px);
+	}
+#bbcomposer-sup-button:hover, #bbcomposer-sup-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 320px 32px 304px);
+	}
+#bbcomposer-sup-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 320px 48px 304px) !important;
+	}
+
+/* SUB */
+#bbcomposer-sub-button
+	{
+	-moz-image-region: rect(0 336px 16px 320px);
+	}
+#bbcomposer-sub-button:hover, #bbcomposer-sub-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 336px 32px 320px);
+	}
+#bbcomposer-sub-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 336px 48px 320px) !important;
+	}
+
+/* ABBREVIATION */
+#bbcomposer-abbr-button
+	{
+	-moz-image-region: rect(0 352px 16px 336px);
+	}
+#bbcomposer-abbr-button:hover, #bbcomposer-abbr-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 352px 32px 336px);
+	}
+#bbcomposer-abbr-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 352px 48px 336px) !important;
+	}
+
+/* ACRONYM */
+#bbcomposer-acronym-button
+	{
+	-moz-image-region: rect(0 368px 16px 352px);
+	}
+#bbcomposer-acronym-button:hover, #bbcomposer-acronym-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 368px 32px 352px);
+	}
+#bbcomposer-acronym-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 368px 48px 352px) !important;
+	}
+
+/* STRIKE */
+#bbcomposer-strike-button
+	{
+	-moz-image-region: rect(0 384px 16px 368px);
+	}
+#bbcomposer-strike-button:hover, #bbcomposer-strike-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 384px 32px 368px);
+	}
+#bbcomposer-strike-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 384px 48px 368px) !important;
+	}
+
+/* QUOTE */
+#bbcomposer-q-button
+	{
+	-moz-image-region: rect(0 400px 16px 384px);
+	}
+#bbcomposer-q-button:hover, #bbcomposer-q-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 400px 32px 384px);
+	}
+#bbcomposer-q-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 400px 48px 384px) !important;
+	}
+
+/* KEYBOARD */
+#bbcomposer-kbd-button
+	{
+	-moz-image-region: rect(0 416px 16px 400px);
+	}
+#bbcomposer-kbd-button:hover, #bbcomposer-kbd-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 416px 32px 400px);
+	}
+#bbcomposer-kbd-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 416px 48px 400px) !important;
+	}
+
+/* CODE */
+#bbcomposer-code-button
+	{
+	-moz-image-region: rect(0 432px 16px 416px);
+	}
+#bbcomposer-code-button:hover, #bbcomposer-code-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 432px 32px 416px);
+	}
+#bbcomposer-code-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 432px 48px 416px) !important;
+	}
+
+/* DEFINITION */
+#bbcomposer-dfn-button
+	{
+	-moz-image-region: rect(0 448px 16px 432px);
+	}
+#bbcomposer-dfn-button:hover, #bbcomposer-dfn-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 448px 32px 432px);
+	}
+#bbcomposer-dfn-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 448px 48px 432px) !important;
+	}
+
+/* SAMPLE */
+#bbcomposer-samp-button
+	{
+	-moz-image-region: rect(0 464px 16px 448px);
+	}
+#bbcomposer-samp-button:hover, #bbcomposer-samp-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 464px 32px 448px);
+	}
+#bbcomposer-samp-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 464px 48px 448px) !important;
+	}
+
+/* VARIABLE */
+#bbcomposer-var-button
+	{
+	-moz-image-region: rect(0 480px 16px 464px);
+	}
+#bbcomposer-var-button:hover, #bbcomposer-var-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 480px 32px 464px);
+	}
+#bbcomposer-var-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 480px 48px 464px) !important;
+	}
+
+/* SPAN */
+#bbcomposer-span-button
+	{
+	-moz-image-region: rect(0 496px 16px 480px);
+	}
+#bbcomposer-span-button:hover, #bbcomposer-span-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 496px 32px 480px);
+	}
+#bbcomposer-span-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 496px 48px 480px) !important;
+	}
+
+/* BR */
+#bbcomposer-br-button
+	{
+	-moz-image-region: rect(0 512px 16px 496px);
+	}
+#bbcomposer-br-button:hover, #bbcomposer-br-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 512px 32px 496px);
+	}
+#bbcomposer-br-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 512px 48px 496px) !important;
+	}
+
+/* EDITION MODE */
+#bbcomposer-editmode-button
+	{
+	-moz-image-region: rect(0 528px 16px 512px);
+	}
+#bbcomposer-editmode-button:hover, #bbcomposer-editmode-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 528px 32px 512px);
+	}
+#bbcomposer-editmode-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 528px 48px 512px);
+	}
+
+/* ANCHOR */
+#bbcomposer-anchor-button
+	{
+	-moz-image-region: rect(0 544px 16px 528px);
+	}
+#bbcomposer-anchor-button:hover, #bbcomposer-anchor-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 544px 32px 528px);
+	}
+#bbcomposer-anchor-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 544px 48px 528px) !important;
+	}
+
+/* OPTIONS */
+#bbcomposer-options-button
+	{
+	-moz-image-region: rect(0 560px 16px 544px);
+	}
+#bbcomposer-options-button:hover, #bbcomposer-options-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 560px 32px 544px);
+	}
+#bbcomposer-options-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 560px 48px 544px) !important;
+	}
+
+/* SIDEBARS */
+#bbcomposer-sidebar-button
+	{
+	-moz-image-region: rect(0 576px 16px 560px);
+	}
+#bbcomposer-sidebar-button:hover, #bbcomposer-sidebar-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 576px 32px 560px);
+	}
+#bbcomposer-sidebar-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 576px 48px 560px) !important;
+	}
+
+/* POETRY */
+#bbcomposer-poetry-button
+	{
+	-moz-image-region: rect(0 592px 16px 576px);
+	}
+#bbcomposer-poetry-button:hover, #bbcomposer-poetry-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 592px 32px 576px);
+	}
+#bbcomposer-poetry-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 592px 48px 576px) !important;
+	}
+
+/* EMBED */
+#bbcomposer-em-button
+	{
+	-moz-image-region: rect(0 608px 16px 592px);
+	}
+#bbcomposer-em-button:hover, #bbcomposer-em-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 608px 32px 592px);
+	}
+#bbcomposer-em-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 608px 48px 592px) !important;
+	}
+
+/* STRONG */
+#bbcomposer-strong-button
+	{
+	-moz-image-region: rect(0 624px 16px 608px);
+	}
+#bbcomposer-strong-button:hover, #bbcomposer-strong-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 624px 32px 608px);
+	}
+#bbcomposer-strong-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 624px 48px 608px) !important;
+	}
+
+/* CITE */
+#bbcomposer-cite-button
+	{
+	-moz-image-region: rect(0 640px 16px 624px);
+	}
+#bbcomposer-cite-button:hover, #bbcomposer-cite-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 640px 32px 624px);
+	}
+#bbcomposer-cite-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 640px 48px 624px) !important;
+	}
+
+/* STOP */
+#bbcomposer-stop-button
+	{
+	-moz-image-region: rect(0 656px 16px 640px);
+	}
+#bbcomposer-stop-button:hover, #bbcomposer-stop-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 656px 32px 640px);
+	}
+#bbcomposer-stop-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 656px 48px 640px) !important;
+	}
+
+/* BACKUP */
+#bbcomposer-backup-button
+	{
+	-moz-image-region: rect(0 672px 16px 656px);
+	}
+#bbcomposer-backup-button:hover, #bbcomposer-backup-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 672px 32px 656px);
+	}
+#bbcomposer-backup-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 672px 48px 656px) !important;
+	}
+
+/* DIV */
+#bbcomposer-div-button
+	{
+	-moz-image-region: rect(0 688px 16px 672px);
+	}
+#bbcomposer-div-button:hover, #bbcomposer-div-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 688px 32px 672px);
+	}
+#bbcomposer-div-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 688px 48px 672px) !important;
+	}
+
+/* BLOCKQUOTE */
+#bbcomposer-blockquote-button
+	{
+	-moz-image-region: rect(0 704px 16px 688px);
+	}
+#bbcomposer-blockquote-button:hover, #bbcomposer-blockquote-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 704px 32px 688px);
+	}
+#bbcomposer-blockquote-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 704px 48px 688px) !important;
+	}
+
+/* INSERTED */
+#bbcomposer-ins-button
+	{
+	-moz-image-region: rect(0 720px 16px 704px);
+	}
+#bbcomposer-ins-button:hover, #bbcomposer-ins-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 720px 32px 704px);
+	}
+#bbcomposer-ins-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 720px 48px 704px) !important;
+	}
+
+/* DELETED */
+#bbcomposer-del-button
+	{
+	-moz-image-region: rect(0 736px 16px 720px);
+	}
+#bbcomposer-del-button:hover, #bbcomposer-del-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 736px 32px 720px);
+	}
+#bbcomposer-del-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 736px 48px 720px) !important;
+	}
+
+/* UNDO */
+#bbcomposer-undo-button
+	{
+	-moz-image-region: rect(0 752px 16px 736px);
+	}
+#bbcomposer-undo-button:hover, #bbcomposer-undo-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 752px 32px 736px);
+	}
+#bbcomposer-undo-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 752px 48px 736px) !important;
+	}
+
+/* REDO */
+#bbcomposer-redo-button
+	{
+	-moz-image-region: rect(0 768px 16px 752px);
+	}
+#bbcomposer-redo-button:hover, #bbcomposer-redo-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 768px 32px 752px);
+	}
+#bbcomposer-redo-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 768px 48px 752px) !important;
+	}
+
+/* SAVE */
+#bbcomposer-load-button
+	{
+	-moz-image-region: rect(0 784px 16px 768px);
+	}
+#bbcomposer-load-button:hover, #bbcomposer-load-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 784px 32px 768px);
+	}
+#bbcomposer-load-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 784px 48px 768px) !important;
+	}
+
+/* LOAD */
+#bbcomposer-save-button
+	{
+	-moz-image-region: rect(0 800px 16px 784px);
+	}
+#bbcomposer-save-button:hover, #bbcomposer-save-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 800px 32px 784px);
+	}
+#bbcomposer-save-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 800px 48px 784px) !important;
+	}
+
+/* LEFT TO RIGHT */
+#bbcomposer-direction-ltr-button
+	{
+	-moz-image-region: rect(0 816px 16px 800px);
+	}
+#bbcomposer-direction-ltr-button:hover, #bbcomposer-direction-ltr-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 816px 32px 800px);
+	}
+#bbcomposer-direction-ltr-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 816px 48px 800px) !important;
+	}
+
+/* RIGHT TO LEFT */
+#bbcomposer-direction-rtl-button
+	{
+	-moz-image-region: rect(0 832px 16px 816px);
+	}
+#bbcomposer-direction-rtl-button:hover, #bbcomposer-direction-rtl-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 832px 32px 816px);
+	}
+#bbcomposer-direction-rtl-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 832px 48px 816px) !important;
+	}
+
+/* CLASS */
+#bbcomposer-attclass-button
+	{
+	-moz-image-region: rect(0 848px 16px 832px);
+	}
+#bbcomposer-attclass-button:hover, #bbcomposer-attclass-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 848px 32px 832px);
+	}
+#bbcomposer-attclass-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 848px 48px 832px) !important;
+	}
+
+/* LANG */
+#bbcomposer-attlang-button
+	{
+	-moz-image-region: rect(0 864px 16px 848px);
+	}
+#bbcomposer-attlang-button:hover, #bbcomposer-attlang-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 864px 32px 848px);
+	}
+#bbcomposer-attlang-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 864px 48px 848px) !important;
+	}
+
+/* TOOLBARS */
+#bbcomposer-toolbar-button
+	{
+	-moz-image-region: rect(0 880px 16px 864px);
+	}
+#bbcomposer-toolbar-button:hover, #bbcomposer-toolbar-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 880px 32px 864px);
+	}
+#bbcomposer-toolbar-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 880px 48px 864px) !important;
+	}
+
+/* CLEAN CSS */
+#bbcomposer-cleancss-button
+	{
+	-moz-image-region: rect(0 656px 16px 640px);
+	}
+#bbcomposer-cleancss-button:hover, #bbcomposer-cleancss-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 656px 32px 640px);
+	}
+#bbcomposer-cleancss-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 656px 48px 640px) !important;
+	}
+
+/* Margin */
+#bbcomposer-margin-top-increase-button
+	{
+	-moz-image-region: rect(0 896px 16px 880px);
+	}
+#bbcomposer-margin-top-increase-button:hover, #bbcomposer-margin-top-increase-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 896px 32px 880px);
+	}
+#bbcomposer-margin-top-increase-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 896px 48px 880px) !important;
+	}
+#bbcomposer-margin-top-decrease-button
+	{
+	-moz-image-region: rect(0 912px 16px 896px);
+	}
+#bbcomposer-margin-top-decrease-button:hover, #bbcomposer-margin-top-decrease-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 912px 32px 896px);
+	}
+#bbcomposer-margin-top-decrease-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 912px 48px 896px) !important;
+	}
+#bbcomposer-margin-right-increase-button
+	{
+	-moz-image-region: rect(0 928px 16px 912px);
+	}
+#bbcomposer-margin-right-increase-button:hover, #bbcomposer-margin-right-increase-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 928px 32px 912px);
+	}
+#bbcomposer-margin-right-increase-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 928px 48px 912px) !important;
+	}
+#bbcomposer-margin-right-decrease-button
+	{
+	-moz-image-region: rect(0 944px 16px 928px);
+	}
+#bbcomposer-margin-right-decrease-button:hover, #bbcomposer-margin-right-decrease-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 944px 32px 928px);
+	}
+#bbcomposer-margin-right-decrease-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 944px 48px 928px) !important;
+	}
+#bbcomposer-margin-bottom-increase-button
+	{
+	-moz-image-region: rect(0 960px 16px 944px);
+	}
+#bbcomposer-margin-bottom-increase-button:hover, #bbcomposer-margin-bottom-increase-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 960px 32px 944px);
+	}
+#bbcomposer-margin-bottom-increase-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 960px 48px 944px) !important;
+	}
+#bbcomposer-margin-bottom-decrease-button
+	{
+	-moz-image-region: rect(0 976px 16px 960px);
+	}
+#bbcomposer-margin-bottom-decrease-button:hover, #bbcomposer-margin-bottom-decrease-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 976px 32px 960px);
+	}
+#bbcomposer-margin-bottom-decrease-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 976px 48px 960px) !important;
+	}
+#bbcomposer-margin-left-increase-button
+	{
+	-moz-image-region: rect(0 992px 16px 976px);
+	}
+#bbcomposer-margin-left-increase-button:hover, #bbcomposer-margin-left-increase-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 992px 32px 976px);
+	}
+#bbcomposer-margin-left-increase-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 992px 48px 976px) !important;
+	}
+#bbcomposer-margin-left-decrease-button
+	{
+	-moz-image-region: rect(0 1008px 16px 992px);
+	}
+#bbcomposer-margin-left-decrease-button:hover, #bbcomposer-margin-left-decrease-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 1008px 32px 992px);
+	}
+#bbcomposer-margin-left-decrease-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 1008px 48px 992px) !important;
+	}

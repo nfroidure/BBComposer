@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/option.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/option.dtd">
+
+
+<dialog buttons="accept, cancel" id="option_dialog" title="&bbcomp.opt.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	onload="initOManager();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcOptionService.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcOptionManager.js"/>
+	<hbox flex="1">
+		<listbox id="option_menu" flex="1">
+			<listitem label="&bbcomp.opt.gnr.label;" value="page/general.xul" selected="true"/>
+			<listitem label="&bbcomp.opt.lng.label;" value="page/language.xul"/>
+			<listitem label="&bbcomp.opt.upd.label;" value="page/upload.xul"/>
+			<listitem label="&bbcomp.opt.rsp.label;" value="page/response.xul"/>
+			<listitem label="&bbcomp.opt.avd.label;" value="page/advanced.xul"/>
+			<listitem label="&bbcomp.opt.fld.label;" value="page/fields.xul"/>
+		</listbox>
+		<vbox flex="6">
+			<iframe id="option_iframe" name="xcms_iframe" flex="1" src="page/general.xul" type="chrome"/>
+		</vbox>
+	</hbox>
+</dialog>

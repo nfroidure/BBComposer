@@ -1,0 +1,51 @@
+<!ENTITY bbcomp.opt.dialog.title "BBComposer:Seçenekler">
+<!ENTITY bbcomp.opt.gnr.label "Genel">
+<!ENTITY bbcomp.opt.lng.label "Dil">
+<!ENTITY bbcomp.opt.upd.label "Yükle">
+<!ENTITY bbcomp.opt.rsp.label "Yanıt">
+<!ENTITY bbcomp.opt.avd.label "Gelişmiş">
+<!ENTITY bbcomp.opt.fld.label "Alanlar">
+<!ENTITY bbcomp.opt.gnr.caption "Genel seçenekler">
+<!ENTITY bbcomp.opt.gnr.site.css.label "CSS dosya dizini (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "Varsayılan CSS&apos;i kullan">
+<!ENTITY bbcomp.opt.cmp.automode.label "Düzenleme Moduna otomatik gir">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "Her zaman imla kontrolü yap">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "Düzenleme modunu yan menüde aç">
+<!ENTITY bbcomp.opt.lng.default.label "Varsayılan dil">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBKod (Semantik BBKod)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "Olağan BBKod">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki söz dizimi">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (bloksuz)">
+<!ENTITY bbcomp.opt.lng.remember.label "Seçilen dili hatırla">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML Seçenekleri">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indent">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Convert non-ASCII characters to HTML entities">
+<!ENTITY bbcomp.opt.upd.caption "Gelişmiş Seçenekler">
+<!ENTITY bbcomp.opt.upd.description "Those options allows you to modify upload parameters.">
+<!ENTITY bbcomp.opt.upd.on.label "Enable upload">
+<!ENTITY bbcomp.opt.upd.site.label "Upload site">
+<!ENTITY bbcomp.opt.upd.folder.label "Upload folder">
+<!ENTITY bbcomp.opt.upd.url.label "Yükleme URL&apos;si">
+<!ENTITY bbcomp.opt.upd.postname.label "Field name of the file">
+<!ENTITY bbcomp.opt.upd.postparams.label "POST parameters">
+<!ENTITY bbcomp.opt.upd.unique.label "Filename must be unique">
+<!ENTITY bbcomp.opt.rsp.caption "Yanıt">
+<!ENTITY bbcomp.opt.rsp.description "Responses treatment parameters.">
+<!ENTITY bbcomp.opt.rsp.type.label "Yanıt tipi">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "Text">
+<!ENTITY bbcomp.opt.rsp.error.label "Error recognizer">
+<!ENTITY bbcomp.opt.rsp.notice.label "Notice recognizer">
+<!ENTITY bbcomp.opt.rsp.filename.label "Filename recognizer">
+<!ENTITY bbcomp.opt.avd.caption "Gelişmiş Ayarlar">
+<!ENTITY bbcomp.opt.avd.description "Ne yaptığınızdan emin değilseniz gelişmiş ayarları değiştirmeyiniz.">
+<!ENTITY bbcomp.opt.avd.save.label "Otomatik kaydetme aralığı">
+<!ENTITY bbcomp.opt.avd.defcont.label "Default contain of the editor">
+<!ENTITY bbcomp.opt.fld.caption.label "Kaydedilen alanlar">
+<!ENTITY bbcomp.opt.fld.site.label "URL Filtresi">
+<!ENTITY bbcomp.opt.fld.id.label "ID Filtresi">
+<!ENTITY bbcomp.opt.fld.language.label "Dil">
+<!ENTITY bbcomp.opt.fld.target.label "Hedef">
+<!ENTITY bbcomp.opt.fld.delete.label "Sil">
+<!ENTITY bbcomp.opt.fld.add.label "Ekle">

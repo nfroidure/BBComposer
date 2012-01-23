@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE page SYSTEM "chrome://bbcomposer/locale/option.dtd">
+
+<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<groupbox>
+		<caption label="&bbcomp.opt.upd.caption;"/>
+		<description value="&bbcomp.opt.upd.description;"/>
+		<checkbox id="bbcomposer.upload.on" label="&bbcomp.opt.upd.on.label;" checked="true"/>
+		<label control="bbcomposer.upload.site" value="&bbcomp.opt.upd.site.label;"/>
+		<textbox id="bbcomposer.upload.site" value=""/>
+		<label control="bbcomposer.upload.folder" value="&bbcomp.opt.upd.folder.label;"/>
+		<textbox id="bbcomposer.upload.folder" value="images/"/>
+		<label control="bbcomposer.upload.url" value="&bbcomp.opt.upd.url.label;"/>
+		<textbox id="bbcomposer.upload.url" value="index.php3"/>
+		<label control="bbcomposer.upload.postname" value="&bbcomp.opt.upd.postname.label;"/>
+		<textbox id="bbcomposer.upload.postname" value="bbfile"/>
+		<label control="bbcomposer.upload.postparams" value="&bbcomp.opt.upd.postparams.label;"/>
+		<textbox id="bbcomposer.upload.postparams" value="bbfile"/>
+		<checkbox id="bbcomposer.upload.unique" label="&bbcomp.opt.upd.unique.label;" checked="true"/>
+	</groupbox>
+</page>

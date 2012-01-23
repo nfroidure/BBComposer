@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Odkaz">
+<!ENTITY bbcomp.link.href.label "Umiestnenie">
+<!ENTITY bbcomp.link.title.label "Tool tip text">
+<!ENTITY bbcomp.link.target.label "Cieľ">
+<!ENTITY bbcomp.link.target.normal.label "Normálny">
+<!ENTITY bbcomp.link.target.popup.label "Nové okno">
+<!ENTITY bbcomp.link.hreflang.label "Cieľový jazyk">
+<!ENTITY bbcomp.link.hreflang.normal.label "Ten istý jazyk">
+<!ENTITY bbcomp.link.hreflang.en.label "Angličtina">
+<!ENTITY bbcomp.link.hreflang.de.label "Nemčina">
+<!ENTITY bbcomp.link.hreflang.es.label "Španielčina">
+<!ENTITY bbcomp.link.hreflang.fr.label "Francúzština">

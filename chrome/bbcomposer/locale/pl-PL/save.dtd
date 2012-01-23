@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.save.dialog.title "Edytuj i zapisz">
+<!ENTITY bbcomp.save.href.label "Filtr URL">
+<!ENTITY bbcomp.save.id.label "Filtr identyfikatorów">
+<!ENTITY bbcomp.save.language.label "Język">
+<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
+<!ENTITY bbcomp.save.language.bbcode.label "BBCode&apos;y">
+<!ENTITY bbcomp.save.language.xbbcode.label "XBBCode&apos;y">
+<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML (bez bloków)">
+<!ENTITY bbcomp.save.target.label "Cel">
+<!ENTITY bbcomp.save.target.tab.label "Wcięcie">
+<!ENTITY bbcomp.save.target.textarea.label "Formularz">

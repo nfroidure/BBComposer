@@ -1,0 +1,134 @@
+<!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.pasteas "Indsæt som">
+<!ENTITY bbcomp.pasteas.div "a division of the document">
+<!ENTITY bbcomp.pasteas.blockquote "et blok-citat">
+<!ENTITY bbcomp.pasteas.ins "added content">
+<!ENTITY bbcomp.pasteas.del "deleted content">
+<!ENTITY bbcomp.pasteas.text "text">
+<!ENTITY bbcomp.pastefrom "Paste from">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
+<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
+<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (no blocks)">
+<!ENTITY bbcomp.delete "Delete">
+<!ENTITY bbcomp.selectall "Select all">
+<!ENTITY bbcomp.edit.textarea.xbbcode "Rediger med XBBkode">
+<!ENTITY bbcomp.edit.textarea.xhtml "Rediger med XHTML">
+<!ENTITY bbcomp.edit.textarea.bbcode "Rediger med BBkode">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Rediger med Mediawiki">
+<!ENTITY bbcomp.edit.textarea.xhtmlnb "Rediger med XHTML (ingen blokke)">
+<!ENTITY bbcomp.edit.remember.label "Rediger og gem">
+<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-da">
+<!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-en">
+<!ENTITY bbcomp.mode.label "Redigeringstilstand">
+<!ENTITY bbcomp.mode.tooltiptext "Aktiver/deaktiver redigeringstilstanden">
+<!ENTITY bbcomp.load.label "Indlæs">
+<!ENTITY bbcomp.load.tooltiptext "Indlæs en note">
+<!ENTITY bbcomp.save.label "Gem">
+<!ENTITY bbcomp.save.tooltiptext "Gem en note">
+<!ENTITY bbcomp.stop.label "Stop">
+<!ENTITY bbcomp.stop.tooltiptext "Annuller ændringer">
+<!ENTITY bbcomp.backup.label "Hurtigindlæs">
+<!ENTITY bbcomp.backup.tooltiptext "Indlæs indhold fra sidste autogem">
+<!ENTITY bbcomp.sidebar.label "Sidebjælker">
+<!ENTITY bbcomp.sidebar.tooltiptext "Vis/skjul sidebjælker">
+<!ENTITY bbcomp.smileys.label "Smileys">
+<!ENTITY bbcomp.smileys.tooltiptext "Smileybibliotek">
+<!ENTITY bbcomp.cartoon.label "Tegneserie">
+<!ENTITY bbcomp.cartoon.tooltiptext "Tegneserie/manga ikonbibliotek">
+<!ENTITY bbcomp.css.label "Stilark">
+<!ENTITY bbcomp.css.tooltiptext "Rediger CSS">
+<!ENTITY bbcomp.options.label "Værktøjer">
+<!ENTITY bbcomp.options.tooltiptext "Se værktøjerne">
+<!ENTITY bbcomp.option.label "Indstillinger">
+<!ENTITY bbcomp.option.tooltiptext "Tilpas BBComposer">
+<!ENTITY bbcomp.validation.label "Validér">
+<!ENTITY bbcomp.validation.tooltiptext "Validér denne side">
+<!ENTITY bbcomp.help.label "Hjælp">
+<!ENTITY bbcomp.help.tooltiptext "Gå til manualen">
+<!ENTITY bbcomp.forum.label "Forum">
+<!ENTITY bbcomp.forum.tooltiptext "Snak om BBComposer">
+<!ENTITY bbcomp.about.label "Om">
+<!ENTITY bbcomp.about.tooltiptext "Om BBComposer">
+<!ENTITY bbcomp.lists.label "Lister">
+<!ENTITY bbcomp.lists.tooltiptext "lister blokke">
+<!ENTITY bbcomp.ul.label "Ikke-sorteret liste">
+<!ENTITY bbcomp.ol.label "Sorteret liste">
+<!ENTITY bbcomp.dl.label "Definitionsliste">
+<!ENTITY bbcomp.texts.label "Tekster">
+<!ENTITY bbcomp.texts.tooltiptext "Tekstblokke">
+<!ENTITY bbcomp.h1.label "Hovedtitel">
+<!ENTITY bbcomp.h2.label "Undertitel">
+<!ENTITY bbcomp.h3.label "Undertitel 2">
+<!ENTITY bbcomp.h4.label "Undertitel 3">
+<!ENTITY bbcomp.h5.label "Undertitel 4">
+<!ENTITY bbcomp.h6.label "Undertitel 5">
+<!ENTITY bbcomp.p.label "Afsnit">
+<!ENTITY bbcomp.pre.label "Præformatteret tekst">
+<!ENTITY bbcomp.address.label "Adresse">
+<!ENTITY bbcomp.hr.label "Horisontal bjælke">
+<!ENTITY bbcomp.hr.tooltiptext "Tilføj en horisontal bjælke">
+<!ENTITY bbcomp.br.label "Ny linje">
+<!ENTITY bbcomp.br.tooltiptext "Gå til en ny linje">
+<!ENTITY bbcomp.deindent.label "Fortryd indryk">
+<!ENTITY bbcomp.deindent.tooltiptext "Fortryd indrykning af teksten">
+<!ENTITY bbcomp.indent.label "Indryk">
+<!ENTITY bbcomp.indent.tooltiptext "Indrykning af teksten">
+<!ENTITY bbcomp.undo.label "Fortryd">
+<!ENTITY bbcomp.undo.tooltiptext "Fortryd seneste ændringer">
+<!ENTITY bbcomp.redo.label "Genskab">
+<!ENTITY bbcomp.redo.tooltiptext "Genskab seneste ændringer">
+<!ENTITY bbcomp.b.label "Fed">
+<!ENTITY bbcomp.b.tooltiptext "Sæt fed">
+<!ENTITY bbcomp.i.label "Kursiv">
+<!ENTITY bbcomp.i.tooltiptext "Sæt valgt tekst til kursiv">
+<!ENTITY bbcomp.u.label "Understreg">
+<!ENTITY bbcomp.u.tooltiptext "Understreg valgt tekst">
+<!ENTITY bbcomp.strong.label "Fremhævet">
+<!ENTITY bbcomp.strong.tooltiptext "Marker som fremhævet">
+<!ENTITY bbcomp.em.label "Emphasis">
+<!ENTITY bbcomp.em.tooltiptext "Tilføj en emphasis">
+<!ENTITY bbcomp.q.label "Citat">
+<!ENTITY bbcomp.q.tooltiptext "Tilføj citat">
+<!ENTITY bbcomp.cite.label "Citering">
+<!ENTITY bbcomp.cite.tooltiptext "Tilføj en reference til en forfatter eller en bog">
+<!ENTITY bbcomp.acronym.label "Akronym">
+<!ENTITY bbcomp.acronym.tooltiptext "Tilføj et akronym">
+<!ENTITY bbcomp.abbr.label "Forkortelse">
+<!ENTITY bbcomp.abbr.tooltiptext "Tilføj en forkortelse">
+<!ENTITY bbcomp.a.label "Link">
+<!ENTITY bbcomp.a.tooltiptext "Tilføj et link">
+<!ENTITY bbcomp.img.label "Billede">
+<!ENTITY bbcomp.img.tooltiptext "Tilføj et billede">
+<!ENTITY bbcomp.table.label "Tabel">
+<!ENTITY bbcomp.table.tooltiptext "Tilføj en tabel">
+<!ENTITY bbcomp.special.label "Speciel">
+<!ENTITY bbcomp.special.tooltiptext "Specialiseret semantik">
+<!ENTITY bbcomp.sup.label "Hævet skrift">
+<!ENTITY bbcomp.sup.tooltiptext "Marker som hævet skrift">
+<!ENTITY bbcomp.sub.label "Sænket skrift">
+<!ENTITY bbcomp.sub.tooltiptext "Marker som sænket skrift">
+<!ENTITY bbcomp.samp.label "Eksempel">
+<!ENTITY bbcomp.samp.tooltiptext "Marker som eksempel">
+<!ENTITY bbcomp.dfn.label "Definition">
+<!ENTITY bbcomp.dfn.tooltiptext "Marker som definition">
+<!ENTITY bbcomp.kbd.label "Tasteanslag">
+<!ENTITY bbcomp.kbd.tooltiptext "Marker som tasteanslag">
+<!ENTITY bbcomp.var.label "Variabel">
+<!ENTITY bbcomp.var.tooltiptext "Marker som kodevariabel">
+<!ENTITY bbcomp.code.label "Computerkode">
+<!ENTITY bbcomp.code.tooltiptext "Marker som kildekode">
+<!ENTITY bbcomp.del.label "Slet">
+<!ENTITY bbcomp.del.tooltiptext "Marker som slettet tekst">
+<!ENTITY bbcomp.ins.label "Indsat">
+<!ENTITY bbcomp.ins.tooltiptext "Marker som indsat tekst">
+<!ENTITY bbcomp.anchor.label "Anker">
+<!ENTITY bbcomp.anchor.tooltiptext "Tilføj/ændre et anker">
+<!ENTITY bbcomp.span.label "Span">
+<!ENTITY bbcomp.span.tooltiptext "Tilføj/slet et span">
+<!ENTITY bbcomp.div.label "Division">
+<!ENTITY bbcomp.div.tooltiptext "Inkluder en divisionsblok">
+<!ENTITY bbcomp.blockquote.label "Citat">
+<!ENTITY bbcomp.blockquote.tooltiptext "Inkluder i en citatblok">
+<!ENTITY bbcomp.style.label "Stil">

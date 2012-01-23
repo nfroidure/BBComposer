@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/about.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/size.dtd">
+
+
+<dialog buttons="accept, cancel" id="bbcomp-size-dialog" title="&bbcomp.size.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="return closeDialog();"
+	onload="initDialog();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/style/size.js"/>
+
+    <vbox>
+	<groupbox>
+	<textbox id="size" value=""/>
+	<menulist id="size-unit">
+	<menupopup>
+		<menuitem label="&bbcomp.size.pixel.label; (px)" value="px"/>
+		<menuitem label="&bbcomp.size.percent.label; (%)" value="%"/>
+	</menupopup>
+	</menulist>
+	</groupbox>
+    </vbox>
+</dialog>

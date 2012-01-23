@@ -1,0 +1,51 @@
+<!ENTITY bbcomp.opt.dialog.title "Настройки BBComposer">
+<!ENTITY bbcomp.opt.gnr.label "Общие">
+<!ENTITY bbcomp.opt.lng.label "Язык">
+<!ENTITY bbcomp.opt.upd.label "Загрузка">
+<!ENTITY bbcomp.opt.rsp.label "Ответ">
+<!ENTITY bbcomp.opt.avd.label "Дополнительно">
+<!ENTITY bbcomp.opt.fld.label "Поля">
+<!ENTITY bbcomp.opt.gnr.caption "Общие настройки">
+<!ENTITY bbcomp.opt.gnr.site.css.label "Расположение CSS файла (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "Использовать CSS по умолчанию">
+<!ENTITY bbcomp.opt.cmp.automode.label "Автоматически включать режим редактирования">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "Всегда включать spellchecker">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "Открывать боковую панель при выборе режима">
+<!ENTITY bbcomp.opt.lng.default.label "Язык по умолчанию:">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (Semantic BBCodes)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "Обычный BBCode">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Синтаксис Mediawiki">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (без блоков)">
+<!ENTITY bbcomp.opt.lng.remember.label "Запоминать выбор языка">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "Настройки XHTML">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Отступ">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Конвертировать символы не ASCII обращенные к HTML">
+<!ENTITY bbcomp.opt.upd.caption "Дополнительные настройки">
+<!ENTITY bbcomp.opt.upd.description "Не изменяйте дополнительные настройки если не знаете, что именно вы делаете.">
+<!ENTITY bbcomp.opt.upd.on.label "Включить upload">
+<!ENTITY bbcomp.opt.upd.site.label "Сайт загрузки">
+<!ENTITY bbcomp.opt.upd.folder.label "Папка загрузки">
+<!ENTITY bbcomp.opt.upd.url.label "Загрузка URL">
+<!ENTITY bbcomp.opt.upd.postname.label "Поле название файла">
+<!ENTITY bbcomp.opt.upd.postparams.label "Параметры POST">
+<!ENTITY bbcomp.opt.upd.unique.label "Имя файла должно быть уникальным">
+<!ENTITY bbcomp.opt.rsp.caption "Ответ">
+<!ENTITY bbcomp.opt.rsp.description "Параметры обработки ответов">
+<!ENTITY bbcomp.opt.rsp.type.label "Тип ответа">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "Текст">
+<!ENTITY bbcomp.opt.rsp.error.label "Ошибка распознавания">
+<!ENTITY bbcomp.opt.rsp.notice.label "Заметка распознавания">
+<!ENTITY bbcomp.opt.rsp.filename.label "Распознавание имени файла">
+<!ENTITY bbcomp.opt.avd.caption "Дополнительные настройки">
+<!ENTITY bbcomp.opt.avd.description "Не изменяйте дополнительные настройки если не знаете, что именно вы делаете.">
+<!ENTITY bbcomp.opt.avd.save.label "Автоматически сохранять задержку">
+<!ENTITY bbcomp.opt.avd.defcont.label "Редактор по умолчанию">
+<!ENTITY bbcomp.opt.fld.caption.label "Сохранить поля">
+<!ENTITY bbcomp.opt.fld.site.label "Фильтр URL">
+<!ENTITY bbcomp.opt.fld.id.label "Фильтр ID">
+<!ENTITY bbcomp.opt.fld.language.label "Язык">
+<!ENTITY bbcomp.opt.fld.target.label "Перенаправление">
+<!ENTITY bbcomp.opt.fld.delete.label "Удалить">
+<!ENTITY bbcomp.opt.fld.add.label "Добавить">

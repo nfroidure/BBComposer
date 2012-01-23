@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE page SYSTEM "chrome://bbcomposer/locale/option.dtd">
+<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<groupbox>
+		<label control="bbcomposer.default.language" value="&bbcomp.opt.lng.default.label;" />
+		<menulist id="bbcomposer.default.language">
+			<menupopup id="bbcomp_default_language_mpopup">
+				<menuitem label="&bbcomp.opt.lng.xhtml.label;" value="xhtml" />
+				<menuitem label="&bbcomp.opt.lng.xbbcode.label;" value="xbbcode" selected="true" />
+				<menuitem label="&bbcomp.opt.lng.bbcode.label;" value="bbcode" />
+				<menuitem label="&bbcomp.opt.lng.mediawiki.label;" value="mediawiki" />
+				<menuitem label="&bbcomp.opt.lng.xhtmlnb.label;" value="xhtmlnb" />
+			</menupopup>
+		</menulist>
+		<checkbox id="bbcomposer.remember.language" label="&bbcomp.opt.lng.remember.label;" checked="true"/>
+	</groupbox>
+	<groupbox>
+		<caption label="&bbcomp.opt.lng.xhtml.caption;"/>
+		<checkbox id="bbcomposer.xhtml.indent" label="&bbcomp.opt.lng.xhtml.indent.label;"/>
+		<checkbox id="bbcomposer.xhtml.ascii" label="&bbcomp.opt.lng.xhtml.ascii.label;"/>
+	</groupbox>
+
+</page>

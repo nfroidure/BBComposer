@@ -1,0 +1,17 @@
+<!ENTITY bbcomp.font.size.dialog.title "Размер шрифта">
+<!ENTITY bbcomp.font.size.numeric.label "Число">
+<!ENTITY bbcomp.font.size.pixel.label "Пиксели">
+<!ENTITY bbcomp.font.size.percent.label "Проценты">
+<!ENTITY bbcomp.font.size.point.label "Пункты">
+<!ENTITY bbcomp.font.size.emphasis.label "Выделение">
+<!ENTITY bbcomp.font.size.varchar.label "Предопределение">
+<!ENTITY bbcomp.font.size.empty.label "Не выбрано">
+<!ENTITY bbcomp.font.size.xx.small.label "Миниатюрный">
+<!ENTITY bbcomp.font.size.x.small.label "Очень мелкий">
+<!ENTITY bbcomp.font.size.small.label "Мелкий">
+<!ENTITY bbcomp.font.size.medium.label "Средний">
+<!ENTITY bbcomp.font.size.large.label "Крупный">
+<!ENTITY bbcomp.font.size.x.large.label "Большой">
+<!ENTITY bbcomp.font.size.xx.large.label "Огромный">
+<!ENTITY bbcomp.font.size.smaller.label "Меньше">
+<!ENTITY bbcomp.font.size.larger.label "Больше">

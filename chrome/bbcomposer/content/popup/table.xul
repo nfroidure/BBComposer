@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/popup.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/table.dtd">
+
+
+<dialog buttons="accept, cancel" id="bbcomp-img-dialog" title="&bbcomp.tbl.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="return closeDialog();"
+	onload="initDialog();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/popup/table.js"/>
+
+    <vbox>
+	<groupbox>
+	<label control="tbl-caption" value="&bbcomp.tbl.caption.label;"/>
+	<textbox id="tbl-caption"/>
+	<label control="tbl-summary" value="&bbcomp.tbl.summary.label;"/>
+	<textbox id="tbl-summary"/>
+	<label control="tbl-hrows" value="&bbcomp.tbl.hrows.label;"/>
+	<textbox id="tbl-hrows" value="1"/>
+	<label control="tbl-rows" value="&bbcomp.tbl.rows.label;"/>
+	<textbox id="tbl-rows" value="3"/>
+	<label control="tbl-frows" value="&bbcomp.tbl.frows.label;"/>
+	<textbox id="tbl-frows" value="0"/>
+	<label control="tbl-cols" value="&bbcomp.tbl.cols.label;"/>
+	<textbox id="tbl-cols" value="3"/>
+	</groupbox>
+    </vbox>
+</dialog>

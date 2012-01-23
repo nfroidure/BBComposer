@@ -1,0 +1,8 @@
+<!ENTITY bbcomp.img.dialog.title "Obrázok">
+<!ENTITY bbcomp.img.src.label "Priečinok">
+<!ENTITY bbcomp.img.browse.label "Prehliadať">
+<!ENTITY bbcomp.img.alt.label "Alternatívny text">
+<!ENTITY bbcomp.img.align.label "Zarovnanie">
+<!ENTITY bbcomp.img.align.normal.label "Normálne">
+<!ENTITY bbcomp.img.align.left.label "Vľavo">
+<!ENTITY bbcomp.img.align.right.label "Vpravo">

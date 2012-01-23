@@ -1,0 +1,44 @@
+/* Block styles */
+body { background-color:#fff; color:#333; font-size:12px; line-height:15px; font-family:sans-serif; }
+body>del, body>ins, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table, blockquote, address, pre, div, noscript, script, object  { border-right:1px solid #666; margin:5px 0 0 0; padding:0 15px 10px 15px; background-repeat:no-repeat; background-position:right top; }
+h1 { background-image: url(chrome://bbcomposer/skin/images/h1.png); font-size:25px; line-height:30px; }
+h2 { background-image: url(chrome://bbcomposer/skin/images/h2.png); font-size:20px; line-height:30px; }
+h3 { background-image: url(chrome://bbcomposer/skin/images/h3.png); font-size:18px; line-height:30px; }
+h4 { background-image: url(chrome://bbcomposer/skin/images/h4.png); font-size:15px; }
+h5 { background-image: url(chrome://bbcomposer/skin/images/h5.png); font-size:14px; }
+h6 { background-image: url(chrome://bbcomposer/skin/images/h6.png); font-size:13px; }
+p { background-image: url(chrome://bbcomposer/skin/images/p.png); }
+ul { background-image: url(chrome://bbcomposer/skin/images/ul.png); }
+ol { background-image: url(chrome://bbcomposer/skin/images/ol.png); }
+dl { background-image: url(chrome://bbcomposer/skin/images/dl.png); }
+dt { font-weight:bold; }
+blockquote { background-image: url(chrome://bbcomposer/skin/images/blockquote.png); border-right: 2px dotted #000099; text-align:left; }
+address { background-image: url(chrome://bbcomposer/skin/images/address.png); border-right: 2px dotted #804000; text-align:left; }
+pre { background-image: url(chrome://bbcomposer/skin/images/pre.png); border-right: 2px dotted #808080; text-align:left; }
+div { background-image: url(chrome://bbcomposer/skin/images/div.png); border-right: 2px dotted #808080; text-align:left; }
+body>del, div>del, blockquote>del, ins>del, noscript>del, del>del { display:block; text-decoration:none; background-image: url(chrome://bbcomposer/skin/images/del.png); border-right: 2px dotted red; text-align:left; }
+body>ins, div>ins, blockquote>ins, ins>ins, noscript>ins, del>ins { display:block; text-decoration:none; background-image: url(chrome://bbcomposer/skin/images/ins.png); border-right: 2px dotted green; text-align:left; }
+/* Texts styles */
+strong { font-weight:bold; }
+em { font-style:italic; }
+kbd { border: 1px solid #888; padding: 1px 2px; }
+abbr, acronym { cursor:help; }
+q { font-style:italic; }
+q:before { content:"\201C"; }
+q:after { content:"\201D"; }
+cite { text-decoration:underline; }
+a[hreflang]:not([hreflang=""]):after { content:"[" attr(hreflang) "]"; }
+code { text-align:left; }
+img { border-style: none; margin:0; }
+/* Table styles */
+table {  background-image: url(chrome://bbcomposer/skin/images/table.png); border:2px solid #000000; border-collapse:collapse; width:90%; margin:auto; overflow: visible;  margin-bottom: 10px; }
+th { font-family:monospace; border:1px dotted #000000; padding:5px; width:25%; }
+td { font-family:sans-serif; font-size:0.9em; border:1px solid #000000; padding:5px; text-align:left; }
+caption { font-size:1.2em; margin:10px; text-align:center; }
+/* External objects styles */
+p.bbcspecial-script { background:url(chrome://bbcomposer/skin/images/script.png) no-repeat center center; width:16px; height:16px; border:0; }
+p.bbcspecial-style { background-image:url(chrome://bbcomposer/skin/images/style.png); padding:0 0 0 16px; }
+noscript { display:block; background-image: url(chrome://bbcomposer/skin/images/noscript.png); border-right: 2px dotted #808080; text-align:left; }
+script { display:block; min-height:15px; width:100%; background-image: url(chrome://bbcomposer/skin/images/noscript.png); border-right: 2px dotted #808080; text-align:left; }
+object { display:block; min-height:15px; width:100%; background-image: url(chrome://bbcomposer/skin/images/object.png); border-right: 2px dotted #808080; text-align:left; }
+param { display:block; min-height:10px; width:100%; background-image: url(chrome://bbcomposer/skin/images/param.png); border-right: 2px dotted #808080; text-align:left; }

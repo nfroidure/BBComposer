@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Таблица">
+<!ENTITY bbcomp.tbl.caption.label "Заголовок">
+<!ENTITY bbcomp.tbl.summary.label "Краткое описание">
+<!ENTITY bbcomp.tbl.hrows.label "Заголовок строк">
+<!ENTITY bbcomp.tbl.rows.label "Строки">
+<!ENTITY bbcomp.tbl.frows.label "Строки нижней сноски">
+<!ENTITY bbcomp.tbl.cols.label "Столбцы">

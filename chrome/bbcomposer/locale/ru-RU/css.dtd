@@ -1,0 +1,160 @@
+<!ENTITY bbcomp.css.dialog.title "Редактор CSS">
+<!ENTITY bbcomp.css.lockon.label "Lock on">
+<!ENTITY bbcomp.css.lockon.all "Все элементы">
+<!ENTITY bbcomp.css.lockon.block "Блоки">
+<!ENTITY bbcomp.css.lockon.superblock "Superblocks">
+<!ENTITY bbcomp.css.apply.label "Применить">
+<!ENTITY bbcomp.css.apply.tooltiptext "Применить изменения">
+<!ENTITY bbcomp.css.cancel.label "Отмена">
+<!ENTITY bbcomp.css.cancel.tooltiptext "Отменить изменения">
+<!ENTITY bbcomp.css.reset.label "Сбросить">
+<!ENTITY bbcomp.css.reset.tooltiptext "Очистить элементы стиля">
+<!ENTITY bbcomp.css.text.label "текст">
+<!ENTITY bbcomp.css.more.label "Подробнее">
+<!ENTITY bbcomp.css.space.label "Расположение">
+<!ENTITY bbcomp.css.style.label "Общий вид">
+<!ENTITY bbcomp.css.position.label "Position">
+<!ENTITY bbcomp.css.color.label "Цвет">
+<!ENTITY bbcomp.css.color.none.label "Не выбрано">
+<!ENTITY bbcomp.css.font.family.label "Шрифт">
+<!ENTITY bbcomp.css.font.size.label "Размер">
+<!ENTITY bbcomp.css.font.weight.label "Насыщенность">
+<!ENTITY bbcomp.css.font.weight.default.label "По умолчанию">
+<!ENTITY bbcomp.css.font.weight.normal.label "Нормальный">
+<!ENTITY bbcomp.css.font.weight.bold.label "Полужирный">
+<!ENTITY bbcomp.css.font.weight.bolder.label "Жирный">
+<!ENTITY bbcomp.css.font.weight.lighter.label "Светлый">
+<!ENTITY bbcomp.css.font.style.label "Стиль">
+<!ENTITY bbcomp.css.font.style.default.label "По умолчанию">
+<!ENTITY bbcomp.css.font.style.normal.label "Нормальный">
+<!ENTITY bbcomp.css.font.style.italic.label "Курсив">
+<!ENTITY bbcomp.css.font.style.oblique.label "Наклонный">
+<!ENTITY bbcomp.css.text.decoration.label "Оформление">
+<!ENTITY bbcomp.css.text.decoration.default.label "По умолчанию">
+<!ENTITY bbcomp.css.text.decoration.none.label "Не выбрано">
+<!ENTITY bbcomp.css.text.decoration.underline.label "Подчеркивание">
+<!ENTITY bbcomp.css.text.decoration.overline.label "Линия вверху">
+<!ENTITY bbcomp.css.text.decoration.line.through.label "Линия до конца">
+<!ENTITY bbcomp.css.text.decoration.blink.label "Мерцание">
+<!ENTITY bbcomp.css.text.transform.label "Преобразование">
+<!ENTITY bbcomp.css.text.transform.default.label "По умолчанию">
+<!ENTITY bbcomp.css.text.transform.none.label "Не выбрано">
+<!ENTITY bbcomp.css.text.transform.capitalize.label "Печатать">
+<!ENTITY bbcomp.css.text.transform.uppercase.label "Верхний регистр">
+<!ENTITY bbcomp.css.text.transform.lowercase.label "Нижний регистр">
+<!ENTITY bbcomp.css.font.stretch.label "Расстояние между буквами">
+<!ENTITY bbcomp.css.font.stretch.default.label "По умолчанию">
+<!ENTITY bbcomp.css.font.stretch.normal.label "Нормально">
+<!ENTITY bbcomp.css.font.stretch.wider.label "Широко">
+<!ENTITY bbcomp.css.font.stretch.narrower.label "Минимально возможно">
+<!ENTITY bbcomp.css.font.stretch.ultra.condensed.label "Сильно сжать">
+<!ENTITY bbcomp.css.font.stretch.extra.condensed.label "Максимально сжать">
+<!ENTITY bbcomp.css.font.stretch.condensed.label "Сжатие">
+<!ENTITY bbcomp.css.font.stretch.semi.condensed.label "Semi condensed">
+<!ENTITY bbcomp.css.font.stretch.semi.expanded.label "Semi expanded">
+<!ENTITY bbcomp.css.font.stretch.expanded.label "Расширить">
+<!ENTITY bbcomp.css.font.stretch.extra.expanded.label "Extra расширение">
+<!ENTITY bbcomp.css.font.stretch.ultra.expanded.label "Ultra расширение">
+<!ENTITY bbcomp.css.font.variant.label "Выбрать">
+<!ENTITY bbcomp.css.font.variant.default.label "По умолчанию">
+<!ENTITY bbcomp.css.font.variant.normal.label "Нормально">
+<!ENTITY bbcomp.css.font.variant.small.caps.label "Small caps">
+<!ENTITY bbcomp.css.text.align.label "Выравнивание">
+<!ENTITY bbcomp.css.text.align.default.label "По умолчанию">
+<!ENTITY bbcomp.css.text.align.center.label "По центру">
+<!ENTITY bbcomp.css.text.align.right.label "По правому краю">
+<!ENTITY bbcomp.css.text.align.left.label "По левому краю">
+<!ENTITY bbcomp.css.text.align.justify.label "Выравнивать">
+<!ENTITY bbcomp.css.font.size.adjust.label "По размеру">
+<!ENTITY bbcomp.css.line.height.label "По высоте">
+<!ENTITY bbcomp.css.text.indent.label "Отступ">
+<!ENTITY bbcomp.css.word.spacing.label "Расстояние между словами">
+<!ENTITY bbcomp.css.letter.spacing.label "Расстояние между буквами">
+<!ENTITY bbcomp.css.white.space.label "Пробел">
+<!ENTITY bbcomp.css.white.space.default.label "По умолчанию">
+<!ENTITY bbcomp.css.white.space.normal.label "Normaux">
+<!ENTITY bbcomp.css.white.space.pre.label "Preserved">
+<!ENTITY bbcomp.css.white.space.nowrap.label "No wrap">
+<!ENTITY bbcomp.css.direction.label "Направление">
+<!ENTITY bbcomp.css.direction.default.label "По умолчанию">
+<!ENTITY bbcomp.css.direction.ltr.label "Слева направо">
+<!ENTITY bbcomp.css.direction.rtl.label "Справа налево">
+<!ENTITY bbcomp.css.unicode.bidi.label "Двунаправленная ориентация">
+<!ENTITY bbcomp.css.unicode.bidi.default.label "По умолчанию">
+<!ENTITY bbcomp.css.unicode.bidi.normal.label "Нормально">
+<!ENTITY bbcomp.css.unicode.bidi.embed.label "Embed">
+<!ENTITY bbcomp.css.unicode.bidi.bidi.override.label "Override">
+<!ENTITY bbcomp.css.text.shadow.label "Тень">
+<!ENTITY bbcomp.css.padding.label "Padding">
+<!ENTITY bbcomp.css.padding.left.label "Слева">
+<!ENTITY bbcomp.css.padding.right.label "Справа">
+<!ENTITY bbcomp.css.padding.top.label "Вверху">
+<!ENTITY bbcomp.css.padding.bottom.label "Внизу">
+<!ENTITY bbcomp.css.margin.label "Margin">
+<!ENTITY bbcomp.css.margin.left.label "По левому краю">
+<!ENTITY bbcomp.css.margin.right.label "По правому краю">
+<!ENTITY bbcomp.css.margin.top.label "Сверху">
+<!ENTITY bbcomp.css.margin.bottom.label "Снизу">
+<!ENTITY bbcomp.css.padding.all "Определить">
+<!ENTITY bbcomp.css.background.label "Фон">
+<!ENTITY bbcomp.css.background.color.label "Цвет">
+<!ENTITY bbcomp.css.background.color.none.label "Не выбрано">
+<!ENTITY bbcomp.css.background.color.transparent.label "Прозрачность">
+<!ENTITY bbcomp.css.background.image.label "Изображение">
+<!ENTITY bbcomp.css.background.position.label "Расположение">
+<!ENTITY bbcomp.css.background.repeat.label "Повторение">
+<!ENTITY bbcomp.css.background.repeat.default.label "По умолчанию">
+<!ENTITY bbcomp.css.background.repeat.repeat.label "Повторение">
+<!ENTITY bbcomp.css.background.repeat.repeat.x.label "Горизонтально">
+<!ENTITY bbcomp.css.background.repeat.repeat.y.label "Вертикально">
+<!ENTITY bbcomp.css.background.repeat.no.repeat.label "Не повторять">
+<!ENTITY bbcomp.css.background.attachment.label "Вложение">
+<!ENTITY bbcomp.css.background.attachment.default.label "По умолчанию">
+<!ENTITY bbcomp.css.background.attachment.scroll.label "Scroll">
+<!ENTITY bbcomp.css.background.attachment.fixed.label "Fixed">
+<!ENTITY bbcomp.css.border.label "Граница">
+<!ENTITY bbcomp.css.border.color.label "Цвет">
+<!ENTITY bbcomp.css.border.color.none.label "Не выбрано">
+<!ENTITY bbcomp.css.border.width.label "Ширина">
+<!ENTITY bbcomp.css.border.style.label "Стиль">
+<!ENTITY bbcomp.css.border.style.none.label "Не выбрано">
+<!ENTITY bbcomp.css.border.style.hidden.label "Скрыть">
+<!ENTITY bbcomp.css.border.style.dotted.label "Dotted">
+<!ENTITY bbcomp.css.border.style.dashed.label "Dashed">
+<!ENTITY bbcomp.css.border.style.solid.label "Solid">
+<!ENTITY bbcomp.css.border.style.double.label "Double">
+<!ENTITY bbcomp.css.border.style.groove.label "Groove">
+<!ENTITY bbcomp.css.border.style.ridge.label "Ridge">
+<!ENTITY bbcomp.css.border.style.inset.label "Inset">
+<!ENTITY bbcomp.css.border.style.outset.label "Outset">
+<!ENTITY bbcomp.css.width.label "Width">
+<!ENTITY bbcomp.css.height.label "Height">
+<!ENTITY bbcomp.css.clear.label "Очистить">
+<!ENTITY bbcomp.css.clear.default.label "Нет">
+<!ENTITY bbcomp.css.clear.left.label "Слева">
+<!ENTITY bbcomp.css.clear.right.label "Справа">
+<!ENTITY bbcomp.css.clear.both.label "По обеим сторонам">
+<!ENTITY bbcomp.css.clear.none.label "Не выбрано">
+<!ENTITY bbcomp.css.float.label "Float">
+<!ENTITY bbcomp.css.float.default.label "По умолчанию">
+<!ENTITY bbcomp.css.float.left.label "Left">
+<!ENTITY bbcomp.css.float.right.label "Right">
+<!ENTITY bbcomp.css.float.none.label "Не выбрано">
+<!ENTITY bbcomp.css.position.default.label "По умолчанию">
+<!ENTITY bbcomp.css.position.static.label "Static">
+<!ENTITY bbcomp.css.position.absolute.label "Absolute">
+<!ENTITY bbcomp.css.position.fixed.label "Fixed">
+<!ENTITY bbcomp.css.position.relative.label "Relative">
+<!ENTITY bbcomp.css.position.inherit.label "Inherit">
+<!ENTITY bbcomp.css.visibility.label "Visibility">
+<!ENTITY bbcomp.css.visibility.default.label "По умолчанию">
+<!ENTITY bbcomp.css.visibility.visible.label "Visible">
+<!ENTITY bbcomp.css.visibility.hidden.label "Hidden">
+<!ENTITY bbcomp.css.visibility.collapse.label "Collapse">
+<!ENTITY bbcomp.css.visibility.inherit.label "Inherit">
+<!ENTITY bbcomp.css.top.label "Top">
+<!ENTITY bbcomp.css.right.label "Right">
+<!ENTITY bbcomp.css.bottom.label "Bottom">
+<!ENTITY bbcomp.css.left.label "Left">
+<!ENTITY bbcomp.css.z-index.label "Z-Index">
+<!ENTITY bbcomp.css.display.label "Display">

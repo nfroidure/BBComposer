@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE page SYSTEM "chrome://bbcomposer/locale/option.dtd">
+
+<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<groupbox>
+		<caption label="&bbcomp.opt.rsp.caption;" />
+		<description value="&bbcomp.opt.rsp.description;"/>
+		<label value="&bbcomp.opt.rsp.type.label;" control="bbcomposer.response.type"/>
+		<radiogroup id="bbcomposer.response.type">
+			<radio label="&bbcomp.opt.rsp.type.xml.label;" value="xml" selected="true"/>
+			<radio label="&bbcomp.opt.rsp.type.text.label;" value="text"/>
+		</radiogroup>
+		<label control="bbcomposer.response.error" value="&bbcomp.opt.rsp.error.label;"/>
+		<textbox id="bbcomposer.response.error" value="error"/>
+		<label control="bbcomposer.response.notice" value="&bbcomp.opt.rsp.notice.label;"/>
+		<textbox id="bbcomposer.response.notice" value="notice"/>
+		<label control="bbcomposer.response.filename" value="&bbcomp.opt.rsp.filename.label;"/>
+		<textbox id="bbcomposer.response.filename" value=""/>
+	</groupbox>
+</page>

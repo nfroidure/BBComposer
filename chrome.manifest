@@ -1,0 +1,19 @@
+content  bbcomposer   chrome/bbcomposer/content/
+skin  bbcomposer   classic   chrome/bbcomposer/skin/classic/
+locale   bbcomposer   cs-CZ   chrome/bbcomposer/locale/cs-CZ/
+locale   bbcomposer   da-DK   chrome/bbcomposer/locale/da-DK/
+locale   bbcomposer   de-DE   chrome/bbcomposer/locale/de-DE/
+locale   bbcomposer   en-US   chrome/bbcomposer/locale/en-US/
+locale   bbcomposer   es-ES   chrome/bbcomposer/locale/es-ES/
+locale   bbcomposer   fr-FR   chrome/bbcomposer/locale/fr-FR/
+locale   bbcomposer   it-IT   chrome/bbcomposer/locale/it-IT/
+locale   bbcomposer   ko-KR   chrome/bbcomposer/locale/ko-KR/
+locale   bbcomposer   nl-NL   chrome/bbcomposer/locale/nl-NL/
+locale   bbcomposer   pl-PL   chrome/bbcomposer/locale/pl-PL/
+locale   bbcomposer   pt-BR   chrome/bbcomposer/locale/pt-BR/
+locale   bbcomposer   ru-RU   chrome/bbcomposer/locale/ru-RU/
+locale   bbcomposer   sk-SK   chrome/bbcomposer/locale/sk-SK/
+locale   bbcomposer   tr-TR   chrome/bbcomposer/locale/tr-TR/
+locale   bbcomposer   zh-CN   chrome/bbcomposer/locale/zh-CN/
+overlay chrome://browser/content/browser.xul  chrome://bbcomposer/content/bbcomposer.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://bbcomposer/skin/bbcomposer.css

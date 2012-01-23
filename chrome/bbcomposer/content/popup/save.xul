@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/save.dtd">
+<?xml-stylesheet href="chrome://bbcomposer/skin/popup.css" type="text/css"?>
+
+
+<dialog buttons="accept, cancel" id="bbcomp-font-size-dialog" title="&bbcomp.save.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="return closeDialog();"
+	onload="initDialog();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/popup/save.js"/>
+
+    <vbox>
+	<groupbox>
+	<label control="save-href" value="&bbcomp.save.href.label;"/>
+	<textbox id="save-href" value="http://"/>
+	<label control="save-id" value="&bbcomp.save.id.label;"/>
+	<textbox id="save-id" value=""/>
+	<label control="save-language" value="&bbcomp.save.language.label;"/>
+	<menulist id="save-language">
+		<menupopup id="save-language-mpopup">
+			<menuitem value="xbbcode" label="&bbcomp.save.language.xbbcode.label;"/>
+			<menuitem value="xhtml" label="&bbcomp.save.language.xhtml.label;"/>
+			<menuitem value="bbcode" label="&bbcomp.save.language.bbcode.label;"/>
+			<menuitem value="mediawiki" label="&bbcomp.save.language.mediawiki.label;"/>
+			<menuitem value="xhtmlnb" label="&bbcomp.save.language.xhtmlnb.label;"/>
+		</menupopup>
+	</menulist>
+	<label control="save-target" value="&bbcomp.save.target.label;"/>
+	<menulist id="save-target">
+		<menupopup>
+			<menuitem value="tab" label="&bbcomp.save.target.tab.label;"/>
+			<menuitem value="textarea" label="&bbcomp.save.target.textarea.label;"/>
+		</menupopup>
+	</menulist>
+	</groupbox>
+    </vbox>
+</dialog>

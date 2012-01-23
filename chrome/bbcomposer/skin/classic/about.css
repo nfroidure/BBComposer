@@ -1,0 +1,36 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#bbcomp-abt-details
+{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding: 5px !important;
+}
+
+#bbcomp-abt-dialog, #bbcomp-abt-separator, .title
+{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.name
+{
+    font-size: x-large !important;
+    padding-right: 5px !important;
+}
+
+.name, .title
+{
+    font-weight: bold !important;
+}
+
+.url
+{
+    color: #0000ff !important;
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
+.url:hover
+{
+    color: #ff0000 !important;
+}

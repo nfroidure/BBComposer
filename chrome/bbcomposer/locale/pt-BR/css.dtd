@@ -1,0 +1,160 @@
+<!ENTITY bbcomp.css.dialog.title "Editor CSS">
+<!ENTITY bbcomp.css.lockon.label "Lock on">
+<!ENTITY bbcomp.css.lockon.all "All elements">
+<!ENTITY bbcomp.css.lockon.block "Blocks">
+<!ENTITY bbcomp.css.lockon.superblock "Superblocks">
+<!ENTITY bbcomp.css.apply.label "Aplicar">
+<!ENTITY bbcomp.css.apply.tooltiptext "Aplicar mudanças">
+<!ENTITY bbcomp.css.cancel.label "Cancelar">
+<!ENTITY bbcomp.css.cancel.tooltiptext "Cancelar mudanças">
+<!ENTITY bbcomp.css.reset.label "Redefinir">
+<!ENTITY bbcomp.css.reset.tooltiptext "Redefinir estilos de elementos">
+<!ENTITY bbcomp.css.text.label "Texto">
+<!ENTITY bbcomp.css.more.label "Mais">
+<!ENTITY bbcomp.css.space.label "Posição">
+<!ENTITY bbcomp.css.style.label "Aparência">
+<!ENTITY bbcomp.css.position.label "Position">
+<!ENTITY bbcomp.css.color.label "Cor">
+<!ENTITY bbcomp.css.color.none.label "Nenhuma">
+<!ENTITY bbcomp.css.font.family.label "Fonte">
+<!ENTITY bbcomp.css.font.size.label "Tamanho">
+<!ENTITY bbcomp.css.font.weight.label "Peso">
+<!ENTITY bbcomp.css.font.weight.default.label "Padrão">
+<!ENTITY bbcomp.css.font.weight.normal.label "Normal">
+<!ENTITY bbcomp.css.font.weight.bold.label "Negrito">
+<!ENTITY bbcomp.css.font.weight.bolder.label "Bolder">
+<!ENTITY bbcomp.css.font.weight.lighter.label "Lighter">
+<!ENTITY bbcomp.css.font.style.label "Estilo">
+<!ENTITY bbcomp.css.font.style.default.label "Padrão">
+<!ENTITY bbcomp.css.font.style.normal.label "Normal">
+<!ENTITY bbcomp.css.font.style.italic.label "Itálico">
+<!ENTITY bbcomp.css.font.style.oblique.label "Obliqua">
+<!ENTITY bbcomp.css.text.decoration.label "Decoração">
+<!ENTITY bbcomp.css.text.decoration.default.label "Padrão">
+<!ENTITY bbcomp.css.text.decoration.none.label "Nenhuma">
+<!ENTITY bbcomp.css.text.decoration.underline.label "Sublinhado">
+<!ENTITY bbcomp.css.text.decoration.overline.label "Sobrelinhado">
+<!ENTITY bbcomp.css.text.decoration.line.through.label "Tachado">
+<!ENTITY bbcomp.css.text.decoration.blink.label "Piscando">
+<!ENTITY bbcomp.css.text.transform.label "Transformação">
+<!ENTITY bbcomp.css.text.transform.default.label "Padrão">
+<!ENTITY bbcomp.css.text.transform.none.label "Nenhuma">
+<!ENTITY bbcomp.css.text.transform.capitalize.label "Caixa Alta">
+<!ENTITY bbcomp.css.text.transform.uppercase.label "Maiúsculo">
+<!ENTITY bbcomp.css.text.transform.lowercase.label "Minúsculo">
+<!ENTITY bbcomp.css.font.stretch.label "Espaçamento">
+<!ENTITY bbcomp.css.font.stretch.default.label "Padrão">
+<!ENTITY bbcomp.css.font.stretch.normal.label "Normal">
+<!ENTITY bbcomp.css.font.stretch.wider.label "Largo">
+<!ENTITY bbcomp.css.font.stretch.narrower.label "Estreito">
+<!ENTITY bbcomp.css.font.stretch.ultra.condensed.label "Ultra condensado">
+<!ENTITY bbcomp.css.font.stretch.extra.condensed.label "Extra condensado">
+<!ENTITY bbcomp.css.font.stretch.condensed.label "Condensado">
+<!ENTITY bbcomp.css.font.stretch.semi.condensed.label "Semi condensado">
+<!ENTITY bbcomp.css.font.stretch.semi.expanded.label "Semi expandido">
+<!ENTITY bbcomp.css.font.stretch.expanded.label "expandido">
+<!ENTITY bbcomp.css.font.stretch.extra.expanded.label "Extra expandido">
+<!ENTITY bbcomp.css.font.stretch.ultra.expanded.label "Ultra expandido">
+<!ENTITY bbcomp.css.font.variant.label "Variante">
+<!ENTITY bbcomp.css.font.variant.default.label "Padrão">
+<!ENTITY bbcomp.css.font.variant.normal.label "Normal">
+<!ENTITY bbcomp.css.font.variant.small.caps.label "Caixa Baixa">
+<!ENTITY bbcomp.css.text.align.label "Alinhamento">
+<!ENTITY bbcomp.css.text.align.default.label "Padrão">
+<!ENTITY bbcomp.css.text.align.center.label "Centralizado">
+<!ENTITY bbcomp.css.text.align.right.label "Direita">
+<!ENTITY bbcomp.css.text.align.left.label "Esquerda">
+<!ENTITY bbcomp.css.text.align.justify.label "Justificado">
+<!ENTITY bbcomp.css.font.size.adjust.label "Ajuste de Tamanho">
+<!ENTITY bbcomp.css.line.height.label "Altura da Linha">
+<!ENTITY bbcomp.css.text.indent.label "Identação">
+<!ENTITY bbcomp.css.word.spacing.label "Espaçamento entre Palavras">
+<!ENTITY bbcomp.css.letter.spacing.label "Espaço entre Letras">
+<!ENTITY bbcomp.css.white.space.label "Espaço em Branco">
+<!ENTITY bbcomp.css.white.space.default.label "Padrão">
+<!ENTITY bbcomp.css.white.space.normal.label "Normal">
+<!ENTITY bbcomp.css.white.space.pre.label "Preservar">
+<!ENTITY bbcomp.css.white.space.nowrap.label "Não quebrar">
+<!ENTITY bbcomp.css.direction.label "Direção">
+<!ENTITY bbcomp.css.direction.default.label "Padrão">
+<!ENTITY bbcomp.css.direction.ltr.label "Esquerda para direita">
+<!ENTITY bbcomp.css.direction.rtl.label "Direita para esquerda">
+<!ENTITY bbcomp.css.unicode.bidi.label "Orientação bidirecional">
+<!ENTITY bbcomp.css.unicode.bidi.default.label "Padrão">
+<!ENTITY bbcomp.css.unicode.bidi.normal.label "Normal">
+<!ENTITY bbcomp.css.unicode.bidi.embed.label "Embutir">
+<!ENTITY bbcomp.css.unicode.bidi.bidi.override.label "Sobrescrever">
+<!ENTITY bbcomp.css.text.shadow.label "Sombra">
+<!ENTITY bbcomp.css.padding.label "Padding">
+<!ENTITY bbcomp.css.padding.left.label "Esquerda">
+<!ENTITY bbcomp.css.padding.right.label "Direita">
+<!ENTITY bbcomp.css.padding.top.label "Acima">
+<!ENTITY bbcomp.css.padding.bottom.label "Abaixo">
+<!ENTITY bbcomp.css.margin.label "Margem">
+<!ENTITY bbcomp.css.margin.left.label "esquerda">
+<!ENTITY bbcomp.css.margin.right.label "direita">
+<!ENTITY bbcomp.css.margin.top.label "Acima">
+<!ENTITY bbcomp.css.margin.bottom.label "Abaixo">
+<!ENTITY bbcomp.css.padding.all "Definir todos">
+<!ENTITY bbcomp.css.background.label "Fundo">
+<!ENTITY bbcomp.css.background.color.label "Cor">
+<!ENTITY bbcomp.css.background.color.none.label "Nenhuma">
+<!ENTITY bbcomp.css.background.color.transparent.label "Transparente">
+<!ENTITY bbcomp.css.background.image.label "Imagem">
+<!ENTITY bbcomp.css.background.position.label "Posição">
+<!ENTITY bbcomp.css.background.repeat.label "Repetir">
+<!ENTITY bbcomp.css.background.repeat.default.label "Padrão">
+<!ENTITY bbcomp.css.background.repeat.repeat.label "Repetir">
+<!ENTITY bbcomp.css.background.repeat.repeat.x.label "Horizontal">
+<!ENTITY bbcomp.css.background.repeat.repeat.y.label "Vertical">
+<!ENTITY bbcomp.css.background.repeat.no.repeat.label "Sem repetição">
+<!ENTITY bbcomp.css.background.attachment.label "Anexo">
+<!ENTITY bbcomp.css.background.attachment.default.label "Padrão">
+<!ENTITY bbcomp.css.background.attachment.scroll.label "Rolar">
+<!ENTITY bbcomp.css.background.attachment.fixed.label "Fixo">
+<!ENTITY bbcomp.css.border.label "Borda">
+<!ENTITY bbcomp.css.border.color.label "Cor">
+<!ENTITY bbcomp.css.border.color.none.label "Nenhuma">
+<!ENTITY bbcomp.css.border.width.label "Largura">
+<!ENTITY bbcomp.css.border.style.label "Estilo">
+<!ENTITY bbcomp.css.border.style.none.label "Nenhum">
+<!ENTITY bbcomp.css.border.style.hidden.label "Oculto">
+<!ENTITY bbcomp.css.border.style.dotted.label "Pontilhado">
+<!ENTITY bbcomp.css.border.style.dashed.label "Tracejado">
+<!ENTITY bbcomp.css.border.style.solid.label "Sólido">
+<!ENTITY bbcomp.css.border.style.double.label "Duplo">
+<!ENTITY bbcomp.css.border.style.groove.label "Sulco">
+<!ENTITY bbcomp.css.border.style.ridge.label "Crista">
+<!ENTITY bbcomp.css.border.style.inset.label "Baixo relevo">
+<!ENTITY bbcomp.css.border.style.outset.label "Alto relevo">
+<!ENTITY bbcomp.css.width.label "Width">
+<!ENTITY bbcomp.css.height.label "Height">
+<!ENTITY bbcomp.css.clear.label "Limpar">
+<!ENTITY bbcomp.css.clear.default.label "Não">
+<!ENTITY bbcomp.css.clear.left.label "Esquerda">
+<!ENTITY bbcomp.css.clear.right.label "Direita">
+<!ENTITY bbcomp.css.clear.both.label "Ambos">
+<!ENTITY bbcomp.css.clear.none.label "None">
+<!ENTITY bbcomp.css.float.label "Float">
+<!ENTITY bbcomp.css.float.default.label "Default">
+<!ENTITY bbcomp.css.float.left.label "Left">
+<!ENTITY bbcomp.css.float.right.label "Right">
+<!ENTITY bbcomp.css.float.none.label "None">
+<!ENTITY bbcomp.css.position.default.label "Default">
+<!ENTITY bbcomp.css.position.static.label "Static">
+<!ENTITY bbcomp.css.position.absolute.label "Absolute">
+<!ENTITY bbcomp.css.position.fixed.label "Fixed">
+<!ENTITY bbcomp.css.position.relative.label "Relative">
+<!ENTITY bbcomp.css.position.inherit.label "Inherit">
+<!ENTITY bbcomp.css.visibility.label "Visibility">
+<!ENTITY bbcomp.css.visibility.default.label "Default">
+<!ENTITY bbcomp.css.visibility.visible.label "Visible">
+<!ENTITY bbcomp.css.visibility.hidden.label "Hidden">
+<!ENTITY bbcomp.css.visibility.collapse.label "Collapse">
+<!ENTITY bbcomp.css.visibility.inherit.label "Inherit">
+<!ENTITY bbcomp.css.top.label "Top">
+<!ENTITY bbcomp.css.right.label "Right">
+<!ENTITY bbcomp.css.bottom.label "Bottom">
+<!ENTITY bbcomp.css.left.label "Left">
+<!ENTITY bbcomp.css.z-index.label "Z-Index">
+<!ENTITY bbcomp.css.display.label "Display">

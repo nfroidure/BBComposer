@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Tabella">
+<!ENTITY bbcomp.tbl.caption.label "Didascalia">
+<!ENTITY bbcomp.tbl.summary.label "Indice">
+<!ENTITY bbcomp.tbl.hrows.label "Righe di intestazione">
+<!ENTITY bbcomp.tbl.rows.label "Righe">
+<!ENTITY bbcomp.tbl.frows.label "Righe a piè di pagina">
+<!ENTITY bbcomp.tbl.cols.label "Colonne">

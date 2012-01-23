@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Tabuľka">
+<!ENTITY bbcomp.tbl.caption.label "Titul">
+<!ENTITY bbcomp.tbl.summary.label "Zoznam">
+<!ENTITY bbcomp.tbl.hrows.label "Riadky hlavičky">
+<!ENTITY bbcomp.tbl.rows.label "Riadky">
+<!ENTITY bbcomp.tbl.frows.label "Riadky päty">
+<!ENTITY bbcomp.tbl.cols.label "Stĺpce">

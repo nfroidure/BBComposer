@@ -1,0 +1,134 @@
+<!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.pasteas "Colar como">
+<!ENTITY bbcomp.pasteas.div "a division of the document">
+<!ENTITY bbcomp.pasteas.blockquote "um bloco de citação">
+<!ENTITY bbcomp.pasteas.ins "added content">
+<!ENTITY bbcomp.pasteas.del "deleted content">
+<!ENTITY bbcomp.pasteas.text "text">
+<!ENTITY bbcomp.pastefrom "Paste from">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
+<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
+<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (no blocks)">
+<!ENTITY bbcomp.delete "Delete">
+<!ENTITY bbcomp.selectall "Select all">
+<!ENTITY bbcomp.edit.textarea.xbbcode "Editar com XBBCode">
+<!ENTITY bbcomp.edit.textarea.xhtml "Editar com HTML4">
+<!ENTITY bbcomp.edit.textarea.bbcode "Editar com BBCode">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Editar com Mediawiki">
+<!ENTITY bbcomp.edit.textarea.xhtmlnb "Edit with XHTML (no blocks)">
+<!ENTITY bbcomp.edit.remember.label "Editar e salvar">
+<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-br">
+<!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-br">
+<!ENTITY bbcomp.mode.label "Modo de Edição">
+<!ENTITY bbcomp.mode.tooltiptext "Habilita/Desabilita o Modo de Edição">
+<!ENTITY bbcomp.load.label "Carregar">
+<!ENTITY bbcomp.load.tooltiptext "Carregar um lembrete">
+<!ENTITY bbcomp.save.label "Salvar">
+<!ENTITY bbcomp.save.tooltiptext "Salvar um lembrete">
+<!ENTITY bbcomp.stop.label "Parar">
+<!ENTITY bbcomp.stop.tooltiptext "Cancelar mudanças">
+<!ENTITY bbcomp.backup.label "Carregamento rápido">
+<!ENTITY bbcomp.backup.tooltiptext "Carregar conteúdo do último auto-salvamento">
+<!ENTITY bbcomp.sidebar.label "Painéis laterais">
+<!ENTITY bbcomp.sidebar.tooltiptext "Exibir/Ocultar painéis">
+<!ENTITY bbcomp.smileys.label "Smileys">
+<!ENTITY bbcomp.smileys.tooltiptext "Biblioteca de Smileys">
+<!ENTITY bbcomp.cartoon.label "Cartoon">
+<!ENTITY bbcomp.cartoon.tooltiptext "Biblioteca de ícones cartoon/manga">
+<!ENTITY bbcomp.css.label "CSS">
+<!ENTITY bbcomp.css.tooltiptext "Editar CSS">
+<!ENTITY bbcomp.options.label "Ferramentas">
+<!ENTITY bbcomp.options.tooltiptext "Exibe as ferramentas">
+<!ENTITY bbcomp.option.label "Opções">
+<!ENTITY bbcomp.option.tooltiptext "Personalizar o BBComposer">
+<!ENTITY bbcomp.validation.label "Validar">
+<!ENTITY bbcomp.validation.tooltiptext "Validar esta página">
+<!ENTITY bbcomp.help.label "Ajuda">
+<!ENTITY bbcomp.help.tooltiptext "Ir para o manual">
+<!ENTITY bbcomp.forum.label "Fórum">
+<!ENTITY bbcomp.forum.tooltiptext "Falar sobre o BBComposer">
+<!ENTITY bbcomp.about.label "Sobre">
+<!ENTITY bbcomp.about.tooltiptext "Sobre BBComposer">
+<!ENTITY bbcomp.lists.label "Listas">
+<!ENTITY bbcomp.lists.tooltiptext "Blocos de listas">
+<!ENTITY bbcomp.ul.label "Lista desordenada">
+<!ENTITY bbcomp.ol.label "Lista Ordenada">
+<!ENTITY bbcomp.dl.label "Lista de Definições">
+<!ENTITY bbcomp.texts.label "Textos">
+<!ENTITY bbcomp.texts.tooltiptext "Blocos de texto">
+<!ENTITY bbcomp.h1.label "Título principal">
+<!ENTITY bbcomp.h2.label "Subtítulo">
+<!ENTITY bbcomp.h3.label "Subtítulo 2">
+<!ENTITY bbcomp.h4.label "Subtítulo 3">
+<!ENTITY bbcomp.h5.label "Subtítulo 4">
+<!ENTITY bbcomp.h6.label "Subtítulo 5">
+<!ENTITY bbcomp.p.label "Parágrafo">
+<!ENTITY bbcomp.pre.label "Texto pré-formatado">
+<!ENTITY bbcomp.address.label "Endereço">
+<!ENTITY bbcomp.hr.label "Barra Horizontal">
+<!ENTITY bbcomp.hr.tooltiptext "Adiciona uma barra horizontal">
+<!ENTITY bbcomp.br.label "Nova linha">
+<!ENTITY bbcomp.br.tooltiptext "Vai para uma nova linha">
+<!ENTITY bbcomp.deindent.label "Remover recuo">
+<!ENTITY bbcomp.deindent.tooltiptext "Remover recuo do texto">
+<!ENTITY bbcomp.indent.label "Recuar">
+<!ENTITY bbcomp.indent.tooltiptext "Recuar o texto">
+<!ENTITY bbcomp.undo.label "Desfazer">
+<!ENTITY bbcomp.undo.tooltiptext "Desfazer últimas mudanças">
+<!ENTITY bbcomp.redo.label "Refazer">
+<!ENTITY bbcomp.redo.tooltiptext "Refazer últimas mudanças">
+<!ENTITY bbcomp.b.label "Negrito">
+<!ENTITY bbcomp.b.tooltiptext "Definir negrito">
+<!ENTITY bbcomp.i.label "Itálico">
+<!ENTITY bbcomp.i.tooltiptext "Define o texto selecionado como itálico">
+<!ENTITY bbcomp.u.label "Sublinhado">
+<!ENTITY bbcomp.u.tooltiptext "Sublinha o texto selecionado">
+<!ENTITY bbcomp.strong.label "Strong">
+<!ENTITY bbcomp.strong.tooltiptext "Marca como Strong">
+<!ENTITY bbcomp.em.label "Ênfase">
+<!ENTITY bbcomp.em.tooltiptext "Adiciona ênfase">
+<!ENTITY bbcomp.q.label "Citação">
+<!ENTITY bbcomp.q.tooltiptext "Adiciona Citação">
+<!ENTITY bbcomp.cite.label "Referência">
+<!ENTITY bbcomp.cite.tooltiptext "Adiciona referência a um autor ou a um livro">
+<!ENTITY bbcomp.acronym.label "Acrônimo">
+<!ENTITY bbcomp.acronym.tooltiptext "Adiciona um acrônimo">
+<!ENTITY bbcomp.abbr.label "Abreviação">
+<!ENTITY bbcomp.abbr.tooltiptext "Adiciona uma abreviação">
+<!ENTITY bbcomp.a.label "Link">
+<!ENTITY bbcomp.a.tooltiptext "Adiciona um link">
+<!ENTITY bbcomp.img.label "Imagem">
+<!ENTITY bbcomp.img.tooltiptext "Adiciona uma imagem">
+<!ENTITY bbcomp.table.label "Tabela">
+<!ENTITY bbcomp.table.tooltiptext "Adiciona uma tabela">
+<!ENTITY bbcomp.special.label "Especial">
+<!ENTITY bbcomp.special.tooltiptext "Semântica Especializada">
+<!ENTITY bbcomp.sup.label "Superscript">
+<!ENTITY bbcomp.sup.tooltiptext "Marcar como superscript">
+<!ENTITY bbcomp.sub.label "Subscript">
+<!ENTITY bbcomp.sub.tooltiptext "Marca como subscript">
+<!ENTITY bbcomp.samp.label "Exemplo">
+<!ENTITY bbcomp.samp.tooltiptext "Marcar como exemplo">
+<!ENTITY bbcomp.dfn.label "Definição">
+<!ENTITY bbcomp.dfn.tooltiptext "Marcar como definição">
+<!ENTITY bbcomp.kbd.label "Palavras-chave">
+<!ENTITY bbcomp.kbd.tooltiptext "Marcar como Palavras-chave">
+<!ENTITY bbcomp.var.label "Variável">
+<!ENTITY bbcomp.var.tooltiptext "Marcar como código variável">
+<!ENTITY bbcomp.code.label "Código de Computador">
+<!ENTITY bbcomp.code.tooltiptext "Marcar como código-fonte">
+<!ENTITY bbcomp.del.label "Excluir">
+<!ENTITY bbcomp.del.tooltiptext "Marcar como texto excluído">
+<!ENTITY bbcomp.ins.label "Inserido">
+<!ENTITY bbcomp.ins.tooltiptext "Marca como texto inserido">
+<!ENTITY bbcomp.anchor.label "Âncora">
+<!ENTITY bbcomp.anchor.tooltiptext "Adiciona/Modifica uma âncora">
+<!ENTITY bbcomp.span.label "Span">
+<!ENTITY bbcomp.span.tooltiptext "Adiciona/Remove um Span">
+<!ENTITY bbcomp.div.label "Divisão">
+<!ENTITY bbcomp.div.tooltiptext "Inclui em um bloco de divisão">
+<!ENTITY bbcomp.blockquote.label "Citação">
+<!ENTITY bbcomp.blockquote.tooltiptext "Inclui em um bloco de citação">
+<!ENTITY bbcomp.style.label "Estilos">

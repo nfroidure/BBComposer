@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/about.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/about.dtd">
+
+<dialog buttons="accept" id="bbcomp-abt-dialog" title="&bbcomp.abt.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <vbox id="bbcomp-abt-details">
+        <hbox>
+            <vbox>
+                <hbox>
+                    <description>BBComposer</description>
+                    <description>3.0</description>
+                </hbox>
+                <description value="&bbcomp.abt.author;"/>
+                <description>Nicolas FROIDURE</description>
+                <description value="&bbcomp.abt.contributor;"/>
+                <description>Mathieu FROIDURE</description>
+            </vbox>
+            <spacer flex="1"/>
+            <vbox>
+                <image src="chrome://bbcomposer/content/logo.png" width="32" height="32"/>
+                <spacer flex="1"/>
+            </vbox>
+        </hbox>
+        <description value="&bbcomp.abt.home.page;"/>
+        <description onclick="window.parent.myBBComposerManager.goToURLWithOptions('http://bbcomposer.elitwork.com/')">http://bbcomposer.elitwork.com/</description>
+        <description value="&bbcomp.abt.translator;: &bbcomp.abt.translator.name;"/>
+        <description onclick="window.parent.myBBComposerManager.goToURLWithOptions('&bbcomp.abt.translator.url;')">&bbcomp.abt.translator.url;</description>
+    </vbox>
+</dialog>

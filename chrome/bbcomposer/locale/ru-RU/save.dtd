@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.save.dialog.title "Редактировать и сохранить">
+<!ENTITY bbcomp.save.href.label "Фильтр URL">
+<!ENTITY bbcomp.save.id.label "Филтр идентификатора">
+<!ENTITY bbcomp.save.language.label "Язык">
+<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
+<!ENTITY bbcomp.save.language.bbcode.label "BBCode">
+<!ENTITY bbcomp.save.language.xbbcode.label "XBBCode">
+<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML (без блоков)">
+<!ENTITY bbcomp.save.target.label "Target">
+<!ENTITY bbcomp.save.target.tab.label "Вкладка">
+<!ENTITY bbcomp.save.target.textarea.label "Форма">

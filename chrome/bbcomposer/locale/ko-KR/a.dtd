@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "링크">
+<!ENTITY bbcomp.link.href.label "위치">
+<!ENTITY bbcomp.link.title.label "툴팁 내용">
+<!ENTITY bbcomp.link.target.label "대상">
+<!ENTITY bbcomp.link.target.normal.label "일반">
+<!ENTITY bbcomp.link.target.popup.label "새 창">
+<!ENTITY bbcomp.link.hreflang.label "대상 언어">
+<!ENTITY bbcomp.link.hreflang.normal.label "동일 언어">
+<!ENTITY bbcomp.link.hreflang.en.label "영어">
+<!ENTITY bbcomp.link.hreflang.de.label "독일어">
+<!ENTITY bbcomp.link.hreflang.es.label "스페인어">
+<!ENTITY bbcomp.link.hreflang.fr.label "불어">

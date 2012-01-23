@@ -1,0 +1,8 @@
+<!ENTITY bbcomp.img.dialog.title "Imagem">
+<!ENTITY bbcomp.img.src.label "Diretório">
+<!ENTITY bbcomp.img.browse.label "Procurar">
+<!ENTITY bbcomp.img.alt.label "Texto alternativo">
+<!ENTITY bbcomp.img.align.label "Alinhamento">
+<!ENTITY bbcomp.img.align.normal.label "Normal">
+<!ENTITY bbcomp.img.align.left.label "Esquerda">
+<!ENTITY bbcomp.img.align.right.label "Direita">

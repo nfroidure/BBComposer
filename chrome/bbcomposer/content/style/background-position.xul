@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/about.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/background-position.dtd">
+
+
+<dialog buttons="accept, cancel" id="bbcomp-background-position-dialog" title="&bbcomp.background.position.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="return closeDialog();"
+	onload="initDialog();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/style/background-position.js"/>
+
+    <vbox>
+	<groupbox label="&bbcomp.background.position.orient.label;">
+	<label for="horizontal-position" value="&bbcomp.background.position.horizontal.label;"/>
+	<menulist id="horizontal-position">
+	<menupopup onpopupshowing="disableCoordPosition();">
+		<menuitem label="&bbcomp.background.position.horizontal.empty.label;" value=""/>
+		<menuitem label="&bbcomp.background.position.horizontal.left.label;" value="left"/>
+		<menuitem label="&bbcomp.background.position.center.label;" value="center"/>
+		<menuitem label="&bbcomp.background.position.horizontal.right.label;" value="right"/>
+	</menupopup>
+	</menulist>
+	<label for="vertical-position" value="&bbcomp.background.position.vertical.label;"/>
+	<menulist id="vertical-position">
+	<menupopup onpopupshowing="disableCoordPosition();">
+		<menuitem label="&bbcomp.background.position.vertical.empty.label;" value=""/>
+		<menuitem label="&bbcomp.background.position.vertical.top.label;" value="top"/>
+		<menuitem label="&bbcomp.background.position.center.label;" value="center"/>
+		<menuitem label="&bbcomp.background.position.vertical.bottom.label;" value="bottom"/>
+	</menupopup>
+	</menulist>
+	</groupbox>
+	<groupbox label="&bbcomp.background.position.coord.label;">
+	<label for="x-position" value="&bbcomp.background.position.x.label;"/>
+	<textbox id="x-position" value="" oninput="disableOrientPosition();"/>
+	<menulist id="x-position-unit">
+	<menupopup onpopupshowing="disableOrientPosition();">
+		<menuitem label="&bbcomp.background.position.pixel.label; (px)" value="px"/>
+		<menuitem label="&bbcomp.background.position.percent.label; (%)" value="%"/>
+	</menupopup>
+	</menulist>
+	<label for="y-position" value="&bbcomp.background.position.y.label;"/>
+	<textbox id="y-position" value=""/>
+	<menulist id="y-position-unit">
+	<menupopup onpopupshowing="disableOrientPosition();">
+		<menuitem label="&bbcomp.background.position.pixel.label; (px)" value="px"/>
+		<menuitem label="&bbcomp.background.position.percent.label; (%)" value="%"/>
+	</menupopup>
+	</menulist>
+	</groupbox>
+    </vbox>
+</dialog>

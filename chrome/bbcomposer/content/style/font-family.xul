@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/about.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/font-family.dtd">
+
+
+<dialog buttons="accept, cancel" id="bbcomp-font-family-dialog" title="&bbcomp.font.family.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="return closeDialog();"
+	onload="initDialog();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/style/font-family.js"/>
+
+    <vbox>
+	<groupbox>
+	<label for="usual-font-family" value="&bbcomp.font.family.usual.label;"/>
+	<hbox>
+		<menulist id="usual-font-family" editable="true" flex="1">
+		<menupopup>
+			<menuitem label="Arial"/>
+			<menuitem label="Verdana"/>
+			<menuitem label="Georgia"/>
+			<menuitem label="Helvetica"/>
+			<menuitem label="Times New Roman"/>
+			<menuitem label="Book Antiqua"/>
+			<menuitem label="serif"/>
+			<menuitem label="sans-serif"/>
+			<menuitem label="cursive"/>
+			<menuitem label="fantasy"/>
+			<menuitem label="monospace"/>
+		</menupopup>
+		</menulist>
+		<button label="&bbcomp.font.family.add.label;"  oncommand="addFontFamily()"/>
+	</hbox>
+	<label for="font-family" value="&bbcomp.font.family.selected.label;"/>
+	<listbox id="font-family"/>
+	<hbox>
+		<button label="&bbcomp.font.family.up.label;"  oncommand="setFontPriority(true)"/>
+		<button label="&bbcomp.font.family.down.label;"  oncommand="setFontPriority(false)"/>
+		<button label="&bbcomp.font.family.remove.label;"  oncommand="removeFontFamily()"/>
+	</hbox>
+	</groupbox>
+    </vbox>
+</dialog>

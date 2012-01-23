@@ -1,0 +1,160 @@
+<!ENTITY bbcomp.css.dialog.title "Editor CSS">
+<!ENTITY bbcomp.css.lockon.label "Lock on">
+<!ENTITY bbcomp.css.lockon.all "All elements">
+<!ENTITY bbcomp.css.lockon.block "Blocks">
+<!ENTITY bbcomp.css.lockon.superblock "Superblocks">
+<!ENTITY bbcomp.css.apply.label "Použiť">
+<!ENTITY bbcomp.css.apply.tooltiptext "Použiť zmeny">
+<!ENTITY bbcomp.css.cancel.label "Ukončiť">
+<!ENTITY bbcomp.css.cancel.tooltiptext "Ukončiť zmeny">
+<!ENTITY bbcomp.css.reset.label "Obnoviť">
+<!ENTITY bbcomp.css.reset.tooltiptext "Obnoviť štýl elementu">
+<!ENTITY bbcomp.css.text.label "Text">
+<!ENTITY bbcomp.css.more.label "Viac">
+<!ENTITY bbcomp.css.space.label "Pozícia">
+<!ENTITY bbcomp.css.style.label "Vzhľad">
+<!ENTITY bbcomp.css.position.label "Position">
+<!ENTITY bbcomp.css.color.label "Farba">
+<!ENTITY bbcomp.css.color.none.label "Žiadny">
+<!ENTITY bbcomp.css.font.family.label "Font">
+<!ENTITY bbcomp.css.font.size.label "Veľkosť">
+<!ENTITY bbcomp.css.font.weight.label "Váha">
+<!ENTITY bbcomp.css.font.weight.default.label "Východzí">
+<!ENTITY bbcomp.css.font.weight.normal.label "Normálny">
+<!ENTITY bbcomp.css.font.weight.bold.label "Tučný">
+<!ENTITY bbcomp.css.font.weight.bolder.label "Tučnejší">
+<!ENTITY bbcomp.css.font.weight.lighter.label "Tenší">
+<!ENTITY bbcomp.css.font.style.label "Štýl">
+<!ENTITY bbcomp.css.font.style.default.label "Východzí">
+<!ENTITY bbcomp.css.font.style.normal.label "Normálny">
+<!ENTITY bbcomp.css.font.style.italic.label "Kurzíva">
+<!ENTITY bbcomp.css.font.style.oblique.label "Sklonené">
+<!ENTITY bbcomp.css.text.decoration.label "Ozdoba">
+<!ENTITY bbcomp.css.text.decoration.default.label "Východzí">
+<!ENTITY bbcomp.css.text.decoration.none.label "Žiadny">
+<!ENTITY bbcomp.css.text.decoration.underline.label "Podčiarknuť">
+<!ENTITY bbcomp.css.text.decoration.overline.label "Nadčiarknuť">
+<!ENTITY bbcomp.css.text.decoration.line.through.label "Preškrtnúť">
+<!ENTITY bbcomp.css.text.decoration.blink.label "Blikať">
+<!ENTITY bbcomp.css.text.transform.label "Transformácia">
+<!ENTITY bbcomp.css.text.transform.default.label "Východzí">
+<!ENTITY bbcomp.css.text.transform.none.label "Žiadny">
+<!ENTITY bbcomp.css.text.transform.capitalize.label "Všetky prvé veľké">
+<!ENTITY bbcomp.css.text.transform.uppercase.label "Všetky veľké">
+<!ENTITY bbcomp.css.text.transform.lowercase.label "Všetky malé">
+<!ENTITY bbcomp.css.font.stretch.label "Natiahnuť">
+<!ENTITY bbcomp.css.font.stretch.default.label "Východzí">
+<!ENTITY bbcomp.css.font.stretch.normal.label "Normálny">
+<!ENTITY bbcomp.css.font.stretch.wider.label "Širší">
+<!ENTITY bbcomp.css.font.stretch.narrower.label "Užší">
+<!ENTITY bbcomp.css.font.stretch.ultra.condensed.label "Extrémne zúžené">
+<!ENTITY bbcomp.css.font.stretch.extra.condensed.label "Veľmi zúžené">
+<!ENTITY bbcomp.css.font.stretch.condensed.label "Zúžené">
+<!ENTITY bbcomp.css.font.stretch.semi.condensed.label "Mierne zúžené">
+<!ENTITY bbcomp.css.font.stretch.semi.expanded.label "Mierne rozšírené">
+<!ENTITY bbcomp.css.font.stretch.expanded.label "Rozšírené">
+<!ENTITY bbcomp.css.font.stretch.extra.expanded.label "Veľmi rozšírené">
+<!ENTITY bbcomp.css.font.stretch.ultra.expanded.label "Extrémne rozšírené">
+<!ENTITY bbcomp.css.font.variant.label "Variant">
+<!ENTITY bbcomp.css.font.variant.default.label "Východzí">
+<!ENTITY bbcomp.css.font.variant.normal.label "Normálny">
+<!ENTITY bbcomp.css.font.variant.small.caps.label "Small caps">
+<!ENTITY bbcomp.css.text.align.label "Zarovnať">
+<!ENTITY bbcomp.css.text.align.default.label "Východzí">
+<!ENTITY bbcomp.css.text.align.center.label "Na stred">
+<!ENTITY bbcomp.css.text.align.right.label "Vpravo">
+<!ENTITY bbcomp.css.text.align.left.label "Vľavo">
+<!ENTITY bbcomp.css.text.align.justify.label "Do bloku">
+<!ENTITY bbcomp.css.font.size.adjust.label "Size adjust">
+<!ENTITY bbcomp.css.line.height.label "Výška riadku">
+<!ENTITY bbcomp.css.text.indent.label "Odsadiť">
+<!ENTITY bbcomp.css.word.spacing.label "Medzislovné medzery">
+<!ENTITY bbcomp.css.letter.spacing.label "Medzery medzi písmenami">
+<!ENTITY bbcomp.css.white.space.label "Medzera">
+<!ENTITY bbcomp.css.white.space.default.label "Východzí">
+<!ENTITY bbcomp.css.white.space.normal.label "Normálny">
+<!ENTITY bbcomp.css.white.space.pre.label "Chránené">
+<!ENTITY bbcomp.css.white.space.nowrap.label "Nezalomiť">
+<!ENTITY bbcomp.css.direction.label "Smer">
+<!ENTITY bbcomp.css.direction.default.label "Východzí">
+<!ENTITY bbcomp.css.direction.ltr.label "Zľava doprava">
+<!ENTITY bbcomp.css.direction.rtl.label "Sprava doľava">
+<!ENTITY bbcomp.css.unicode.bidi.label "Obojsmerne">
+<!ENTITY bbcomp.css.unicode.bidi.default.label "Východzí">
+<!ENTITY bbcomp.css.unicode.bidi.normal.label "Normálny">
+<!ENTITY bbcomp.css.unicode.bidi.embed.label "Embed">
+<!ENTITY bbcomp.css.unicode.bidi.bidi.override.label "Override">
+<!ENTITY bbcomp.css.text.shadow.label "Tieň">
+<!ENTITY bbcomp.css.padding.label "Padding">
+<!ENTITY bbcomp.css.padding.left.label "Vľavo">
+<!ENTITY bbcomp.css.padding.right.label "Vpravo">
+<!ENTITY bbcomp.css.padding.top.label "Hore">
+<!ENTITY bbcomp.css.padding.bottom.label "Dole">
+<!ENTITY bbcomp.css.margin.label "Okraj">
+<!ENTITY bbcomp.css.margin.left.label "ľavý">
+<!ENTITY bbcomp.css.margin.right.label "pravý">
+<!ENTITY bbcomp.css.margin.top.label "horný">
+<!ENTITY bbcomp.css.margin.bottom.label "dolný">
+<!ENTITY bbcomp.css.padding.all "Definuj všetky">
+<!ENTITY bbcomp.css.background.label "Pozadie">
+<!ENTITY bbcomp.css.background.color.label "Farba">
+<!ENTITY bbcomp.css.background.color.none.label "Žiadny">
+<!ENTITY bbcomp.css.background.color.transparent.label "Priehľadný">
+<!ENTITY bbcomp.css.background.image.label "Obrázok">
+<!ENTITY bbcomp.css.background.position.label "Pozícia">
+<!ENTITY bbcomp.css.background.repeat.label "Zopakovať">
+<!ENTITY bbcomp.css.background.repeat.default.label "Východzí">
+<!ENTITY bbcomp.css.background.repeat.repeat.label "Zopakovať">
+<!ENTITY bbcomp.css.background.repeat.repeat.x.label "Vodorovne">
+<!ENTITY bbcomp.css.background.repeat.repeat.y.label "Zvisle">
+<!ENTITY bbcomp.css.background.repeat.no.repeat.label "Neopakovať">
+<!ENTITY bbcomp.css.background.attachment.label "Príloha">
+<!ENTITY bbcomp.css.background.attachment.default.label "Východzí">
+<!ENTITY bbcomp.css.background.attachment.scroll.label "Scroll">
+<!ENTITY bbcomp.css.background.attachment.fixed.label "Fixed">
+<!ENTITY bbcomp.css.border.label "Hranica">
+<!ENTITY bbcomp.css.border.color.label "Farba">
+<!ENTITY bbcomp.css.border.color.none.label "Žiadny">
+<!ENTITY bbcomp.css.border.width.label "Šírka">
+<!ENTITY bbcomp.css.border.style.label "Štýl">
+<!ENTITY bbcomp.css.border.style.none.label "Žiadny">
+<!ENTITY bbcomp.css.border.style.hidden.label "Skrytý">
+<!ENTITY bbcomp.css.border.style.dotted.label "Bodkovaný">
+<!ENTITY bbcomp.css.border.style.dashed.label "Dashed">
+<!ENTITY bbcomp.css.border.style.solid.label "Solid">
+<!ENTITY bbcomp.css.border.style.double.label "Dvojitý">
+<!ENTITY bbcomp.css.border.style.groove.label "Groove">
+<!ENTITY bbcomp.css.border.style.ridge.label "Ridge">
+<!ENTITY bbcomp.css.border.style.inset.label "Inset">
+<!ENTITY bbcomp.css.border.style.outset.label "Outset">
+<!ENTITY bbcomp.css.width.label "Width">
+<!ENTITY bbcomp.css.height.label "Height">
+<!ENTITY bbcomp.css.clear.label "Clear">
+<!ENTITY bbcomp.css.clear.default.label "Žiadny">
+<!ENTITY bbcomp.css.clear.left.label "Vľavo">
+<!ENTITY bbcomp.css.clear.right.label "Vpravo">
+<!ENTITY bbcomp.css.clear.both.label "Obidva">
+<!ENTITY bbcomp.css.clear.none.label "None">
+<!ENTITY bbcomp.css.float.label "Float">
+<!ENTITY bbcomp.css.float.default.label "Default">
+<!ENTITY bbcomp.css.float.left.label "Left">
+<!ENTITY bbcomp.css.float.right.label "Right">
+<!ENTITY bbcomp.css.float.none.label "None">
+<!ENTITY bbcomp.css.position.default.label "Default">
+<!ENTITY bbcomp.css.position.static.label "Static">
+<!ENTITY bbcomp.css.position.absolute.label "Absolute">
+<!ENTITY bbcomp.css.position.fixed.label "Fixed">
+<!ENTITY bbcomp.css.position.relative.label "Relative">
+<!ENTITY bbcomp.css.position.inherit.label "Inherit">
+<!ENTITY bbcomp.css.visibility.label "Visibility">
+<!ENTITY bbcomp.css.visibility.default.label "Default">
+<!ENTITY bbcomp.css.visibility.visible.label "Visible">
+<!ENTITY bbcomp.css.visibility.hidden.label "Hidden">
+<!ENTITY bbcomp.css.visibility.collapse.label "Collapse">
+<!ENTITY bbcomp.css.visibility.inherit.label "Inherit">
+<!ENTITY bbcomp.css.top.label "Top">
+<!ENTITY bbcomp.css.right.label "Right">
+<!ENTITY bbcomp.css.bottom.label "Bottom">
+<!ENTITY bbcomp.css.left.label "Left">
+<!ENTITY bbcomp.css.z-index.label "Z-Index">
+<!ENTITY bbcomp.css.display.label "Display">

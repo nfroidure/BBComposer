@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.save.dialog.title "Uprav a ulož">
+<!ENTITY bbcomp.save.href.label "Filter URL">
+<!ENTITY bbcomp.save.id.label "Identifikačný filter">
+<!ENTITY bbcomp.save.language.label "Jazyk">
+<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
+<!ENTITY bbcomp.save.language.bbcode.label "BB kódy">
+<!ENTITY bbcomp.save.language.xbbcode.label "XBB kódy">
+<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML(bez blokov)">
+<!ENTITY bbcomp.save.target.label "Cieľ">
+<!ENTITY bbcomp.save.target.tab.label "Karta">
+<!ENTITY bbcomp.save.target.textarea.label "Formulár">

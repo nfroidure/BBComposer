@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/about.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/font-size.dtd">
+
+
+<dialog buttons="accept, cancel" id="bbcomp-font-size-dialog" title="&bbcomp.font.size.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="return closeDialog();"
+	onload="initDialog();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/style/font-size.js"/>
+
+    <vbox>
+	<groupbox>
+	<label control="font-size-numeric" value="&bbcomp.font.size.numeric.label;"/>
+	<textbox id="font-size-numeric" value="" oninput="disableVarcharFontSize();"/>
+	<menulist id="font-size-numeric-unit">
+	<menupopup onpopupshowing="disableVarcharFontSize();">
+		<menuitem label="&bbcomp.font.size.pixel.label; (px)" value="px"/>
+		<menuitem label="&bbcomp.font.size.percent.label; (%)" value="%"/>
+		<menuitem label="&bbcomp.font.size.emphasis.label; (em)" value="em"/>
+		<menuitem label="&bbcomp.font.size.point.label; (pt)" value="pt"/>
+	</menupopup>
+	</menulist>
+	<label control="font-size-varchar" value="&bbcomp.font.size.varchar.label;"/>
+	<menulist id="font-size-varchar">
+		<menupopup onpopupshowing="disableNumericFontSize();">
+			<menuitem value="" label="&bbcomp.font.size.empty.label;"/>
+			<menuitem value="xx-small" label="&bbcomp.font.size.xx.small.label;"/>
+			<menuitem value="x-small" label="&bbcomp.font.size.x.small.label;"/>
+			<menuitem value="small" label="&bbcomp.font.size.small.label;"/>
+			<menuitem value="medium" label="&bbcomp.font.size.medium.label;"/>
+			<menuitem value="large" label="&bbcomp.font.size.large.label;"/>
+			<menuitem value="x-large" label="&bbcomp.font.size.x.large.label;"/>
+			<menuitem value="xx-large" label="&bbcomp.font.size.xx.large.label;"/>
+			<menuitem value="smaller" label="&bbcomp.font.size.smaller.label;"/>
+			<menuitem value="larger" label="&bbcomp.font.size.larger.label;"/>
+		</menupopup>
+	</menulist>
+	</groupbox>
+    </vbox>
+</dialog>

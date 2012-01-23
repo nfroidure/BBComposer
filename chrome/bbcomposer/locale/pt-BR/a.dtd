@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Link">
+<!ENTITY bbcomp.link.href.label "Localização">
+<!ENTITY bbcomp.link.title.label "Texto da dica">
+<!ENTITY bbcomp.link.target.label "Destino">
+<!ENTITY bbcomp.link.target.normal.label "Normal">
+<!ENTITY bbcomp.link.target.popup.label "Nova Janela">
+<!ENTITY bbcomp.link.hreflang.label "Idioma de destino">
+<!ENTITY bbcomp.link.hreflang.normal.label "Mesmo Idioma">
+<!ENTITY bbcomp.link.hreflang.en.label "Inglês">
+<!ENTITY bbcomp.link.hreflang.de.label "Alemão">
+<!ENTITY bbcomp.link.hreflang.es.label "Espanhol">
+<!ENTITY bbcomp.link.hreflang.fr.label "Francês">

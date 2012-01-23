@@ -1,0 +1,134 @@
+<!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.pasteas "Prilepiť ako">
+<!ENTITY bbcomp.pasteas.div "a division of the document">
+<!ENTITY bbcomp.pasteas.blockquote "a blockquote">
+<!ENTITY bbcomp.pasteas.ins "added content">
+<!ENTITY bbcomp.pasteas.del "deleted content">
+<!ENTITY bbcomp.pasteas.text "text">
+<!ENTITY bbcomp.pastefrom "Paste from">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
+<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
+<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (no blocks)">
+<!ENTITY bbcomp.delete "Delete">
+<!ENTITY bbcomp.selectall "Select all">
+<!ENTITY bbcomp.edit.textarea.xbbcode "Upraviť pomocou XBBCode">
+<!ENTITY bbcomp.edit.textarea.xhtml "Upraviť pomocou XHTML">
+<!ENTITY bbcomp.edit.textarea.bbcode "Upraviť pomocou BBCode">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Upraviť pomocou Mediawiki">
+<!ENTITY bbcomp.edit.textarea.xhtmlnb "Upraviť pomocou XHTML (bez blokov)">
+<!ENTITY bbcomp.edit.remember.label "Upraviť a uložiť">
+<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-sk">
+<!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-sk">
+<!ENTITY bbcomp.mode.label "Režim úprav">
+<!ENTITY bbcomp.mode.tooltiptext "Povoliť/Zakázať režim úprav">
+<!ENTITY bbcomp.load.label "Načítať">
+<!ENTITY bbcomp.load.tooltiptext "Načítať poznámku">
+<!ENTITY bbcomp.save.label "Uložiť">
+<!ENTITY bbcomp.save.tooltiptext "Uložiť poznámku">
+<!ENTITY bbcomp.stop.label "Stop">
+<!ENTITY bbcomp.stop.tooltiptext "Zrušiť zmeny">
+<!ENTITY bbcomp.backup.label "Rýchle načítanie">
+<!ENTITY bbcomp.backup.tooltiptext "Načítať obsah posledného automatického uloženia">
+<!ENTITY bbcomp.sidebar.label "Bočné panely">
+<!ENTITY bbcomp.sidebar.tooltiptext "Ukázať/Schovať bočné panely">
+<!ENTITY bbcomp.smileys.label "Smajlíky">
+<!ENTITY bbcomp.smileys.tooltiptext "Knižnica smajlíkov">
+<!ENTITY bbcomp.cartoon.label "Cartoon">
+<!ENTITY bbcomp.cartoon.tooltiptext "Cartoon/manga icons library">
+<!ENTITY bbcomp.css.label "Štýly">
+<!ENTITY bbcomp.css.tooltiptext "Úprava CSS">
+<!ENTITY bbcomp.options.label "Nástroje">
+<!ENTITY bbcomp.options.tooltiptext "Pozri nástroje">
+<!ENTITY bbcomp.option.label "Voľby">
+<!ENTITY bbcomp.option.tooltiptext "Prispôsobiť BBComposer">
+<!ENTITY bbcomp.validation.label "Overiť">
+<!ENTITY bbcomp.validation.tooltiptext "Overiť túto stránku">
+<!ENTITY bbcomp.help.label "Pomoc">
+<!ENTITY bbcomp.help.tooltiptext "Choď na príručku">
+<!ENTITY bbcomp.forum.label "Fórum">
+<!ENTITY bbcomp.forum.tooltiptext "Rozprávať sa o BBComposer">
+<!ENTITY bbcomp.about.label "O">
+<!ENTITY bbcomp.about.tooltiptext "O programe BBComposer">
+<!ENTITY bbcomp.lists.label "Zoznamy">
+<!ENTITY bbcomp.lists.tooltiptext "Zoznamy blokov">
+<!ENTITY bbcomp.ul.label "Neusporiadaný zoznam">
+<!ENTITY bbcomp.ol.label "Usporiadaný zoznam">
+<!ENTITY bbcomp.dl.label "Zoznam definícií">
+<!ENTITY bbcomp.texts.label "Texty">
+<!ENTITY bbcomp.texts.tooltiptext "Textové bloky">
+<!ENTITY bbcomp.h1.label "Hlavný titul">
+<!ENTITY bbcomp.h2.label "Podtitul">
+<!ENTITY bbcomp.h3.label "Podtitul 2">
+<!ENTITY bbcomp.h4.label "Podtitul 3">
+<!ENTITY bbcomp.h5.label "Podtitul 4">
+<!ENTITY bbcomp.h6.label "Podtitul 5">
+<!ENTITY bbcomp.p.label "Odstavec">
+<!ENTITY bbcomp.pre.label "Predformátovaný text">
+<!ENTITY bbcomp.address.label "Adresa">
+<!ENTITY bbcomp.hr.label "Vodorovný panel">
+<!ENTITY bbcomp.hr.tooltiptext "Pridať vodorovný panel">
+<!ENTITY bbcomp.br.label "Nový riadok">
+<!ENTITY bbcomp.br.tooltiptext "Choď na nový riadok">
+<!ENTITY bbcomp.deindent.label "Zrušiť odsadenie">
+<!ENTITY bbcomp.deindent.tooltiptext "Zrušiť odsadenie">
+<!ENTITY bbcomp.indent.label "Odsadiť">
+<!ENTITY bbcomp.indent.tooltiptext "Odsadiť text">
+<!ENTITY bbcomp.undo.label "Undo">
+<!ENTITY bbcomp.undo.tooltiptext "Undo last changes">
+<!ENTITY bbcomp.redo.label "Redo">
+<!ENTITY bbcomp.redo.tooltiptext "Redo last changes">
+<!ENTITY bbcomp.b.label "Tučne">
+<!ENTITY bbcomp.b.tooltiptext "Nastav tučne">
+<!ENTITY bbcomp.i.label "Kurzíva">
+<!ENTITY bbcomp.i.tooltiptext "Nastav kurzívu na vybraný text">
+<!ENTITY bbcomp.u.label "Podčiarknuť">
+<!ENTITY bbcomp.u.tooltiptext "Podčiarknuť vybraný text">
+<!ENTITY bbcomp.strong.label "Silný">
+<!ENTITY bbcomp.strong.tooltiptext "Označ ako silný">
+<!ENTITY bbcomp.em.label "Zvýrazniť">
+<!ENTITY bbcomp.em.tooltiptext "Pridať zvýraznenie">
+<!ENTITY bbcomp.q.label "Úvodzovky">
+<!ENTITY bbcomp.q.tooltiptext "Pridať úvodzovky">
+<!ENTITY bbcomp.cite.label "Citát">
+<!ENTITY bbcomp.cite.tooltiptext "Pridať referenciu na autora alebo knihu">
+<!ENTITY bbcomp.acronym.label "Akronym">
+<!ENTITY bbcomp.acronym.tooltiptext "Pridať akronym">
+<!ENTITY bbcomp.abbr.label "Skratka">
+<!ENTITY bbcomp.abbr.tooltiptext "Pridať skratku">
+<!ENTITY bbcomp.a.label "Odkaz">
+<!ENTITY bbcomp.a.tooltiptext "Pridať odkaz">
+<!ENTITY bbcomp.img.label "Obrázok">
+<!ENTITY bbcomp.img.tooltiptext "Pridať obrázok">
+<!ENTITY bbcomp.table.label "Tabuľka">
+<!ENTITY bbcomp.table.tooltiptext "Pridať tabuľku">
+<!ENTITY bbcomp.special.label "Špeciál">
+<!ENTITY bbcomp.special.tooltiptext "Špeciálny význam">
+<!ENTITY bbcomp.sup.label "Horný index">
+<!ENTITY bbcomp.sup.tooltiptext "Označiť ako horný index">
+<!ENTITY bbcomp.sub.label "Dolný index">
+<!ENTITY bbcomp.sub.tooltiptext "Označiť ako dolný index">
+<!ENTITY bbcomp.samp.label "Príklad">
+<!ENTITY bbcomp.samp.tooltiptext "Označiť ako príklad">
+<!ENTITY bbcomp.dfn.label "Definícia">
+<!ENTITY bbcomp.dfn.tooltiptext "Označiť ako definíciu">
+<!ENTITY bbcomp.kbd.label "Keystrokes">
+<!ENTITY bbcomp.kbd.tooltiptext "Mark as Keystrokes">
+<!ENTITY bbcomp.var.label "Premenná">
+<!ENTITY bbcomp.var.tooltiptext "Označiť ako premennú">
+<!ENTITY bbcomp.code.label "Zdrojový kód">
+<!ENTITY bbcomp.code.tooltiptext "Označiť ako zdrojový kód">
+<!ENTITY bbcomp.del.label "Vymazaný">
+<!ENTITY bbcomp.del.tooltiptext "Označiť ako vymazaný text">
+<!ENTITY bbcomp.ins.label "Vložený">
+<!ENTITY bbcomp.ins.tooltiptext "Označiť ako vložený text">
+<!ENTITY bbcomp.anchor.label "Kotva">
+<!ENTITY bbcomp.anchor.tooltiptext "Pridať/Upraviť kotvu">
+<!ENTITY bbcomp.span.label "Roztiahnuť">
+<!ENTITY bbcomp.span.tooltiptext "Pridať/Odstrániť roztiahnutie">
+<!ENTITY bbcomp.div.label "Delenie">
+<!ENTITY bbcomp.div.tooltiptext "Include in a division block">
+<!ENTITY bbcomp.blockquote.label "Úvodzovky">
+<!ENTITY bbcomp.blockquote.tooltiptext "Include in a quote block">
+<!ENTITY bbcomp.style.label "Štýly">

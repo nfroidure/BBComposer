@@ -1,0 +1,16 @@
+<!ENTITY bbcomp.background.position.dialog.title "Расположение фона">
+<!ENTITY bbcomp.background.position.orient.label "Выравнивание">
+<!ENTITY bbcomp.background.position.horizontal.label "Горизонтально">
+<!ENTITY bbcomp.background.position.horizontal.empty.label "">
+<!ENTITY bbcomp.background.position.horizontal.left.label "По левому краю">
+<!ENTITY bbcomp.background.position.horizontal.right.label "По правому краю">
+<!ENTITY bbcomp.background.position.vertical.label "Вертикально">
+<!ENTITY bbcomp.background.position.vertical.empty.label "">
+<!ENTITY bbcomp.background.position.vertical.top.label "Вверху">
+<!ENTITY bbcomp.background.position.vertical.bottom.label "Внизу">
+<!ENTITY bbcomp.background.position.center.label "По центру">
+<!ENTITY bbcomp.background.position.coord.label "">
+<!ENTITY bbcomp.background.position.x.label "Абсцисса">
+<!ENTITY bbcomp.background.position.y.label "Ордината">
+<!ENTITY bbcomp.background.position.pixel.label "Пикселей">
+<!ENTITY bbcomp.background.position.percent.label "Процентов">

@@ -1,0 +1,17 @@
+<!ENTITY bbcomp.font.size.dialog.title "글자 크기">
+<!ENTITY bbcomp.font.size.numeric.label "수치">
+<!ENTITY bbcomp.font.size.pixel.label "픽셀">
+<!ENTITY bbcomp.font.size.percent.label "퍼센트">
+<!ENTITY bbcomp.font.size.point.label "포인트">
+<!ENTITY bbcomp.font.size.emphasis.label "강조">
+<!ENTITY bbcomp.font.size.varchar.label "기정된">
+<!ENTITY bbcomp.font.size.empty.label "">
+<!ENTITY bbcomp.font.size.xx.small.label "왜소한">
+<!ENTITY bbcomp.font.size.x.small.label "매우 작은">
+<!ENTITY bbcomp.font.size.small.label "작은">
+<!ENTITY bbcomp.font.size.medium.label "중간">
+<!ENTITY bbcomp.font.size.large.label "큰">
+<!ENTITY bbcomp.font.size.x.large.label "매우 큰">
+<!ENTITY bbcomp.font.size.xx.large.label "거대한">
+<!ENTITY bbcomp.font.size.smaller.label "작게">
+<!ENTITY bbcomp.font.size.larger.label "크게">

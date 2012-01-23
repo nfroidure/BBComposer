@@ -1,0 +1,134 @@
+<!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.pasteas "Вставить как">
+<!ENTITY bbcomp.pasteas.div "a division of the document">
+<!ENTITY bbcomp.pasteas.blockquote "цитату">
+<!ENTITY bbcomp.pasteas.ins "added content">
+<!ENTITY bbcomp.pasteas.del "deleted content">
+<!ENTITY bbcomp.pasteas.text "text">
+<!ENTITY bbcomp.pastefrom "Paste from">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
+<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
+<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (no blocks)">
+<!ENTITY bbcomp.delete "Delete">
+<!ENTITY bbcomp.selectall "Select all">
+<!ENTITY bbcomp.edit.textarea.xbbcode "Редактировать в XBBCode">
+<!ENTITY bbcomp.edit.textarea.xhtml "Редактировать в HTML4">
+<!ENTITY bbcomp.edit.textarea.bbcode "Редактировать в BBCode">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Редактировать в Mediawiki">
+<!ENTITY bbcomp.edit.textarea.xhtmlnb "Edit with XHTML (no blocks)">
+<!ENTITY bbcomp.edit.remember.label "Редактировать и сохранить">
+<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-ru">
+<!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-ru">
+<!ENTITY bbcomp.mode.label "Режим редактирования">
+<!ENTITY bbcomp.mode.tooltiptext "Вкл/Выкл режим редактирования">
+<!ENTITY bbcomp.load.label "Загрузить">
+<!ENTITY bbcomp.load.tooltiptext "Загрузить примечание">
+<!ENTITY bbcomp.save.label "Сохранить">
+<!ENTITY bbcomp.save.tooltiptext "Сохранить примечание">
+<!ENTITY bbcomp.stop.label "Стоп">
+<!ENTITY bbcomp.stop.tooltiptext "Отменить изменения">
+<!ENTITY bbcomp.backup.label "Быстрая загрузка">
+<!ENTITY bbcomp.backup.tooltiptext "Загрузить содержимое последнего авто сохранения">
+<!ENTITY bbcomp.sidebar.label "Боковая панель">
+<!ENTITY bbcomp.sidebar.tooltiptext "Показать/Скрыть боковую панель">
+<!ENTITY bbcomp.smileys.label "Смайлики">
+<!ENTITY bbcomp.smileys.tooltiptext "Библиотека смайликов">
+<!ENTITY bbcomp.cartoon.label "Cartoon">
+<!ENTITY bbcomp.cartoon.tooltiptext "Библиотека иконок сartoon/manga">
+<!ENTITY bbcomp.css.label "CSS">
+<!ENTITY bbcomp.css.tooltiptext "Редактировать CSS">
+<!ENTITY bbcomp.options.label "Инструменты">
+<!ENTITY bbcomp.options.tooltiptext "Смотреть инструменты">
+<!ENTITY bbcomp.option.label "Настройки">
+<!ENTITY bbcomp.option.tooltiptext "Настройте BBComposer">
+<!ENTITY bbcomp.validation.label "Проверка W3C">
+<!ENTITY bbcomp.validation.tooltiptext "Проверить эту страницу W3C">
+<!ENTITY bbcomp.help.label "Помощь">
+<!ENTITY bbcomp.help.tooltiptext "Перейти к документации">
+<!ENTITY bbcomp.forum.label "Форум">
+<!ENTITY bbcomp.forum.tooltiptext "Обсуждение BBComposer">
+<!ENTITY bbcomp.about.label "О BBComposer">
+<!ENTITY bbcomp.about.tooltiptext "О BBComposer">
+<!ENTITY bbcomp.lists.label "Списки">
+<!ENTITY bbcomp.lists.tooltiptext "список блоков">
+<!ENTITY bbcomp.ul.label "Маркированный список">
+<!ENTITY bbcomp.ol.label "Нумерованный список">
+<!ENTITY bbcomp.dl.label "Список определений">
+<!ENTITY bbcomp.texts.label "Текст">
+<!ENTITY bbcomp.texts.tooltiptext "Блоки текста">
+<!ENTITY bbcomp.h1.label "Оглавление">
+<!ENTITY bbcomp.h2.label "Заголовок">
+<!ENTITY bbcomp.h3.label "Заголовок 2">
+<!ENTITY bbcomp.h4.label "Заголовок 3">
+<!ENTITY bbcomp.h5.label "Заголовок 4">
+<!ENTITY bbcomp.h6.label "Заголовок 5">
+<!ENTITY bbcomp.p.label "Параграф">
+<!ENTITY bbcomp.pre.label "Пере форматированный текст">
+<!ENTITY bbcomp.address.label "Адрес">
+<!ENTITY bbcomp.hr.label "Горизонтальная линия">
+<!ENTITY bbcomp.hr.tooltiptext "Добавить горизонтальную линию">
+<!ENTITY bbcomp.br.label "Новая линия">
+<!ENTITY bbcomp.br.tooltiptext "Перейти на новую строку">
+<!ENTITY bbcomp.deindent.label "Deindent">
+<!ENTITY bbcomp.deindent.tooltiptext "Deindent the text">
+<!ENTITY bbcomp.indent.label "Indent">
+<!ENTITY bbcomp.indent.tooltiptext "Indent the text">
+<!ENTITY bbcomp.undo.label "Отменить">
+<!ENTITY bbcomp.undo.tooltiptext "Отменить последние изменения">
+<!ENTITY bbcomp.redo.label "Повторить">
+<!ENTITY bbcomp.redo.tooltiptext "Повторить последние изменения">
+<!ENTITY bbcomp.b.label "Bold">
+<!ENTITY bbcomp.b.tooltiptext "Set bold">
+<!ENTITY bbcomp.i.label "Курсив">
+<!ENTITY bbcomp.i.tooltiptext "Выделить курсивом выбранный текст">
+<!ENTITY bbcomp.u.label "Подчеркнутый">
+<!ENTITY bbcomp.u.tooltiptext "Подчеркнуть выделенный текст">
+<!ENTITY bbcomp.strong.label "Полужирный">
+<!ENTITY bbcomp.strong.tooltiptext "Пометить как полужирный">
+<!ENTITY bbcomp.em.label "Курсив">
+<!ENTITY bbcomp.em.tooltiptext "Добавить курсив">
+<!ENTITY bbcomp.q.label "Кавычки">
+<!ENTITY bbcomp.q.tooltiptext "Добавить кавычки">
+<!ENTITY bbcomp.cite.label "Цитата">
+<!ENTITY bbcomp.cite.tooltiptext "Подчеркивание - ссылка на автора или книгу">
+<!ENTITY bbcomp.acronym.label "Акроним">
+<!ENTITY bbcomp.acronym.tooltiptext "Добавить акроним">
+<!ENTITY bbcomp.abbr.label "Аббревиатура">
+<!ENTITY bbcomp.abbr.tooltiptext "Добавить аббревиатуру">
+<!ENTITY bbcomp.a.label "Ссылка">
+<!ENTITY bbcomp.a.tooltiptext "Добавить ссылку">
+<!ENTITY bbcomp.img.label "Изображение">
+<!ENTITY bbcomp.img.tooltiptext "Добавить изображение">
+<!ENTITY bbcomp.table.label "Таблица">
+<!ENTITY bbcomp.table.tooltiptext "Добавить таблицу">
+<!ENTITY bbcomp.special.label "Специальные">
+<!ENTITY bbcomp.special.tooltiptext "Специализированные смысловые">
+<!ENTITY bbcomp.sup.label "Надстрочный знак">
+<!ENTITY bbcomp.sup.tooltiptext "Пометить как надстрочный знак">
+<!ENTITY bbcomp.sub.label "Подстрочный знак">
+<!ENTITY bbcomp.sub.tooltiptext "Пометить как подстрочный знак">
+<!ENTITY bbcomp.samp.label "Пример">
+<!ENTITY bbcomp.samp.tooltiptext "Выделить как пример">
+<!ENTITY bbcomp.dfn.label "Определение">
+<!ENTITY bbcomp.dfn.tooltiptext "Выделить как определение">
+<!ENTITY bbcomp.kbd.label "Нажатие на клавишу">
+<!ENTITY bbcomp.kbd.tooltiptext "Выделить как нажатие на клавишу">
+<!ENTITY bbcomp.var.label "Переменная">
+<!ENTITY bbcomp.var.tooltiptext "Выделить как изменяемый код">
+<!ENTITY bbcomp.code.label "Компьютерный код">
+<!ENTITY bbcomp.code.tooltiptext "Выделить как исходный код">
+<!ENTITY bbcomp.del.label "Удалить">
+<!ENTITY bbcomp.del.tooltiptext "Зачеркнутый текст">
+<!ENTITY bbcomp.ins.label "Вставленный">
+<!ENTITY bbcomp.ins.tooltiptext "Отметить как вставленный текст">
+<!ENTITY bbcomp.anchor.label "Якорь">
+<!ENTITY bbcomp.anchor.tooltiptext "Добавить/Изменить якорь">
+<!ENTITY bbcomp.span.label "Span">
+<!ENTITY bbcomp.span.tooltiptext "Добавить/Удалить span">
+<!ENTITY bbcomp.div.label "Разделение">
+<!ENTITY bbcomp.div.tooltiptext "Вставить в блок разделения">
+<!ENTITY bbcomp.blockquote.label "Цитата">
+<!ENTITY bbcomp.blockquote.tooltiptext "Вставить в блок цитаты">
+<!ENTITY bbcomp.style.label "Стили">

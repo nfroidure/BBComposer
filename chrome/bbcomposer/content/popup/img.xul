@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/popup.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/img.dtd">
+
+
+<dialog buttons="accept, cancel" id="bbcomp-img-dialog" title="&bbcomp.img.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="return closeDialog();"
+	onload="initDialog();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/file.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/popup/img.js"/>
+
+    <vbox>
+	<groupbox>
+	<label control="img-src" value="&bbcomp.img.src.label;"/>
+	<hbox>
+		<textbox id="img-src" value="http://" flex="1"/>
+		<button label="&bbcomp.img.browse.label;" oncommand="browseDirectory();"/>
+	</hbox>
+	<label control="img-alt" value="&bbcomp.img.alt.label;"/>
+	<textbox id="img-alt" value=""/>
+	<label control="img-align" value="&bbcomp.img.align.label;"/>
+	<menulist id="img-align">
+		<menupopup>
+			<menuitem value="" label="&bbcomp.img.align.normal.label;"/>
+			<menuitem value="right" label="&bbcomp.img.align.right.label;"/>
+			<menuitem value="left" label="&bbcomp.img.align.left.label;"/>
+		</menupopup>
+	</menulist>
+	</groupbox>
+    </vbox>
+</dialog>

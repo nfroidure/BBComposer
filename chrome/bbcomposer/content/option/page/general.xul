@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE page SYSTEM "chrome://bbcomposer/locale/option.dtd">
+
+<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<groupbox>
+		<caption label="&bbcomp.opt.gnr.caption;"/>
+		<label control="bbcomposer.site.css" value="&bbcomp.opt.gnr.site.css.label;"/>
+		<menulist id="bbcomposer.site.css" value="http://demo.elitwork.com/" editable="true">
+			<menupopup>
+				<menuitem label="&bbcomp.opt.gnr.site.css.none.label;" value="none"/>
+			</menupopup>
+		</menulist>
+		<checkbox id="bbcomposer.autodetect" label="&bbcomp.opt.cmp.automode.label;" checked="true"/>
+		<checkbox id="bbcomposer.spellchecker" label="&bbcomp.opt.cmp.spellchecker.label;"/>
+		<checkbox id="bbcomposer.sidebar" label="&bbcomp.opt.cmp.sidebar.label;"/>
+	</groupbox>
+
+</page>

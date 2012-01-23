@@ -1,0 +1,8 @@
+<!ENTITY bbcomp.img.dialog.title "그림">
+<!ENTITY bbcomp.img.src.label "디렉토리">
+<!ENTITY bbcomp.img.browse.label "찾아보기">
+<!ENTITY bbcomp.img.alt.label "대체 문자">
+<!ENTITY bbcomp.img.align.label "정렬">
+<!ENTITY bbcomp.img.align.normal.label "기본">
+<!ENTITY bbcomp.img.align.left.label "왼쪽">
+<!ENTITY bbcomp.img.align.right.label "오른쪽">

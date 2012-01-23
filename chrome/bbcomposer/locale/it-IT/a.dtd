@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Collegamento">
+<!ENTITY bbcomp.link.href.label "Percorso">
+<!ENTITY bbcomp.link.title.label "Titolo">
+<!ENTITY bbcomp.link.target.label "Destinazione">
+<!ENTITY bbcomp.link.target.normal.label "Normale">
+<!ENTITY bbcomp.link.target.popup.label "Nuova finestra">
+<!ENTITY bbcomp.link.hreflang.label "Lingua di destinazione">
+<!ENTITY bbcomp.link.hreflang.normal.label "Stessa lingua">
+<!ENTITY bbcomp.link.hreflang.en.label "Inglese">
+<!ENTITY bbcomp.link.hreflang.de.label "Tedesco">
+<!ENTITY bbcomp.link.hreflang.es.label "Spagnolo">
+<!ENTITY bbcomp.link.hreflang.fr.label "Francese">

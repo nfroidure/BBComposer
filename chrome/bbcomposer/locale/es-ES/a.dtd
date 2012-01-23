@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Enlace">
+<!ENTITY bbcomp.link.href.label "Localización">
+<!ENTITY bbcomp.link.title.label "Tool tip text">
+<!ENTITY bbcomp.link.target.label "Objetivo">
+<!ENTITY bbcomp.link.target.normal.label "Normal">
+<!ENTITY bbcomp.link.target.popup.label "Nueva ventana">
+<!ENTITY bbcomp.link.hreflang.label "Idioma objetivo">
+<!ENTITY bbcomp.link.hreflang.normal.label "Mismo idioma">
+<!ENTITY bbcomp.link.hreflang.en.label "Inglés">
+<!ENTITY bbcomp.link.hreflang.de.label "Alemán">
+<!ENTITY bbcomp.link.hreflang.es.label "Español">
+<!ENTITY bbcomp.link.hreflang.fr.label "Francés">

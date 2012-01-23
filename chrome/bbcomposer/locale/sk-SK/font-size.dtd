@@ -1,0 +1,17 @@
+<!ENTITY bbcomp.font.size.dialog.title "Veľkosť fontu">
+<!ENTITY bbcomp.font.size.numeric.label "Číselný">
+<!ENTITY bbcomp.font.size.pixel.label "Pixel">
+<!ENTITY bbcomp.font.size.percent.label "Percento">
+<!ENTITY bbcomp.font.size.point.label "Bod">
+<!ENTITY bbcomp.font.size.emphasis.label "Zvýraznený">
+<!ENTITY bbcomp.font.size.varchar.label "Preddefinovaný">
+<!ENTITY bbcomp.font.size.empty.label ".">
+<!ENTITY bbcomp.font.size.xx.small.label "Maličký">
+<!ENTITY bbcomp.font.size.x.small.label "Veľmi malý">
+<!ENTITY bbcomp.font.size.small.label "Malý">
+<!ENTITY bbcomp.font.size.medium.label "Stredný">
+<!ENTITY bbcomp.font.size.large.label "Veľký">
+<!ENTITY bbcomp.font.size.x.large.label "Veľmi veľký">
+<!ENTITY bbcomp.font.size.xx.large.label "Obrovský">
+<!ENTITY bbcomp.font.size.smaller.label "Menší">
+<!ENTITY bbcomp.font.size.larger.label "Väčší">

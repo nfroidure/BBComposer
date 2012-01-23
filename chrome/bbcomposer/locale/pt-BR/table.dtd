@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Tabela">
+<!ENTITY bbcomp.tbl.caption.label "Legenda">
+<!ENTITY bbcomp.tbl.summary.label "Resumo">
+<!ENTITY bbcomp.tbl.hrows.label "Linhas de Cabeçalho">
+<!ENTITY bbcomp.tbl.rows.label "Linhas">
+<!ENTITY bbcomp.tbl.frows.label "Linha de Rodapé">
+<!ENTITY bbcomp.tbl.cols.label "Colunas">

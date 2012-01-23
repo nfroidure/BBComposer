@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Tabela">
+<!ENTITY bbcomp.tbl.caption.label "Etykieta">
+<!ENTITY bbcomp.tbl.summary.label "Streszczenie">
+<!ENTITY bbcomp.tbl.hrows.label "Wiersze nagłówka">
+<!ENTITY bbcomp.tbl.rows.label "Wiersze">
+<!ENTITY bbcomp.tbl.frows.label "Wiersze stopki">
+<!ENTITY bbcomp.tbl.cols.label "Kolumny">

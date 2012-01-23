@@ -1,0 +1,51 @@
+<!ENTITY bbcomp.opt.dialog.title "BBComposer : 선택사항">
+<!ENTITY bbcomp.opt.gnr.label "일반">
+<!ENTITY bbcomp.opt.lng.label "언어">
+<!ENTITY bbcomp.opt.upd.label "업로드">
+<!ENTITY bbcomp.opt.rsp.label "응답">
+<!ENTITY bbcomp.opt.avd.label "고급">
+<!ENTITY bbcomp.opt.fld.label "필드">
+<!ENTITY bbcomp.opt.gnr.caption "일반 선택사항">
+<!ENTITY bbcomp.opt.gnr.site.css.label "CSS 파일 디렉토리 (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "기본 CSS 사용">
+<!ENTITY bbcomp.opt.cmp.automode.label "편집 형식 자동 입력">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "언제나 맞춤법 검사기 사용">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "편집 모드 안에 탐색막대 열기">
+<!ENTITY bbcomp.opt.lng.default.label "기본 언어:">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCode (BBCode)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "일반 BBCode">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki 구문">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (블럭 없음)">
+<!ENTITY bbcomp.opt.lng.remember.label "선택시 언어 기억">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML 선택사항">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "들여쓰기">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "비ASCII 문자를 HTML에 맞게 변환">
+<!ENTITY bbcomp.opt.upd.caption "고급 선택사항">
+<!ENTITY bbcomp.opt.upd.description "어떻게 할지 모르는 경우엔 고급 선택사항을 변경하지 마십시오.">
+<!ENTITY bbcomp.opt.upd.on.label "업로드 사용">
+<!ENTITY bbcomp.opt.upd.site.label "업로드 사이트">
+<!ENTITY bbcomp.opt.upd.folder.label "업로드 폴더">
+<!ENTITY bbcomp.opt.upd.url.label "업로드 URL">
+<!ENTITY bbcomp.opt.upd.postname.label "파일 필드명">
+<!ENTITY bbcomp.opt.upd.postparams.label "POST 매개변수">
+<!ENTITY bbcomp.opt.upd.unique.label "파일명은 유일해야만 합니다.">
+<!ENTITY bbcomp.opt.rsp.caption "응답">
+<!ENTITY bbcomp.opt.rsp.description "응답 처리 매개변수">
+<!ENTITY bbcomp.opt.rsp.type.label "응답 형식">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "본문">
+<!ENTITY bbcomp.opt.rsp.error.label "오류 승인자">
+<!ENTITY bbcomp.opt.rsp.notice.label "통지 승인자">
+<!ENTITY bbcomp.opt.rsp.filename.label "파일명 승인자">
+<!ENTITY bbcomp.opt.avd.caption "고급 선택사항">
+<!ENTITY bbcomp.opt.avd.description "어떻게 할지 모르는 경우엔 고급 선택사항을 변경하지 마십시오.">
+<!ENTITY bbcomp.opt.avd.save.label "일정 간격으로 자동 저장">
+<!ENTITY bbcomp.opt.avd.defcont.label "Default contain of the editor">
+<!ENTITY bbcomp.opt.fld.caption.label "저장된 필드">
+<!ENTITY bbcomp.opt.fld.site.label "URL 필터">
+<!ENTITY bbcomp.opt.fld.id.label "ID 필터">
+<!ENTITY bbcomp.opt.fld.language.label "언어">
+<!ENTITY bbcomp.opt.fld.target.label "대상">
+<!ENTITY bbcomp.opt.fld.delete.label "삭제">
+<!ENTITY bbcomp.opt.fld.add.label "추가">

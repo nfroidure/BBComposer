@@ -1,0 +1,134 @@
+<!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.pasteas "Plakken als">
+<!ENTITY bbcomp.pasteas.div "een deel van het document">
+<!ENTITY bbcomp.pasteas.blockquote "een blokaanhaling">
+<!ENTITY bbcomp.pasteas.ins "toegevoegde inhoud">
+<!ENTITY bbcomp.pasteas.del "verwijderde inhoud">
+<!ENTITY bbcomp.pasteas.text "tekst">
+<!ENTITY bbcomp.pastefrom "Plakken van">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
+<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
+<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (geen blokken)">
+<!ENTITY bbcomp.delete "Verwijderen">
+<!ENTITY bbcomp.selectall "Alles selecteren">
+<!ENTITY bbcomp.edit.textarea.xbbcode "Bewerken met XBBCode">
+<!ENTITY bbcomp.edit.textarea.xhtml "Bewerken met XHTML">
+<!ENTITY bbcomp.edit.textarea.bbcode "Bewerken met BBCode">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Bewerken met Mediawiki">
+<!ENTITY bbcomp.edit.textarea.xhtmlnb "Bewerken met XHTML (geen blokken)">
+<!ENTITY bbcomp.edit.remember.label "Bewerken en opslaan">
+<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-nl">
+<!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-nl">
+<!ENTITY bbcomp.mode.label "Toepassen">
+<!ENTITY bbcomp.mode.tooltiptext "Bewerkingsinhoud op het tekstgebied toepassen">
+<!ENTITY bbcomp.load.label "Laden">
+<!ENTITY bbcomp.load.tooltiptext "Notitie laden">
+<!ENTITY bbcomp.save.label "Opslaan">
+<!ENTITY bbcomp.save.tooltiptext "Notitie opslaan">
+<!ENTITY bbcomp.stop.label "Stoppen">
+<!ENTITY bbcomp.stop.tooltiptext "Wijzigingen niet doorvoeren">
+<!ENTITY bbcomp.backup.label "Snel laden">
+<!ENTITY bbcomp.backup.tooltiptext "Inhoud van laatste keer automatisch opslaan laden">
+<!ENTITY bbcomp.sidebar.label "Zijbalken">
+<!ENTITY bbcomp.sidebar.tooltiptext "Zijbalken weergeven/verbergen">
+<!ENTITY bbcomp.smileys.label "Smilies">
+<!ENTITY bbcomp.smileys.tooltiptext "Smilies bibliotheek">
+<!ENTITY bbcomp.cartoon.label "Cartoon">
+<!ENTITY bbcomp.cartoon.tooltiptext "Cartoon/manga pictogrammenbibliotheek">
+<!ENTITY bbcomp.css.label "CSS">
+<!ENTITY bbcomp.css.tooltiptext "CSS bewerken">
+<!ENTITY bbcomp.options.label "Hulpmiddelen">
+<!ENTITY bbcomp.options.tooltiptext "Zie de hulpmiddelen">
+<!ENTITY bbcomp.option.label "Opties">
+<!ENTITY bbcomp.option.tooltiptext "BBComposer aanpassen">
+<!ENTITY bbcomp.validation.label "Valideren">
+<!ENTITY bbcomp.validation.tooltiptext "Deze pagina valideren">
+<!ENTITY bbcomp.help.label "Help">
+<!ENTITY bbcomp.help.tooltiptext "Kijk in de handleiding">
+<!ENTITY bbcomp.forum.label "Forum">
+<!ENTITY bbcomp.forum.tooltiptext "Praten over BBComposer">
+<!ENTITY bbcomp.about.label "Over">
+<!ENTITY bbcomp.about.tooltiptext "Over BBComposer">
+<!ENTITY bbcomp.lists.label "Lijsten">
+<!ENTITY bbcomp.lists.tooltiptext "Lijstblokken">
+<!ENTITY bbcomp.ul.label "Ongesorteerde lijst">
+<!ENTITY bbcomp.ol.label "Gesorteerde lijst">
+<!ENTITY bbcomp.dl.label "Definitie lijst">
+<!ENTITY bbcomp.texts.label "Teksten">
+<!ENTITY bbcomp.texts.tooltiptext "Tekstblokken">
+<!ENTITY bbcomp.h1.label "Hoofdtitel">
+<!ENTITY bbcomp.h2.label "Titel">
+<!ENTITY bbcomp.h3.label "Titel 2">
+<!ENTITY bbcomp.h4.label "Titel 3">
+<!ENTITY bbcomp.h5.label "Titel 4">
+<!ENTITY bbcomp.h6.label "Ondertitel 5">
+<!ENTITY bbcomp.p.label "Paragraaf">
+<!ENTITY bbcomp.pre.label "Vooropgemaakte tekst">
+<!ENTITY bbcomp.address.label "Adres">
+<!ENTITY bbcomp.hr.label "Horizontale balk">
+<!ENTITY bbcomp.hr.tooltiptext "Een horizontale balk toevoegen">
+<!ENTITY bbcomp.br.label "Nieuwe regel">
+<!ENTITY bbcomp.br.tooltiptext "Naar nieuwe regel gaan">
+<!ENTITY bbcomp.deindent.label "Inspringen verwijderen">
+<!ENTITY bbcomp.deindent.tooltiptext "Inspringen van tekst verwijderen">
+<!ENTITY bbcomp.indent.label "Inspringen">
+<!ENTITY bbcomp.indent.tooltiptext "Tekst inspringen">
+<!ENTITY bbcomp.undo.label "Ongedaan maken">
+<!ENTITY bbcomp.undo.tooltiptext "Laatste wijzigingen ongedaan maken">
+<!ENTITY bbcomp.redo.label "Opnieuw uitvoeren">
+<!ENTITY bbcomp.redo.tooltiptext "Laatste wijzigingen opnieuw uitvoeren">
+<!ENTITY bbcomp.b.label "Vet">
+<!ENTITY bbcomp.b.tooltiptext "Vet instellen">
+<!ENTITY bbcomp.i.label "Schuingedrukt">
+<!ENTITY bbcomp.i.tooltiptext "Geselecteerde tekst schuin drukken">
+<!ENTITY bbcomp.u.label "Onderstrepen">
+<!ENTITY bbcomp.u.tooltiptext "Geselecteerde tekst onderstrepen">
+<!ENTITY bbcomp.strong.label "Sterk">
+<!ENTITY bbcomp.strong.tooltiptext "Als sterk markeren">
+<!ENTITY bbcomp.em.label "Nadruk">
+<!ENTITY bbcomp.em.tooltiptext "Nadruk toevoegen">
+<!ENTITY bbcomp.q.label "Aanhalen">
+<!ENTITY bbcomp.q.tooltiptext "Aanhalingstekens toevoegen">
+<!ENTITY bbcomp.cite.label "Citaat">
+<!ENTITY bbcomp.cite.tooltiptext "Referentie naar een auteur of een boek toevoegen">
+<!ENTITY bbcomp.acronym.label "Acroniem">
+<!ENTITY bbcomp.acronym.tooltiptext "Acroniem toevoegen">
+<!ENTITY bbcomp.abbr.label "Afkorting">
+<!ENTITY bbcomp.abbr.tooltiptext "Afkorting toevoegen">
+<!ENTITY bbcomp.a.label "Koppeling">
+<!ENTITY bbcomp.a.tooltiptext "Koppeling toevoegen">
+<!ENTITY bbcomp.img.label "Afbeelding">
+<!ENTITY bbcomp.img.tooltiptext "Afbeelding toevoegen">
+<!ENTITY bbcomp.table.label "Tabel">
+<!ENTITY bbcomp.table.tooltiptext "Tabel toevoegen">
+<!ENTITY bbcomp.special.label "Speciale functies">
+<!ENTITY bbcomp.special.tooltiptext "Gespecialiseerde semantiek">
+<!ENTITY bbcomp.sup.label "Bovenschrift">
+<!ENTITY bbcomp.sup.tooltiptext "Als bovenschrift markeren">
+<!ENTITY bbcomp.sub.label "Onderschrift">
+<!ENTITY bbcomp.sub.tooltiptext "Als onderschrift markeren">
+<!ENTITY bbcomp.samp.label "Voorbeeld">
+<!ENTITY bbcomp.samp.tooltiptext "Als voorbeeld markeren">
+<!ENTITY bbcomp.dfn.label "Definitie">
+<!ENTITY bbcomp.dfn.tooltiptext "Als definitie markeren">
+<!ENTITY bbcomp.kbd.label "Toetsaanslagen">
+<!ENTITY bbcomp.kbd.tooltiptext "Als toetsaanslagen markeren">
+<!ENTITY bbcomp.var.label "Variabele">
+<!ENTITY bbcomp.var.tooltiptext "Als code variabele markeren">
+<!ENTITY bbcomp.code.label "Computercode">
+<!ENTITY bbcomp.code.tooltiptext "Als broncode markeren">
+<!ENTITY bbcomp.del.label "Verwijderen">
+<!ENTITY bbcomp.del.tooltiptext "Als verwijderde tekst markeren">
+<!ENTITY bbcomp.ins.label "Ingevoegd">
+<!ENTITY bbcomp.ins.tooltiptext "Als ingevoegde tekst markeren">
+<!ENTITY bbcomp.anchor.label "Anker">
+<!ENTITY bbcomp.anchor.tooltiptext "Anker toevoegen/aanpassen">
+<!ENTITY bbcomp.span.label "Span">
+<!ENTITY bbcomp.span.tooltiptext "Span toevoegen/verwijderen">
+<!ENTITY bbcomp.div.label "Scheiding">
+<!ENTITY bbcomp.div.tooltiptext "In een scheidingsblok opnemen">
+<!ENTITY bbcomp.blockquote.label "Quote">
+<!ENTITY bbcomp.blockquote.tooltiptext "In een quoteblok opnemen">
+<!ENTITY bbcomp.style.label "Stijlen">

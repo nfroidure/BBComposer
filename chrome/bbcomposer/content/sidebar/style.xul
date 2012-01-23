@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://bbcomposer/locale/css.dtd">
+
+
+<window id="style_sidebar" title="&bbcomp.css.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onunload="window.parent.myBBComposerManager.toggleSidebar('css',false);" onload="if(!window.parent.myBBComposerManager.sidebar) { window.parent.myBBComposerManager.toggleSidebar('css', true); } if(window.parent.myBBComposerManager.sidebarIsAllowed('css')) { window.parent.myBBComposerManager.focusedBBComposer.getElementStyle(document.getElementById('bbcomposer-lockon-menu').value); } else { window.parent.myBBComposerManager.toggleSidebar('css',false); }">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/sidebar/style.js"/>
+	<toolbar>
+		<label value="&bbcomp.css.lockon.label;"/>
+		<menulist id="bbcomposer-lockon-menu" oncommand="window.parent.myBBComposerManager.focusedBBComposer.getElementStyle(document.getElementById('bbcomposer-lockon-menu').value);">
+			<menupopup>
+				<menuitem label="&bbcomp.css.lockon.all;" value=""/>
+				<menuitem label="&bbcomp.css.lockon.block;" value="block"/>
+				<menuitem label="&bbcomp.css.lockon.superblock;" value="superblock"/>
+			</menupopup>
+		</menulist>
+		<toolbarspring/>
+		<toolbarseparator/>
+		<toolbarbutton label="&bbcomp.css.apply.label;" class="bbcomposer-sidebar-button" id="bbcomposer-apply-button" tooltiptext="&bbcomp.css.apply.tooltiptext;" oncommand="window.parent.myBBComposerManager.focusedBBComposer.setElementStyle(document.getElementById('bbcomposer-lockon-menu').value);"/>
+		<toolbarseparator/>
+		<toolbarbutton label="&bbcomp.css.cancel.label;" class="bbcomposer-sidebar-button" id="bbcomposer-cancel-button" tooltiptext="&bbcomp.css.cancel.tooltiptext;" oncommand="window.parent.myBBComposerManager.focusedBBComposer.getElementStyle(document.getElementById('bbcomposer-lockon-menu').value);"/>
+		<toolbarseparator/>
+		<toolbarbutton label="&bbcomp.css.reset.label;" class="bbcomposer-sidebar-button" id="bbcomposer-reset-button" tooltiptext="&bbcomp.css.reset.tooltiptext;" oncommand="window.parent.myBBComposerManager.focusedBBComposer.resetElementStyle(document.getElementById('bbcomposer-lockon-menu').value);"/>
+	</toolbar>
+
+	<tabbox>
+        	<tabs id="bbcomposer-sidebar-tabs">
+			<tab id="bbcomposer-text-tab" label="&bbcomp.css.text.label;"/>
+			<tab id="bbcomposer-more-tab" label="&bbcomp.css.more.label;"/>
+			<tab id="bbcomposer-space-tab" label="&bbcomp.css.space.label;"/>
+			<tab id="bbcomposer-style-tab" label="&bbcomp.css.style.label;"/>
+			<tab id="bbcomposer-position-tab" label="&bbcomp.css.position.label;"/>
+		</tabs>
+	        <tabpanels id="bbcomposer-sidebar-tabpanels" flex="1">
+			<tabpanel>
+			<vbox flex="1">
+				<groupbox>
+					<label control="color" value="&bbcomp.css.color.label;"/>
+					<hbox>
+						<colorpicker id="color" type="button" flex="1"/>
+						<button label="&bbcomp.css.color.none.label;" oncommand="document.getElementById('color').color='transparent';"/>
+					</hbox>
+					<label control="font-family" value="&bbcomp.css.font.family.label;"/>
+					<hbox>
+						<textbox id="font-family" value="" flex="1"/>
+						<button label="+" oncommand="setProperty('font-family');"/>
+					</hbox>
+					<label control="font-size" value="&bbcomp.css.font.size.label;"/>
+					<hbox>
+						<textbox id="font-size" value="" flex="1"/>
+						<button label="+" oncommand="setProperty('font-size');"/>
+					</hbox>
+					<label control="font-weight" value="&bbcomp.css.font.weight.label;"/>
+					<menulist id="font-weight">
+						<menupopup>
+							<menuitem label="&bbcomp.css.font.weight.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.font.weight.normal.label;" value="normal"/>
+							<menuitem label="&bbcomp.css.font.weight.bold.label;" value="bold"/>
+							<menuitem label="&bbcomp.css.font.weight.bolder.label;" value="bolder"/>
+							<menuitem label="&bbcomp.css.font.weight.lighter.label;" value="lighter"/>
+							<menuitem label="100" value="100"/>
+							<menuitem label="200" value="200"/>
+							<menuitem label="300" value="300"/>
+							<menuitem label="400" value="400"/>
+							<menuitem label="500" value="500"/>
+							<menuitem label="600" value="600"/>
+							<menuitem label="700" value="700"/>
+							<menuitem label="800" value="800"/>
+							<menuitem label="900" value="900"/>
+						</menupopup>
+					</menulist>
+					<label control="font-style" value="&bbcomp.css.font.style.label;"/>
+					<menulist id="font-style">
+						<menupopup>
+							<menuitem label="&bbcomp.css.font.style.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.font.style.normal.label;" value="normal"/>
+							<menuitem label="&bbcomp.css.font.style.italic.label;" value="italic"/>
+							<menuitem label="&bbcomp.css.font.style.oblique.label;" value="oblique"/>
+						</menupopup>
+					</menulist>
+
+					<label control="text-decoration" value="&bbcomp.css.text.decoration.label;"/>
+					<menulist id="text-decoration">
+						<menupopup>
+							<menuitem label="&bbcomp.css.text.decoration.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.text.decoration.none.label;" value="none"/>
+							<menuitem label="&bbcomp.css.text.decoration.underline.label;" value="underline"/>
+							<menuitem label="&bbcomp.css.text.decoration.overline.label;" value="overline"/>
+							<menuitem label="&bbcomp.css.text.decoration.blink.label;" value="blink"/>
+							<menuitem label="&bbcomp.css.text.decoration.line.through.label;" value="line-through"/>
+						</menupopup>
+					</menulist>
+
+					<label control="text-transform" value="&bbcomp.css.text.transform.label;"/>
+					<menulist id="text-transform">
+						<menupopup>
+							<menuitem label="&bbcomp.css.text.transform.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.text.transform.none.label;" value="none"/>
+							<menuitem label="&bbcomp.css.text.transform.capitalize.label;" value="capitalize"/>
+							<menuitem label="&bbcomp.css.text.transform.uppercase.label;" value="uppercase"/>
+							<menuitem label="&bbcomp.css.text.transform.lowercase.label;" value="lowercase"/>
+						</menupopup>
+					</menulist>
+
+					<label control="font-stretch" value="&bbcomp.css.font.stretch.label;"/>
+					<menulist id="font-stretch">
+						<menupopup>
+							<menuitem label="&bbcomp.css.font.stretch.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.font.stretch.normal.label;" value="normal"/>
+							<menuitem label="&bbcomp.css.font.stretch.wider.label;" value="wider"/>
+							<menuitem label="&bbcomp.css.font.stretch.narrower.label;" value="narrower"/>
+							<menuitem label="&bbcomp.css.font.stretch.ultra.condensed.label;" value="ultra-condensed"/>
+							<menuitem label="&bbcomp.css.font.stretch.extra.condensed.label;" value="extra-condensed"/>
+							<menuitem label="&bbcomp.css.font.stretch.condensed.label;" value="condensed"/>
+							<menuitem label="&bbcomp.css.font.stretch.semi.condensed.label;" value="semi-condensed"/>
+							<menuitem label="&bbcomp.css.font.stretch.semi.expanded.label;" value="semi-expanded"/>
+							<menuitem label="&bbcomp.css.font.stretch.expanded.label;" value="expanded"/>
+							<menuitem label="&bbcomp.css.font.stretch.extra.expanded.label;" value="extra-expanded"/>
+							<menuitem label="&bbcomp.css.font.stretch.ultra.expanded.label;" value="ultra-expanded"/>
+						</menupopup>
+					</menulist>
+					<label control="font-variant" value="&bbcomp.css.font.variant.label;" />
+					<menulist id="font-variant">
+						<menupopup>
+							<menuitem label="&bbcomp.css.font.variant.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.font.variant.normal.label;" value="normal"/>
+							<menuitem label="&bbcomp.css.font.variant.small.caps.label;" value="small-caps"/>
+						</menupopup>
+					</menulist>
+					<label control="text-align" value="&bbcomp.css.text.align.label;" />
+					<menulist id="text-align">
+						<menupopup>
+							<menuitem label="&bbcomp.css.text.align.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.text.align.center.label;" value="center"/>
+							<menuitem label="&bbcomp.css.text.align.right.label;" value="right"/>
+							<menuitem label="&bbcomp.css.text.align.left.label;" value="left"/>
+							<menuitem label="&bbcomp.css.text.align.justify.label;" value="justify"/>
+						</menupopup>
+					</menulist>
+				</groupbox>
+			</vbox>
+			</tabpanel>
+			<tabpanel>
+			<vbox flex="1">
+				<groupbox>
+					<label control="font-size-adjust" value="&bbcomp.css.font.size.adjust.label;"/>
+					<textbox id="font-size-adjust" value=""/>
+					<label control="line-height" value="&bbcomp.css.line.height.label;"/>
+					<hbox>
+						<textbox id="line-height" value="" flex="1"/>
+						<button label="+" oncommand="setSize('line-height');"/>
+					</hbox>
+					<label control="text-indent" value="&bbcomp.css.text.indent.label;"/>
+					<hbox>
+						<textbox id="text-indent" value="" flex="1"/>
+						<button label="+" oncommand="setSize('text-indent');"/>
+					</hbox>
+					<label control="word-spacing" value="&bbcomp.css.word.spacing.label;"/>
+					<hbox>
+						<textbox id="word-spacing" value="" flex="1"/>
+						<button label="+" oncommand="setSize('word-spacing');"/>
+					</hbox>
+					<label control="letter-spacing" value="&bbcomp.css.letter.spacing.label;"/>
+					<hbox>
+						<textbox id="letter-spacing" value="" flex="1"/>
+						<button label="+" oncommand="setSize('letter-spacing');"/>
+					</hbox>
+					<label control="white-space" value="&bbcomp.css.white.space.label;"/>
+					<menulist id="white-space">
+						<menupopup>
+							<menuitem label="&bbcomp.css.white.space.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.white.space.normal.label;" value="normal"/>
+							<menuitem label="&bbcomp.css.white.space.pre.label;" value="pre"/>
+							<menuitem label="&bbcomp.css.white.space.nowrap.label;" value="nowrap"/>
+						</menupopup>
+					</menulist>
+					<label control="text-shadow" value="&bbcomp.css.text.shadow.label;"/>
+					<hbox>
+						<textbox id="text-shadow" value="" flex="1"/>
+						<button label="+" oncommand="setSize('text-shadow');"/>
+					</hbox>
+					<label control="direction" value="&bbcomp.css.direction.label;"/>
+					<menulist id="direction">
+						<menupopup>
+							<menuitem label="&bbcomp.css.direction.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.direction.ltr.label;" value="ltr"/>
+							<menuitem label="&bbcomp.css.direction.rtl.label;" value="rtl"/>
+						</menupopup>
+					</menulist>
+					<label control="unicode-bidi" value="&bbcomp.css.unicode.bidi.label;"/>
+					<menulist id="unicode-bidi">
+						<menupopup>
+							<menuitem label="&bbcomp.css.unicode.bidi.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.unicode.bidi.normal.label;" value="normal"/>
+							<menuitem label="&bbcomp.css.unicode.bidi.embed.label;" value="embed"/>
+							<menuitem label="&bbcomp.css.unicode.bidi.bidi.override.label;" value="bidi-override"/>
+						</menupopup>
+					</menulist>
+				</groupbox>
+			</vbox>
+			</tabpanel>
+			<tabpanel>
+			<vbox  flex="1">
+				<groupbox>
+				<caption label="&bbcomp.css.padding.label;"/>
+					<label control="padding-top" value="&bbcomp.css.padding.top.label;"/>
+					<hbox>
+						<textbox id="padding-top" value="" flex="1"/>
+						<button label="+" oncommand="setSize('padding-top');"/>
+					</hbox>
+					<label control="padding-right" value="&bbcomp.css.padding.right.label;"/>
+					<hbox>
+						<textbox id="padding-right" value="" flex="1"/>
+						<button label="+" oncommand="setSize('padding-right');"/>
+					</hbox>
+					<label control="padding-bottom" value="&bbcomp.css.padding.bottom.label;"/>
+					<hbox>
+						<textbox id="padding-bottom" value="" flex="1"/>
+						<button label="+" oncommand="setSize('padding-bottom');"/>
+					</hbox>
+					<label control="padding-left" value="&bbcomp.css.padding.left.label;"/>
+					<hbox>
+						<textbox id="padding-left" value="" flex="1"/>
+						<button label="+" oncommand="setSize('padding-left');"/>
+					</hbox>
+					<button label="&bbcomp.css.padding.all;" oncommand="setAllSizes('padding');"/>
+				</groupbox>
+				<groupbox>
+				<caption label="&bbcomp.css.margin.label;"/>
+					<label control="margin-top" value="&bbcomp.css.margin.top.label;"/>
+					<hbox>
+						<textbox id="margin-top" value="" flex="1"/>
+						<button label="+" oncommand="setSize('margin-top');"/>
+					</hbox>
+					<label control="margin-right" value="&bbcomp.css.margin.right.label;"/>
+					<hbox>
+						<textbox id="margin-right" value="" flex="1"/>
+						<button label="+" oncommand="setSize('margin-right');"/>
+					</hbox>
+					<label control="margin-bottom" value="&bbcomp.css.margin.bottom.label;"/>
+					<hbox>
+						<textbox id="margin-bottom" value="" flex="1"/>
+						<button label="+" oncommand="setSize('margin-bottom');"/>
+					</hbox>
+					<label control="margin-left" value="&bbcomp.css.margin.left.label;"/>
+					<hbox>
+						<textbox id="margin-left" value="" flex="1"/>
+						<button label="+" oncommand="setSize('margin-left');"/>
+					</hbox>
+					<button label="&bbcomp.css.padding.all;" oncommand="setAllSizes('margin');"/>
+				</groupbox>
+			</vbox>
+			</tabpanel>
+
+			<tabpanel>
+			<vbox flex="1">
+				<groupbox>
+				<caption label="&bbcomp.css.background.label;"/>
+					<label control="background-color" value="&bbcomp.css.background.color.label;"/>
+					<hbox>
+						<colorpicker id="background-color" type="button" flex="1"/>
+						<button label="&bbcomp.css.background.color.none.label;" oncommand="document.getElementById('background-color').color='transparent';"/>
+					</hbox>
+					<label control="background-image" value="&bbcomp.css.background.image.label;" />
+					<hbox>
+						<textbox id="background-image" value="" flex="1"/>
+						<button label="+" oncommand="setProperty('background-image');"/>
+					</hbox>
+					<label control="background-position" value="&bbcomp.css.background.position.label;" />
+					<hbox>
+						<textbox id="background-position" value="" flex="1"/>
+						<button label="+" oncommand="setProperty('background-position');"/>
+					</hbox>
+					<label control="background-repeat" value="&bbcomp.css.background.repeat.label;" />
+					<menulist id="background-repeat">
+						<menupopup>
+							<menuitem label="&bbcomp.css.background.repeat.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.background.repeat.repeat.label;" value="repeat"/>
+							<menuitem label="&bbcomp.css.background.repeat.no.repeat.label;" value="no-repeat"/>
+							<menuitem label="&bbcomp.css.background.repeat.repeat.x.label;" value="repeat-x"/>
+							<menuitem label="&bbcomp.css.background.repeat.repeat.y.label;" value="repeat-y"/>
+						</menupopup>
+					</menulist>
+					<label control="background-attachment" value="&bbcomp.css.background.attachment.label;" />
+					<menulist id="background-attachment">
+						<menupopup>
+							<menuitem label="&bbcomp.css.text.align.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.background.attachment.scroll.label;" value="scroll"/>
+							<menuitem label="&bbcomp.css.background.attachment.fixed.label;" value="fixed"/>
+						</menupopup>
+					</menulist>
+				</groupbox>
+				<groupbox>
+				<caption label="&bbcomp.css.border.label;"/>
+					<label control="border-color" value="&bbcomp.css.border.color.label;"/>
+					<hbox>
+						<colorpicker id="border-color" type="button" flex="1"/>
+						<button label="&bbcomp.css.border.color.none.label;" oncommand="document.getElementById('border-color').color='transparent';"/>
+					</hbox>
+					<label control="border-width" value="&bbcomp.css.border.width.label;" />
+					<hbox>
+						<textbox id="border-width" value="" flex="1"/>
+						<button label="+" oncommand="setSize('border-width');"/>
+					</hbox>
+					<label control="border-style" value="&bbcomp.css.border.style.label;" />
+					<menulist id="border-style">
+						<menupopup>
+							<menuitem label="&bbcomp.css.border.style.none.label;" value="" selected="true"/>
+							<menuitem label="&bbcomp.css.border.style.hidden.label;" value="hidden"/>
+							<menuitem label="&bbcomp.css.border.style.dotted.label;" value="dotted"/>
+							<menuitem label="&bbcomp.css.border.style.dashed.label;" value="dashed"/>
+							<menuitem label="&bbcomp.css.border.style.solid.label;" value="solid"/>
+							<menuitem label="&bbcomp.css.border.style.double.label;" value="double"/>
+							<menuitem label="&bbcomp.css.border.style.groove.label;" value="groove"/>
+							<menuitem label="&bbcomp.css.border.style.ridge.label;" value="ridge"/>
+							<menuitem label="&bbcomp.css.border.style.inset.label;" value="inset"/>
+							<menuitem label="&bbcomp.css.border.style.outset.label;" value="outset"/>
+						</menupopup>
+					</menulist>
+				</groupbox>
+			</vbox>
+			</tabpanel>
+
+			<tabpanel>
+			<vbox flex="1">
+				<groupbox>
+					<label control="width" value="&bbcomp.css.width.label;" />
+					<hbox>
+						<textbox id="width" value="" flex="1"/>
+						<button label="+" oncommand="setSize('width');"/>
+					</hbox>
+					<label control="height" value="&bbcomp.css.height.label;" />
+					<hbox>
+						<textbox id="height" value="" flex="1"/>
+						<button label="+" oncommand="setSize('height');"/>
+					</hbox>
+					<label control="float" value="&bbcomp.css.float.label;" />
+					<menulist id="float">
+						<menupopup>
+							<menuitem label="&bbcomp.css.float.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.float.right.label;" value="right"/>
+							<menuitem label="&bbcomp.css.float.left.label;" value="left"/>
+							<menuitem label="&bbcomp.css.float.none.label;" value="none"/>
+						</menupopup>
+					</menulist>
+					<label control="clear" value="&bbcomp.css.clear.label;" />
+					<menulist id="clear">
+						<menupopup>
+							<menuitem label="&bbcomp.css.clear.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.clear.right.label;" value="right"/>
+							<menuitem label="&bbcomp.css.clear.left.label;" value="left"/>
+							<menuitem label="&bbcomp.css.clear.both.label;" value="both"/>
+							<menuitem label="&bbcomp.css.clear.none.label;" value="none"/>
+						</menupopup>
+					</menulist>
+					<label control="position" value="&bbcomp.css.position.label;" />
+					<menulist id="position">
+						<menupopup>
+							<menuitem label="&bbcomp.css.position.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.position.static.label;" value="static"/>
+							<menuitem label="&bbcomp.css.position.absolute.label;" value="absolute"/>
+							<menuitem label="&bbcomp.css.position.fixed.label;" value="fixed"/>
+							<menuitem label="&bbcomp.css.position.relative.label;" value="relative"/>
+							<menuitem label="&bbcomp.css.position.inherit.label;" value="inherit"/>
+						</menupopup>
+					</menulist>
+					<label control="visibility" value="&bbcomp.css.visibility.label;" />
+					<menulist id="visibility">
+						<menupopup>
+							<menuitem label="&bbcomp.css.visibility.default.label;" value=""/>
+							<menuitem label="&bbcomp.css.visibility.visible.label;" value="visible"/>
+							<menuitem label="&bbcomp.css.visibility.hidden.label;" value="hidden"/>
+							<menuitem label="&bbcomp.css.visibility.collapse.label;" value="collapse"/>
+							<menuitem label="&bbcomp.css.visibility.inherit.label;" value="inherit"/>
+						</menupopup>
+					</menulist>
+				<!-- display (default|none|inline|block|inline-block|list-item|run-in|compact|marker|table|inline-table|table-row-group|table-header-group|table-footer-group|table-row|table-column-group|table-column|table-cell|table-caption) -->
+				</groupbox>
+				<groupbox>
+					<label control="top" value="&bbcomp.css.top.label;" />
+					<hbox>
+						<textbox id="top" value="" flex="1"/>
+						<button label="+" oncommand="setSize('top');"/>
+					</hbox>
+					<label control="right" value="&bbcomp.css.right.label;" />
+					<hbox>
+						<textbox id="right" value="" flex="1"/>
+						<button label="+" oncommand="setSize('right');"/>
+					</hbox>
+					<label control="bottom" value="&bbcomp.css.bottom.label;" />
+					<hbox>
+						<textbox id="bottom" value="" flex="1"/>
+						<button label="+" oncommand="setSize('bottom');"/>
+					</hbox>
+					<label control="left" value="&bbcomp.css.left.label;" />
+					<hbox>
+						<textbox id="left" value="" flex="1"/>
+						<button label="+" oncommand="setSize('left');"/>
+					</hbox>
+					<label control="z-index" value="&bbcomp.css.z-index.label;" />
+					<textbox id="z-index" value=""/>
+				</groupbox>
+			</vbox>
+			</tabpanel>
+		</tabpanels>
+	</tabbox>
+
+</window>

@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.save.dialog.title "BBComposer-Seiteneinstellungen">
+<!ENTITY bbcomp.save.href.label "URL-Filter">
+<!ENTITY bbcomp.save.id.label "ID-Filter">
+<!ENTITY bbcomp.save.language.label "Code-Sprache">
+<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
+<!ENTITY bbcomp.save.language.bbcode.label "BBCode">
+<!ENTITY bbcomp.save.language.xbbcode.label "XBBCode">
+<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML (no blocks)">
+<!ENTITY bbcomp.save.target.label "Editor-Ziel">
+<!ENTITY bbcomp.save.target.tab.label "Tab">
+<!ENTITY bbcomp.save.target.textarea.label "Formular">

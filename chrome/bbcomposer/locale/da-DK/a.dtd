@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Link">
+<!ENTITY bbcomp.link.href.label "Placering">
+<!ENTITY bbcomp.link.title.label "Værktøjstip-tekst">
+<!ENTITY bbcomp.link.target.label "Mål">
+<!ENTITY bbcomp.link.target.normal.label "Normal">
+<!ENTITY bbcomp.link.target.popup.label "Nyt vindue">
+<!ENTITY bbcomp.link.hreflang.label "Målsprog">
+<!ENTITY bbcomp.link.hreflang.normal.label "Samme sprog">
+<!ENTITY bbcomp.link.hreflang.en.label "Engelsk">
+<!ENTITY bbcomp.link.hreflang.de.label "Tysk">
+<!ENTITY bbcomp.link.hreflang.es.label "Spansk">
+<!ENTITY bbcomp.link.hreflang.fr.label "Fransk">

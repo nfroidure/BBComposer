@@ -1,0 +1,16 @@
+<!ENTITY bbcomp.background.position.dialog.title "Pozícia pozadia">
+<!ENTITY bbcomp.background.position.orient.label "Zarovnanie">
+<!ENTITY bbcomp.background.position.horizontal.label "Vodorovne">
+<!ENTITY bbcomp.background.position.horizontal.empty.label ".">
+<!ENTITY bbcomp.background.position.horizontal.left.label "Vľavo">
+<!ENTITY bbcomp.background.position.horizontal.right.label "Vpravo">
+<!ENTITY bbcomp.background.position.vertical.label "Zvisle">
+<!ENTITY bbcomp.background.position.vertical.empty.label ".">
+<!ENTITY bbcomp.background.position.vertical.top.label "Hore">
+<!ENTITY bbcomp.background.position.vertical.bottom.label "Dole">
+<!ENTITY bbcomp.background.position.center.label "Na stred">
+<!ENTITY bbcomp.background.position.coord.label ".">
+<!ENTITY bbcomp.background.position.x.label "Os x">
+<!ENTITY bbcomp.background.position.y.label "Os y">
+<!ENTITY bbcomp.background.position.pixel.label "Pixel">
+<!ENTITY bbcomp.background.position.percent.label "Percento">

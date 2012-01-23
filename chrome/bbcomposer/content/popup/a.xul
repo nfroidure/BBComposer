@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcomposer/skin/popup.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/a.dtd">
+
+
+<dialog buttons="accept, cancel" id="bbcomp-font-size-dialog" title="&bbcomp.link.dialog.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	ondialogaccept="return closeDialog();"
+	ondialogcancel="return cancelDialog();"
+	onload="initDialog();">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/popup/a.js"/>
+
+	<stringbundle src="chrome://global/locale/languageNames.properties" id="bbcomp_languages"/>
+    <vbox>
+	<groupbox>
+	<label control="link-href" value="&bbcomp.link.href.label;"/>
+	<textbox id="link-href" value="http://" type="autocomplete" autocompletesearch="history"/><!-- bookmarks history -->
+	<label control="link-title" value="&bbcomp.link.title.label;"/>
+	<textbox id="link-title" value=""/>
+	<label control="link-onclick" value="&bbcomp.link.target.label;"/>
+	<menulist id="link-onclick">
+		<menupopup>
+			<menuitem value="" label="&bbcomp.link.target.normal.label;"/>
+			<menuitem value="window.open(this.href); return false;" label="&bbcomp.link.target.popup.label;"/>
+		</menupopup>
+	</menulist>
+	<label control="link-hreflang" value="&bbcomp.link.hreflang.label;"/>
+	<menulist id="link-hreflang">
+		<menupopup>
+			<menuitem value="" label="&bbcomp.link.hreflang.normal.label;"/>
+			<menuitem value="en" label="&bbcomp.link.hreflang.en.label;"/>
+			<menuitem value="de" label="&bbcomp.link.hreflang.de.label;"/>
+			<menuitem value="es" label="&bbcomp.link.hreflang.es.label;"/>
+			<menuitem value="fr" label="&bbcomp.link.hreflang.fr.label;"/>
+		</menupopup>
+	</menulist>
+	</groupbox>
+    </vbox>
+</dialog>

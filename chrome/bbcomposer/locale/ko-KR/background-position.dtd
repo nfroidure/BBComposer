@@ -1,0 +1,16 @@
+<!ENTITY bbcomp.background.position.dialog.title "배경 위치">
+<!ENTITY bbcomp.background.position.orient.label "정렬">
+<!ENTITY bbcomp.background.position.horizontal.label "수평">
+<!ENTITY bbcomp.background.position.horizontal.empty.label "">
+<!ENTITY bbcomp.background.position.horizontal.left.label "왼쪽">
+<!ENTITY bbcomp.background.position.horizontal.right.label "오른쪽">
+<!ENTITY bbcomp.background.position.vertical.label "수직">
+<!ENTITY bbcomp.background.position.vertical.empty.label "">
+<!ENTITY bbcomp.background.position.vertical.top.label "상단">
+<!ENTITY bbcomp.background.position.vertical.bottom.label "하단">
+<!ENTITY bbcomp.background.position.center.label "중앙">
+<!ENTITY bbcomp.background.position.coord.label "">
+<!ENTITY bbcomp.background.position.x.label "가로 좌표">
+<!ENTITY bbcomp.background.position.y.label "세로 좌표">
+<!ENTITY bbcomp.background.position.pixel.label "픽셀">
+<!ENTITY bbcomp.background.position.percent.label "퍼센트">

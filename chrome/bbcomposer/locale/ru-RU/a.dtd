@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Ссылка">
+<!ENTITY bbcomp.link.href.label "Адрес">
+<!ENTITY bbcomp.link.title.label "Вспывающая подсказка">
+<!ENTITY bbcomp.link.target.label "Перенаправление">
+<!ENTITY bbcomp.link.target.normal.label "Нормально">
+<!ENTITY bbcomp.link.target.popup.label "Новое окно">
+<!ENTITY bbcomp.link.hreflang.label "Язык перенаправления">
+<!ENTITY bbcomp.link.hreflang.normal.label "Тот же язык">
+<!ENTITY bbcomp.link.hreflang.en.label "Английский">
+<!ENTITY bbcomp.link.hreflang.de.label "Немецкий">
+<!ENTITY bbcomp.link.hreflang.es.label "Испанский">
+<!ENTITY bbcomp.link.hreflang.fr.label "Французкий">

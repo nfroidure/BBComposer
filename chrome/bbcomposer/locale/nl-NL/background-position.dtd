@@ -1,0 +1,16 @@
+<!ENTITY bbcomp.background.position.dialog.title "Achtergrondpositie">
+<!ENTITY bbcomp.background.position.orient.label "Uitlijning">
+<!ENTITY bbcomp.background.position.horizontal.label "Horizontaal">
+<!ENTITY bbcomp.background.position.horizontal.empty.label "">
+<!ENTITY bbcomp.background.position.horizontal.left.label "Links">
+<!ENTITY bbcomp.background.position.horizontal.right.label "Rechts">
+<!ENTITY bbcomp.background.position.vertical.label "Verticaal">
+<!ENTITY bbcomp.background.position.vertical.empty.label "">
+<!ENTITY bbcomp.background.position.vertical.top.label "Bovenaan">
+<!ENTITY bbcomp.background.position.vertical.bottom.label "Onderaan">
+<!ENTITY bbcomp.background.position.center.label "Gecentreerd">
+<!ENTITY bbcomp.background.position.coord.label "">
+<!ENTITY bbcomp.background.position.x.label "Abscis (x-coördinaat)">
+<!ENTITY bbcomp.background.position.y.label "Ordinaat (y-coördinaat)">
+<!ENTITY bbcomp.background.position.pixel.label "pixels">
+<!ENTITY bbcomp.background.position.percent.label "procent">

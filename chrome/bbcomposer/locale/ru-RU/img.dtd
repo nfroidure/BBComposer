@@ -1,0 +1,8 @@
+<!ENTITY bbcomp.img.dialog.title "Изображение">
+<!ENTITY bbcomp.img.src.label "Папка">
+<!ENTITY bbcomp.img.browse.label "Обзор">
+<!ENTITY bbcomp.img.alt.label "Alt текст">
+<!ENTITY bbcomp.img.align.label "Выравнивание">
+<!ENTITY bbcomp.img.align.normal.label "Нормально">
+<!ENTITY bbcomp.img.align.left.label "По левому краю">
+<!ENTITY bbcomp.img.align.right.label "По правому краю">

@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.save.dialog.title "Edit and save">
+<!ENTITY bbcomp.save.href.label "URL Filter">
+<!ENTITY bbcomp.save.id.label "Identifier Filter">
+<!ENTITY bbcomp.save.language.label "Language">
+<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
+<!ENTITY bbcomp.save.language.bbcode.label "BBCodes">
+<!ENTITY bbcomp.save.language.xbbcode.label "XBBCodes">
+<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML (no blocks)">
+<!ENTITY bbcomp.save.target.label "Target">
+<!ENTITY bbcomp.save.target.tab.label "Tab">
+<!ENTITY bbcomp.save.target.textarea.label "Form">

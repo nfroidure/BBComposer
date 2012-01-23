@@ -1,0 +1,134 @@
+<!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.pasteas "다음으로 붙여넣기">
+<!ENTITY bbcomp.pasteas.div "a division of the document">
+<!ENTITY bbcomp.pasteas.blockquote "a blockquote">
+<!ENTITY bbcomp.pasteas.ins "added content">
+<!ENTITY bbcomp.pasteas.del "deleted content">
+<!ENTITY bbcomp.pasteas.text "text">
+<!ENTITY bbcomp.pastefrom "Paste from">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
+<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
+<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (no blocks)">
+<!ENTITY bbcomp.delete "Delete">
+<!ENTITY bbcomp.selectall "Select all">
+<!ENTITY bbcomp.edit.textarea.xbbcode "XBBCode로 편집">
+<!ENTITY bbcomp.edit.textarea.xhtml "HTML4로">
+<!ENTITY bbcomp.edit.textarea.bbcode "BBCode로 편집">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Mediawiki로 편집">
+<!ENTITY bbcomp.edit.textarea.xhtmlnb "XHTML로 편집 (블럭 없음)">
+<!ENTITY bbcomp.edit.remember.label "편집 후 저장">
+<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-ko">
+<!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-ko">
+<!ENTITY bbcomp.mode.label "편집 모드">
+<!ENTITY bbcomp.mode.tooltiptext "편집 모드 끄기/켜기">
+<!ENTITY bbcomp.load.label "불러오기">
+<!ENTITY bbcomp.load.tooltiptext "놑트로 불러오기">
+<!ENTITY bbcomp.save.label "저장">
+<!ENTITY bbcomp.save.tooltiptext "노트로 저장">
+<!ENTITY bbcomp.stop.label "정지">
+<!ENTITY bbcomp.stop.tooltiptext "변경 취소">
+<!ENTITY bbcomp.backup.label "빠른 불러오기">
+<!ENTITY bbcomp.backup.tooltiptext "마지막 자동저장으로 부터 내용 불러오기">
+<!ENTITY bbcomp.sidebar.label "탐색창">
+<!ENTITY bbcomp.sidebar.tooltiptext "탐색창 보이기/감추기">
+<!ENTITY bbcomp.smileys.label "스마일리">
+<!ENTITY bbcomp.smileys.tooltiptext "스마일리 라이브러리">
+<!ENTITY bbcomp.cartoon.label "카툰">
+<!ENTITY bbcomp.cartoon.tooltiptext "카툰/만화 아이콘 라이브러리">
+<!ENTITY bbcomp.css.label "스타일시트">
+<!ENTITY bbcomp.css.tooltiptext "CSS 편집">
+<!ENTITY bbcomp.options.label "도구">
+<!ENTITY bbcomp.options.tooltiptext "도구 보기">
+<!ENTITY bbcomp.option.label "선택사항">
+<!ENTITY bbcomp.option.tooltiptext "BBComposer 사용자 지정">
+<!ENTITY bbcomp.validation.label "검증">
+<!ENTITY bbcomp.validation.tooltiptext "이 페이지를 확인">
+<!ENTITY bbcomp.help.label "도움말">
+<!ENTITY bbcomp.help.tooltiptext "설명서로 가기">
+<!ENTITY bbcomp.forum.label "포럼">
+<!ENTITY bbcomp.forum.tooltiptext "BBComposer에 대해 나눕니다.">
+<!ENTITY bbcomp.about.label "확장기능 정보">
+<!ENTITY bbcomp.about.tooltiptext "BBComposer 정보">
+<!ENTITY bbcomp.lists.label "목록">
+<!ENTITY bbcomp.lists.tooltiptext "목록 구역">
+<!ENTITY bbcomp.ul.label "Unordered List">
+<!ENTITY bbcomp.ol.label "Ordered List">
+<!ENTITY bbcomp.dl.label "Definition List">
+<!ENTITY bbcomp.texts.label "본문">
+<!ENTITY bbcomp.texts.tooltiptext "문장 구역">
+<!ENTITY bbcomp.h1.label "주 제목">
+<!ENTITY bbcomp.h2.label "제목">
+<!ENTITY bbcomp.h3.label "제목 2">
+<!ENTITY bbcomp.h4.label "제목 3">
+<!ENTITY bbcomp.h5.label "제목 4">
+<!ENTITY bbcomp.h6.label "제목 5">
+<!ENTITY bbcomp.p.label "단락">
+<!ENTITY bbcomp.pre.label "Preformated text">
+<!ENTITY bbcomp.address.label "주소">
+<!ENTITY bbcomp.hr.label "수평 막대">
+<!ENTITY bbcomp.hr.tooltiptext "수평 막대 추가">
+<!ENTITY bbcomp.br.label "새 줄">
+<!ENTITY bbcomp.br.tooltiptext "새 줄로 가기">
+<!ENTITY bbcomp.deindent.label "Deindent">
+<!ENTITY bbcomp.deindent.tooltiptext "Deindent the text">
+<!ENTITY bbcomp.indent.label "Indent">
+<!ENTITY bbcomp.indent.tooltiptext "Indent the text">
+<!ENTITY bbcomp.undo.label "실행 취소">
+<!ENTITY bbcomp.undo.tooltiptext "최종 변경된 내용 취소">
+<!ENTITY bbcomp.redo.label "실행 반복">
+<!ENTITY bbcomp.redo.tooltiptext "최종 변경된 내용 반복">
+<!ENTITY bbcomp.b.label "강조">
+<!ENTITY bbcomp.b.tooltiptext "강조로 설정">
+<!ENTITY bbcomp.i.label "이탤릭">
+<!ENTITY bbcomp.i.tooltiptext "선택된 문장을 이탤릭으로 설정">
+<!ENTITY bbcomp.u.label "밑줄">
+<!ENTITY bbcomp.u.tooltiptext "선택된 문장을 밑줄로 설정">
+<!ENTITY bbcomp.strong.label "굵게">
+<!ENTITY bbcomp.strong.tooltiptext "굵게 표시">
+<!ENTITY bbcomp.em.label "강조">
+<!ENTITY bbcomp.em.tooltiptext "강조 추가">
+<!ENTITY bbcomp.q.label "인용">
+<!ENTITY bbcomp.q.tooltiptext "인용 추가">
+<!ENTITY bbcomp.cite.label "인용">
+<!ENTITY bbcomp.cite.tooltiptext "저자 또는 책에 대한 참조을 추가">
+<!ENTITY bbcomp.acronym.label "약어">
+<!ENTITY bbcomp.acronym.tooltiptext "약어 추가">
+<!ENTITY bbcomp.abbr.label "줄임말">
+<!ENTITY bbcomp.abbr.tooltiptext "줄임말 추가">
+<!ENTITY bbcomp.a.label "링크">
+<!ENTITY bbcomp.a.tooltiptext "링크 추가">
+<!ENTITY bbcomp.img.label "그림">
+<!ENTITY bbcomp.img.tooltiptext "그림 추가">
+<!ENTITY bbcomp.table.label "표">
+<!ENTITY bbcomp.table.tooltiptext "표 추가">
+<!ENTITY bbcomp.special.label "전문의">
+<!ENTITY bbcomp.special.tooltiptext "의미상의 전문화">
+<!ENTITY bbcomp.sup.label "윗 첨자">
+<!ENTITY bbcomp.sup.tooltiptext "윗 첨자로 표시">
+<!ENTITY bbcomp.sub.label "아래 첨자">
+<!ENTITY bbcomp.sub.tooltiptext "아래 첨자로 표시">
+<!ENTITY bbcomp.samp.label "예제">
+<!ENTITY bbcomp.samp.tooltiptext "예제로 표시">
+<!ENTITY bbcomp.dfn.label "정의">
+<!ENTITY bbcomp.dfn.tooltiptext "정의로 표시">
+<!ENTITY bbcomp.kbd.label "키스트로크">
+<!ENTITY bbcomp.kbd.tooltiptext "키스트로크로 표시">
+<!ENTITY bbcomp.var.label "변수">
+<!ENTITY bbcomp.var.tooltiptext "변수로 표시">
+<!ENTITY bbcomp.code.label "컴퓨터 코드">
+<!ENTITY bbcomp.code.tooltiptext "소스 코드로 표시">
+<!ENTITY bbcomp.del.label "삭제">
+<!ENTITY bbcomp.del.tooltiptext "삭제된 글자로 표시">
+<!ENTITY bbcomp.ins.label "삽입된">
+<!ENTITY bbcomp.ins.tooltiptext "삽입된 글자로 표시">
+<!ENTITY bbcomp.anchor.label "앵커">
+<!ENTITY bbcomp.anchor.tooltiptext "앵커 추가/수정">
+<!ENTITY bbcomp.span.label "Span">
+<!ENTITY bbcomp.span.tooltiptext "span 추가/삭제">
+<!ENTITY bbcomp.div.label "분할">
+<!ENTITY bbcomp.div.tooltiptext "분할 구역내 삽입">
+<!ENTITY bbcomp.blockquote.label "인용">
+<!ENTITY bbcomp.blockquote.tooltiptext "인용 구역내 삽입">
+<!ENTITY bbcomp.style.label "스타일">

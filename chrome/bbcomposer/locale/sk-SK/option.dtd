@@ -1,0 +1,51 @@
+<!ENTITY bbcomp.opt.dialog.title "BBComposer : Voľby">
+<!ENTITY bbcomp.opt.gnr.label "Všeobecné">
+<!ENTITY bbcomp.opt.lng.label "Jazyk">
+<!ENTITY bbcomp.opt.upd.label "Upload">
+<!ENTITY bbcomp.opt.rsp.label "Odpoveď">
+<!ENTITY bbcomp.opt.avd.label "Pokročilé">
+<!ENTITY bbcomp.opt.fld.label "Polia">
+<!ENTITY bbcomp.opt.gnr.caption "Všeobecné voľby">
+<!ENTITY bbcomp.opt.gnr.site.css.label "Priečinok CSS súborov (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "Použiť východzí CSS">
+<!ENTITY bbcomp.opt.cmp.automode.label "Automaticky prejsť do režimu úprav">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "Vždy umožniť kontrolu pravopisu">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "Otvoriť bočný panel v režime úprav">
+<!ENTITY bbcomp.opt.lng.default.label "Východzí jazyk:">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBB kódy (sémantické BB kódy)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "Bežné BB kódy">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Syntax Mediawiki">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (bez blokov)">
+<!ENTITY bbcomp.opt.lng.remember.label "Zapamätať jazyk, ak je vybraný">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "Voľby XHTML">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Odsadenie">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Previesť non-ASCII znaky na HTML">
+<!ENTITY bbcomp.opt.upd.caption "Rozšírené voľby">
+<!ENTITY bbcomp.opt.upd.description "Tieto voľby umožnia modifikovať parametre uploadu">
+<!ENTITY bbcomp.opt.upd.on.label "Upload možný">
+<!ENTITY bbcomp.opt.upd.site.label "Stránka uploadu">
+<!ENTITY bbcomp.opt.upd.folder.label "Priečinok uploadu">
+<!ENTITY bbcomp.opt.upd.url.label "Upload URL">
+<!ENTITY bbcomp.opt.upd.postname.label "Pole názvu súboru">
+<!ENTITY bbcomp.opt.upd.postparams.label "POST parametre">
+<!ENTITY bbcomp.opt.upd.unique.label "Názov súboru musí byť jedinečný">
+<!ENTITY bbcomp.opt.rsp.caption "Odpoveď">
+<!ENTITY bbcomp.opt.rsp.description "Vráti parametre spracovania">
+<!ENTITY bbcomp.opt.rsp.type.label "Typ odpovede">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "Text">
+<!ENTITY bbcomp.opt.rsp.error.label "Rozpoznávanie chýb">
+<!ENTITY bbcomp.opt.rsp.notice.label "Rozpoznávanie oznámenia">
+<!ENTITY bbcomp.opt.rsp.filename.label "Rozpoznávanie názvu súboru">
+<!ENTITY bbcomp.opt.avd.caption "Rozšírené voľby">
+<!ENTITY bbcomp.opt.avd.description "Neupravujte rozšírené voľby, ak neviete ako.">
+<!ENTITY bbcomp.opt.avd.save.label "Oneskorenie automatického ukladania">
+<!ENTITY bbcomp.opt.avd.defcont.label "Východzí obsah editora">
+<!ENTITY bbcomp.opt.fld.caption.label "Uložené polia">
+<!ENTITY bbcomp.opt.fld.site.label "Filter URL">
+<!ENTITY bbcomp.opt.fld.id.label "Filter ID">
+<!ENTITY bbcomp.opt.fld.language.label "Jazyk">
+<!ENTITY bbcomp.opt.fld.target.label "Cieľ">
+<!ENTITY bbcomp.opt.fld.delete.label "Vymazať">
+<!ENTITY bbcomp.opt.fld.add.label "Pridať">

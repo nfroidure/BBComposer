@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "테이블">
+<!ENTITY bbcomp.tbl.caption.label "설명">
+<!ENTITY bbcomp.tbl.summary.label "요약">
+<!ENTITY bbcomp.tbl.hrows.label "머리말 행">
+<!ENTITY bbcomp.tbl.rows.label "행">
+<!ENTITY bbcomp.tbl.frows.label "꼬리말 행">
+<!ENTITY bbcomp.tbl.cols.label "열">
