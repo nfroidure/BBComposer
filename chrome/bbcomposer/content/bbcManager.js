@@ -644,7 +644,7 @@ function bbcManager()
 			{
 			if(this.selectedTextarea.hasAttribute('id')&&this.selectedTextarea.getAttribute('id'))
 				{
-				var params = this.openPopupDialog('save', new Array('(.*)'+window.getBrowser().contentDocument.location.href.replace(/(?:http|ftp|https):\/\/([^\/]+)(?:.*)/, '$1')+'(.*)',this.selectedTextarea.getAttribute('id'),this.myBBComposerPreferences.getCharOption('bbcomposer.default.language'), this.myBBComposerPreferences.getCharOption('bbcomposer.editor.target')));
+				var params = this.openPopupDialog('save', new Array('(.*)'+window.getBrowser().contentDocument.location.href.replace(/(?:http|ftp|https):\/\/([^\/]+)(?:.*)/, '$1')+'(.*)',this.selectedTextarea.getAttribute('id'),this.myBBComposerPreferences.getCharOption('bbcomposer.default.language')));
 				if(params.length)
 					{
 					this.addField(params);

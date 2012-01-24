@@ -9,10 +9,13 @@
 		<menulist id="bbcomposer.default.language">
 			<menupopup id="bbcomp_default_language_mpopup">
 				<menuitem label="&bbcomp.opt.lng.xhtml.label;" value="xhtml" />
+				<menuitem label="&bbcomp.opt.lng.xhtmlnb.label;" value="xhtmlnb" />
 				<menuitem label="&bbcomp.opt.lng.xbbcode.label;" value="xbbcode" selected="true" />
 				<menuitem label="&bbcomp.opt.lng.bbcode.label;" value="bbcode" />
 				<menuitem label="&bbcomp.opt.lng.mediawiki.label;" value="mediawiki" />
-				<menuitem label="&bbcomp.opt.lng.xhtmlnb.label;" value="xhtmlnb" />
+				<menuitem label="&bbcomp.opt.lng.spip.label;" value="spip" />
+				<menuitem label="&bbcomp.opt.lng.spip2.label;" value="spip2" />
+				<menuitem label="&bbcomp.opt.lng.skyblog.label;" value="skyblog" />
 			</menupopup>
 		</menulist>
 		<checkbox id="bbcomposer.remember.language" label="&bbcomp.opt.lng.remember.label;" checked="true"/>

@@ -9,7 +9,6 @@ function closeDialog()
 	else
 		attributes[1] = '(.+)';
 	attributes[2] = document.getElementById('save-language').value;
-	attributes[3] = document.getElementById('save-target').value;
 	window.arguments[0].out = {value:attributes};
 	return true;
 	}
@@ -24,7 +23,6 @@ function initDialog()
 		document.getElementById('save-href').value = attributes[0];
 		document.getElementById('save-id').value = attributes[1];
 		document.getElementById('save-language').value = attributes[2];
-		document.getElementById('save-target').value = attributes[3];
 		}
 	}
 var attributes = false;

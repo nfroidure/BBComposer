@@ -13,10 +13,13 @@
 <!ENTITY bbcomp.opt.cmp.sidebar.label "Ouvrir la barre lat&#233;rale en mode &#233;dition">
 <!ENTITY bbcomp.opt.lng.default.label "Langage d&apos;&#233;dition par d&#233;faut :">
 <!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (sans blocs)">
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (BBCodes s&#233;mantiques)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "BBCodes courants">
-<!ENTITY bbcomp.opt.lng.mediawiki.label "Syntaxe Mediawiki">
-<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (sans blocs)">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Syntaxe Mediawiki (beta)">
+<!ENTITY bbcomp.opt.lng.spip.label "Typo Spip (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Typo Spip Enrichie (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "Se souvenir du langage s&#233;lectionn&#233;">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "Options du XHTML">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indenter">

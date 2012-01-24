@@ -23,15 +23,11 @@
 			<menuitem value="xbbcode" label="&bbcomp.save.language.xbbcode.label;"/>
 			<menuitem value="xhtml" label="&bbcomp.save.language.xhtml.label;"/>
 			<menuitem value="bbcode" label="&bbcomp.save.language.bbcode.label;"/>
-			<menuitem value="mediawiki" label="&bbcomp.save.language.mediawiki.label;"/>
 			<menuitem value="xhtmlnb" label="&bbcomp.save.language.xhtmlnb.label;"/>
-		</menupopup>
-	</menulist>
-	<label control="save-target" value="&bbcomp.save.target.label;"/>
-	<menulist id="save-target">
-		<menupopup>
-			<menuitem value="tab" label="&bbcomp.save.target.tab.label;"/>
-			<menuitem value="textarea" label="&bbcomp.save.target.textarea.label;"/>
+			<menuitem value="mediawiki" label="&bbcomp.save.language.mediawiki.label;"/>
+			<menuitem value="spip" label="&bbcomp.save.language.spip.label;"/>
+			<menuitem value="spip2" label="&bbcomp.save.language.spip2.label;"/>
+			<menuitem value="skyblog" label="&bbcomp.save.language.skyblog.label;"/>
 		</menupopup>
 	</menulist>
 	</groupbox>

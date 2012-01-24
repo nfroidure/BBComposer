@@ -13,10 +13,13 @@
 <!ENTITY bbcomp.opt.cmp.sidebar.label "Open the sidebar in the edition mode">
 <!ENTITY bbcomp.opt.lng.default.label "Default language :">
 <!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (no blocks)">
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (Semantic BBCodes)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "Usual BBCodes">
-<!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki Syntax">
-<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (no blocks)">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki Syntax (beta)">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "Remember langage when selected">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML Options">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indent">

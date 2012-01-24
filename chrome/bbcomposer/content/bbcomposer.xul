@@ -14,10 +14,13 @@
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcElementStyle.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcManager.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/xhtml.js"/>
-	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/xbbcode.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/xhtmlnb.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/bbcode.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/xbbcode.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/mediawiki.js"/>
-	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/xhtmlnb.js" id="lastJsFile"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/spip.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/spip2.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/languages/skyblog.js" id="lastJsFile"/>
 
 	<stringbundleset id="stringbundleset">
 		<stringbundle id="bbcomposer-properties" src="chrome://bbcomposer/locale/bbcomposer.properties"/>
@@ -37,6 +40,9 @@
 			<command id="bbcomposer-pasteasxhtmlnb-command" oncommand="myBBComposerManager.focusedBBComposer.pasteFrom('xhtmlnb')"/>
 			<command id="bbcomposer-pasteasxbbcode-command" oncommand="myBBComposerManager.focusedBBComposer.pasteFrom('xbbcode')"/>
 			<command id="bbcomposer-pasteasmediawiki-command" oncommand="myBBComposerManager.focusedBBComposer.pasteFrom('mediawiki')"/>
+			<command id="bbcomposer-pasteasspip-command" oncommand="myBBComposerManager.focusedBBComposer.pasteFrom('spip')"/>
+			<command id="bbcomposer-pasteasspip2-command" oncommand="myBBComposerManager.focusedBBComposer.pasteFrom('spip2')"/>
+			<command id="bbcomposer-pasteasskyblog-command" oncommand="myBBComposerManager.focusedBBComposer.pasteFrom('skyblog')"/>
 			<command id="bbcomposer-delete-command" oncommand="myBBComposerManager.focusedBBComposer.doDelete()"/>
 		    <command id="bbcomposer-editmode-command" oncommand="myBBComposerManager.closeBBComposer(myBBComposerManager.focusedBBComposer);"/>
 		    <command id="bbcomposer-stop-command" oncommand="myBBComposerManager.closeBBComposer(myBBComposerManager.focusedBBComposer,true);"/>
@@ -96,6 +102,7 @@
 		    <command id="bbcomposer-cleancss-command" oncommand="myBBComposerManager.focusedBBComposer.useCommand(this.getAttribute('id'));"/>
 		    <command id="bbcomposer-fonts-command" oncommand="myBBComposerManager.focusedBBComposer.useCommand('bbcomposer-fonts-command');"/>
 		    <command id="bbcomposer-color-command" oncommand="myBBComposerManager.focusedBBComposer.useCommand(this.getAttribute('id'));"/>
+		    <command id="bbcomposer-element-div-class-spip_poesie-command" oncommand="myBBComposerManager.focusedBBComposer.useCommand(this.getAttribute('id'));"/>
 	</commandset>
 
 	<broadcasterset id="mainBroadcasterSet">
@@ -119,6 +126,9 @@
 				<menuitem label="&bbcomp.edit.textarea.xhtmlnb;" id="bbcomposer-xhtmlnb-context" type="checkbox" autoCheck="false" oncommand="myBBComposerManager.toggleEditor('xhtmlnb')"/>
 				<menuitem label="&bbcomp.edit.textarea.xbbcode;" id="bbcomposer-xbbcode-context" type="checkbox" autoCheck="false" oncommand="myBBComposerManager.toggleEditor('xbbcode')"/>
 				<menuitem label="&bbcomp.edit.textarea.mediawiki;" id="bbcomposer-mediawiki-context" type="checkbox" autoCheck="false" oncommand="myBBComposerManager.toggleEditor('mediawiki')"/>
+				<menuitem label="&bbcomp.edit.textarea.spip;" id="bbcomposer-spip-context" type="checkbox" autoCheck="false" oncommand="myBBComposerManager.toggleEditor('spip')"/>
+				<menuitem label="&bbcomp.edit.textarea.spip2;" id="bbcomposer-spip2-context" type="checkbox" autoCheck="false" oncommand="myBBComposerManager.toggleEditor('spip2')"/>
+				<menuitem label="&bbcomp.edit.textarea.skyblog;" id="bbcomposer-skyblog-context" type="checkbox" autoCheck="false" oncommand="myBBComposerManager.toggleEditor('skyblog')"/>
 			</menupopup>
 		</menu>
 		<menuitem label="&bbcomp.edit.remember.label;" id="bbcomposer-remember-context" oncommand="myBBComposerManager.remember()"/>
@@ -126,9 +136,9 @@
 
 	<popupset id="mainPopupSet">
 		<popup id="bbcomposerContextMenu">
-			<menuitem label="Couper" command="bbcomposer-cut-command"/>
-			<menuitem label="Copier" command="bbcomposer-copy-command"/>
-			<menuitem label="Coller" command="bbcomposer-paste-command"/>
+			<menuitem label="&bbcomp.cut;" command="bbcomposer-cut-command"/>
+			<menuitem label="&bbcomp.copy;" command="bbcomposer-copy-command"/>
+			<menuitem label="&bbcomp.paste;" command="bbcomposer-paste-command"/>
 			<menu label="&bbcomp.pasteas;" id="bbcomposer-pasteas-context">
 				<menupopup id="bbcomposer-pasteas-context-mpopup">
 					<menuitem label="&bbcomp.pasteas.text;" command="bbcomposer-pasteastext-command"/>
@@ -147,6 +157,9 @@
 					<menuitem label="&bbcomp.pastefrom.xhtmlnb;" command="bbcomposer-pasteasxhtmlnb-command"/>
 					<menuitem label="&bbcomp.pastefrom.xbbcode;" command="bbcomposer-pasteasxbbcode-command"/>
 					<menuitem label="&bbcomp.pastefrom.mediawiki;" command="bbcomposer-pasteasmediawiki-command"/>
+					<menuitem label="&bbcomp.pastefrom.spip;" command="bbcomposer-pasteasspip-command"/>
+					<menuitem label="&bbcomp.pastefrom.spip2;" command="bbcomposer-pasteasspip2-command"/>
+					<menuitem label="&bbcomp.pastefrom.skyblog;" command="bbcomposer-pasteaskyblog-command"/>
 				</menupopup>
 			</menu>
 			<menuitem label="&bbcomp.delete;" command="bbcomposer-delete-command"/>
@@ -166,6 +179,7 @@
 		<vbox insertafter="bbcomposer-splitter" id="bbcomposer-panel" flex="1" collapsed="true">
 			<toolbox id="bbcomposer-toolbox">
 				<toolbarpalette id="bbcomposerToolbarPalette">
+					<!-- Global buttons -->
 					<toolbarbutton label="&bbcomp.mode.label;" class="bbcomposer-toolbar-button" id="bbcomposer-editmode-button" tooltiptext="&bbcomp.mode.tooltiptext;" command="bbcomposer-editmode-command"/>
 					<toolbarbutton label="&bbcomp.stop.label;" class="bbcomposer-toolbar-button" id="bbcomposer-stop-button" tooltiptext="&bbcomp.stop.tooltiptext;" command="bbcomposer-stop-command"/>
 					<toolbarbutton label="&bbcomp.load.label;" class="bbcomposer-toolbar-button" id="bbcomposer-load-button" tooltiptext="&bbcomp.load.tooltiptext;" command="bbcomposer-load-command"/>
@@ -195,7 +209,37 @@
 							</menupopup>
 						</menulist>
 					</toolbaritem>
+					<!-- Html buttons -->
 					<toolbarbutton label="&bbcomp.br.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-br-button" tooltiptext="&bbcomp.br.tooltiptext;" disabled="true" command="bbcomposer-element-br-command"/>
+					<toolbarbutton label="&bbcomp.b.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-b-button" tooltiptext="&bbcomp.b.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-b-command"/>
+					<toolbarbutton label="&bbcomp.i.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-i-button" tooltiptext="&bbcomp.i.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-i-command"/>
+					<toolbarbutton label="&bbcomp.u.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-u-button" tooltiptext="&bbcomp.u.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-u-command"/>
+					<toolbarbutton label="&bbcomp.em.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-em-button" tooltiptext="&bbcomp.em.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-em-command"/>
+					<toolbarbutton label="&bbcomp.strong.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-strong-button" tooltiptext="&bbcomp.strong.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-strong-command"/>
+					<toolbarbutton label="&bbcomp.q.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-q-button" tooltiptext="&bbcomp.q.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-q-command"/>
+					<toolbarbutton label="&bbcomp.cite.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-cite-button" tooltiptext="&bbcomp.cite.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-cite-command"/>
+					<toolbarbutton label="&bbcomp.del.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-del-button" tooltiptext="&bbcomp.del.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-del-command"/>
+					<toolbarbutton label="&bbcomp.ins.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-ins-button" tooltiptext="&bbcomp.ins.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-ins-command"/>
+					<toolbarbutton label="&bbcomp.dfn.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-dfn-button" tooltiptext="&bbcomp.dfn.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-dfn-command"/>
+					<toolbarbutton label="&bbcomp.a.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-a-button" tooltiptext="&bbcomp.a.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-a-command"/>
+					<toolbarbutton label="&bbcomp.anchor.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-anchor-button" tooltiptext="&bbcomp.anchor.tooltiptext;" disabled="true" type="checkbox"  autoCheck="false" command="bbcomposer-anchor-command"/>
+					<toolbarbutton label="&bbcomp.img.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-img-button" tooltiptext="&bbcomp.img.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-img-command"/>
+					<toolbarbutton label="&bbcomp.table.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-table-button" tooltiptext="&bbcomp.table.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-table-command"/>
+					<toolbarbutton label="&bbcomp.hr.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-hr-button" tooltiptext="&bbcomp.hr.tooltiptext;" disabled="true" type="checkbox"  autoCheck="false" command="bbcomposer-element-hr-command"/>
+					<toolbarbutton label="&bbcomp.sup.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-sup-button" tooltiptext="&bbcomp.sup.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-sup-command"/>
+					<toolbarbutton label="&bbcomp.sub.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-sub-button" tooltiptext="&bbcomp.sub.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-sub-command"/>
+					<toolbarbutton label="&bbcomp.acronym.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-acronym-button" tooltiptext="&bbcomp.acronym.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-acronym-command"/>
+					<toolbarbutton label="&bbcomp.abbr.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-abbr-button" tooltiptext="&bbcomp.abbr.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-abbr-command"/>
+					<toolbarbutton label="&bbcomp.kbd.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-kbd-button" tooltiptext="&bbcomp.kbd.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-kbd-command"/>
+					<toolbarbutton label="&bbcomp.code.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-code-button" tooltiptext="&bbcomp.code.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-code-command"/>
+					<toolbarbutton label="&bbcomp.samp.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-samp-button" tooltiptext="&bbcomp.samp.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-samp-command"/>
+					<toolbarbutton label="&bbcomp.var.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-var-button" tooltiptext="&bbcomp.var.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-var-command"/>
+					<toolbarbutton label="&bbcomp.span.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-span-button" tooltiptext="&bbcomp.span.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-span-command"/>
+					<toolbarbutton label="&bbcomp.blockquote.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-blockquote-button" tooltiptext="&bbcomp.blockquote.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-blockquote-command"/>
+					<toolbarbutton label="&bbcomp.div.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-div-button" tooltiptext="&bbcomp.div.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-div-command"/>
+					<toolbarbutton label="&bbcomp.attclass.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-attclass-button" tooltiptext="&bbcomp.attclass.tooltiptext;" disabled="true" command="bbcomposer-attribute-class-command"/>
+					<toolbarbutton label="&bbcomp.attlang.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-attlang-button" tooltiptext="&bbcomp.attlang.tooltiptext;" disabled="true" command="bbcomposer-attribute-lang-command"/>
+					<!-- CSS Buttons -->
 					<toolbarbutton label="&bbcomp.deindent.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-deindent-button" tooltiptext="&bbcomp.deindent.tooltiptext;" disabled="true" command="bbcomposer-deindent-command"/>
 					<toolbarbutton label="&bbcomp.indent.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-indent-button" tooltiptext="&bbcomp.indent.tooltiptext;" disabled="true" command="bbcomposer-indent-command"/>
 					<toolbarbutton label="&bbcomp.fontsizeinc.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-font-size-increase-button" tooltiptext="&bbcomp.fontsizeinc.tooltiptext;" disabled="true" command="bbcomposer-numcss-font_size-increase-1-command"/>
@@ -237,34 +281,8 @@
 					<toolbaritem id="bbcomposer-color">
 						<colorpicker id="bbcomposer-color-button" disabled="true" palettename="standard" type="button" class="bbcomposer-command-button" command="bbcomposer-color-command" onchange="myBBComposerManager.focusedBBComposer.useCommand('bbcomposer-color-command');"/>
 					</toolbaritem>
-					<toolbarbutton label="&bbcomp.attclass.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-attclass-button" tooltiptext="&bbcomp.attclass.tooltiptext;" disabled="true" command="bbcomposer-attribute-class-command"/>
-					<toolbarbutton label="&bbcomp.attlang.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-attlang-button" tooltiptext="&bbcomp.attlang.tooltiptext;" disabled="true" command="bbcomposer-attribute-lang-command"/>
-					<toolbarbutton label="&bbcomp.b.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-b-button" tooltiptext="&bbcomp.b.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-b-command"/>
-					<toolbarbutton label="&bbcomp.i.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-i-button" tooltiptext="&bbcomp.i.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-i-command"/>
-					<toolbarbutton label="&bbcomp.u.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-u-button" tooltiptext="&bbcomp.u.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-u-command"/>
-					<toolbarbutton label="&bbcomp.em.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-em-button" tooltiptext="&bbcomp.em.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-em-command"/>
-					<toolbarbutton label="&bbcomp.strong.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-strong-button" tooltiptext="&bbcomp.strong.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-strong-command"/>
-					<toolbarbutton label="&bbcomp.q.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-q-button" tooltiptext="&bbcomp.q.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-q-command"/>
-					<toolbarbutton label="&bbcomp.cite.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-cite-button" tooltiptext="&bbcomp.cite.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-cite-command"/>
-					<toolbarbutton label="&bbcomp.del.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-del-button" tooltiptext="&bbcomp.del.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-del-command"/>
-					<toolbarbutton label="&bbcomp.ins.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-ins-button" tooltiptext="&bbcomp.ins.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-ins-command"/>
-					<toolbarbutton label="&bbcomp.dfn.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-dfn-button" tooltiptext="&bbcomp.dfn.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-dfn-command"/>
-					<toolbarbutton label="&bbcomp.a.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-a-button" tooltiptext="&bbcomp.a.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-a-command"/>
-					<toolbarbutton label="&bbcomp.anchor.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-anchor-button" tooltiptext="&bbcomp.anchor.tooltiptext;" disabled="true" type="checkbox"  autoCheck="false" command="bbcomposer-anchor-command"/>
-					<toolbarbutton label="&bbcomp.img.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-img-button" tooltiptext="&bbcomp.img.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-img-command"/>
-					<toolbarbutton label="&bbcomp.table.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-table-button" tooltiptext="&bbcomp.table.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-table-command"/>
-					<toolbarbutton label="&bbcomp.hr.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-hr-button" tooltiptext="&bbcomp.hr.tooltiptext;" disabled="true" type="checkbox"  autoCheck="false" command="bbcomposer-element-hr-command"/>
-					<toolbarbutton label="&bbcomp.sup.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-sup-button" tooltiptext="&bbcomp.sup.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-sup-command"/>
-					<toolbarbutton label="&bbcomp.sub.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-sub-button" tooltiptext="&bbcomp.sub.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-sub-command"/>
-					<toolbarbutton label="&bbcomp.acronym.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-acronym-button" tooltiptext="&bbcomp.acronym.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-acronym-command"/>
-					<toolbarbutton label="&bbcomp.abbr.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-abbr-button" tooltiptext="&bbcomp.abbr.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-abbr-command"/>
-					<toolbarbutton label="&bbcomp.kbd.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-kbd-button" tooltiptext="&bbcomp.kbd.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-kbd-command"/>
-					<toolbarbutton label="&bbcomp.code.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-code-button" tooltiptext="&bbcomp.code.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-code-command"/>
-					<toolbarbutton label="&bbcomp.samp.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-samp-button" tooltiptext="&bbcomp.samp.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-samp-command"/>
-					<toolbarbutton label="&bbcomp.var.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-var-button" tooltiptext="&bbcomp.var.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-var-command"/>
-					<toolbarbutton label="&bbcomp.span.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-span-button" tooltiptext="&bbcomp.span.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-span-command"/>
-					<toolbarbutton label="&bbcomp.blockquote.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-blockquote-button" tooltiptext="&bbcomp.blockquote.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-blockquote-command"/>
-					<toolbarbutton label="&bbcomp.div.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-div-button" tooltiptext="&bbcomp.div.tooltiptext;" disabled="true" type="checkbox" autoCheck="false" command="bbcomposer-element-div-command"/>
+					<!-- Spip Buttons -->
+					<toolbarbutton label="&bbcomp.poetry.label;" class="bbcomposer-toolbar-button bbcomposer-command-button" id="bbcomposer-poetry-button" tooltiptext="&bbcomp.poetry.tooltip;" disabled="true" command="bbcomposer-element-div-class-spip_poesie-command"/>
 					<toolbarbutton label="&bbcomp.sidebar.label;" class="bbcomposer-toolbar-button" id="bbcomposer-sidebar-button" tooltiptext="&bbcomp.sidebar.tooltiptext;" type="menu">
 						<menupopup id="bbcomposer-sidebar-button-mpopup" onpopupshowing="myBBComposerManager.sidebarMenuPopup(this)">
 							<menuitem label="&bbcomp.css.label;" id="bbcomposer-css-sidebar-button" observes="bbcomp-css-sidebar" tooltiptext="&bbcomp.css.tooltiptext;" oncommand="myBBComposerManager.toggleSidebar('css')"/>
@@ -276,6 +294,7 @@
 						<menupopup id="bbcomposer-toolbar-button-mpopup" onpopupshowing="myBBComposerManager.toolbarMenuPopup(this)">
 							<menuitem type="checkbox" label="&bbcomp.edition.label;" id="bbcomposer-edition-toolbar-button" tooltiptext="&bbcomp.edition.tooltiptext;" oncommand="myBBComposerManager.toggleToolbar('edition')"/>
 							<menuitem type="checkbox" label="&bbcomp.css.label;" id="bbcomposer-css-toolbar-button" tooltiptext="&bbcomp.css.tooltiptext;" oncommand="myBBComposerManager.toggleToolbar('css')"/>
+							<menuitem type="checkbox" label="&bbcomp.spip.label;" id="bbcomposer-spip-toolbar-button" tooltiptext="&bbcomp.spip.tooltiptext;" oncommand="myBBComposerManager.toggleToolbar('spip')"/>
 						</menupopup>
 					</toolbarbutton>
 					<toolbarbutton label="&bbcomp.options.label;" class="bbcomposer-toolbar-button" id="bbcomposer-options-button" tooltiptext="&bbcomp.options.tooltiptext;" type="menu">
@@ -294,14 +313,19 @@
 					currentset="bbcomposer-editmode-button,bbcomposer-stop-button,separator,bbcomposer-save-button,bbcomposer-load-button,bbcomposer-backup-button,spring,bbcomposer-sidebar-button,bbcomposer-toolbar-button,bbcomposer-options-button"
 					customizable="true" persist="mode currentset" hidden="false" grippytooltiptext="&bbcomp.name;" mode="full">
 				</toolbar>
-				<toolbar id="bbcomposer-edition-toolbar" toolbarname="&bbcomp.name;"
+				<toolbar id="bbcomposer-edition-toolbar" toolbarname="&bbcomp.edition.label;"
 					defaultset="bbcomposer-undo-button,bbcomposer-redo-button,separator,bbcomposer-blocks,bbcomposer-b-button,bbcomposer-i-button,bbcomposer-u-button,bbcomposer-em-button,bbcomposer-strong-button,bbcomposer-q-button,separator,bbcomposer-a-button,bbcomposer-anchor-button,bbcomposer-img-button,separator,bbcomposer-cite-button,bbcomposer-dfn-button,bbcomposer-sup-button,bbcomposer-sub-button,bbcomposer-acronym-button,bbcomposer-abbr-button,separator,bbcomposer-kbd-button,bbcomposer-code-button,bbcomposer-samp-button,bbcomposer-var-button,bbcomposer-span-button,separator,bbcomposer-table-button,bbcomposer-hr-button,separator,bbcomposer-del-button,bbcomposer-ins-button,separator,bbcomposer-blockquote-button,bbcomposer-div-button"
 					currentset="bbcomposer-undo-button,bbcomposer-redo-button,separator,bbcomposer-blocks,bbcomposer-b-button,bbcomposer-i-button,bbcomposer-u-button,bbcomposer-em-button,bbcomposer-strong-button,bbcomposer-q-button,separator,bbcomposer-a-button,bbcomposer-anchor-button,bbcomposer-img-button,separator,bbcomposer-cite-button,bbcomposer-dfn-button,bbcomposer-sup-button,bbcomposer-sub-button,bbcomposer-acronym-button,bbcomposer-abbr-button,separator,bbcomposer-kbd-button,bbcomposer-code-button,bbcomposer-samp-button,bbcomposer-var-button,bbcomposer-span-button,separator,bbcomposer-table-button,bbcomposer-hr-button,separator,bbcomposer-del-button,bbcomposer-ins-button,separator,bbcomposer-blockquote-button,bbcomposer-div-button"
 					customizable="true" persist="mode currentset" hidden="false" grippytooltiptext="&bbcomp.name;" mode="icons">
 				</toolbar>
-				<toolbar id="bbcomposer-css-toolbar" toolbarname="&bbcomp.name;"
+				<toolbar id="bbcomposer-css-toolbar" toolbarname="&bbcomp.css.label;"
 					defaultset="bbcomposer-deindent-button,bbcomposer-indent-button,separator,bbcomposer-align-left-button,bbcomposer-align-center-button,bbcomposer-align-right-button,bbcomposer-align-justify-button,separator,bbcomposer-direction-ltr-button,bbcomposer-direction-rtl-button,separator,bbcomposer-font-size-decrease-button,bbcomposer-font-size-increase-button,bbcomposer-fonts,bbcomposer-color,separator,bbcomposer-margin-top-decrease-button,bbcomposer-margin-top-increase-button,bbcomposer-margin-right-decrease-button,bbcomposer-margin-right-increase-button,bbcomposer-margin-bottom-decrease-button,bbcomposer-margin-bottom-increase-button,bbcomposer-margin-left-decrease-button,bbcomposer-margin-left-increase-button,separator,bbcomposer-cleancss-button,separator,bbcomposer-attclass-button,bbcomposer-attlang-button"
 					currentset="bbcomposer-deindent-button,bbcomposer-indent-button,separator,bbcomposer-align-left-button,bbcomposer-align-center-button,bbcomposer-align-right-button,bbcomposer-align-justify-button,separator,bbcomposer-direction-ltr-button,bbcomposer-direction-rtl-button,separator,bbcomposer-font-size-decrease-button,bbcomposer-font-size-increase-button,bbcomposer-fonts,bbcomposer-color,separator,bbcomposer-margin-top-decrease-button,bbcomposer-margin-top-increase-button,bbcomposer-margin-right-decrease-button,bbcomposer-margin-right-increase-button,bbcomposer-margin-bottom-decrease-button,bbcomposer-margin-bottom-increase-button,bbcomposer-margin-left-decrease-button,bbcomposer-margin-left-increase-button,separator,bbcomposer-cleancss-button,separator,bbcomposer-attclass-button,bbcomposer-attlang-button"
+					customizable="true" persist="mode currentset" hidden="false" grippytooltiptext="&bbcomp.name;" mode="icons">
+				</toolbar>
+				<toolbar id="bbcomposer-spip-toolbar" toolbarname="&bbcomp.spip.label;"
+					defaultset="bbcomposer-poetry-button"
+					currentset="bbcomposer-poetry-button"
 					customizable="true" persist="mode currentset" hidden="false" grippytooltiptext="&bbcomp.name;" mode="icons">
 				</toolbar>
 			</toolbox>

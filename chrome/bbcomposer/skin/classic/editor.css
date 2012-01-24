@@ -42,3 +42,21 @@ noscript { display:block; background-image: url(chrome://bbcomposer/skin/images/
 script { display:block; min-height:15px; width:100%; background-image: url(chrome://bbcomposer/skin/images/noscript.png); border-right: 2px dotted #808080; text-align:left; }
 object { display:block; min-height:15px; width:100%; background-image: url(chrome://bbcomposer/skin/images/object.png); border-right: 2px dotted #808080; text-align:left; }
 param { display:block; min-height:10px; width:100%; background-image: url(chrome://bbcomposer/skin/images/param.png); border-right: 2px dotted #808080; text-align:left; }
+/* Spip style */
+/* Raccourcis typo en ligne : */
+.spip-note:before { content:" (Note:"; }
+.spip-note:after { content:")"; }
+.spip-wikipedia { background:#dbdbdb url(chrome://bbcomposer/skin/images/wikipedia.png) no-repeat left center; padding-left:18px; font-weight:bold; }
+.caractencadre-spip:before { content:"([*]:"; }
+.caractencadre-spip:after { content:")"; }
+/* Raccourcis typo en block : */
+div.spip-cadre, div.spip-poesie , div.texteencadre-spip { margin-right: 0; padding: 10px 30px; background-repeat: no-repeat; background-position: right top; text-align:left; }
+div.spip-cadre { border-right:2px dotted red; }
+div.spip-poesie { border-right:2px dotted pink; background-image: url(chrome://bbcomposer/skin/images/poesie.png); }
+div.texteencadre-spip { border:1px solid black; }
+/* Images */
+.spip-image-left { float:left; }
+.spip-image-right { float:right; }
+.spip-document-left { display:block; float:left; }
+.spip-document-right { display:block; float:right; }
+.spip-document-center, .spip-image-center { display:block; text-align:center; }

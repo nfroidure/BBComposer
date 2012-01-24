@@ -2508,7 +2508,7 @@ function bbcomposer(editor, language, textarea, manager)
 		return false;
 		}
 
-	bbcomposer.prototype.doElementCommand = function (markup)
+	bbcomposer.prototype.doElementCommand = function (markup,attribute,value)
 		{
 		if(markup==='a'||markup==='img')
 			{
@@ -2520,7 +2520,14 @@ function bbcomposer(editor, language, textarea, manager)
 			}
 		else
 			{
-			this.toggleCommand(markup);
+			var attributes=[];
+			if(attribute)
+				{
+				attributes[attribute]=(value+'').replace('_','-');
+				this.toggleCommand(markup,attributes);
+				}
+			else
+				this.toggleCommand(markup);
 			}
 		}
 
