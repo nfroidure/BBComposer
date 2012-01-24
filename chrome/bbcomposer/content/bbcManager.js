@@ -1,7 +1,6 @@
 function bbcManager()
 	{
 	/* UI */
-	this.editionButton = document.getElementById('bbcomposer-button');
 	this.editionPanel = document.getElementById('bbcomposer-panel');
 	this.editionSplitter = document.getElementById('bbcomposer-splitter');
 	this.editorTabbox = document.getElementById('bbcomposer-tabbox');
@@ -17,20 +16,15 @@ function bbcManager()
 	this.bbcomposers = new Array();
 	this.focusedBBComposer=false;
 	/* Events */
-	this.browserTabCloseHandler=false;
-	this.browserLoadHandler=false;
-	this.browserPageHideHandler=false;
-	this.browserCloseHandler=false;
-	this.textareaDbClickHandler=false;
-	this.textareaHandler=false;
-	this.editorTabSelectHandler=false;
 	this.initEvents();
 	};
 
+	/*------ EVENTS ------*/
 	/*------ Events initialization ------*/
 	bbcManager.prototype.initEvents = function ()
 		{
-		this.browserLoadHandler=this.newEventHandler(this, this.detection,'browserLoadHandler');
+		// Browser events
+		this.browserLoadHandler=this.newEventHandler(this, this.browserLoad,'browserLoadHandler');
 		window.getBrowser().addEventListener("load", this.browserLoadHandler, true);
 		this.browserPageHideHandler=this.newEventHandler(this, this.browserPageHide,'browserPageHideHandler');
 		window.getBrowser().addEventListener("pagehide", this.browserPageHideHandler, true);
@@ -38,12 +32,14 @@ function bbcManager()
 		window.getBrowser().tabContainer.addEventListener("TabClose", this.browserTabCloseHandler, true);
 		this.browserCloseHandler=this.newEventHandler(this, this.browserClose,'browserCloseHandler');
 		window.addEventListener("close", this.browserCloseHandler, true);
-		this.formSubmitHandler=this.newEventHandler(this, this.formSubmit,'formSubmitHandler');
-		window.getBrowser().addEventListener("submit", this.formSubmitHandler, true);
-		this.textareaDbClickHandler=this.newEventHandler(this, this.openEditorForTextarea,'textareaDbClickHandler');
-		this.textareaHandler=this.newEventHandler(this, this.selectTextarea,'textareaHandler');
-		this.textareaOutHandler=this.newEventHandler(this, this.hideButton,'textareaOutHandler');
-		this.textareaFocusHandler=this.newEventHandler(this, this.focusEditorForTextarea,'textareaFocusHandler');
+		// ContentWindow Events
+		this.documentSubmitHandler=this.newEventHandler(this, this.documentSubmit,'documentSubmitHandler');
+		window.getBrowser().addEventListener("submit", this.documentSubmitHandler, true);
+		this.documentDoubleclickHandler=this.newEventHandler(this, this.documentDoubleclick,'documentDoubleclickHandler');
+		window.getBrowser().addEventListener("dblclick", this.documentDoubleclickHandler, true);
+		this.documentOverHandler=this.newEventHandler(this, this.documentOver,'documentOverHandler');
+		window.getBrowser().addEventListener("mouseover", this.documentOverHandler, true);
+		// Editor events
 		this.editorTabSelectHandler=this.newEventHandler(this, this.editorTabSelect,'editorTabSelectHandler');
 		this.editorTabbox.tabs.addEventListener("select", this.editorTabSelectHandler, true);
 		//this.editorTabCloseHandler=this.newEventHandler(this, this.editorTabClose,'editorTabCloseHandler');
@@ -61,8 +57,8 @@ function bbcManager()
 		return function () { return fx.apply(obj, arguments); }
 		}
 
-	/*------ Textareas detection & selection ------*/
-	bbcManager.prototype.detection = function (hEvent)
+	/*------ Browser events ------*/
+	bbcManager.prototype.browserLoad = function (hEvent)
 		{
 		if(hEvent.target.nodeName.toLowerCase()=='#document')
 			{
@@ -74,9 +70,6 @@ function bbcManager()
 					{
 					if(!textareas[i].disabled)
 						{
-						textareas[i].addEventListener("mouseover", this.textareaHandler, false);
-						textareas[i].addEventListener("mouseout", this.textareaOutHandler, false);
-						//textareas[i].addEventListener("dblclick", this.textareaDbClickHandler, false);
 						var language = this.getSavedLanguageForTextarea(textareas[i]);
 						if(language)
 							{
@@ -84,11 +77,6 @@ function bbcManager()
 								{
 								this.toggleEditor(language, textareas[i]);
 								}
-							else
-								{
-								textareas[i].addEventListener("dblclick", this.textareaDbClickHandler, false);
-								}
-							continue;
 							}
 						}
 					}
@@ -98,30 +86,81 @@ function bbcManager()
 		return false;
 		}
 
-	bbcManager.prototype.selectTextarea = function (hEvent)
+	/*------ Document events ------*/
+	bbcManager.prototype.documentDoubleclick = function (hEvent)
 		{
-		this.selectedTextarea = hEvent.currentTarget;
-		if(this.getSavedLanguageForTextarea(this.selectedTextarea))
-			this.showButton(this.selectedTextarea);
-		}
-
-	bbcManager.prototype.openEditorForTextarea = function (hEvent)
-		{
-		this.selectedTextarea=hEvent.currentTarget;
-		if(!this.selectedTextarea.disabled)
+		var element=hEvent.target;
+		if(element.nodeName.toLowerCase()=='textarea')
 			{
-			var language = this.getSavedLanguageForTextarea(this.selectedTextarea);
-			if(language)
+			if(element.disabled)
 				{
-				this.toggleEditor(language, this.selectedTextarea);
-				hEvent.stopPropagation(); hEvent.preventDefault(); hEvent.cancelBubble = true;
-				return;
+				this.focusEditorForTextarea(element);
+				}
+			else
+				{
+				var language=this.getSavedLanguageForTextarea(element);
+				if(language)
+					this.toggleEditor(language, element);
 				}
 			}
-		this.toggleEditor();
-		hEvent.stopPropagation(); hEvent.preventDefault(); hEvent.cancelBubble = true;
+		}
+	bbcManager.prototype.documentOver = function (hEvent)
+		{
+		var element=hEvent.target;
+		if(element.nodeName.toLowerCase()=='textarea')
+			{
+			if(element.disabled)
+				{
+				this.displayStatusText('Double click to show currently opened editor for this textarea.');
+				}
+			else
+				{
+				var language=this.getSavedLanguageForTextarea(element);
+				if(language)
+					this.displayStatusText('Double click to edit with BBComposer in '+language);
+				}
+			}
+		}
+	bbcManager.prototype.documentSubmit = function (hEvent)
+		{
+		var textareas=hEvent.target.getElementsByTagName('textarea');
+		for(var j=textareas.length-1; j>-1; j--)
+			{
+			for (var i=this.bbcomposers.length-1; i>-1 ; i--)
+				{
+				if(this.bbcomposers[i].textarea==textareas[j])
+					{
+					this.closeBBComposer(this.bbcomposers[i],!confirm(this.myBBComposerProperties.getString('submit_alert')));
+					}
+				}
+			}
 		}
 
+	/*------ Editor events ------*/
+	bbcManager.prototype.editorTabClose = function (hEvent)
+		{
+		for (var i=this.bbcomposers.length-1; i>-1 ; i--)
+			{
+			if(this.bbcomposers[i].linkedTab==this.editorTabbox.selectedTab)
+				{
+				this.closeBBComposer(this.bbcomposers[i]);
+				return true;
+				}
+			}
+		}
+	bbcManager.prototype.editorTabSelect = function (hEvent)
+		{
+		for (var i=this.bbcomposers.length-1; i>-1; i--)
+			{
+			if(this.bbcomposers[i].linkedTab==this.editorTabbox.selectedTab)
+				{
+				this.setFocusedBBComposer(this.bbcomposers[i]);
+				return true;
+				}
+			}
+		}
+
+	/*------ Textareas informations ------*/
 	bbcManager.prototype.getSavedLanguageForTextarea = function (textarea)
 		{
 		if(textarea.hasAttribute('id')) //&&this.myBBComposerPreferences.getBoolOption('bbcomposer.autodetect')&&(window.frames[k].document==window.getBrowser().contentDocument))
@@ -138,45 +177,16 @@ function bbcManager()
 			}
 		return false;
 		}
-
-	bbcManager.prototype.focusEditorForTextarea = function (hEvent)
+	bbcManager.prototype.focusEditorForTextarea = function (textarea)
 		{
 		for (var i=this.bbcomposers.length-1; i>-1 ; i--)
 			{
-			if(this.bbcomposers[i].textarea==hEvent.currentTarget)
+			if(this.bbcomposers[i].textarea==textarea)
 				{
 				this.setFocusedBBComposer(this.bbcomposers[i]);
-				hEvent.stopPropagation(); hEvent.preventDefault(); hEvent.cancelBubble = true;
 				break;
 				}
 			}
-		}
-
-	bbcManager.prototype.formSubmit = function (hEvent)
-		{
-		var textareas=hEvent.target.getElementsByTagName('textarea');
-		for(var j=textareas.length-1; j>-1; j--)
-			{
-			for (var i=this.bbcomposers.length-1; i>-1 ; i--)
-				{
-				if(this.bbcomposers[i].textarea==textareas[j])
-					{
-					this.closeBBComposer(this.bbcomposers[i],!confirm(this.myBBComposerProperties.getString('submit_alert')));
-					}
-				}
-			}
-		}
-
-	/*------ Button functions ------*/
-	bbcManager.prototype.showButton = function (anchor)
-		{
-		this.editionButton.hidePopup();
-		this.editionButton.openPopup(anchor, "after_start", 0, 0, false, false);
-		}
-
-	bbcManager.prototype.hideButton = function ()
-		{
-		this.editionButton.hidePopup();
 		}
 
 	/*------ UI functions ------*/
@@ -333,45 +343,29 @@ function bbcManager()
 
 	bbcManager.prototype.menuPopup = function (menupopup)
 		{
-		var language;
-		if((!this.focusedBBComposer)||!this.focusedBBComposer.language)
+		var language='';
+		if(gContextMenu&&gContextMenu.target&&gContextMenu.target.disabled==false)
 			{
-			language = this.myBBComposerPreferences.getCharOption('bbcomposer.default.language');
+			this.selectedTextarea=gContextMenu.target;
+			language=this.getSavedLanguageForTextarea(this.selectedTextarea);
+			if(!language)
+				{
+				if((!this.focusedBBComposer)||!this.focusedBBComposer.language)
+					{
+					language = this.myBBComposerPreferences.getCharOption('bbcomposer.default.language');
+					}
+				else
+					language = this.focusedBBComposer.language;
+				}
 			}
-		else
-			language = this.focusedBBComposer.language;
-		if((this.selectedTextarea&&this.selectedTextarea.disabled==false)||this.focusedBBComposer) { var state=false; }
-		else { var state=true; }
+		else { this.selectedTextarea=false; }
+
 		var x = menupopup.childNodes.length;
 		for(var i=0; i<x; i++)
 			{
-			if(menupopup.childNodes[i].getAttribute('disabled')!=state) { menupopup.childNodes[i].setAttribute('disabled',state); }
+			menupopup.childNodes[i].setAttribute('disabled',(this.selectedTextarea?false:true));
 			if(menupopup.childNodes[i].getAttribute('id')=='bbcomposer-'+language+'-context') {  menupopup.childNodes[i].setAttribute('checked',true); }
 			else {  menupopup.childNodes[i].setAttribute('checked',false); }
-			}
-		}
-
-	/*------ Editor tabs events functions ------*/
-	bbcManager.prototype.editorTabClose = function (hEvent)
-		{
-		for (var i=this.bbcomposers.length-1; i>-1 ; i--)
-			{
-			if(this.bbcomposers[i].linkedTab==this.editorTabbox.selectedTab)
-				{
-				this.closeBBComposer(this.bbcomposers[i]);
-				return true;
-				}
-			}
-		}
-	bbcManager.prototype.editorTabSelect = function (hEvent)
-		{
-		for (var i=this.bbcomposers.length-1; i>-1; i--)
-			{
-			if(this.bbcomposers[i].linkedTab==this.editorTabbox.selectedTab)
-				{
-				this.setFocusedBBComposer(this.bbcomposers[i]);
-				return true;
-				}
 			}
 		}
 
@@ -398,8 +392,6 @@ function bbcManager()
 			{
 			closedBBComposer.textarea.value = closedBBComposer.getContent();
 			}
-		closedBBComposer.textarea.addEventListener("mouseover", this.textareaHandler, false);
-		closedBBComposer.textarea.removeEventListener("mouseover", this.textareaFocusHandler, false);
 		closedBBComposer.unInit();
 		closedBBComposer.textarea.disabled=false;
 		closedBBComposer.editor.parentNode.parentNode.removeChild(closedBBComposer.editor.parentNode);
@@ -445,8 +437,6 @@ function bbcManager()
 		newBBComposer.linkedTab=editorTab;
 		this.bbcomposers[this.bbcomposers.length] = newBBComposer;
 		textarea.disabled=true;
-		textarea.removeEventListener("mouseover", this.textareaHandler, false);
-		textarea.addEventListener("mouseover", this.textareaFocusHandler, false);
 		this.setFocusedBBComposer(newBBComposer);
 		}
 
