@@ -23,8 +23,6 @@ var bbcXhtmlSupport =
 		string = string.replace('<br>', '<br />', 'g');
 		string = string.replace('<hr>', '<hr />', 'g');
 		string = bbcUtils.doRegExp(string, /<(img|hr|param|area)([^>]*)([^\/])>/mg, '<$1$2$3 />');
-		//string = bbcUtils.doRegExp(string, /<hr([^>]*)([^\/])>/mg, '<hr$1$2 />');
-		//string = bbcUtils.doRegExp(string, /<param([^>]*)([^\/])>/mg, '<param$1$2 />');
 		if(myBBComposerManager.focusedBBComposer.language=='xhtml')
 			{
 			if(myBBComposerManager.myBBComposerPreferences.getBoolOption('bbcomposer.xhtml.indent'))
@@ -113,11 +111,11 @@ bbcXhtmlSupport.acceptedMarkups =
 	"strong":
 		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups},
 	"q":
-		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups},
+		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"cite","default":""},{"name":"title","default":""}]},
 	"br":
 		{"type":"inline","childs":[]},
 	"a":
-		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""}]},
+		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""},{"name":"rel","default":""}]},
 	"img":
 		{"type":"inline","childs":[],"attributes":[{"name":"src","default":""},{"name":"alt","default":""},{"name":"name","default":""},{"name":"usemap","default":""},{"name":"style","default":""}]},
 	"sub":
@@ -150,9 +148,9 @@ bbcXhtmlSupport.acceptedMarkups =
 	"tr":
 		{"type":"table-row","childs":['th', 'td']},
 	"td":
-		{"type":"table-cell","childs":bbcXhtmlSupport.inlineMarkups},
+		{"type":"table-cell","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"scope","default":""}]},
 	"th":
-		{"type":"table-cell","childs":bbcXhtmlSupport.inlineMarkups},
+		{"type":"table-cell","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"scope","default":""}]},
 	"colgroup":
 		{"type":"table-column-group","childs":['col']},
 	"col":
