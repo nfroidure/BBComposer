@@ -625,6 +625,25 @@ function bbcManager()
 		{
 		this.focusedBBComposer.getElementStyle();
 		}
+	
+	bbcManager.prototype.degradxDisplay = function ()
+		{
+		var curElement = this.focusedBBComposer.getSelectedElement();
+		while(curElement&&curElement.nodeName.toLowerCase()!='body')
+			{
+			if(curElement.hasAttribute('class')&&(curElement.getAttribute('class')=='x'||curElement.getAttribute('class')=='y'))
+				{
+				var colors = curElement.getAttribute('title').split('-');
+				var box = this.sidebar.contentDocument.getElementById(curElement.getAttribute('class') + '-colorpickers');
+				while(box.childNodes.length>1)
+					box.removeChild(box.lastChild);
+				box.firstChild.color = colors[0];
+				for(var i=1; i<colors.length; i++)
+					this.sidebar.contentWindow.degradx_plus(curElement.getAttribute('class'), colors[i]);
+				}
+			curElement = curElement.parentNode;
+			}
+		}
 
 	bbcManager.prototype.sidebarMenuPopup = function (menupopup)
 		{

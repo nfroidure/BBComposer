@@ -131,7 +131,7 @@ bbcXhtmlSupport.acceptedMarkups =
 	"dfn":
 		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups},
 	"span":
-		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups},
+		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"title","default":""}]},
 	"samp":
 		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups},
 	// Table

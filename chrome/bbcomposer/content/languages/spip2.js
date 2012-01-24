@@ -65,10 +65,10 @@ var bbcSpip2Support =
 				string = string.substring(0, string.search(/<poesie>/mg)) + replace + string.substring(string.search(/<\/poesie>/mg)+9, string.length);
 			}
 		// Documents
-		string = bbcUtils.doRegExp(string, /<img([0-9]+)\|(left|center|right)>/mg, '<span class="spip-document-$2"><img src="chrome://spip/skin/spip-image.png" alt="$1"/></span>');
+		string = bbcUtils.doRegExp(string, /<img([0-9]+)\|(left|center|right)>/mg, '<span class="spip-document-$2"><img src="chrome://bbcomposer/skin/images/spip-image.png" alt="$1"/></span>');
 		string = bbcUtils.doRegExp(string, /<img([0-9]+)>/mg, '<span class="spip-document-left"><img src="chrome://spip/skin/spip-image.png" alt="$1"/></span>');
-		string = bbcUtils.doRegExp(string, /<((?:[a-z]+)(?:[0-9]+))\|(left|center|right)>/mg, '<span class="spip-document-$2"><img src="chrome://spip/skin/spip-document.png" alt="$1"/></span>');
-		string = bbcUtils.doRegExp(string, /<((?:[a-z]+)(?:[0-9]+))>/mg, '<span class="spip-document-left"><img src="chrome://spip/skin/spip-document.png" alt="$1"/></span>');
+		string = bbcUtils.doRegExp(string, /<((?:[a-z]+)(?:[0-9]+))\|(left|center|right)>/mg, '<span class="spip-document-$2"><img src="chrome://bbcomposer/skin/images/spip-document.png" alt="$1"/></span>');
+		string = bbcUtils.doRegExp(string, /<((?:[a-z]+)(?:[0-9]+))>/mg, '<span class="spip-document-left"><img src="chrome://bbcomposer/skin/images/spip-document.png" alt="$1"/></span>');
 		// Blocs
 		string = string.replace('{{{', '<h2>','g');
 		string = string.replace('}}}', '</h2>','g');

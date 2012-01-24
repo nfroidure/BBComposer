@@ -28,7 +28,6 @@
 <!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
 <!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "Edit and save">
-<!ENTITY bbcomp.dbclick "Double-click to edit with BBComposer">
 <!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-en">
 <!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-en">
 <!ENTITY bbcomp.mode.label "Apply">
@@ -49,6 +48,8 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "Cartoon/manga icons library">
 <!ENTITY bbcomp.css.label "Stylesheets">
 <!ENTITY bbcomp.css.tooltiptext "Edit CSS">
+<!ENTITY bbcomp.degradx.label "Degradees">
+<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
 <!ENTITY bbcomp.toolbar.label "Toolbars">
 <!ENTITY bbcomp.toolbar.tooltiptext "Show/Hide toolbars">
 <!ENTITY bbcomp.edition.label "Elements">
