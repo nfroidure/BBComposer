@@ -9,6 +9,8 @@ var bbcXbbcodeSupport =
 	/* Language */
 	sourceToEditor : function (string)
 		{
+		string = string.replace('[[', '&#91;', 'g');
+		string = string.replace(']]', '&#93;', 'g');
 		string = string.replace('"', '&quot;', 'g');
 		string = bbcUtils.doRegExp(string, /\[([^\]]+) ([a-z0-9]+)=([^="\]]+) ([^\s][a-z0-9]+)=(.)/mg, '[$1 $2="$3" $4=$5');
 		string = bbcUtils.doRegExp(string, /\[([^\]]+) ([a-z0-9]+)=([^="\]]+) \/\]/mg, '[$1 $2="$3" /]');
@@ -24,6 +26,10 @@ var bbcXbbcodeSupport =
 	editorToSource : function (editor)
 		{
 		var string = bbcXhtmlSupport.editorToSource(editor);
+		string = string.replace('[', '[[', 'g');
+		string = string.replace(']', ']] ', 'g');
+		string = string.replace('&#91;', '[[', 'g');
+		string = string.replace('&#93;', ']]', 'g');
 		string = bbcUtils.doRegExp(string, /\<([^>]+)"([^>]*)>/mg, '<$1$2>');
 		string = string.replace('<', '[', 'g');
 		string = string.replace('>', ']', 'g');
