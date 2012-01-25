@@ -111,13 +111,13 @@ function bbcManager()
 			{
 			if(element.disabled)
 				{
-				this.displayStatusText('Double click to show currently opened editor for this textarea.');
+				this.displayStatusText(this.myBBComposerProperties.getString('doubleclick_view'));
 				}
 			else
 				{
 				var language=this.getSavedLanguageForTextarea(element);
 				if(language)
-					this.displayStatusText('Double click to edit with BBComposer in '+language);
+					this.displayStatusText(this.myBBComposerProperties.getString('doubleclick_edit')+' '+language);
 				}
 			}
 		}
@@ -590,7 +590,9 @@ function bbcManager()
 			this.sidebarName = sidebarName;
 			document.getElementById("sidebar").hidden = false;
 			toggleSidebar('bbcomp-' + sidebarName + '-sidebar', true);
+			return true;
 			}
+		return false;
 		}
 
 	bbcManager.prototype.sidebarIsAllowed = function (sidebarName)

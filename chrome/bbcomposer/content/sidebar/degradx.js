@@ -210,15 +210,18 @@ function degradx_refresh()
 
 function degradx_init()
 	{
-	window.parent.myBBComposerManager.toggleSidebar('degradx', true);
-	degradx_refresh();
 	document.removeEventListener('load', degradx_init, false);
-	document.addEventListener('unload', degradx_uninit, false);
+	if(window.parent.myBBComposerManager.toggleSidebar('degradx', true))
+		{
+		degradx_refresh();
+		document.addEventListener('unload', degradx_uninit, false);
+		}
 	}
 
 function degradx_uninit()
 	{
 	window.clearTimeout(degradx_interval);
+	document.removeEventListener('unload', degradx_uninit, false);
 	window.parent.myBBComposerManager.toggleSidebar('degradx',false);
 	}
 

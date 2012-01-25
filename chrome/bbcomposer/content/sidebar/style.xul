@@ -5,7 +5,7 @@
 
 
 <window id="style_sidebar" title="&bbcomp.css.dialog.title;"
-	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onunload="window.parent.myBBComposerManager.toggleSidebar('css',false);" onload="if(!window.parent.myBBComposerManager.sidebar) { window.parent.myBBComposerManager.toggleSidebar('css', true); } if(window.parent.myBBComposerManager.sidebarIsAllowed('css')) { window.parent.myBBComposerManager.focusedBBComposer.getElementStyle(document.getElementById('bbcomposer-lockon-menu').value); } else { window.parent.myBBComposerManager.toggleSidebar('css',false); }">
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/sidebar/style.js"/>
 	<toolbar>
 		<label value="&bbcomp.css.lockon.label;"/>

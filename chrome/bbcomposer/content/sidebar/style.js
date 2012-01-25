@@ -34,3 +34,21 @@ function setAllSizes(size_type)
 		document.getElementById(size_type + "-bottom").value = size;
 		}
 	}
+
+function style_init()
+	{
+	document.removeEventListener('load', style_init, false);
+	if(window.parent.myBBComposerManager.toggleSidebar('css', true))
+		{
+		window.parent.myBBComposerManager.focusedBBComposer.getElementStyle(document.getElementById('bbcomposer-lockon-menu').value);
+		document.addEventListener('unload', style_uninit, false);
+		}
+	}
+
+function style_uninit()
+	{
+	document.removeEventListener('unload', style_uninit, false);
+	window.parent.myBBComposerManager.toggleSidebar('css',false);
+	}
+
+window.addEventListener('load', style_init, false);
