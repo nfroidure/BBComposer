@@ -154,7 +154,7 @@ function ewkOptionService(prefix,branch)
 		var childList = this.defaultPrefServ.getChildList(this.prefsPrefix+branchName,{});
 		for(var i=0; i<childList.length; i++)
 			{
-			intOptions[childList[i].replace(/(?:.+)\.([^\.]+)/,'$1')] = this.getIntOption(childList[i]);
+			intOptions[childList[i].replace(/(?:.+)\.([^\.]+)/,'$1')] = this.getIntOption(branchName+'.'+childList[i].replace(/(?:.+)\.([^\.]+)/,'$1'));
 			}
 		return intOptions;
 		}
@@ -163,7 +163,7 @@ function ewkOptionService(prefix,branch)
 		var charOptions = new Array();
 		var childList = this.defaultPrefServ.getChildList(this.prefsPrefix+branchName,{});
 		for(var i=0; i<childList.length; i++)
-			charOptions[childList[i].replace(/(?:.+)\.([^\.]+)/,'$1')] = this.getCharOption(childList[i]);
+			charOptions[childList[i].replace(/(?:.+)\.([^\.]+)/,'$1')] = this.getCharOption(branchName+'.'+childList[i].replace(/(?:.+)\.([^\.]+)/,'$1'));
 		return charOptions;
 		}
 	ewkOptionService.prototype.getDefaultCharOption = function (name)
