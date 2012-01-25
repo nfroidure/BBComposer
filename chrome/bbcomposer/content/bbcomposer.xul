@@ -7,7 +7,7 @@
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcFile.js"/>
-	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcOptionService.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/ewkOptionService.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcLib.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcColor.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcomposer.js"/>
@@ -289,7 +289,7 @@
 					</toolbarbutton>
 					<toolbarbutton label="&bbcomp.options.label;" class="bbcomposer-toolbar-button" id="bbcomposer-options-button" tooltiptext="&bbcomp.options.tooltiptext;" type="menu">
 						<menupopup id="bbcomposer-options-button-mpopup">
-							<menuitem label="&bbcomp.option.label;" id="bbcomposer-option-button" tooltiptext="&bbcomp.option.tooltiptext;" oncommand="window.openDialog('chrome://bbcomposer/content/option/options.xul','Options','centerscreen, chrome, resizable').focus(); myBBComposerManager.myBBComposerPreferences = new bbcOptionService();"/>
+							<menuitem label="&bbcomp.option.label;" id="bbcomposer-option-button" tooltiptext="&bbcomp.option.tooltiptext;" oncommand="window.openDialog('chrome://bbcomposer/content/option/options.xul','Options','centerscreen, chrome, resizable').focus(); myBBComposerManager.myBBComposerPreferences = new ewkOptionService('extensions.bbcomposer@elitwork.com.','');"/>
 							<menuitem label="&bbcomp.validation.label;" id="bbcomposer-validation-button" tooltiptext="&bbcomp.validation.tooltiptext;" oncommand="myBBComposerManager.validateXhtml()"/>
 							<menuitem label="&bbcomp.help.label;" id="bbcomposer-help-button" tooltiptext="&bbcomp.help.tooltiptext;" oncommand="myBBComposerManager.goToURLWithOptions('&bbcomp.manual;')"/>
 							<menuitem label="&bbcomp.forum.label;" id="bbcomposer-forum-button" tooltiptext="&bbcomp.forum.tooltiptext;" oncommand="myBBComposerManager.goToURLWithOptions('&bbcomp.forum;')"/>

@@ -25,9 +25,9 @@ var bbcXhtmlSupport =
 		string = bbcUtils.doRegExp(string, /<(img|hr|param|area)([^>]*)([^\/])>/mg, '<$1$2$3 />');
 		if(myBBComposerManager.focusedBBComposer.language=='xhtml')
 			{
-			if(myBBComposerManager.myBBComposerPreferences.getBoolOption('bbcomposer.xhtml.indent'))
+			if(myBBComposerManager.myBBComposerPreferences.getBoolOption('xhtml.indent'))
 				string = bbcUtils.indentHTML(string);
-			if(myBBComposerManager.myBBComposerPreferences.getBoolOption('bbcomposer.xhtml.ascii'))
+			if(myBBComposerManager.myBBComposerPreferences.getBoolOption('xhtml.ascii'))
 				string = bbcUtils.nonASCII2HTMLEntities(string);
 			}
 		return string;

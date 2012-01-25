@@ -8,10 +8,10 @@
 	<groupbox>
 		<caption label="&bbcomp.opt.avd.caption;"/>
 		<description value="&bbcomp.opt.avd.description;"/>
-		<label control="bbcomposer.save.delay" value="&bbcomp.opt.avd.save.label;"/>
-		<textbox id="bbcomposer.save.delay" value="300"/>
-		<label control="bbcomposer.default.content" value="&bbcomp.opt.avd.defcont.label;" />
-		<textbox id="bbcomposer.default.content" multiline="true" value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
+		<label control="save.delay" value="&bbcomp.opt.avd.save.label;"/>
+		<textbox id="save.delay" value="300"/>
+		<label control="default.content" value="&bbcomp.opt.avd.defcont.label;" />
+		<textbox id="default.content" multiline="true" value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;"/>
 	</groupbox>
 
 </page>

@@ -8,23 +8,21 @@
 
 	<groupbox>
 		<caption label="&bbcomp.opt.fld.caption.label;"/>
-		<listbox flex="1" id="bbcomposer.fields" rows="10" onselect="document.getElementById('bbcomposer.delete.button').disabled=false;">
+		<listbox flex="1" id="fields" rows="10" onselect="document.getElementById('delete.button').disabled=false;">
 			<listhead>
 				<listheader label="&bbcomp.opt.fld.site.label;"/>
 				<listheader label="&bbcomp.opt.fld.id.label;"/>
 				<listheader label="&bbcomp.opt.fld.language.label;"/>
-				<listheader label="&bbcomp.opt.fld.target.label;"/>
 			</listhead>
 			<listcols>
 				<listcol flex="1"/>
 				<listcol/>
 				<listcol/>
-				<listcol/>
 			</listcols>
 		</listbox>
 		<hbox>
-			<button id="bbcomposer.add.button" label="&bbcomp.opt.fld.add.label;" oncommand="listbox_add(document.getElementById('bbcomposer.fields'));"/>
-			<button id="bbcomposer.delete.button" label="&bbcomp.opt.fld.delete.label;" disabled="true" oncommand="listbox_delete(document.getElementById('bbcomposer.fields')); this.disabled=true;"/>
+			<button id="add.button" label="&bbcomp.opt.fld.add.label;" oncommand="listbox_add(document.getElementById('fields'));"/>
+			<button id="delete.button" label="&bbcomp.opt.fld.delete.label;" disabled="true" oncommand="listbox_delete(document.getElementById('fields')); this.disabled=true;"/>
 		</hbox>
 	</groupbox>
 </page>

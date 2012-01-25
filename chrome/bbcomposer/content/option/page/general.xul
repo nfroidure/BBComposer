@@ -7,15 +7,15 @@
 
 	<groupbox>
 		<caption label="&bbcomp.opt.gnr.caption;"/>
-		<label control="bbcomposer.site.css" value="&bbcomp.opt.gnr.site.css.label;"/>
-		<menulist id="bbcomposer.site.css" value="http://demo.elitwork.com/" editable="true">
+		<label control="site.css" value="&bbcomp.opt.gnr.site.css.label;"/>
+		<menulist id="site.css" value="http://demo.elitwork.com/" editable="true">
 			<menupopup>
 				<menuitem label="&bbcomp.opt.gnr.site.css.none.label;" value="none"/>
 			</menupopup>
 		</menulist>
-		<checkbox id="bbcomposer.autodetect" label="&bbcomp.opt.cmp.automode.label;" checked="true"/>
-		<checkbox id="bbcomposer.spellchecker" label="&bbcomp.opt.cmp.spellchecker.label;"/>
-		<checkbox id="bbcomposer.sidebar" label="&bbcomp.opt.cmp.sidebar.label;"/>
+		<checkbox id="autodetect" label="&bbcomp.opt.cmp.automode.label;" checked="true"/>
+		<checkbox id="spellchecker" label="&bbcomp.opt.cmp.spellchecker.label;"/>
+		<checkbox id="sidebar" label="&bbcomp.opt.cmp.sidebar.label;"/>
 	</groupbox>
 
 </page>

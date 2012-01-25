@@ -5,8 +5,8 @@
 <page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<groupbox>
-		<label control="bbcomposer.default.language" value="&bbcomp.opt.lng.default.label;" />
-		<menulist id="bbcomposer.default.language">
+		<label control="default.language" value="&bbcomp.opt.lng.default.label;" />
+		<menulist id="default.language">
 			<menupopup id="bbcomp_default_language_mpopup">
 				<menuitem label="&bbcomp.opt.lng.xhtml.label;" value="xhtml" />
 				<menuitem label="&bbcomp.opt.lng.xhtmlnb.label;" value="xhtmlnb" />
@@ -18,12 +18,12 @@
 				<menuitem label="&bbcomp.opt.lng.skyblog.label;" value="skyblog" />
 			</menupopup>
 		</menulist>
-		<checkbox id="bbcomposer.remember.language" label="&bbcomp.opt.lng.remember.label;" checked="true"/>
+		<checkbox id="remember.language" label="&bbcomp.opt.lng.remember.label;" checked="true"/>
 	</groupbox>
 	<groupbox>
 		<caption label="&bbcomp.opt.lng.xhtml.caption;"/>
-		<checkbox id="bbcomposer.xhtml.indent" label="&bbcomp.opt.lng.xhtml.indent.label;"/>
-		<checkbox id="bbcomposer.xhtml.ascii" label="&bbcomp.opt.lng.xhtml.ascii.label;"/>
+		<checkbox id="xhtml.indent" label="&bbcomp.opt.lng.xhtml.indent.label;"/>
+		<checkbox id="xhtml.ascii" label="&bbcomp.opt.lng.xhtml.ascii.label;"/>
 	</groupbox>
 
 </page>

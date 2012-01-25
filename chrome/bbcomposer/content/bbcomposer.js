@@ -43,17 +43,17 @@ function bbcomposer(editor, language, textarea, manager)
 		// FF 3.0 & 3.5 
 		this.editor.contentDocument.addEventListener('drop',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		// Options
-		if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.site.css')!='none')
+		if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('site.css')!='none')
 			{
 			var style = this.editor.contentDocument.getElementsByTagName('link')[0];
-			style.setAttribute('href', this.myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.site.css'));
+			style.setAttribute('href', this.myBBComposerManager.myBBComposerPreferences.getCharOption('site.css'));
 			}
-		if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.save.delay'))
-			this.autoSaveTimeout = window.setTimeout(this.myBBComposerManager.newEventHandler(this, this.autoSave,''), this.myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.save.delay'));
+		if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('save.delay'))
+			this.autoSaveTimeout = window.setTimeout(this.myBBComposerManager.newEventHandler(this, this.autoSave,''), this.myBBComposerManager.myBBComposerPreferences.getCharOption('save.delay'));
 		// Start
 		this.editor.contentDocument.designMode="on";
 		this.myBBComposerManager.setFocusedBBComposer(this);
-		if(this.myBBComposerManager.myBBComposerPreferences.getBoolOption('bbcomposer.spellchecker'))
+		if(this.myBBComposerManager.myBBComposerPreferences.getBoolOption('spellchecker'))
 			{
 			this.myBBComposerManager.enableSpellcheck();
 			}
@@ -3504,7 +3504,7 @@ function bbcomposer(editor, language, textarea, manager)
 		else if(content)
 			content = this.bbcLanguageSupport.sourceToEditor(content);
 		else
-			content = this.myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.default.content');
+			content = this.myBBComposerManager.myBBComposerPreferences.getCharOption('default.content');
 		this.setEditorContent(content);
 		}
 
@@ -3686,7 +3686,7 @@ function bbcomposer(editor, language, textarea, manager)
 
 	bbcomposer.prototype.sanitizeContent = function (documentFragment, blockLevel, dontDeletedEmptyNodes)
 		{
-		documentFragment.innerHTML=documentFragment.innerHTML.replace(this.myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.editor.chrome').replace(/(.+)\/([^\/]*)/, '$1/'),this.base);
+		documentFragment.innerHTML=documentFragment.innerHTML.replace(this.myBBComposerManager.myBBComposerPreferences.getCharOption('editor.chrome').replace(/(.+)\/([^\/]*)/, '$1/'),this.base);
 		var report='';
 		var walkerTexasRanger;
 		var isModified=false;
@@ -4697,8 +4697,8 @@ function bbcomposer(editor, language, textarea, manager)
 			this.myBBComposerManager.displayStatusText(this.myBBComposerManager.myBBComposerProperties.getString('file_saving'));
 			this.myBBComposerManager.saveToFile(this.rootElement.innerHTML, true);
 			}
-		if(!andDie&&this.myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.save.delay'))
-			this.autoSaveTimeout = window.setTimeout(this.myBBComposerManager.newEventHandler(this, this.autoSave,''), this.myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.save.delay'));
+		if(!andDie&&this.myBBComposerManager.myBBComposerPreferences.getCharOption('save.delay'))
+			this.autoSaveTimeout = window.setTimeout(this.myBBComposerManager.newEventHandler(this, this.autoSave,''), this.myBBComposerManager.myBBComposerPreferences.getCharOption('save.delay'));
 		}
 	bbcomposer.prototype.backUp = function ()
 		{
@@ -4730,7 +4730,7 @@ function bbcomposer(editor, language, textarea, manager)
 				images[i].src='chrome://bbcomposer/skin/images/image.png';
 				var filename = myBBComposerManager.sendFile(images[i].src);
 				if(filename)
-					images[i].setAttribute('src',myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.upload.site') + "/" + myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.upload.folder') + filename); //images[i].src.replace(/file:\/\/\/(?:.+)\/([^\/]+)\.([a-zA-Z]+)/, '$1.$2').replace('/', '\\')
+					images[i].setAttribute('src',myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site') + "/" + myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder') + filename); //images[i].src.replace(/file:\/\/\/(?:.+)\/([^\/]+)\.([a-zA-Z]+)/, '$1.$2').replace('/', '\\')
 				else
 					images[i].src=src;*/
 				}
@@ -4739,7 +4739,7 @@ function bbcomposer(editor, language, textarea, manager)
 
 	bbcomposer.prototype.checkImage = function (curImage)
 		{
-		if(navigator.onLine&&this.myBBComposerManager.myBBComposerPreferences.getBoolOption('bbcomposer.upload.on')&&/file:\/\/\/(.+)/.test(curImage.src))
+		if(navigator.onLine&&this.myBBComposerManager.myBBComposerPreferences.getBoolOption('upload.on')&&/file:\/\/\/(.+)/.test(curImage.src))
 			return true;
 		else
 			return false;
@@ -4747,7 +4747,7 @@ function bbcomposer(editor, language, textarea, manager)
 
 	bbcomposer.prototype.uploadImage = function (curImage)
 		{
-		var uploadSite=myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.upload.site')||this.base;
+		var uploadSite=myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')||this.base;
 		var image = new Image();
 		image.original=curImage;
 		image.src=curImage.src;
@@ -4763,7 +4763,7 @@ function bbcomposer(editor, language, textarea, manager)
 			//	{
 				var filename = myBBComposerManager.sendFile(this.src);
 				if(filename&&!/http:\/\/(.*)/.test(filename))
-					this.original.setAttribute('src',uploadSite + "/" + myBBComposerManager.myBBComposerPreferences.getCharOption('bbcomposer.upload.folder') + filename); //images[i].src.replace(/file:\/\/\/(?:.+)\/([^\/]+)\.([a-zA-Z]+)/, '$1.$2').replace('/', '\\')
+					this.original.setAttribute('src',uploadSite + "/" + myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder') + filename); //images[i].src.replace(/file:\/\/\/(?:.+)\/([^\/]+)\.([a-zA-Z]+)/, '$1.$2').replace('/', '\\')
 				else if(filename)
 					this.original.setAttribute('src',filename);
 				else

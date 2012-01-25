@@ -10,9 +10,9 @@ function bbcManager()
 	this.toolbarButtons = document.getElementsByClassName('bbcomposer-command-button');
 	this.myBBComposerProperties = document.getElementById("bbcomposer-properties");
 	/* Core */
-	this.myBBComposerPreferences = new bbcOptionService();
+	this.myBBComposerPreferences = new ewkOptionService('extensions.bbcomposer@elitwork.com.');
 	this.selectedTextarea = false;
-	this.selectedLanguage = this.myBBComposerPreferences.getCharOption('bbcomposer.default.language');;
+	this.selectedLanguage = this.myBBComposerPreferences.getCharOption('default.language');
 	this.bbcomposers = new Array();
 	this.focusedBBComposer=false;
 	/* Events */
@@ -73,7 +73,7 @@ function bbcManager()
 						var language = this.getSavedLanguageForTextarea(textareas[i]);
 						if(language)
 							{
-							if(this.myBBComposerPreferences.getBoolOption('bbcomposer.autodetect'))
+							if(this.myBBComposerPreferences.getBoolOption('autodetect'))
 								{
 								this.toggleEditor(language, textareas[i]);
 								}
@@ -163,12 +163,12 @@ function bbcManager()
 	/*------ Textareas informations ------*/
 	bbcManager.prototype.getSavedLanguageForTextarea = function (textarea)
 		{
-		if(textarea.hasAttribute('id')) //&&this.myBBComposerPreferences.getBoolOption('bbcomposer.autodetect')&&(window.frames[k].document==window.getBrowser().contentDocument))
+		if(textarea.hasAttribute('id')) //&&this.myBBComposerPreferences.getBoolOption('autodetect')&&(window.frames[k].document==window.getBrowser().contentDocument))
 			{
 			var current_site = textarea.ownerDocument.location.href.replace(/(.+)\/([^\/]*)/, '$1/');
-			for(var j=0; this.myBBComposerPreferences.defaultOptionIsset('bbcomposer.fields.'+j)&&this.myBBComposerPreferences.getCharOption('bbcomposer.fields.'+j).length!=0; j++)
+			for(var j=0; this.myBBComposerPreferences.defaultOptionIsset('fields.'+j)&&this.myBBComposerPreferences.getCharOption('fields.'+j).length!=0; j++)
 				{
-				var curPref = this.myBBComposerPreferences.getArrayOption('bbcomposer.fields.'+j);
+				var curPref = this.myBBComposerPreferences.getArrayOption('fields.'+j);
 				if(new RegExp(curPref[0]).test(current_site)&&new RegExp(curPref[1]).test(textarea.getAttribute('id')))
 					{
 					return curPref[2];
@@ -297,7 +297,7 @@ function bbcManager()
 		this.executeSidebarCommand();
 		var selectedBlock = this.focusedBBComposer.getSelectedBlock();
 		this.checkBlockButton((selectedBlock?selectedBlock.tagName.toLowerCase():null));
-		if(this.myBBComposerPreferences.getBoolOption('bbcomposer.spellchecker'))
+		if(this.myBBComposerPreferences.getBoolOption('spellchecker'))
 			this.refreshSpellcheck();
 		document.commandDispatcher.focusedWindow=this.focusedBBComposer.editor.contentWindow;
 		}
@@ -352,7 +352,7 @@ function bbcManager()
 				{
 				if((!this.focusedBBComposer)||!this.focusedBBComposer.language)
 					{
-					language = this.myBBComposerPreferences.getCharOption('bbcomposer.default.language');
+					language = this.myBBComposerPreferences.getCharOption('default.language');
 					}
 				else
 					language = this.focusedBBComposer.language;
@@ -421,7 +421,7 @@ function bbcManager()
 					label=labels[i].textContent;
 				}
 			}
-		var editorHref = this.myBBComposerPreferences.getCharOption('bbcomposer.editor.chrome');
+		var editorHref = this.myBBComposerPreferences.getCharOption('editor.chrome');
 		var editorTab = document.createElement('tab');
 		editorTab.setAttribute('label', label + (textarea.ownerDocument.domain?'-'+textarea.ownerDocument.domain:''));
 		var editorTabPanel = document.createElement('tabpanel');
@@ -665,7 +665,7 @@ function bbcManager()
 			{
 			if(this.selectedTextarea.hasAttribute('id')&&this.selectedTextarea.getAttribute('id'))
 				{
-				var params = this.openPopupDialog('save', new Array('(.*)'+window.getBrowser().contentDocument.location.href.replace(/(?:http|ftp|https):\/\/([^\/]+)(?:.*)/, '$1')+'(.*)',this.selectedTextarea.getAttribute('id'),this.myBBComposerPreferences.getCharOption('bbcomposer.default.language')));
+				var params = this.openPopupDialog('save', new Array('(.*)'+window.getBrowser().contentDocument.location.href.replace(/(?:http|ftp|https):\/\/([^\/]+)(?:.*)/, '$1')+'(.*)',this.selectedTextarea.getAttribute('id'),this.myBBComposerPreferences.getCharOption('default.language')));
 				if(params.length)
 					{
 					this.addField(params);
@@ -680,18 +680,18 @@ function bbcManager()
 
 	bbcManager.prototype.addField = function (params)
 		{
-		for(var i=0; this.myBBComposerPreferences.defaultOptionIsset('bbcomposer.fields.'+i)&&this.myBBComposerPreferences.getCharOption('bbcomposer.fields.'+i).length!=0; i++)
+		for(var i=0; this.myBBComposerPreferences.defaultOptionIsset('fields.'+i)&&this.myBBComposerPreferences.getCharOption('fields.'+i).length!=0; i++)
 			{	}
-		this.myBBComposerPreferences.setArrayOption('bbcomposer.fields.'+i, params);
+		this.myBBComposerPreferences.setArrayOption('fields.'+i, params);
 		this.myBBComposerPreferences.saveOptions();
 		}
 
 	/*------ Other functions ------*/
 	bbcManager.prototype.goToURLWithOptions = function (url)
 		{
-		if(this.myBBComposerPreferences.getCharOption('bbcomposer.link.target')=='tab')
+		if(this.myBBComposerPreferences.getCharOption('link.target')=='tab')
 			var newTab = window.getBrowser().addTab(url);
-		else if(this.myBBComposerPreferences.getCharOption('bbcomposer.link.target')=='current')
+		else if(this.myBBComposerPreferences.getCharOption('link.target')=='current')
 			{
 			window.getBrowser().contentDocument.location = url;
 			}
@@ -895,62 +895,62 @@ function bbcManager()
 	bbcManager.prototype.sendFile = function (url)
 		{
 		var filename = '';
-		var uploadSite=(this.myBBComposerPreferences.getCharOption('bbcomposer.upload.site')?this.myBBComposerPreferences.getCharOption('bbcomposer.upload.site'):this.focusedBBComposer.base);
+		var uploadSite=(this.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerPreferences.getCharOption('upload.site'):this.focusedBBComposer.base);
 		var myFile = new bbFile(null);
 		myFile.fromURLSpec(url);
-		if(this.myBBComposerPreferences.getBoolOption('bbcomposer.upload.unique')===true)
+		if(this.myBBComposerPreferences.getBoolOption('upload.unique')===true)
 			{
 			var range = "abcdefghijklmnopqrstxyz0123456789";
-			while((!filename)||myFile.isOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('bbcomposer.upload.folder') + filename))
+			while((!filename)||myFile.isOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('upload.folder') + filename))
 				{
 				filename = '';
 				for(i=0; i<5; i++)
 					filename += range.charAt(Math.floor(Math.random() * range.length-2));
 				filename += '_' + myFile.file.leafName.replace(new RegExp('[^a-z0-9\.]','gi'),'_').toLowerCase();
 				}
-			var response = myFile.putOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('bbcomposer.upload.url'), this.myBBComposerPreferences.getCharOption('bbcomposer.upload.postname'), filename, this.myBBComposerPreferences.getCharOption('bbcomposer.upload.postparams'));
+			var response = myFile.putOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('upload.url'), this.myBBComposerPreferences.getCharOption('upload.postname'), filename, this.myBBComposerPreferences.getCharOption('upload.postparams'));
 			}
-		else if((!myFile.isOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('bbcomposer.upload.folder') + myFile.file.leafName.replace(new RegExp('[^a-z0-9]','gi'),'_')))
+		else if((!myFile.isOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('upload.folder') + myFile.file.leafName.replace(new RegExp('[^a-z0-9]','gi'),'_')))
 			|| window.confirm(myFile.file.leafName + this.myBBComposerProperties.getString('file_upload')))
 			{
 			filename = myFile.file.leafName.replace(new RegExp('[^a-z0-9\.]','gi'),'_').toLowerCase();
-			var response = myFile.putOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('bbcomposer.upload.url'), this.myBBComposerPreferences.getCharOption('bbcomposer.upload.postname'), filename, this.myBBComposerPreferences.getCharOption('bbcomposer.upload.postparams'));
+			var response = myFile.putOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('upload.url'), this.myBBComposerPreferences.getCharOption('upload.postname'), filename, this.myBBComposerPreferences.getCharOption('upload.postparams'));
 			}
 		else { return true; }
 		if(response)
 			{
-			if(this.myBBComposerPreferences.getCharOption('bbcomposer.response.type')=="text")
+			if(this.myBBComposerPreferences.getCharOption('response.type')=="text")
 				{
-				if(this.myBBComposerPreferences.getCharOption('bbcomposer.response.error')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('bbcomposer.response.error')).test(response.responseText))
+				if(this.myBBComposerPreferences.getCharOption('response.error')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('response.error')).test(response.responseText))
 					{
-					alert(new RegExp(this.myBBComposerPreferences.getCharOption('bbcomposer.response.notice'), 'mi').exec(response.responseText)[1]);
+					alert(new RegExp(this.myBBComposerPreferences.getCharOption('response.notice'), 'mi').exec(response.responseText)[1]);
 					return false;
 					}
-				if(this.myBBComposerPreferences.getCharOption('bbcomposer.response.notice')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('bbcomposer.response.notice')).test(response.responseText))
+				if(this.myBBComposerPreferences.getCharOption('response.notice')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('response.notice')).test(response.responseText))
 					{
-					alert(new RegExp(this.myBBComposerPreferences.getCharOption('bbcomposer.response.notice'), 'mi').exec(response.responseText)[1]);
+					alert(new RegExp(this.myBBComposerPreferences.getCharOption('response.notice'), 'mi').exec(response.responseText)[1]);
 					}
-				if(this.myBBComposerPreferences.getCharOption('bbcomposer.response.filename')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('bbcomposer.response.filename'), 'mi').test(response.responseText))
+				if(this.myBBComposerPreferences.getCharOption('response.filename')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('response.filename'), 'mi').test(response.responseText))
 					{
-					return new RegExp(this.myBBComposerPreferences.getCharOption('bbcomposer.response.filename'), 'mi').exec(response.responseText)[1];
+					return new RegExp(this.myBBComposerPreferences.getCharOption('response.filename'), 'mi').exec(response.responseText)[1];
 					}
 				}
 			else
 				{
-				if(this.myBBComposerPreferences.getCharOption('bbcomposer.response.error')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('bbcomposer.response.error'))[0])
+				if(this.myBBComposerPreferences.getCharOption('response.error')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.error'))[0])
 					{
-					for(var i=0; i<response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('bbcomposer.response.error')).length; i++)
-						alert(response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('bbcomposer.response.error'))[i].textContent);
+					for(var i=0; i<response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.error')).length; i++)
+						alert(response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.error'))[i].textContent);
 					return false;
 					}
-				if(this.myBBComposerPreferences.getCharOption('bbcomposer.response.notice')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('bbcomposer.response.notice'))[0])
+				if(this.myBBComposerPreferences.getCharOption('response.notice')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.notice'))[0])
 					{
-					for(var i=0; i<response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('bbcomposer.response.notice')).length; i++)
-						alert(response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('bbcomposer.response.notice'))[i].textContent);
+					for(var i=0; i<response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.notice')).length; i++)
+						alert(response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.notice'))[i].textContent);
 					}
-				if(this.myBBComposerPreferences.getCharOption('bbcomposer.response.filename')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('bbcomposer.response.filename'))[0])
+				if(this.myBBComposerPreferences.getCharOption('response.filename')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.filename'))[0])
 					{
-					return response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('bbcomposer.response.filename'))[0];
+					return response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.filename'))[0];
 					}
 				}
 			return filename;
