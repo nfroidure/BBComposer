@@ -6,7 +6,7 @@
 <overlay id="bbcomposer"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcFile.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/ewkFile.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/ewkOptionService.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcLib.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcColor.js"/>

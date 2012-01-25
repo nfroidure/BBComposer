@@ -783,7 +783,7 @@ function bbcManager()
 		else if(flavor.value=='image/jpg')
 			{
 			if (str) str = str.value.QueryInterface(Components.interfaces.nsIInputStream);;
-			var myFile = new bbFile(null);
+			var myFile = new ewkFile(null);
 			if(myFile.fromUserProfile('moz-screenshot.jpg')||myFile.create())
 				myFile.writeFromStream(str);
 			return this.focusedBBComposer.importContent(myFile.getUri(),"text/unicode");
@@ -896,7 +896,7 @@ function bbcManager()
 		{
 		var filename = '';
 		var uploadSite=(this.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerPreferences.getCharOption('upload.site'):this.focusedBBComposer.base);
-		var myFile = new bbFile(null);
+		var myFile = new ewkFile(null);
 		myFile.fromURLSpec(url);
 		if(this.myBBComposerPreferences.getBoolOption('upload.unique')===true)
 			{
@@ -959,7 +959,7 @@ function bbcManager()
 		}
 	bbcManager.prototype.saveToFile = function (content, auto)
 		{
-		var myFile = new bbFile(null);
+		var myFile = new ewkFile(null);
 		if(auto)
 			{
 			if(myFile.fromUserProfile(this.focusedBBComposer.language + '-autosave.bbc')||myFile.create())
@@ -971,7 +971,7 @@ function bbcManager()
 		}
 	bbcManager.prototype.loadFromFile = function (auto)
 		{
-		var myFile = new bbFile(null);
+		var myFile = new ewkFile(null);
 		if(auto)
 			{
 			if(myFile.fromUserProfile(this.focusedBBComposer.language + '-autosave.bbc'))
