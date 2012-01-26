@@ -1,10 +1,10 @@
 var bbcSpip2Support =
 	{
 	/* User Interface */
-	allowedButtons : new Array('blocks', 'br', 'em', 'strong', 'a', 'img', 'table', 'anchor', 'sub', 'sup', 'code', 'hr', 'abbr', 'acronym', 'blockquote', 'poetry'),
+	allowedButtons : new Array('blocks', 'br', 'em', 'strong', 'a', 'img', 'table', 'anchor', 'sub', 'sup', 'code', 'hr', 'abbr', 'acronym', 'blockquote', 'poetry', 'align-left', 'align-center', 'align-right'),
 	allowedBlocks : new Array('p', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol'),
-	allowedToolbars : new Array('edition','spip'),
-	displayedToolbars : new Array('edition','spip'),
+	allowedToolbars : new Array('edition','spip','css'),
+	displayedToolbars : new Array('edition','spip','css'),
 	allowedSidebars : new Array('tags'),
 	/* Language */
 	sourceToEditor : function (string)
