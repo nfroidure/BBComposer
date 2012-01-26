@@ -1,7 +1,0 @@
-<!ENTITY degradx.name "DegradX">
-<!ENTITY degradx.tooltiptext "Ajouter des dégradés">
-<!ENTITY degradx.tabs.text "Texte">
-<!ENTITY degradx.tabs.background "Fond">
-<!ENTITY degradx.refresh.delay "Actualisation des dégradés (en secondes) :">
-<!ENTITY degradx.button.delete "Effacer">
-<!ENTITY degradx.button.apply "Appliquer">

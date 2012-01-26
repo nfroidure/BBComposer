@@ -1,7 +1,0 @@
-<!ENTITY bbcomp.tbl.dialog.title "Tabel">
-<!ENTITY bbcomp.tbl.caption.label "Tekst">
-<!ENTITY bbcomp.tbl.summary.label "Samenvatting">
-<!ENTITY bbcomp.tbl.hrows.label "Koptekstrijen">
-<!ENTITY bbcomp.tbl.rows.label "Rijen">
-<!ENTITY bbcomp.tbl.frows.label "Voettekstrijen">
-<!ENTITY bbcomp.tbl.cols.label "Kolommen">

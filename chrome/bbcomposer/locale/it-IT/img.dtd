@@ -1,8 +1,0 @@
-<!ENTITY bbcomp.img.dialog.title "Immagine">
-<!ENTITY bbcomp.img.src.label "Cartella">
-<!ENTITY bbcomp.img.browse.label "Sfoglia">
-<!ENTITY bbcomp.img.alt.label "Testo alternativo">
-<!ENTITY bbcomp.img.align.label "Allineamento">
-<!ENTITY bbcomp.img.align.normal.label "Normale">
-<!ENTITY bbcomp.img.align.left.label "A sinistra">
-<!ENTITY bbcomp.img.align.right.label "A destra">

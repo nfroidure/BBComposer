@@ -1,7 +1,0 @@
-<!ENTITY bbcomp.tbl.dialog.title "Tabel">
-<!ENTITY bbcomp.tbl.caption.label "Overskrift">
-<!ENTITY bbcomp.tbl.summary.label "Sammenfatning">
-<!ENTITY bbcomp.tbl.hrows.label "Header rækker">
-<!ENTITY bbcomp.tbl.rows.label "Rækker">
-<!ENTITY bbcomp.tbl.frows.label "Footer rækker">
-<!ENTITY bbcomp.tbl.cols.label "Kolonner">
