@@ -3,8 +3,8 @@ var bbcBbcodeSupport =
 	/* User Interface */
 	allowedButtons : new Array('blocks', 'br', 'undo', 'redo', 'align-left', 'align-center', 'align-right', 'i', 'b', 'q', 'u', 'del', 'a', 'img', 'code', 'hr', 'acronym', 'abbr', 'blockquote'),
 	allowedBlocks : new Array('p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'dl', 'pre'),
-	allowedToolbars : new Array('edition'),
-	displayedToolbars : new Array('edition'),
+	allowedToolbars : new Array('edition','css'),
+	displayedToolbars : new Array('edition','css'),
 	allowedSidebars : new Array('degradx', 'gallery', 'smileys', 'cartoon', 'tags', 'canimage'),
 	/* Language */
 	sourceToEditor : function (string)
