@@ -10,7 +10,8 @@
                    em:homepageURL="http://bbcomposer.elitwork.com"
                    em:optionsURL="chrome://bbcomposer/content/option/options.xul"
                    em:iconURL="chrome://bbcomposer/content/logo.png"
-                   em:contributor="Mathieu FROIDURE">
+                   em:contributor="Mathieu FROIDURE"
+                   em:type="2">
     <em:targetApplication RDF:resource="rdf:#$arpP13"/>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$arpP13"
