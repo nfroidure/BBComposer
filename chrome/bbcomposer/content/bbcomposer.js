@@ -2494,7 +2494,8 @@ function bbcomposer(editor, language, textarea, manager)
 			{
 			if(element&&element.nodeName.toLowerCase()==commandParams[1])
 				{
-				return true;
+				if((!commandParams[2])||(element.hasAttribute(commandParams[2])&&element.getAttribute(commandParams[2])==commandParams[3]))
+					return true;
 				}
 			element=element.parentNode;
 			}
@@ -2520,14 +2521,15 @@ function bbcomposer(editor, language, textarea, manager)
 			}
 		else
 			{
-			var attributes=[];
-			if(attribute)
+			var element = this.getSelectedElement();
+			if((!attribute)||(element.hasAttribute(attribute)&&element.getAttribute(attribute)==value))
+				this.toggleCommand(markup);
+			else
 				{
+				var attributes=[];
 				attributes[attribute]=(value+'').replace('_','-');
 				this.toggleCommand(markup,attributes);
 				}
-			else
-				this.toggleCommand(markup);
 			}
 		}
 

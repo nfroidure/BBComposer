@@ -897,7 +897,7 @@ function bbcManager()
 		var filename = '';
 		var uploadSite=(this.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerPreferences.getCharOption('upload.site'):this.focusedBBComposer.base);
 		var myFile = new ewkFile(null);
-		myFile.fromURLSpec(url);
+		myFile.fromUri(url);
 		if(this.myBBComposerPreferences.getBoolOption('upload.unique')===true)
 			{
 			var range = "abcdefghijklmnopqrstxyz0123456789";
@@ -965,7 +965,7 @@ function bbcManager()
 			if(myFile.fromUserProfile(this.focusedBBComposer.language + '-autosave.bbc')||myFile.create())
 				myFile.write(content);
 			}
-		else if(myFile.fromUserCreation(this.myBBComposerProperties.getString('file_save'), this.myBBComposerProperties.getString('file_name') + '.bbc',  '*.bbc;', this.myBBComposerProperties.getString('file_type')))
+		else if(myFile.fromUserCreation(this.myBBComposerProperties.getString('file_save'), '', this.myBBComposerProperties.getString('file_name') + '.bbc',  '*.bbc;', this.myBBComposerProperties.getString('file_type')))
 			myFile.write(content);
 		return 1;
 		}
@@ -977,7 +977,7 @@ function bbcManager()
 			if(myFile.fromUserProfile(this.focusedBBComposer.language + '-autosave.bbc'))
 				return myFile.read();
 			}
-		if(myFile.fromUserSelection(this.myBBComposerProperties.getString('file_load'), this.myBBComposerProperties.getString('file_name') + '.bbc',  '*.bbc;', this.myBBComposerProperties.getString('file_type')))
+		if(myFile.fromUserSelection(this.myBBComposerProperties.getString('file_load'), '', this.myBBComposerProperties.getString('file_name') + '.bbc',  '*.bbc;', this.myBBComposerProperties.getString('file_type')))
 			{
 			return myFile.read();
 			}
