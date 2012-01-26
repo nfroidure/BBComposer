@@ -1,0 +1,7 @@
+<!ENTITY degradx.name "AyrıX">
+<!ENTITY degradx.tooltiptext "Renk aralığı ekle">
+<!ENTITY degradx.tabs.text "Metin">
+<!ENTITY degradx.tabs.background "Arka plan">
+<!ENTITY degradx.refresh.delay "Görüntü tazeleme için gecikme (saniye)">
+<!ENTITY degradx.button.delete "Sil">
+<!ENTITY degradx.button.apply "Uygula">

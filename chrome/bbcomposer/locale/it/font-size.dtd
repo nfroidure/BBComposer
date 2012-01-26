@@ -1,0 +1,17 @@
+<!ENTITY bbcomp.font.size.dialog.title "Dimensione del font">
+<!ENTITY bbcomp.font.size.numeric.label "Numerica">
+<!ENTITY bbcomp.font.size.pixel.label "Pixel">
+<!ENTITY bbcomp.font.size.percent.label "Percentuale">
+<!ENTITY bbcomp.font.size.point.label "Punti">
+<!ENTITY bbcomp.font.size.emphasis.label "Accentuata">
+<!ENTITY bbcomp.font.size.varchar.label "Predefinita">
+<!ENTITY bbcomp.font.size.empty.label "">
+<!ENTITY bbcomp.font.size.xx.small.label "Minuscola">
+<!ENTITY bbcomp.font.size.x.small.label "Molto piccola">
+<!ENTITY bbcomp.font.size.small.label "Piccola">
+<!ENTITY bbcomp.font.size.medium.label "Media">
+<!ENTITY bbcomp.font.size.large.label "Grande">
+<!ENTITY bbcomp.font.size.x.large.label "Molto grande">
+<!ENTITY bbcomp.font.size.xx.large.label "Enorme">
+<!ENTITY bbcomp.font.size.smaller.label "Più piccola">
+<!ENTITY bbcomp.font.size.larger.label "Più grande">

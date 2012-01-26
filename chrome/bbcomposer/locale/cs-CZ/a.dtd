@@ -1,12 +1,12 @@
-<!ENTITY bbcomp.link.dialog.title "Link">
-<!ENTITY bbcomp.link.href.label "Location">
-<!ENTITY bbcomp.link.title.label "Tool tip text">
-<!ENTITY bbcomp.link.target.label "Target">
-<!ENTITY bbcomp.link.target.normal.label "Normal">
-<!ENTITY bbcomp.link.target.popup.label "New window">
-<!ENTITY bbcomp.link.hreflang.label "Target language">
-<!ENTITY bbcomp.link.hreflang.normal.label "Same language">
-<!ENTITY bbcomp.link.hreflang.en.label "English">
-<!ENTITY bbcomp.link.hreflang.de.label "German">
-<!ENTITY bbcomp.link.hreflang.es.label "Spanish">
-<!ENTITY bbcomp.link.hreflang.fr.label "French">
+<!ENTITY bbcomp.link.dialog.title "Odkaz">
+<!ENTITY bbcomp.link.href.label "Umístění">
+<!ENTITY bbcomp.link.title.label "Text popisku">
+<!ENTITY bbcomp.link.target.label "Cíl">
+<!ENTITY bbcomp.link.target.normal.label "Normální">
+<!ENTITY bbcomp.link.target.popup.label "Nové okno">
+<!ENTITY bbcomp.link.hreflang.label "Cílový jazyk">
+<!ENTITY bbcomp.link.hreflang.normal.label "Stejný jazyk">
+<!ENTITY bbcomp.link.hreflang.en.label "Angličtina">
+<!ENTITY bbcomp.link.hreflang.de.label "Němčina">
+<!ENTITY bbcomp.link.hreflang.es.label "Španělština">
+<!ENTITY bbcomp.link.hreflang.fr.label "Francouzština">

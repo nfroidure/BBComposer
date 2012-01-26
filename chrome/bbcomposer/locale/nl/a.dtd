@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Koppeling">
+<!ENTITY bbcomp.link.href.label "Locatie">
+<!ENTITY bbcomp.link.title.label "Tooltiptekst">
+<!ENTITY bbcomp.link.target.label "Doel">
+<!ENTITY bbcomp.link.target.normal.label "Normaal">
+<!ENTITY bbcomp.link.target.popup.label "Nieuw venster">
+<!ENTITY bbcomp.link.hreflang.label "Doeltaal">
+<!ENTITY bbcomp.link.hreflang.normal.label "Zelfde taal">
+<!ENTITY bbcomp.link.hreflang.en.label "Engels">
+<!ENTITY bbcomp.link.hreflang.de.label "Duits">
+<!ENTITY bbcomp.link.hreflang.es.label "Spaans">
+<!ENTITY bbcomp.link.hreflang.fr.label "Frans">

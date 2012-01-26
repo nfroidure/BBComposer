@@ -1,0 +1,7 @@
+<!ENTITY degradx.name "градиенты">
+<!ENTITY degradx.tooltiptext "Додати діапазон кольорів">
+<!ENTITY degradx.tabs.text "Текст">
+<!ENTITY degradx.tabs.background "Фон">
+<!ENTITY degradx.refresh.delay "Інтервал оновлень (секунд):">
+<!ENTITY degradx.button.delete "Вилучити">
+<!ENTITY degradx.button.apply "Застосувати">

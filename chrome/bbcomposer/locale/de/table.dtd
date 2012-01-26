@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Tabelle">
+<!ENTITY bbcomp.tbl.caption.label "Tabellenüberschrift">
+<!ENTITY bbcomp.tbl.summary.label "Zusammenfassung">
+<!ENTITY bbcomp.tbl.hrows.label "Kopfzeilen">
+<!ENTITY bbcomp.tbl.rows.label "Zeilen">
+<!ENTITY bbcomp.tbl.frows.label "Fußzeilen">
+<!ENTITY bbcomp.tbl.cols.label "Spalten">

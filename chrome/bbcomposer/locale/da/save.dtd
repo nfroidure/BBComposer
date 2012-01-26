@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.save.dialog.title "Rediger og gem">
+<!ENTITY bbcomp.save.href.label "URL-filter">
+<!ENTITY bbcomp.save.id.label "Identifikator-filter">
+<!ENTITY bbcomp.save.language.label "Sprog">
+<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML (ingen blokke)">
+<!ENTITY bbcomp.save.language.bbcode.label "BBkoder">
+<!ENTITY bbcomp.save.language.xbbcode.label "XBBkoder">
+<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
+<!ENTITY bbcomp.save.language.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.save.language.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.save.language.skyblog.label "Skyrock blog (beta)">

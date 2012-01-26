@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.save.dialog.title "Bewerken en opslaan">
+<!ENTITY bbcomp.save.href.label "URL-filter">
+<!ENTITY bbcomp.save.id.label "Identificerend filter">
+<!ENTITY bbcomp.save.language.label "Taal">
+<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML (geen blokken)">
+<!ENTITY bbcomp.save.language.bbcode.label "BBCodes">
+<!ENTITY bbcomp.save.language.xbbcode.label "XBBCodes">
+<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
+<!ENTITY bbcomp.save.language.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.save.language.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.save.language.skyblog.label "Skyrock blog (beta)">

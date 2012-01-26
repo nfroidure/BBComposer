@@ -1,0 +1,160 @@
+<!ENTITY bbcomp.css.dialog.title "CSS-redigerare">
+<!ENTITY bbcomp.css.lockon.label "Lås">
+<!ENTITY bbcomp.css.lockon.all "Alla element">
+<!ENTITY bbcomp.css.lockon.block "Block">
+<!ENTITY bbcomp.css.lockon.superblock "Superblock">
+<!ENTITY bbcomp.css.apply.label "Verkställ">
+<!ENTITY bbcomp.css.apply.tooltiptext "Verkställ ändringar">
+<!ENTITY bbcomp.css.cancel.label "Avbryt">
+<!ENTITY bbcomp.css.cancel.tooltiptext "Förkasta ändringar">
+<!ENTITY bbcomp.css.reset.label "Återställ">
+<!ENTITY bbcomp.css.reset.tooltiptext "Återställ elementstilar">
+<!ENTITY bbcomp.css.text.label "Text">
+<!ENTITY bbcomp.css.more.label "Mer">
+<!ENTITY bbcomp.css.space.label "Marginaler">
+<!ENTITY bbcomp.css.style.label "Utseende">
+<!ENTITY bbcomp.css.position.label "Position">
+<!ENTITY bbcomp.css.color.label "Färg">
+<!ENTITY bbcomp.css.color.none.label "Ingen">
+<!ENTITY bbcomp.css.font.family.label "Font">
+<!ENTITY bbcomp.css.font.size.label "Storlek">
+<!ENTITY bbcomp.css.font.weight.label "Grovlek">
+<!ENTITY bbcomp.css.font.weight.default.label "Standard">
+<!ENTITY bbcomp.css.font.weight.normal.label "Normal">
+<!ENTITY bbcomp.css.font.weight.bold.label "Fet">
+<!ENTITY bbcomp.css.font.weight.bolder.label "Fetare">
+<!ENTITY bbcomp.css.font.weight.lighter.label "Tunnare">
+<!ENTITY bbcomp.css.font.style.label "Stil">
+<!ENTITY bbcomp.css.font.style.default.label "Standard">
+<!ENTITY bbcomp.css.font.style.normal.label "Normal">
+<!ENTITY bbcomp.css.font.style.italic.label "Kursiv">
+<!ENTITY bbcomp.css.font.style.oblique.label "Sned">
+<!ENTITY bbcomp.css.text.decoration.label "Utsmyckning">
+<!ENTITY bbcomp.css.text.decoration.default.label "Standard">
+<!ENTITY bbcomp.css.text.decoration.none.label "Ingen">
+<!ENTITY bbcomp.css.text.decoration.underline.label "Understruken">
+<!ENTITY bbcomp.css.text.decoration.overline.label "Överstruken">
+<!ENTITY bbcomp.css.text.decoration.line.through.label "Genomstruken">
+<!ENTITY bbcomp.css.text.decoration.blink.label "Blinkande">
+<!ENTITY bbcomp.css.text.transform.label "Transformation">
+<!ENTITY bbcomp.css.text.transform.default.label "Standard">
+<!ENTITY bbcomp.css.text.transform.none.label "Ingen">
+<!ENTITY bbcomp.css.text.transform.capitalize.label "Inledande Versal">
+<!ENTITY bbcomp.css.text.transform.uppercase.label "VERSALER">
+<!ENTITY bbcomp.css.text.transform.lowercase.label "gemener">
+<!ENTITY bbcomp.css.font.stretch.label "Sträckning">
+<!ENTITY bbcomp.css.font.stretch.default.label "Standard">
+<!ENTITY bbcomp.css.font.stretch.normal.label "Normal">
+<!ENTITY bbcomp.css.font.stretch.wider.label "Bredare">
+<!ENTITY bbcomp.css.font.stretch.narrower.label "Smalare">
+<!ENTITY bbcomp.css.font.stretch.ultra.condensed.label "Mest kondenserad">
+<!ENTITY bbcomp.css.font.stretch.extra.condensed.label "Mer kondenserad">
+<!ENTITY bbcomp.css.font.stretch.condensed.label "Kondenserad">
+<!ENTITY bbcomp.css.font.stretch.semi.condensed.label "Något kondenserad">
+<!ENTITY bbcomp.css.font.stretch.semi.expanded.label "Något expanderad">
+<!ENTITY bbcomp.css.font.stretch.expanded.label "Expanderad">
+<!ENTITY bbcomp.css.font.stretch.extra.expanded.label "Mer expanderad">
+<!ENTITY bbcomp.css.font.stretch.ultra.expanded.label "Mest expanderad">
+<!ENTITY bbcomp.css.font.variant.label "Variant">
+<!ENTITY bbcomp.css.font.variant.default.label "Standard">
+<!ENTITY bbcomp.css.font.variant.normal.label "Normal">
+<!ENTITY bbcomp.css.font.variant.small.caps.label "Kapitäler">
+<!ENTITY bbcomp.css.text.align.label "Justera">
+<!ENTITY bbcomp.css.text.align.default.label "Standard">
+<!ENTITY bbcomp.css.text.align.center.label "Centrera">
+<!ENTITY bbcomp.css.text.align.right.label "Högerjustera">
+<!ENTITY bbcomp.css.text.align.left.label "Vänsterjustera">
+<!ENTITY bbcomp.css.text.align.justify.label "Marginaljustera">
+<!ENTITY bbcomp.css.font.size.adjust.label "Justera storlek">
+<!ENTITY bbcomp.css.line.height.label "Radhöjd">
+<!ENTITY bbcomp.css.text.indent.label "Indrag">
+<!ENTITY bbcomp.css.word.spacing.label "Ordmellanrum">
+<!ENTITY bbcomp.css.letter.spacing.label "Bokstavsmellanrum">
+<!ENTITY bbcomp.css.white.space.label "Tomt utrymme">
+<!ENTITY bbcomp.css.white.space.default.label "Standard">
+<!ENTITY bbcomp.css.white.space.normal.label "Normal">
+<!ENTITY bbcomp.css.white.space.pre.label "Behåll">
+<!ENTITY bbcomp.css.white.space.nowrap.label "Ingen radbrytning">
+<!ENTITY bbcomp.css.direction.label "Riktning">
+<!ENTITY bbcomp.css.direction.default.label "Standard">
+<!ENTITY bbcomp.css.direction.ltr.label "Vänster till höger">
+<!ENTITY bbcomp.css.direction.rtl.label "Höger till vänster">
+<!ENTITY bbcomp.css.unicode.bidi.label "Dubbelriktad orientering">
+<!ENTITY bbcomp.css.unicode.bidi.default.label "Standard">
+<!ENTITY bbcomp.css.unicode.bidi.normal.label "Normal">
+<!ENTITY bbcomp.css.unicode.bidi.embed.label "Bädda in">
+<!ENTITY bbcomp.css.unicode.bidi.bidi.override.label "Åsidosätt">
+<!ENTITY bbcomp.css.text.shadow.label "Skugga">
+<!ENTITY bbcomp.css.padding.label "Utfyllnad">
+<!ENTITY bbcomp.css.padding.left.label "Vänster">
+<!ENTITY bbcomp.css.padding.right.label "Höger">
+<!ENTITY bbcomp.css.padding.top.label "Överst">
+<!ENTITY bbcomp.css.padding.bottom.label "Nederst">
+<!ENTITY bbcomp.css.margin.label "Marginal">
+<!ENTITY bbcomp.css.margin.left.label "Vänster">
+<!ENTITY bbcomp.css.margin.right.label "Höger">
+<!ENTITY bbcomp.css.margin.top.label "Överst">
+<!ENTITY bbcomp.css.margin.bottom.label "Nederst">
+<!ENTITY bbcomp.css.padding.all "Definiera alla">
+<!ENTITY bbcomp.css.background.label "Bakgrund">
+<!ENTITY bbcomp.css.background.color.label "Färg">
+<!ENTITY bbcomp.css.background.color.none.label "Ingen">
+<!ENTITY bbcomp.css.background.color.transparent.label "Transparent">
+<!ENTITY bbcomp.css.background.image.label "Bild">
+<!ENTITY bbcomp.css.background.position.label "Position">
+<!ENTITY bbcomp.css.background.repeat.label "Upprepa">
+<!ENTITY bbcomp.css.background.repeat.default.label "Standard">
+<!ENTITY bbcomp.css.background.repeat.repeat.label "Upprepa">
+<!ENTITY bbcomp.css.background.repeat.repeat.x.label "Vågrätt">
+<!ENTITY bbcomp.css.background.repeat.repeat.y.label "Lodrätt">
+<!ENTITY bbcomp.css.background.repeat.no.repeat.label "Upprepa inte">
+<!ENTITY bbcomp.css.background.attachment.label "Fäste">
+<!ENTITY bbcomp.css.background.attachment.default.label "Standard">
+<!ENTITY bbcomp.css.background.attachment.scroll.label "Rullning">
+<!ENTITY bbcomp.css.background.attachment.fixed.label "Fast">
+<!ENTITY bbcomp.css.border.label "Kantlinje">
+<!ENTITY bbcomp.css.border.color.label "Färg">
+<!ENTITY bbcomp.css.border.color.none.label "Ingen">
+<!ENTITY bbcomp.css.border.width.label "Bredd">
+<!ENTITY bbcomp.css.border.style.label "Stil">
+<!ENTITY bbcomp.css.border.style.none.label "Ingen">
+<!ENTITY bbcomp.css.border.style.hidden.label "Dold">
+<!ENTITY bbcomp.css.border.style.dotted.label "Prickad">
+<!ENTITY bbcomp.css.border.style.dashed.label "Streckad">
+<!ENTITY bbcomp.css.border.style.solid.label "Heldragen">
+<!ENTITY bbcomp.css.border.style.double.label "Dubbel">
+<!ENTITY bbcomp.css.border.style.groove.label "Nedsänkt 1">
+<!ENTITY bbcomp.css.border.style.ridge.label "Upphöjd 1">
+<!ENTITY bbcomp.css.border.style.inset.label "Nedsänkt 2">
+<!ENTITY bbcomp.css.border.style.outset.label "Upphöjd 2">
+<!ENTITY bbcomp.css.width.label "Bredd">
+<!ENTITY bbcomp.css.height.label "Höjd">
+<!ENTITY bbcomp.css.clear.label "Figursättningsundantag (clear)">
+<!ENTITY bbcomp.css.clear.default.label "Nej">
+<!ENTITY bbcomp.css.clear.left.label "Vänster">
+<!ENTITY bbcomp.css.clear.right.label "Höger">
+<!ENTITY bbcomp.css.clear.both.label "Båda">
+<!ENTITY bbcomp.css.clear.none.label "Ingen">
+<!ENTITY bbcomp.css.float.label "Figursättning (float)">
+<!ENTITY bbcomp.css.float.default.label "Standard">
+<!ENTITY bbcomp.css.float.left.label "Vänster">
+<!ENTITY bbcomp.css.float.right.label "Höger">
+<!ENTITY bbcomp.css.float.none.label "Ingen">
+<!ENTITY bbcomp.css.position.default.label "Standard">
+<!ENTITY bbcomp.css.position.static.label "Statisk">
+<!ENTITY bbcomp.css.position.absolute.label "Absolut">
+<!ENTITY bbcomp.css.position.fixed.label "Fast">
+<!ENTITY bbcomp.css.position.relative.label "Relativ">
+<!ENTITY bbcomp.css.position.inherit.label "Ärvd">
+<!ENTITY bbcomp.css.visibility.label "Synlighet">
+<!ENTITY bbcomp.css.visibility.default.label "Standard">
+<!ENTITY bbcomp.css.visibility.visible.label "Synlig">
+<!ENTITY bbcomp.css.visibility.hidden.label "Dold">
+<!ENTITY bbcomp.css.visibility.collapse.label "Minimera">
+<!ENTITY bbcomp.css.visibility.inherit.label "Ärvd">
+<!ENTITY bbcomp.css.top.label "Överst">
+<!ENTITY bbcomp.css.right.label "Höger">
+<!ENTITY bbcomp.css.bottom.label "Nederst">
+<!ENTITY bbcomp.css.left.label "Vänster">
+<!ENTITY bbcomp.css.z-index.label "z-index">
+<!ENTITY bbcomp.css.display.label "Visa">

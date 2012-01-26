@@ -1,0 +1,193 @@
+<!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.copy "Copy">
+<!ENTITY bbcomp.cut "Cut">
+<!ENTITY bbcomp.paste "Paste">
+<!ENTITY bbcomp.pasteas "Klistra in som">
+<!ENTITY bbcomp.pasteas.div "en sektion i dokumentet">
+<!ENTITY bbcomp.pasteas.blockquote "ett blockquote">
+<!ENTITY bbcomp.pasteas.ins "tillagt innehåll">
+<!ENTITY bbcomp.pasteas.del "borttaget innehåll">
+<!ENTITY bbcomp.pasteas.text "text">
+<!ENTITY bbcomp.pastefrom "Klistra in från">
+<!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
+<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (inga block)">
+<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pastefrom.mediawiki "MediaWiki">
+<!ENTITY bbcomp.pastefrom.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.skyblog "Skyrock blog (beta)">
+<!ENTITY bbcomp.delete "Ta bort">
+<!ENTITY bbcomp.selectall "Markera alla">
+<!ENTITY bbcomp.edit.textarea.xhtml "Redigera som XHTML">
+<!ENTITY bbcomp.edit.textarea.bbcode "Redigera som BBCode">
+<!ENTITY bbcomp.edit.textarea.xbbcode "Redigera som XBBCode">
+<!ENTITY bbcomp.edit.textarea.xhtmlnb "Redigera som XHTML (inga block)">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Redigera som MediaWiki">
+<!ENTITY bbcomp.edit.textarea.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
+<!ENTITY bbcomp.edit.remember.label "Redigera och spara">
+<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-en">
+<!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-en">
+<!ENTITY bbcomp.mode.label "Verkställ">
+<!ENTITY bbcomp.mode.tooltiptext "Skriv in redigerarens innehåll i textområdet">
+<!ENTITY bbcomp.load.label "Läs in">
+<!ENTITY bbcomp.load.tooltiptext "Läs in en anteckning">
+<!ENTITY bbcomp.save.label "Spara">
+<!ENTITY bbcomp.save.tooltiptext "Spara en anteckning">
+<!ENTITY bbcomp.stop.label "Avbryt">
+<!ENTITY bbcomp.stop.tooltiptext "Förkasta ändringarna och lämna innehållet i textområdet orört">
+<!ENTITY bbcomp.backup.label "Snabbinläsning">
+<!ENTITY bbcomp.backup.tooltiptext "Läs in det senast auto-sparade innehållet">
+<!ENTITY bbcomp.sidebar.label "Marginallister">
+<!ENTITY bbcomp.sidebar.tooltiptext "Visa/Dölj marginallister">
+<!ENTITY bbcomp.smileys.label "Smilisar">
+<!ENTITY bbcomp.smileys.tooltiptext "Smilisbibliotek">
+<!ENTITY bbcomp.cartoon.label "Seriefigurer">
+<!ENTITY bbcomp.cartoon.tooltiptext "Bibliotek med seriefigur- och mangaikoner">
+<!ENTITY bbcomp.css.label "Formatmallar">
+<!ENTITY bbcomp.css.tooltiptext "Redigera CSS">
+<!ENTITY bbcomp.degradx.label "Degradees">
+<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
+<!ENTITY bbcomp.toolbar.label "Verktygsfält">
+<!ENTITY bbcomp.toolbar.tooltiptext "Visa/Dölj verktygsfält">
+<!ENTITY bbcomp.edition.label "Element">
+<!ENTITY bbcomp.edition.tooltiptext "Redigera element">
+<!ENTITY bbcomp.spip.label "Spip Typo">
+<!ENTITY bbcomp.spip.tooltiptext "Edit Spip Typo syntax">
+<!ENTITY bbcomp.options.label "Verktyg">
+<!ENTITY bbcomp.options.tooltiptext "Visa verktygen">
+<!ENTITY bbcomp.option.label "Inställningar">
+<!ENTITY bbcomp.option.tooltiptext "Anpassa BBComposer">
+<!ENTITY bbcomp.validation.label "Validera">
+<!ENTITY bbcomp.validation.tooltiptext "Validera denna sida">
+<!ENTITY bbcomp.help.label "Hjälp">
+<!ENTITY bbcomp.help.tooltiptext "Gå till manualen">
+<!ENTITY bbcomp.forum.label "Forum">
+<!ENTITY bbcomp.forum.tooltiptext "Prata om BBComposer">
+<!ENTITY bbcomp.debug.label "Felsökning">
+<!ENTITY bbcomp.debug.tooltiptext "Spara en felsökningsrapport">
+<!ENTITY bbcomp.about.label "Om">
+<!ENTITY bbcomp.about.tooltiptext "Om BBComposer">
+<!ENTITY bbcomp.lists.label "Lista">
+<!ENTITY bbcomp.lists.tooltiptext "Listar block">
+<!ENTITY bbcomp.ul.label "Osorterad lista">
+<!ENTITY bbcomp.ol.label "Sorterad lista">
+<!ENTITY bbcomp.dl.label "Detaljerad lista">
+<!ENTITY bbcomp.texts.label "Text">
+<!ENTITY bbcomp.texts.tooltiptext "Textblock">
+<!ENTITY bbcomp.h1.label "Huvudrubrik">
+<!ENTITY bbcomp.h2.label "Underrubrik">
+<!ENTITY bbcomp.h3.label "Underrubrik 2">
+<!ENTITY bbcomp.h4.label "Underrubrik 3">
+<!ENTITY bbcomp.h5.label "Underrubrik 4">
+<!ENTITY bbcomp.h6.label "Underrubrik 5">
+<!ENTITY bbcomp.p.label "Stycke">
+<!ENTITY bbcomp.pre.label "Förformaterad text">
+<!ENTITY bbcomp.address.label "Adress">
+<!ENTITY bbcomp.hr.label "Vågrätt streck">
+<!ENTITY bbcomp.hr.tooltiptext "Lägg till ett vågrätt streck">
+<!ENTITY bbcomp.br.label "Ny rad">
+<!ENTITY bbcomp.br.tooltiptext "Infoga en ny rad">
+<!ENTITY bbcomp.undo.label "Ångra">
+<!ENTITY bbcomp.undo.tooltiptext "Ångra senaste ändring">
+<!ENTITY bbcomp.redo.label "Gör om">
+<!ENTITY bbcomp.redo.tooltiptext "Gör om senaste ändring">
+<!ENTITY bbcomp.b.label "Fet">
+<!ENTITY bbcomp.b.tooltiptext "Ange som fetstil">
+<!ENTITY bbcomp.i.label "Kursiv">
+<!ENTITY bbcomp.i.tooltiptext "Ange som kursiv stil">
+<!ENTITY bbcomp.u.label "Understruken">
+<!ENTITY bbcomp.u.tooltiptext "Stryk under markerad text">
+<!ENTITY bbcomp.strong.label "Kraftig">
+<!ENTITY bbcomp.strong.tooltiptext "Märk som kraftig (strong)">
+<!ENTITY bbcomp.em.label "Betoning">
+<!ENTITY bbcomp.em.tooltiptext "Lägg till en betoning">
+<!ENTITY bbcomp.q.label "Citera">
+<!ENTITY bbcomp.q.tooltiptext "Lägg till citationstecken">
+<!ENTITY bbcomp.cite.label "Källhänvisning">
+<!ENTITY bbcomp.cite.tooltiptext "Lägg till en referens till en författare eller en bok">
+<!ENTITY bbcomp.acronym.label "Initialförkortning">
+<!ENTITY bbcomp.acronym.tooltiptext "Lägg till en initialförkortning">
+<!ENTITY bbcomp.abbr.label "Förkortning">
+<!ENTITY bbcomp.abbr.tooltiptext "Lägg till en förkortning">
+<!ENTITY bbcomp.a.label "Länk">
+<!ENTITY bbcomp.a.tooltiptext "Lägg till en länk">
+<!ENTITY bbcomp.img.label "Bild">
+<!ENTITY bbcomp.img.tooltiptext "Lägg till en bild">
+<!ENTITY bbcomp.table.label "Tabell">
+<!ENTITY bbcomp.table.tooltiptext "Lägg till en tabell">
+<!ENTITY bbcomp.special.label "Special">
+<!ENTITY bbcomp.special.tooltiptext "Specialiserad semantik">
+<!ENTITY bbcomp.sup.label "Upphöjd">
+<!ENTITY bbcomp.sup.tooltiptext "Märk som upphöjd text">
+<!ENTITY bbcomp.sub.label "Nedsänkt">
+<!ENTITY bbcomp.sub.tooltiptext "Märk som nedsänkt text">
+<!ENTITY bbcomp.samp.label "Exempel">
+<!ENTITY bbcomp.samp.tooltiptext "Märk som exempel">
+<!ENTITY bbcomp.dfn.label "Definition">
+<!ENTITY bbcomp.dfn.tooltiptext "Märk som definition">
+<!ENTITY bbcomp.kbd.label "Tangenttryckning">
+<!ENTITY bbcomp.kbd.tooltiptext "Märk som tangenttryckning">
+<!ENTITY bbcomp.var.label "Variabel">
+<!ENTITY bbcomp.var.tooltiptext "Märk som kodvariabel">
+<!ENTITY bbcomp.code.label "Källkod">
+<!ENTITY bbcomp.code.tooltiptext "Märk som källkod">
+<!ENTITY bbcomp.del.label "Ta bort">
+<!ENTITY bbcomp.del.tooltiptext "Märk som borttagen text">
+<!ENTITY bbcomp.ins.label "Infogad">
+<!ENTITY bbcomp.ins.tooltiptext "Märk som infogad text">
+<!ENTITY bbcomp.anchor.label "Ankare">
+<!ENTITY bbcomp.anchor.tooltiptext "Lägg till/Ändra ett ankare">
+<!ENTITY bbcomp.span.label "Span">
+<!ENTITY bbcomp.span.tooltiptext "Lägg till/Ta bort ett span-element">
+<!ENTITY bbcomp.div.label "Sektion">
+<!ENTITY bbcomp.div.tooltiptext "Inkludera i ett sektionsblock">
+<!ENTITY bbcomp.blockquote.label "Blockquote">
+<!ENTITY bbcomp.blockquote.tooltiptext "Inkludera i ett citationsblock">
+<!ENTITY bbcomp.attclass.label "Klasser">
+<!ENTITY bbcomp.attclass.tooltiptext "Ändra klasserna för detta element">
+<!ENTITY bbcomp.attlang.label "Språk">
+<!ENTITY bbcomp.attlang.tooltiptext "Ange språket för textinnehållet i detta element">
+<!ENTITY bbcomp.deindent.label "Minska indrag">
+<!ENTITY bbcomp.deindent.tooltiptext "Minska indraget i texten">
+<!ENTITY bbcomp.indent.label "Indrag">
+<!ENTITY bbcomp.indent.tooltiptext "Gör indrag i texten">
+<!ENTITY bbcomp.fontsizedec.label "Minska storlek">
+<!ENTITY bbcomp.fontsizedec.tooltiptext "Minska fontstorleken">
+<!ENTITY bbcomp.fontsizeinc.label "Öka storlek">
+<!ENTITY bbcomp.fontsizeinc.tooltiptext "Öka fontstorleken">
+<!ENTITY bbcomp.margintopdec.label "Decrease margin top">
+<!ENTITY bbcomp.margintopdec.tooltiptext "Decrease margin top of the element">
+<!ENTITY bbcomp.margintopinc.label "Increase margin top">
+<!ENTITY bbcomp.margintopinc.tooltiptext "Increase margin top of the element">
+<!ENTITY bbcomp.marginrightdec.label "Decrease margin right">
+<!ENTITY bbcomp.marginrightdec.tooltiptext "Decrease margin right of the element">
+<!ENTITY bbcomp.marginrightinc.label "Increase margin right">
+<!ENTITY bbcomp.marginrightinc.tooltiptext "Increase margin right of the element">
+<!ENTITY bbcomp.marginbottomdec.label "Decrease margin bottom">
+<!ENTITY bbcomp.marginbottomdec.tooltiptext "Decrease margin bottom of the element">
+<!ENTITY bbcomp.marginbottominc.label "Increase margin bottom">
+<!ENTITY bbcomp.marginbottominc.tooltiptext "Increase margin bottom of the element">
+<!ENTITY bbcomp.marginleftdec.label "Decrease margin margin left">
+<!ENTITY bbcomp.marginleftdec.tooltiptext "Decrease margin left of the element">
+<!ENTITY bbcomp.marginleftinc.label "Increase margin left">
+<!ENTITY bbcomp.marginleftinc.tooltiptext "Increase margin left of the element">
+<!ENTITY bbcomp.alignleft.label "Vänsterjustera">
+<!ENTITY bbcomp.alignleft.tooltiptext "Justera texten åt vänster">
+<!ENTITY bbcomp.aligncent.label "Centrera">
+<!ENTITY bbcomp.aligncent.tooltiptext "Justera texten mot mitten">
+<!ENTITY bbcomp.alignrigh.label "Högerjustera">
+<!ENTITY bbcomp.alignrigh.tooltiptext "Justera texten åt höger">
+<!ENTITY bbcomp.alignjust.label "Marginaljustera">
+<!ENTITY bbcomp.alignjust.tooltiptext "Marginaljustera texten">
+<!ENTITY bbcomp.dirltr.label "Vänster till höger">
+<!ENTITY bbcomp.dirltr.tooltiptext "Orientera texten från vänster till höger">
+<!ENTITY bbcomp.dirrtl.label "Höger till vänster">
+<!ENTITY bbcomp.dirrtl.tooltiptext "Orientera texten från höger till vänster">
+<!ENTITY bbcomp.cleancss.label "Rensa CSS">
+<!ENTITY bbcomp.cleancss.tooltiptext "Ta bort all formatering av det aktuella elementet">
+<!ENTITY bbcomp.style.label "Stilar">
+<!ENTITY bbcomp.poetry.label "Poetry">
+<!ENTITY bbcomp.poetry.tooltip "Insert poetry">

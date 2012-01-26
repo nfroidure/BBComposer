@@ -1,0 +1,54 @@
+<!ENTITY bbcomp.opt.dialog.title "Composeur : Options">
+<!ENTITY bbcomp.opt.gnr.label "G&#233;n&#233;ral">
+<!ENTITY bbcomp.opt.lng.label "Langage">
+<!ENTITY bbcomp.opt.upd.label "T&#233;l&#233;chargements">
+<!ENTITY bbcomp.opt.rsp.label "R&#233;ponse">
+<!ENTITY bbcomp.opt.avd.label "Avanc&#233;">
+<!ENTITY bbcomp.opt.fld.label "Champs">
+<!ENTITY bbcomp.opt.gnr.caption "Options g&#233;n&#233;rales">
+<!ENTITY bbcomp.opt.gnr.site.css.label "Chemin de la feuille de style (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "Pas de feuille de style">
+<!ENTITY bbcomp.opt.cmp.automode.label "Entrer en mode d&apos;&#233;dition automatiquement">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "Toujours activer la v&#233;rification orthographique (Firefox 2.0 et plus)">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "Ouvrir la barre lat&#233;rale en mode &#233;dition">
+<!ENTITY bbcomp.opt.lng.default.label "Langage d&apos;&#233;dition par d&#233;faut :">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (sans blocs)">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (BBCodes s&#233;mantiques)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "BBCodes courants">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Syntaxe Mediawiki (beta)">
+<!ENTITY bbcomp.opt.lng.spip.label "Typo Spip (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Typo Spip Enrichie (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
+<!ENTITY bbcomp.opt.lng.remember.label "Se souvenir du langage s&#233;lectionn&#233;">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "Options du XHTML">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indenter">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Convertir en entit&#233;s les caract&#232;res non ASCII">
+<!ENTITY bbcomp.opt.upd.caption "T&#233;l&#233;chargements">
+<!ENTITY bbcomp.opt.upd.description "Ces options permettent de r&#233;gler les param&#232;tres de t&#233;l&#233;chargement.">
+<!ENTITY bbcomp.opt.upd.on.label "Autoriser le t&#233;l&#233;chargement">
+<!ENTITY bbcomp.opt.upd.site.label "Site de t&#233;l&#233;chargement">
+<!ENTITY bbcomp.opt.upd.folder.label "Dossier de t&#233;l&#233;chargement">
+<!ENTITY bbcomp.opt.upd.url.label "Adresse de t&#233;l&#233;chargement">
+<!ENTITY bbcomp.opt.upd.postname.label "Nom du champs du fichier">
+<!ENTITY bbcomp.opt.upd.postparams.label "Param&#232;tres POST">
+<!ENTITY bbcomp.opt.upd.unique.label "Nom de fichier unique">
+<!ENTITY bbcomp.opt.rsp.caption "R&#233;ponses">
+<!ENTITY bbcomp.opt.rsp.description "R&#233;glages du type de r&#233;ponse du serveur.">
+<!ENTITY bbcomp.opt.rsp.type.label "R&#233;ponse du type">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "Texte">
+<!ENTITY bbcomp.opt.rsp.error.label "Marqueur d&apos;erreur">
+<!ENTITY bbcomp.opt.rsp.notice.label "Marqueur d&apos;avertissement">
+<!ENTITY bbcomp.opt.rsp.filename.label "Marqueur de nom de fichier">
+<!ENTITY bbcomp.opt.avd.caption "Options avanc&#233;es">
+<!ENTITY bbcomp.opt.avd.description "Ne modifiez ces options que si vous &#234;tes certain des r&#233;percussions que cela occasionnera.">
+<!ENTITY bbcomp.opt.avd.save.label "D&#233;lai de la sauvegarde automatique">
+<!ENTITY bbcomp.opt.avd.defcont.label "Contenu par d&#233;faut de l&apos;&#233;diteur">
+<!ENTITY bbcomp.opt.fld.caption.label "Champs enregistr&#233;s">
+<!ENTITY bbcomp.opt.fld.site.label "Filtre URL">
+<!ENTITY bbcomp.opt.fld.id.label "Filtre ID">
+<!ENTITY bbcomp.opt.fld.language.label "Langage">
+<!ENTITY bbcomp.opt.fld.target.label "Destination">
+<!ENTITY bbcomp.opt.fld.delete.label "Supprimer">
+<!ENTITY bbcomp.opt.fld.add.label "Ajouter">

@@ -1,0 +1,54 @@
+<!ENTITY bbcomp.opt.dialog.title "BBComposer : Opcje">
+<!ENTITY bbcomp.opt.gnr.label "Ogólne">
+<!ENTITY bbcomp.opt.lng.label "Język">
+<!ENTITY bbcomp.opt.upd.label "Wyślij">
+<!ENTITY bbcomp.opt.rsp.label "Odpowiedź">
+<!ENTITY bbcomp.opt.avd.label "Zaawansowane">
+<!ENTITY bbcomp.opt.fld.label "Pola">
+<!ENTITY bbcomp.opt.gnr.caption "Ogólne opcje">
+<!ENTITY bbcomp.opt.gnr.site.css.label "Katalog z plikiem CSS (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "Użyj domyślnego CSS">
+<!ENTITY bbcomp.opt.cmp.automode.label "Automatycznie przechodź w tryb edycji">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "Zawsze aktywuj sprawdzanie pisowni">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "Otwieraj boczny panel w trybie edycji">
+<!ENTITY bbcomp.opt.lng.default.label "Domyślny język :">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (bez bloków)">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCode&apos;y (semantyka BBCode&apos;ów)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "Zwyczajne BBCode&apos;y">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "Składnia Mediawiki">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
+<!ENTITY bbcomp.opt.lng.remember.label "Zapamiętaj wybrany język">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "Opcje XHTML">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Wcięcie">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Konwertuj znaki nie-ASCII na jednostki HTML">
+<!ENTITY bbcomp.opt.upd.caption "Zaawansowane opcje">
+<!ENTITY bbcomp.opt.upd.description "Te opcje pozwalają na modyfikację parametrów wysyłania">
+<!ENTITY bbcomp.opt.upd.on.label "Aktywuj wysyłanie">
+<!ENTITY bbcomp.opt.upd.site.label "Strona wysyłu">
+<!ENTITY bbcomp.opt.upd.folder.label "Katalog wysyłu">
+<!ENTITY bbcomp.opt.upd.url.label "URL wysyłu">
+<!ENTITY bbcomp.opt.upd.postname.label "Nazwa pliku">
+<!ENTITY bbcomp.opt.upd.postparams.label "Parametry POST">
+<!ENTITY bbcomp.opt.upd.unique.label "Nazwa pliku musi być unikatowa">
+<!ENTITY bbcomp.opt.rsp.caption "Odpowiedź">
+<!ENTITY bbcomp.opt.rsp.description "Parametry obchodzenia się z odpowiedziami">
+<!ENTITY bbcomp.opt.rsp.type.label "Typ odpowiedzi">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "Tekstowa">
+<!ENTITY bbcomp.opt.rsp.error.label "Rozpoznawanie błędów">
+<!ENTITY bbcomp.opt.rsp.notice.label "Rozpoznawanie ostrzeżeń">
+<!ENTITY bbcomp.opt.rsp.filename.label "Rozpoznawanie nazw plików">
+<!ENTITY bbcomp.opt.avd.caption "Zaawansowane opcje">
+<!ENTITY bbcomp.opt.avd.description "Nie modyfikuj zaawansowanych opcji jeżeli nie wiesz, co robisz.">
+<!ENTITY bbcomp.opt.avd.save.label "Przerwa między automatycznymi zapisywaniami">
+<!ENTITY bbcomp.opt.avd.defcont.label "Domyślna zawartość obszaru edytora">
+<!ENTITY bbcomp.opt.fld.caption.label "Zapisane pola">
+<!ENTITY bbcomp.opt.fld.site.label "Filtr URL">
+<!ENTITY bbcomp.opt.fld.id.label "Filtr ID">
+<!ENTITY bbcomp.opt.fld.language.label "Język">
+<!ENTITY bbcomp.opt.fld.target.label "Cel">
+<!ENTITY bbcomp.opt.fld.delete.label "Usuń">
+<!ENTITY bbcomp.opt.fld.add.label "Dodaj">

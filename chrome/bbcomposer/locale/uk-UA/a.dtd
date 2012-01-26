@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Посилання">
+<!ENTITY bbcomp.link.href.label "Розміщення">
+<!ENTITY bbcomp.link.title.label "Текст підказки">
+<!ENTITY bbcomp.link.target.label "Ціль">
+<!ENTITY bbcomp.link.target.normal.label "Нормальний">
+<!ENTITY bbcomp.link.target.popup.label "Нове вікно">
+<!ENTITY bbcomp.link.hreflang.label "Цільова мова">
+<!ENTITY bbcomp.link.hreflang.normal.label "Та ж мова">
+<!ENTITY bbcomp.link.hreflang.en.label "Англійська">
+<!ENTITY bbcomp.link.hreflang.de.label "Німецька">
+<!ENTITY bbcomp.link.hreflang.es.label "Іспанська">
+<!ENTITY bbcomp.link.hreflang.fr.label "Французька">

@@ -1,8 +1,8 @@
-<!ENTITY bbcomp.img.dialog.title "Image">
-<!ENTITY bbcomp.img.src.label "Directory">
-<!ENTITY bbcomp.img.browse.label "Browse">
-<!ENTITY bbcomp.img.alt.label "Alternate text">
-<!ENTITY bbcomp.img.align.label "Alignement">
-<!ENTITY bbcomp.img.align.normal.label "Normal">
-<!ENTITY bbcomp.img.align.left.label "Left">
-<!ENTITY bbcomp.img.align.right.label "Right">
+<!ENTITY bbcomp.img.dialog.title "Obrázek">
+<!ENTITY bbcomp.img.src.label "Umístění">
+<!ENTITY bbcomp.img.browse.label "Procházet">
+<!ENTITY bbcomp.img.alt.label "Alternativní text">
+<!ENTITY bbcomp.img.align.label "Zarovnání">
+<!ENTITY bbcomp.img.align.normal.label "Normální">
+<!ENTITY bbcomp.img.align.left.label "Vlevo">
+<!ENTITY bbcomp.img.align.right.label "Vpravo">

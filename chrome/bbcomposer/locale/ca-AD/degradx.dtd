@@ -1,0 +1,7 @@
+<!ENTITY degradx.name "DegradX">
+<!ENTITY degradx.tooltiptext "Afegeix rangs de colors">
+<!ENTITY degradx.tabs.text "Text">
+<!ENTITY degradx.tabs.background "Fons">
+<!ENTITY degradx.refresh.delay "Veure retard en l'actualització (en segons):">
+<!ENTITY degradx.button.delete "Esborra">
+<!ENTITY degradx.button.apply "Aplica">

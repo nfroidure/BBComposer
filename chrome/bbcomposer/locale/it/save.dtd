@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.save.dialog.title "Modifica e salva">
+<!ENTITY bbcomp.save.href.label "Filtro URL">
+<!ENTITY bbcomp.save.id.label "Filtro di identificazione">
+<!ENTITY bbcomp.save.language.label "Linguaggio">
+<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML (senza elementi blocco)">
+<!ENTITY bbcomp.save.language.bbcode.label "BBCode">
+<!ENTITY bbcomp.save.language.xbbcode.label "XBBCode">
+<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
+<!ENTITY bbcomp.save.language.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.save.language.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.save.language.skyblog.label "Skyrock blog (beta)">

@@ -1,0 +1,16 @@
+<!ENTITY bbcomp.background.position.dialog.title "Bakgrundsposition">
+<!ENTITY bbcomp.background.position.orient.label "Justering">
+<!ENTITY bbcomp.background.position.horizontal.label "Vågrätt">
+<!ENTITY bbcomp.background.position.horizontal.empty.label "">
+<!ENTITY bbcomp.background.position.horizontal.left.label "Vänster">
+<!ENTITY bbcomp.background.position.horizontal.right.label "Höger">
+<!ENTITY bbcomp.background.position.vertical.label "Lodrätt">
+<!ENTITY bbcomp.background.position.vertical.empty.label "">
+<!ENTITY bbcomp.background.position.vertical.top.label "Överst">
+<!ENTITY bbcomp.background.position.vertical.bottom.label "Nederst">
+<!ENTITY bbcomp.background.position.center.label "Centrera">
+<!ENTITY bbcomp.background.position.coord.label "">
+<!ENTITY bbcomp.background.position.x.label "Abskissa (x)">
+<!ENTITY bbcomp.background.position.y.label "Ordinata (y)">
+<!ENTITY bbcomp.background.position.pixel.label "Pixlar">
+<!ENTITY bbcomp.background.position.percent.label "Procent">

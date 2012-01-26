@@ -177,15 +177,15 @@
 <!ENTITY bbcomp.alignleft.label "Left">
 <!ENTITY bbcomp.alignleft.tooltiptext "Align the text to the left">
 <!ENTITY bbcomp.aligncent.label "Center">
-<!ENTITY bbcomp.aligncent.tooltiptext "Align the texte at the center">
+<!ENTITY bbcomp.aligncent.tooltiptext "Center the text">
 <!ENTITY bbcomp.alignrigh.label "Right">
-<!ENTITY bbcomp.alignrigh.tooltiptext "Aligner the text to the right">
+<!ENTITY bbcomp.alignrigh.tooltiptext "Align the text to the right">
 <!ENTITY bbcomp.alignjust.label "Justify">
 <!ENTITY bbcomp.alignjust.tooltiptext "Justify the text">
 <!ENTITY bbcomp.dirltr.label "Left to right">
-<!ENTITY bbcomp.dirltr.tooltiptext "Orient the texte from left to right">
+<!ENTITY bbcomp.dirltr.tooltiptext "Left-to-right orientation">
 <!ENTITY bbcomp.dirrtl.label "Right to left">
-<!ENTITY bbcomp.dirrtl.tooltiptext "Orient the text from right to left">
+<!ENTITY bbcomp.dirrtl.tooltiptext "Right to left orientation">
 <!ENTITY bbcomp.cleancss.label "Clean CSS">
 <!ENTITY bbcomp.cleancss.tooltiptext "Delete all styles of the current element">
 <!ENTITY bbcomp.style.label "Styles">

@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Tableau">
+<!ENTITY bbcomp.tbl.caption.label "Titre">
+<!ENTITY bbcomp.tbl.summary.label "Sommaire">
+<!ENTITY bbcomp.tbl.hrows.label "Lignes d&apos;en-t&#234;te">
+<!ENTITY bbcomp.tbl.rows.label "Lignes de corps">
+<!ENTITY bbcomp.tbl.frows.label "Lignes de fin">
+<!ENTITY bbcomp.tbl.cols.label "Colonnes">

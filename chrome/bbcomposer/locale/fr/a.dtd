@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Lien">
+<!ENTITY bbcomp.link.href.label "Adresse">
+<!ENTITY bbcomp.link.title.label "Texte de survol">
+<!ENTITY bbcomp.link.target.label "Cible">
+<!ENTITY bbcomp.link.target.normal.label "Normal">
+<!ENTITY bbcomp.link.target.popup.label "Nouvelle fenêtre">
+<!ENTITY bbcomp.link.hreflang.label "Langue de la cible">
+<!ENTITY bbcomp.link.hreflang.normal.label "Même langue">
+<!ENTITY bbcomp.link.hreflang.en.label "Anglais">
+<!ENTITY bbcomp.link.hreflang.de.label "Allemand">
+<!ENTITY bbcomp.link.hreflang.es.label "Espagnol">
+<!ENTITY bbcomp.link.hreflang.fr.label "Francais">

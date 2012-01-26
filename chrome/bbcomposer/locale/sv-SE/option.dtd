@@ -1,0 +1,54 @@
+<!ENTITY bbcomp.opt.dialog.title "BBComposer : Inställningar">
+<!ENTITY bbcomp.opt.gnr.label "Allmänt">
+<!ENTITY bbcomp.opt.lng.label "Språk">
+<!ENTITY bbcomp.opt.upd.label "Uppladdning">
+<!ENTITY bbcomp.opt.rsp.label "Svar">
+<!ENTITY bbcomp.opt.avd.label "Avancerat">
+<!ENTITY bbcomp.opt.fld.label "Fält">
+<!ENTITY bbcomp.opt.gnr.caption "Allmänna inställningar">
+<!ENTITY bbcomp.opt.gnr.site.css.label "CSS-filmapp (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "Använd standard-CSS">
+<!ENTITY bbcomp.opt.cmp.automode.label "Gå till redigeringsläget automatiskt">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "Aktivera alltid stavningskontrollen">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "Öppna sidopanelen i redigeringsläget">
+<!ENTITY bbcomp.opt.lng.default.label "Standardspråk :">
+<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (inga block)">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCode (semantisk BBCode)">
+<!ENTITY bbcomp.opt.lng.bbcode.label "Vanlig BBCode">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "MediaWiki-syntax">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
+<!ENTITY bbcomp.opt.lng.remember.label "Kom ihåg språk när det har valts">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML-inställningar">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indrag">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Konvertera icke-ASCII-tecken till HTML-entiteter">
+<!ENTITY bbcomp.opt.upd.caption "Avancerade inställningar">
+<!ENTITY bbcomp.opt.upd.description "Dessa inställningar låter dig justera uppladdningsparametrar.">
+<!ENTITY bbcomp.opt.upd.on.label "Aktivera uppladdning">
+<!ENTITY bbcomp.opt.upd.site.label "Uppladdningswebbplats">
+<!ENTITY bbcomp.opt.upd.folder.label "Uppladdningsmapp">
+<!ENTITY bbcomp.opt.upd.url.label "Uppladdnings-URL">
+<!ENTITY bbcomp.opt.upd.postname.label "Fältnamn för filen">
+<!ENTITY bbcomp.opt.upd.postparams.label "POST-parametrar">
+<!ENTITY bbcomp.opt.upd.unique.label "Filnamn måste vara unika">
+<!ENTITY bbcomp.opt.rsp.caption "Svar">
+<!ENTITY bbcomp.opt.rsp.description "Svarar på behandlingsparametrar.">
+<!ENTITY bbcomp.opt.rsp.type.label "Svarstyp">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
+<!ENTITY bbcomp.opt.rsp.type.text.label "Text">
+<!ENTITY bbcomp.opt.rsp.error.label "Feltolk">
+<!ENTITY bbcomp.opt.rsp.notice.label "Meddelandetolk">
+<!ENTITY bbcomp.opt.rsp.filename.label "Filnamnstolk">
+<!ENTITY bbcomp.opt.avd.caption "Avancerade inställningar">
+<!ENTITY bbcomp.opt.avd.description "Ändra inte avancerade inställningar utan att veta vad de gör.">
+<!ENTITY bbcomp.opt.avd.save.label "Fördröjning för automatisk sparfunktion">
+<!ENTITY bbcomp.opt.avd.defcont.label "Standardinnehåll i redigeraren">
+<!ENTITY bbcomp.opt.fld.caption.label "Sparade fält">
+<!ENTITY bbcomp.opt.fld.site.label "URL-filter">
+<!ENTITY bbcomp.opt.fld.id.label "ID-filter">
+<!ENTITY bbcomp.opt.fld.language.label "Språk">
+<!ENTITY bbcomp.opt.fld.target.label "Mål">
+<!ENTITY bbcomp.opt.fld.delete.label "Ta bort">
+<!ENTITY bbcomp.opt.fld.add.label "Lägg till">

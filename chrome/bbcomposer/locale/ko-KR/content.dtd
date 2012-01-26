@@ -1,33 +1,42 @@
 <!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.copy "Copy">
+<!ENTITY bbcomp.cut "Cut">
+<!ENTITY bbcomp.paste "Paste">
 <!ENTITY bbcomp.pasteas "다음으로 붙여넣기">
-<!ENTITY bbcomp.pasteas.div "a division of the document">
-<!ENTITY bbcomp.pasteas.blockquote "a blockquote">
-<!ENTITY bbcomp.pasteas.ins "added content">
-<!ENTITY bbcomp.pasteas.del "deleted content">
-<!ENTITY bbcomp.pasteas.text "text">
-<!ENTITY bbcomp.pastefrom "Paste from">
-<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pasteas.div "문서의 한 부분">
+<!ENTITY bbcomp.pasteas.blockquote "인용구">
+<!ENTITY bbcomp.pasteas.ins "내용 추가">
+<!ENTITY bbcomp.pasteas.del "내용 삭제">
+<!ENTITY bbcomp.pasteas.text "(단순)글">
+<!ENTITY bbcomp.pastefrom "다음으로 붙이기">
 <!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
+<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (블럭 없음)">
 <!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
 <!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
-<!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (no blocks)">
-<!ENTITY bbcomp.delete "Delete">
-<!ENTITY bbcomp.selectall "Select all">
-<!ENTITY bbcomp.edit.textarea.xbbcode "XBBCode로 편집">
-<!ENTITY bbcomp.edit.textarea.xhtml "HTML4로">
+<!ENTITY bbcomp.pastefrom.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.skyblog "Skyrock blog (beta)">
+<!ENTITY bbcomp.delete "삭제">
+<!ENTITY bbcomp.selectall "모두 선택">
+<!ENTITY bbcomp.edit.textarea.xhtml "XHTML로 편집">
 <!ENTITY bbcomp.edit.textarea.bbcode "BBCode로 편집">
-<!ENTITY bbcomp.edit.textarea.mediawiki "Mediawiki로 편집">
+<!ENTITY bbcomp.edit.textarea.xbbcode "XBBCode로 편집">
 <!ENTITY bbcomp.edit.textarea.xhtmlnb "XHTML로 편집 (블럭 없음)">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Mediawiki로 편집">
+<!ENTITY bbcomp.edit.textarea.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "편집 후 저장">
 <!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-ko">
 <!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-ko">
 <!ENTITY bbcomp.mode.label "편집 모드">
 <!ENTITY bbcomp.mode.tooltiptext "편집 모드 끄기/켜기">
 <!ENTITY bbcomp.load.label "불러오기">
-<!ENTITY bbcomp.load.tooltiptext "놑트로 불러오기">
+<!ENTITY bbcomp.load.tooltiptext "노트 불러오기">
 <!ENTITY bbcomp.save.label "저장">
-<!ENTITY bbcomp.save.tooltiptext "노트로 저장">
-<!ENTITY bbcomp.stop.label "정지">
+<!ENTITY bbcomp.save.tooltiptext "노트 저장">
+<!ENTITY bbcomp.stop.label "취소">
 <!ENTITY bbcomp.stop.tooltiptext "변경 취소">
 <!ENTITY bbcomp.backup.label "빠른 불러오기">
 <!ENTITY bbcomp.backup.tooltiptext "마지막 자동저장으로 부터 내용 불러오기">
@@ -39,6 +48,14 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "카툰/만화 아이콘 라이브러리">
 <!ENTITY bbcomp.css.label "스타일시트">
 <!ENTITY bbcomp.css.tooltiptext "CSS 편집">
+<!ENTITY bbcomp.degradx.label "Degradees">
+<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
+<!ENTITY bbcomp.toolbar.label "도구막대">
+<!ENTITY bbcomp.toolbar.tooltiptext "도구막대 표시/숨기기">
+<!ENTITY bbcomp.edition.label "요소">
+<!ENTITY bbcomp.edition.tooltiptext "요소 편집">
+<!ENTITY bbcomp.spip.label "Spip Typo">
+<!ENTITY bbcomp.spip.tooltiptext "Edit Spip Typo syntax">
 <!ENTITY bbcomp.options.label "도구">
 <!ENTITY bbcomp.options.tooltiptext "도구 보기">
 <!ENTITY bbcomp.option.label "선택사항">
@@ -49,6 +66,8 @@
 <!ENTITY bbcomp.help.tooltiptext "설명서로 가기">
 <!ENTITY bbcomp.forum.label "포럼">
 <!ENTITY bbcomp.forum.tooltiptext "BBComposer에 대해 나눕니다.">
+<!ENTITY bbcomp.debug.label "디버그">
+<!ENTITY bbcomp.debug.tooltiptext "디버그 보고서 저장">
 <!ENTITY bbcomp.about.label "확장기능 정보">
 <!ENTITY bbcomp.about.tooltiptext "BBComposer 정보">
 <!ENTITY bbcomp.lists.label "목록">
@@ -71,10 +90,6 @@
 <!ENTITY bbcomp.hr.tooltiptext "수평 막대 추가">
 <!ENTITY bbcomp.br.label "새 줄">
 <!ENTITY bbcomp.br.tooltiptext "새 줄로 가기">
-<!ENTITY bbcomp.deindent.label "Deindent">
-<!ENTITY bbcomp.deindent.tooltiptext "Deindent the text">
-<!ENTITY bbcomp.indent.label "Indent">
-<!ENTITY bbcomp.indent.tooltiptext "Indent the text">
 <!ENTITY bbcomp.undo.label "실행 취소">
 <!ENTITY bbcomp.undo.tooltiptext "최종 변경된 내용 취소">
 <!ENTITY bbcomp.redo.label "실행 반복">
@@ -131,4 +146,48 @@
 <!ENTITY bbcomp.div.tooltiptext "분할 구역내 삽입">
 <!ENTITY bbcomp.blockquote.label "인용">
 <!ENTITY bbcomp.blockquote.tooltiptext "인용 구역내 삽입">
+<!ENTITY bbcomp.attclass.label "클래스">
+<!ENTITY bbcomp.attclass.tooltiptext "Modifier les classes de cet élément">
+<!ENTITY bbcomp.attlang.label "언어">
+<!ENTITY bbcomp.attlang.tooltiptext "Définir la langue du texte contenu dans cet élément">
+<!ENTITY bbcomp.deindent.label "내어쓰기">
+<!ENTITY bbcomp.deindent.tooltiptext "글을 내어 씁니다">
+<!ENTITY bbcomp.indent.label "들여쓰기">
+<!ENTITY bbcomp.indent.tooltiptext "글을 들여 씁니다">
+<!ENTITY bbcomp.fontsizedec.label "크기 줄임">
+<!ENTITY bbcomp.fontsizedec.tooltiptext "글꼴 크기 줄임">
+<!ENTITY bbcomp.fontsizeinc.label "크기 늘임">
+<!ENTITY bbcomp.fontsizeinc.tooltiptext "글꼴 크기 늘임">
+<!ENTITY bbcomp.margintopdec.label "Decrease margin top">
+<!ENTITY bbcomp.margintopdec.tooltiptext "Decrease margin top of the element">
+<!ENTITY bbcomp.margintopinc.label "Increase margin top">
+<!ENTITY bbcomp.margintopinc.tooltiptext "Increase margin top of the element">
+<!ENTITY bbcomp.marginrightdec.label "Decrease margin right">
+<!ENTITY bbcomp.marginrightdec.tooltiptext "Decrease margin right of the element">
+<!ENTITY bbcomp.marginrightinc.label "Increase margin right">
+<!ENTITY bbcomp.marginrightinc.tooltiptext "Increase margin right of the element">
+<!ENTITY bbcomp.marginbottomdec.label "Decrease margin bottom">
+<!ENTITY bbcomp.marginbottomdec.tooltiptext "Decrease margin bottom of the element">
+<!ENTITY bbcomp.marginbottominc.label "Increase margin bottom">
+<!ENTITY bbcomp.marginbottominc.tooltiptext "Increase margin bottom of the element">
+<!ENTITY bbcomp.marginleftdec.label "Decrease margin margin left">
+<!ENTITY bbcomp.marginleftdec.tooltiptext "Decrease margin left of the element">
+<!ENTITY bbcomp.marginleftinc.label "Increase margin left">
+<!ENTITY bbcomp.marginleftinc.tooltiptext "Increase margin left of the element">
+<!ENTITY bbcomp.alignleft.label "왼쪽">
+<!ENTITY bbcomp.alignleft.tooltiptext "왼쪽으로 글 정렬">
+<!ENTITY bbcomp.aligncent.label "중앙">
+<!ENTITY bbcomp.aligncent.tooltiptext "중앙으로 글 정렬">
+<!ENTITY bbcomp.alignrigh.label "오른쪽">
+<!ENTITY bbcomp.alignrigh.tooltiptext "오른쪽으로 글 정렬">
+<!ENTITY bbcomp.alignjust.label "자리맞춤">
+<!ENTITY bbcomp.alignjust.tooltiptext "글 자리맞춤">
+<!ENTITY bbcomp.dirltr.label "왼쪽에서 오른쪽으로">
+<!ENTITY bbcomp.dirltr.tooltiptext "왼쪽에서 오른쪽으로 글을 진행">
+<!ENTITY bbcomp.dirrtl.label "오른쪽에서 왼쪽으로">
+<!ENTITY bbcomp.dirrtl.tooltiptext "오른쪽에서 왼쪽으로 글을 진행">
+<!ENTITY bbcomp.cleancss.label "CSS 지우기">
+<!ENTITY bbcomp.cleancss.tooltiptext "현재 요소의 모든 스타일을 지웁니다">
 <!ENTITY bbcomp.style.label "스타일">
+<!ENTITY bbcomp.poetry.label "Poetry">
+<!ENTITY bbcomp.poetry.tooltip "Insert poetry">

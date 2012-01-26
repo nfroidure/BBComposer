@@ -1,0 +1,7 @@
+<!ENTITY bbcomp.tbl.dialog.title "Tabell">
+<!ENTITY bbcomp.tbl.caption.label "Undertext">
+<!ENTITY bbcomp.tbl.summary.label "Sammanfattning">
+<!ENTITY bbcomp.tbl.hrows.label "Tabellsidhuvuden">
+<!ENTITY bbcomp.tbl.rows.label "Rader">
+<!ENTITY bbcomp.tbl.frows.label "Tabellsidfötter">
+<!ENTITY bbcomp.tbl.cols.label "Kolumner">

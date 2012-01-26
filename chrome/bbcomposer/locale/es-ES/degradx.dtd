@@ -1,0 +1,7 @@
+<!ENTITY degradx.name "DegradX">
+<!ENTITY degradx.tooltiptext "Añadir colores">
+<!ENTITY degradx.tabs.text "Texto">
+<!ENTITY degradx.tabs.background "Fondo">
+<!ENTITY degradx.refresh.delay "Ver tiempo de recarga (en segundos):">
+<!ENTITY degradx.button.delete "Eliminar">
+<!ENTITY degradx.button.apply "Aplicar">

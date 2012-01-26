@@ -1,0 +1,17 @@
+<!ENTITY bbcomp.font.size.dialog.title "Fontstorlek">
+<!ENTITY bbcomp.font.size.numeric.label "Numerisk">
+<!ENTITY bbcomp.font.size.pixel.label "Pixlar">
+<!ENTITY bbcomp.font.size.percent.label "Procent">
+<!ENTITY bbcomp.font.size.point.label "Punkter">
+<!ENTITY bbcomp.font.size.emphasis.label "Betoning">
+<!ENTITY bbcomp.font.size.varchar.label "Fördefinierad">
+<!ENTITY bbcomp.font.size.empty.label "">
+<!ENTITY bbcomp.font.size.xx.small.label "Pytteliten">
+<!ENTITY bbcomp.font.size.x.small.label "Mycket liten">
+<!ENTITY bbcomp.font.size.small.label "Liten">
+<!ENTITY bbcomp.font.size.medium.label "Medelstor">
+<!ENTITY bbcomp.font.size.large.label "Stor">
+<!ENTITY bbcomp.font.size.x.large.label "Mycket stor">
+<!ENTITY bbcomp.font.size.xx.large.label "Jättestor">
+<!ENTITY bbcomp.font.size.smaller.label "Mindre">
+<!ENTITY bbcomp.font.size.larger.label "Större">

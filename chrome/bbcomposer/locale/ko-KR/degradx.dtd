@@ -1,0 +1,7 @@
+<!ENTITY degradx.name "DegradX">
+<!ENTITY degradx.tooltiptext "색상 범위 추가">
+<!ENTITY degradx.tabs.text "본문">
+<!ENTITY degradx.tabs.background "배경">
+<!ENTITY degradx.refresh.delay "표현 갱신 간격(초 단위):">
+<!ENTITY degradx.button.delete "삭제">
+<!ENTITY degradx.button.apply "적용">

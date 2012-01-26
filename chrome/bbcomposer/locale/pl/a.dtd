@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Odnośnik">
+<!ENTITY bbcomp.link.href.label "Lokalizacja">
+<!ENTITY bbcomp.link.title.label "Dymek">
+<!ENTITY bbcomp.link.target.label "Otwórz">
+<!ENTITY bbcomp.link.target.normal.label "Normalnie">
+<!ENTITY bbcomp.link.target.popup.label "W nowym oknie">
+<!ENTITY bbcomp.link.hreflang.label "Język docelowy">
+<!ENTITY bbcomp.link.hreflang.normal.label "Ten sam język">
+<!ENTITY bbcomp.link.hreflang.en.label "Angielski">
+<!ENTITY bbcomp.link.hreflang.de.label "Niemiecki">
+<!ENTITY bbcomp.link.hreflang.es.label "Hiszpański">
+<!ENTITY bbcomp.link.hreflang.fr.label "Francuski">

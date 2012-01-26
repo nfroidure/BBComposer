@@ -1,0 +1,7 @@
+<!ENTITY degradx.name "DegradX">
+<!ENTITY degradx.tooltiptext "Kleurbereiken toevoegen">
+<!ENTITY degradx.tabs.text "Tekst">
+<!ENTITY degradx.tabs.background "Achtergrond">
+<!ENTITY degradx.refresh.delay "Beeldverversing vertraging (in sec.):">
+<!ENTITY degradx.button.delete "Verwijderen">
+<!ENTITY degradx.button.apply "Toepassen">

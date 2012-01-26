@@ -1,0 +1,12 @@
+<!ENTITY bbcomp.link.dialog.title "Länk">
+<!ENTITY bbcomp.link.href.label "Plats">
+<!ENTITY bbcomp.link.title.label "Verktygstipstext">
+<!ENTITY bbcomp.link.target.label "Mål">
+<!ENTITY bbcomp.link.target.normal.label "Standard">
+<!ENTITY bbcomp.link.target.popup.label "Nytt fönster">
+<!ENTITY bbcomp.link.hreflang.label "Målspråk">
+<!ENTITY bbcomp.link.hreflang.normal.label "Samma språk">
+<!ENTITY bbcomp.link.hreflang.en.label "Engelska">
+<!ENTITY bbcomp.link.hreflang.de.label "Tyska">
+<!ENTITY bbcomp.link.hreflang.es.label "Spanska">
+<!ENTITY bbcomp.link.hreflang.fr.label "Franska">

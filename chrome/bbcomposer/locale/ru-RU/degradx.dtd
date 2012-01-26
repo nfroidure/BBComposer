@@ -1,0 +1,7 @@
+<!ENTITY degradx.name "DegradX">
+<!ENTITY degradx.tooltiptext "Добавить диапазон цветов">
+<!ENTITY degradx.tabs.text "Текст">
+<!ENTITY degradx.tabs.background "Фон">
+<!ENTITY degradx.refresh.delay "Интервал обновлений (секунд):">
+<!ENTITY degradx.button.delete "Удалить">
+<!ENTITY degradx.button.apply "Применить">

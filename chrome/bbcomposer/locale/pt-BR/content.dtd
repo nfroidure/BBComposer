@@ -1,4 +1,7 @@
 <!ENTITY bbcomp.name "BBComposer">
+<!ENTITY bbcomp.copy "Copy">
+<!ENTITY bbcomp.cut "Cut">
+<!ENTITY bbcomp.paste "Paste">
 <!ENTITY bbcomp.pasteas "Colar como">
 <!ENTITY bbcomp.pasteas.div "a division of the document">
 <!ENTITY bbcomp.pasteas.blockquote "um bloco de citação">
@@ -6,18 +9,24 @@
 <!ENTITY bbcomp.pasteas.del "deleted content">
 <!ENTITY bbcomp.pasteas.text "text">
 <!ENTITY bbcomp.pastefrom "Paste from">
-<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
 <!ENTITY bbcomp.pastefrom.xhtml "XHTML 1.0">
-<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
-<!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
 <!ENTITY bbcomp.pastefrom.xhtmlnb "XHTML (no blocks)">
+<!ENTITY bbcomp.pastefrom.bbcode "BBCode">
+<!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
+<!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki (beta)">
+<!ENTITY bbcomp.pastefrom.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.delete "Delete">
 <!ENTITY bbcomp.selectall "Select all">
-<!ENTITY bbcomp.edit.textarea.xbbcode "Editar com XBBCode">
 <!ENTITY bbcomp.edit.textarea.xhtml "Editar com HTML4">
 <!ENTITY bbcomp.edit.textarea.bbcode "Editar com BBCode">
-<!ENTITY bbcomp.edit.textarea.mediawiki "Editar com Mediawiki">
+<!ENTITY bbcomp.edit.textarea.xbbcode "Editar com XBBCode">
 <!ENTITY bbcomp.edit.textarea.xhtmlnb "Edit with XHTML (no blocks)">
+<!ENTITY bbcomp.edit.textarea.mediawiki "Editar com Mediawiki">
+<!ENTITY bbcomp.edit.textarea.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "Editar e salvar">
 <!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-br">
 <!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-br">
@@ -39,6 +48,14 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "Biblioteca de ícones cartoon/manga">
 <!ENTITY bbcomp.css.label "CSS">
 <!ENTITY bbcomp.css.tooltiptext "Editar CSS">
+<!ENTITY bbcomp.degradx.label "Degradees">
+<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
+<!ENTITY bbcomp.toolbar.label "Toolbars">
+<!ENTITY bbcomp.toolbar.tooltiptext "Show/Hide toolbars">
+<!ENTITY bbcomp.edition.label "Elements">
+<!ENTITY bbcomp.edition.tooltiptext "Edit elements">
+<!ENTITY bbcomp.spip.label "Spip Typo">
+<!ENTITY bbcomp.spip.tooltiptext "Edit Spip Typo syntax">
 <!ENTITY bbcomp.options.label "Ferramentas">
 <!ENTITY bbcomp.options.tooltiptext "Exibe as ferramentas">
 <!ENTITY bbcomp.option.label "Opções">
@@ -49,6 +66,8 @@
 <!ENTITY bbcomp.help.tooltiptext "Ir para o manual">
 <!ENTITY bbcomp.forum.label "Fórum">
 <!ENTITY bbcomp.forum.tooltiptext "Falar sobre o BBComposer">
+<!ENTITY bbcomp.debug.label "Debug">
+<!ENTITY bbcomp.debug.tooltiptext "Save Debug report">
 <!ENTITY bbcomp.about.label "Sobre">
 <!ENTITY bbcomp.about.tooltiptext "Sobre BBComposer">
 <!ENTITY bbcomp.lists.label "Listas">
@@ -71,10 +90,6 @@
 <!ENTITY bbcomp.hr.tooltiptext "Adiciona uma barra horizontal">
 <!ENTITY bbcomp.br.label "Nova linha">
 <!ENTITY bbcomp.br.tooltiptext "Vai para uma nova linha">
-<!ENTITY bbcomp.deindent.label "Remover recuo">
-<!ENTITY bbcomp.deindent.tooltiptext "Remover recuo do texto">
-<!ENTITY bbcomp.indent.label "Recuar">
-<!ENTITY bbcomp.indent.tooltiptext "Recuar o texto">
 <!ENTITY bbcomp.undo.label "Desfazer">
 <!ENTITY bbcomp.undo.tooltiptext "Desfazer últimas mudanças">
 <!ENTITY bbcomp.redo.label "Refazer">
@@ -131,4 +146,48 @@
 <!ENTITY bbcomp.div.tooltiptext "Inclui em um bloco de divisão">
 <!ENTITY bbcomp.blockquote.label "Citação">
 <!ENTITY bbcomp.blockquote.tooltiptext "Inclui em um bloco de citação">
+<!ENTITY bbcomp.attclass.label "Classes">
+<!ENTITY bbcomp.attclass.tooltiptext "Modifier les classes de cet élément">
+<!ENTITY bbcomp.attlang.label "Langue">
+<!ENTITY bbcomp.attlang.tooltiptext "Définir la langue du texte contenu dans cet élément">
+<!ENTITY bbcomp.deindent.label "Remover recuo">
+<!ENTITY bbcomp.deindent.tooltiptext "Remover recuo do texto">
+<!ENTITY bbcomp.indent.label "Recuar">
+<!ENTITY bbcomp.indent.tooltiptext "Recuar o texto">
+<!ENTITY bbcomp.fontsizedec.label "Decrease size">
+<!ENTITY bbcomp.fontsizedec.tooltiptext "Decrease font size">
+<!ENTITY bbcomp.fontsizeinc.label "Increase size">
+<!ENTITY bbcomp.fontsizeinc.tooltiptext "Increase font size">
+<!ENTITY bbcomp.margintopdec.label "Decrease margin top">
+<!ENTITY bbcomp.margintopdec.tooltiptext "Decrease margin top of the element">
+<!ENTITY bbcomp.margintopinc.label "Increase margin top">
+<!ENTITY bbcomp.margintopinc.tooltiptext "Increase margin top of the element">
+<!ENTITY bbcomp.marginrightdec.label "Decrease margin right">
+<!ENTITY bbcomp.marginrightdec.tooltiptext "Decrease margin right of the element">
+<!ENTITY bbcomp.marginrightinc.label "Increase margin right">
+<!ENTITY bbcomp.marginrightinc.tooltiptext "Increase margin right of the element">
+<!ENTITY bbcomp.marginbottomdec.label "Decrease margin bottom">
+<!ENTITY bbcomp.marginbottomdec.tooltiptext "Decrease margin bottom of the element">
+<!ENTITY bbcomp.marginbottominc.label "Increase margin bottom">
+<!ENTITY bbcomp.marginbottominc.tooltiptext "Increase margin bottom of the element">
+<!ENTITY bbcomp.marginleftdec.label "Decrease margin margin left">
+<!ENTITY bbcomp.marginleftdec.tooltiptext "Decrease margin left of the element">
+<!ENTITY bbcomp.marginleftinc.label "Increase margin left">
+<!ENTITY bbcomp.marginleftinc.tooltiptext "Increase margin left of the element">
+<!ENTITY bbcomp.alignleft.label "Left">
+<!ENTITY bbcomp.alignleft.tooltiptext "Align the text to the left">
+<!ENTITY bbcomp.aligncent.label "Center">
+<!ENTITY bbcomp.aligncent.tooltiptext "Center the text">
+<!ENTITY bbcomp.alignrigh.label "Right">
+<!ENTITY bbcomp.alignrigh.tooltiptext "Align the text to the right">
+<!ENTITY bbcomp.alignjust.label "Justify">
+<!ENTITY bbcomp.alignjust.tooltiptext "Justify the text">
+<!ENTITY bbcomp.dirltr.label "Left to right">
+<!ENTITY bbcomp.dirltr.tooltiptext "Left-to-right orientation">
+<!ENTITY bbcomp.dirrtl.label "Right to left">
+<!ENTITY bbcomp.dirrtl.tooltiptext "Right to left orientation">
+<!ENTITY bbcomp.cleancss.label "Clean CSS">
+<!ENTITY bbcomp.cleancss.tooltiptext "Delete all styles of the current element">
 <!ENTITY bbcomp.style.label "Estilos">
+<!ENTITY bbcomp.poetry.label "Poetry">
+<!ENTITY bbcomp.poetry.tooltip "Insert poetry">

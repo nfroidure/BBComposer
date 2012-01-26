@@ -13,10 +13,13 @@
 <!ENTITY bbcomp.opt.cmp.sidebar.label "편집 모드 안에 탐색막대 열기">
 <!ENTITY bbcomp.opt.lng.default.label "기본 언어:">
 <!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (블럭 없음)">
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCode (BBCode)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "일반 BBCode">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki 구문">
-<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (블럭 없음)">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "선택시 언어 기억">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML 선택사항">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "들여쓰기">
@@ -41,7 +44,7 @@
 <!ENTITY bbcomp.opt.avd.caption "고급 선택사항">
 <!ENTITY bbcomp.opt.avd.description "어떻게 할지 모르는 경우엔 고급 선택사항을 변경하지 마십시오.">
 <!ENTITY bbcomp.opt.avd.save.label "일정 간격으로 자동 저장">
-<!ENTITY bbcomp.opt.avd.defcont.label "Default contain of the editor">
+<!ENTITY bbcomp.opt.avd.defcont.label "편집기의 기본으로 포함할">
 <!ENTITY bbcomp.opt.fld.caption.label "저장된 필드">
 <!ENTITY bbcomp.opt.fld.site.label "URL 필터">
 <!ENTITY bbcomp.opt.fld.id.label "ID 필터">

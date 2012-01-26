@@ -1,0 +1,7 @@
+<!ENTITY degradx.name "DegradX">
+<!ENTITY degradx.tooltiptext "Додај обиме боја">
+<!ENTITY degradx.tabs.text "Текст">
+<!ENTITY degradx.tabs.background "Позадина">
+<!ENTITY degradx.refresh.delay "Одложено освежавање приказа (у секундама):">
+<!ENTITY degradx.button.delete "Избриши">
+<!ENTITY degradx.button.apply "Примени">
