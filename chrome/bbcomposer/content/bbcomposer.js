@@ -1538,6 +1538,7 @@ function bbcomposer(editor, language, textarea, manager)
 	bbcomposer.prototype.doDeleteSelectionCommand = function (preferFocusAfterNode,deleteEmptyTextNode)
 		{
 		var selection = this.getSelection();
+		var focusedNode;
 		if(selection&&!selection.collapsed)
 			{
 			var focusedNodeBefore; var focusedNodeAfter;
