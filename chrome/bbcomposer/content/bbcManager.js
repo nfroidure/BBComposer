@@ -811,6 +811,8 @@ function bbcManager()
 		window.openDialog("chrome://bbcomposer/content/popup/" + markup + ".xul", "", "chrome, dialog, modal, resizable=no", params).focus();
 		if(params.out&&params.out.value)
 			{
+			if(params.out.value['src']&&/file:\/\/\/(.+)/.test(params.out.value['src']))
+				params.out.value['src']=this.focusedBBComposer.addImportedFile(new File(new ewkFile(params.out.value['src']).file));
 			return params.out.value;
 			}
 		else

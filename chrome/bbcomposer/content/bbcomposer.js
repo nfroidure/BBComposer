@@ -3051,13 +3051,13 @@ function bbcomposer(editor, language, textarea, manager)
 		if(attributes!==null)
 			{
 			this.toggleCommand(markup, attributes);
+			if(markup=='img')
+				this.checkFiles();
 			}
 		else if(element)
 			{
 			this.toggleCommand(markup);
 			}
-		if(markup=='img')
-			this.checkFiles();
 		}
 
 	bbcomposer.prototype.toggleAttributes = function (element, attributes)
@@ -3522,12 +3522,11 @@ function bbcomposer(editor, language, textarea, manager)
 					documentFragment=this.editor.contentDocument.createElement('p')
 				this.myBBComposerManager.displayStatusText(this.myBBComposerManager.myBBComposerProperties.getString('import_image')+' '+files[i].name);
 				newNode = this.editor.contentDocument.createElement('img');
-				var src=window.URL.createObjectURL(files[i]);
+				var src=this.addImportedFile(files[i]);
 				newNode.setAttribute('src', src);
 				var text=prompt(this.myBBComposerManager.myBBComposerProperties.getString('import_image_alt'), this.myBBComposerManager.myBBComposerProperties.getString('import_image_dalt'));
 				newNode.setAttribute('alt', text);
 				documentFragment.appendChild(newNode);
-				this.importedFiles.push({'file':files[i],'uri':src});
 				}
 			}
 		return documentFragment;
@@ -4856,62 +4855,23 @@ function bbcomposer(editor, language, textarea, manager)
 		this.checkFiles();
 		}
 
-/*	bbcomposer.prototype.checkFiles = function ()
+	bbcomposer.prototype.addImportedFile = function (file)
 		{
-		var images = this.editor.contentDocument.getElementsByTagName('img');
-		var x = images.length;
-		for(var i=0; i<x; i++)
+		var uri=window.URL.createObjectURL(file);
+		this.importedFiles.push({'file':file,'uri':uri});
+		return uri;
+		}
+
+	bbcomposer.prototype.removeImportedFile = function (uri)
+		{
+		for(var i=0, j=this.importedFiles.length; i<j; i++)
 			{
-			if(this.checkImage(images[i]))
+			if(this.importedFiles[i].uri==uri)
 				{
-				this.uploadImage(images[i]);
-/*				var src=images[i].src;
-				images[i].src='chrome://bbcomposer/skin/images/image.png';
-				var filename = myBBComposerManager.sendFile(images[i].src);
-				if(filename)
-					images[i].setAttribute('src',myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site') + "/" + myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder') + filename); //images[i].src.replace(/file:\/\/\/(?:.+)\/([^\/]+)\.([a-zA-Z]+)/, '$1.$2').replace('/', '\\')
-				else
-					images[i].src=src;*//*
+				this.importedFiles.splice(i,1);
 				}
 			}
-		}
-
-	bbcomposer.prototype.checkImage = function (curImage)
-		{
-		//if(navigator.onLine&&this.myBBComposerManager.myBBComposerPreferences.getBoolOption('upload.on')&&/file:\/\/\/(.+)/.test(curImage.src))
-		if(navigator.onLine&&this.myBBComposerManager.myBBComposerPreferences.getBoolOption('upload.on')&&/moz-filedata:(.+)/.test(curImage.src))
-			return true;
-		else
-			return false;
-		}
-
-/*	bbcomposer.prototype.uploadImage = function (curImage)
-		{
-		var uploadSite=myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')||this.base;
-		var image = new Image();
-		image.original=curImage;
-		image.src=curImage.src;
-		curImage.src='chrome://bbcomposer/skin/images/image.png';
-		image.upload = function ()
-			{
-			this.removeEventListener('load',this.loadImageHandler,false);
-			//if(this.naturalHeight>400&&this.naturalWidth>300)
-			//	{
-			//	alert(this.myBBComposerManager.myBBComposerProperties.getString('image_toobig'));
-			//	}
-			//else
-			//	{
-				var filename = myBBComposerManager.sendFile(this.src);
-				if(filename&&!/http:\/\/(.*)/.test(filename))
-					this.original.setAttribute('src',uploadSite + "/" + myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder') + filename); //images[i].src.replace(/file:\/\/\/(?:.+)\/([^\/]+)\.([a-zA-Z]+)/, '$1.$2').replace('/', '\\')
-				else if(filename)
-					this.original.setAttribute('src',filename);
-				else
-					this.original.src=this.src;
-			//	}
-			}
-		image.loadImageHandler = this.myBBComposerManager.newEventHandler(image,image.upload,'loadImageHandler');
-		image.addEventListener('load',image.loadImageHandler,false);
+		window.URL.revokeObjectURL(uri);
 		}
 
 			/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@
