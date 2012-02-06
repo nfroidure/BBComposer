@@ -9,6 +9,7 @@ function closeDialog()
 		newAttributes['href']=document.getElementById('link-href').value;
 		newAttributes['hreflang']=document.getElementById('link-hreflang').value;
 		newAttributes['title']=document.getElementById('link-title').value;
+		newAttributes['rel']=document.getElementById('link-rel').value;
 		newAttributes['onclick']=document.getElementById('link-onclick').value;
 		window.arguments[0].out = {value:newAttributes};
 		}

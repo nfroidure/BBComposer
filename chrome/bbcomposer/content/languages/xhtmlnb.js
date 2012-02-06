@@ -75,7 +75,7 @@ bbcXhtmlnbSupport.acceptedMarkups =
 	"br":
 		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups},
 	"a":
-		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""}]},
+		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""},{"name":"rel","default":""},{"name":"rev","default":""}]},
 	"img":
 		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups,"attributes":[{"name":"src","default":""},{"name":"alt","default":""},{"name":"style","default":""}]},
 	"sub":

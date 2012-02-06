@@ -115,7 +115,7 @@ bbcXhtmlSupport.acceptedMarkups =
 	"br":
 		{"type":"inline","childs":[]},
 	"a":
-		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""},{"name":"rel","default":""}]},
+		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""},{"name":"rel","default":""},{"name":"rev","default":""}]},
 	"img":
 		{"type":"inline","childs":[],"attributes":[{"name":"src","default":""},{"name":"alt","default":""},{"name":"name","default":""},{"name":"usemap","default":""},{"name":"style","default":""}]},
 	"sub":

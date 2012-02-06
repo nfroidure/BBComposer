@@ -19,6 +19,20 @@
 	<textbox id="link-href" value="http://" type="autocomplete" autocompletesearch="history"/><!-- bookmarks history -->
 	<label control="link-title" value="&bbcomp.link.title.label;"/>
 	<textbox id="link-title" value=""/>
+	<label control="link-rel" value="&bbcomp.link.rel.label;"/>
+	<menulist id="link-rel" editable="true">
+		<menupopup>
+			<menuitem label="nofollow"/>
+			<menuitem label="author"/>
+			<menuitem label="start"/>
+			<menuitem label="next"/>
+			<menuitem label="prev"/>
+			<menuitem label="copyright"/>
+			<menuitem label="contents"/>
+			<menuitem label="help"/>
+			<menuitem label="lightbox"/>
+		</menupopup>
+	</menulist>
 	<label control="link-onclick" value="&bbcomp.link.target.label;"/>
 	<menulist id="link-onclick">
 		<menupopup>

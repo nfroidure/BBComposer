@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "Lien">
 <!ENTITY bbcomp.link.href.label "Adresse">
 <!ENTITY bbcomp.link.title.label "Texte de survol">
+<!ENTITY bbcomp.link.rel.label "Relation">
+<!ENTITY bbcomp.link.rev.label "Relation inverse">
 <!ENTITY bbcomp.link.target.label "Cible">
 <!ENTITY bbcomp.link.target.normal.label "Normal">
 <!ENTITY bbcomp.link.target.popup.label "Nouvelle fenêtre">
