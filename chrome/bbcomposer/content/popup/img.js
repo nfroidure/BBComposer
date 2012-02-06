@@ -47,8 +47,9 @@ function browseDirectory()
 	var res = fp.show();
 	if (res == nsIFilePicker.returnOK)
 		{
-		var nfph = Components.classes["@mozilla.org/network/protocol;1?name=file"]
+		/*var nfph = Components.classes["@mozilla.org/network/protocol;1?name=file"]
 			.createInstance(Components.interfaces.nsIFileProtocolHandler);
-		document.getElementById('img-src').value = nfph.getURLSpecFromFile(fp.file);
+		document.getElementById('img-src').value = nfph.getURLSpecFromFile(fp.file);*/
+		document.getElementById('img-src').value = window.URL.createObjectURL(new File(fp.file));
 		}
 	}

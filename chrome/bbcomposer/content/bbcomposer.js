@@ -15,6 +15,8 @@ function bbcomposer(editor, language, textarea, manager)
 	this.autoSaveTimeout = false;
 	this.lastSaveAction=false;
 	this.initHandler=this.myBBComposerManager.newEventHandler(this, this.init,'initHandler');
+	this.fileExistsHandler=this.myBBComposerManager.newEventHandler(this, this.fileExists,'fileExistsHandler');
+	this.fileUploadedHandler=this.myBBComposerManager.newEventHandler(this, this.fileUploaded,'fileUploadedHandler');
 	this.editor.addEventListener("load", this.initHandler, true);
 	};
 	bbcomposer.prototype.init = function ()
@@ -30,17 +32,12 @@ function bbcomposer(editor, language, textarea, manager)
 		this.editor.contentDocument.addEventListener('keyup',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		this.editor.contentDocument.addEventListener('keypress',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		this.editor.contentDocument.addEventListener('focus',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
-		// FF 3.0
-		this.editor.contentDocument.addEventListener('dragdrop',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
-		this.editor.contentDocument.addEventListener('dragexit',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
-		// FF 3.5 
 		this.editor.contentDocument.addEventListener('drag',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		this.editor.contentDocument.addEventListener('dragstart',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		this.editor.contentDocument.addEventListener('dragenter',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		this.editor.contentDocument.addEventListener('dragover',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		this.editor.contentDocument.addEventListener('dragleave',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		this.editor.contentDocument.addEventListener('dragend',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
-		// FF 3.0 & 3.5 
 		this.editor.contentDocument.addEventListener('drop',this.myBBComposerManager.newEventHandler(this, this.handleEvent,''),true);
 		// Options
 		if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('site.css')!='none')
@@ -131,10 +128,6 @@ function bbcomposer(editor, language, textarea, manager)
 				this.toggleDialogCommand(hEvent.target.tagName.toLowerCase());
 				}
 			break;
-			// FF 3.0 
-			case "dragexit" :
-			case "dragdrop" :
-			// FF 3.5 
 			case "drag" :
 			hEvent.stopPropagation(); hEvent.preventDefault(); //hEvent.cancelBubble = true;
 			break;
@@ -145,7 +138,6 @@ function bbcomposer(editor, language, textarea, manager)
 			case "dragend" :
 			//hEvent.stopPropagation(); hEvent.preventDefault(); //hEvent.cancelBubble = true;
 			break;
-			// FF3.0 & 3.5
 			case "drop" :
 			hEvent.stopPropagation(); hEvent.preventDefault(); //hEvent.cancelBubble = true;
 			this.drop(hEvent);
@@ -3065,7 +3057,7 @@ function bbcomposer(editor, language, textarea, manager)
 			this.toggleCommand(markup);
 			}
 		if(markup=='img')
-			this.checkImages();
+			this.checkFiles();
 		}
 
 	bbcomposer.prototype.toggleAttributes = function (element, attributes)
@@ -3356,7 +3348,7 @@ function bbcomposer(editor, language, textarea, manager)
 	bbcomposer.prototype.paste = function ()
 		{
 		this.insertContent(this.myBBComposerManager.getClipboardContent());
-		this.checkImages();
+		this.checkFiles();
 		}
 
 	bbcomposer.prototype.pasteIn = function (markup)
@@ -3435,7 +3427,7 @@ function bbcomposer(editor, language, textarea, manager)
 			this.sanitizeContent(documentFragment, true);
 			this.insertContent(documentFragment);
 			}
-		this.checkImages();
+		this.checkFiles();
 		}
 
 	bbcomposer.prototype.copy = function ()
@@ -3454,7 +3446,9 @@ function bbcomposer(editor, language, textarea, manager)
 		var content;
 		if(hEvent.dataTransfer)
 			{
-			if(hEvent.dataTransfer.types.contains("text/x-moz-url"))
+			if(hEvent.dataTransfer.types.contains("Files"))
+				content=this.importFiles(hEvent.dataTransfer.files);
+			else if(hEvent.dataTransfer.types.contains("text/x-moz-url"))
 				content=this.importContent(hEvent.dataTransfer.getData("text/x-moz-url"),"text/x-moz-url");
 			else if(hEvent.dataTransfer.types.contains("text/html"))
 				content=this.importContent(hEvent.dataTransfer.getData("text/html"),"text/html");
@@ -3462,14 +3456,10 @@ function bbcomposer(editor, language, textarea, manager)
 				content=this.importContent(hEvent.dataTransfer.getData("text/uri-list"),"text/uri-list");
 			else if(hEvent.dataTransfer.types.contains("text/unicode"))
 				content=this.importContent(hEvent.dataTransfer.getData("text/unicode"),"text/unicode");
-			else if(hEvent.dataTransfer.types.contains("application/x-moz-file"))
-				content='application/x-moz-file';
 			}
-		else
-			content=this.myBBComposerManager.getDroppedContent();
 		if(content)
 			this.insertContent(content,(hEvent.rangeParent?hEvent.rangeParent:null), (hEvent.rangeOffset?hEvent.rangeOffset:null));
-		this.checkImages();
+		this.checkFiles();
 		}
 
 	bbcomposer.prototype.setEditorContent = function (content)
@@ -3517,6 +3507,30 @@ function bbcomposer(editor, language, textarea, manager)
 		else
 			var content = this.bbcLanguageSupport.editorToSource(this.rootElement);
 		return content;
+		}
+
+	bbcomposer.prototype.importedFiles=new Array();
+
+	bbcomposer.prototype.importFiles = function (files)
+		{
+		var newNode, documentFragment;
+		for(var i=0,j=files.length; i<j; i++)
+			{
+			if(/image\/(gif|png|jpg|jpeg)/i.test(files[i].type))
+				{
+				if(!documentFragment)
+					documentFragment=this.editor.contentDocument.createElement('p')
+				this.myBBComposerManager.displayStatusText(this.myBBComposerManager.myBBComposerProperties.getString('import_image')+' '+files[i].name);
+				newNode = this.editor.contentDocument.createElement('img');
+				var src=window.URL.createObjectURL(files[i]);
+				newNode.setAttribute('src', src);
+				var text=prompt(this.myBBComposerManager.myBBComposerProperties.getString('import_image_alt'), this.myBBComposerManager.myBBComposerProperties.getString('import_image_dalt'));
+				newNode.setAttribute('alt', text);
+				documentFragment.appendChild(newNode);
+				this.importedFiles.push({'file':files[i],'uri':src});
+				}
+			}
+		return documentFragment;
 		}
 
 	bbcomposer.prototype.importContent = function (data,type)
@@ -4716,10 +4730,133 @@ function bbcomposer(editor, language, textarea, manager)
 			@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 			
 			/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-			   IMAGE FUNCTIONS : BEGIN
+			   FILE FUNCTIONS : BEGIN
 			@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-	bbcomposer.prototype.checkImages = function ()
+	bbcomposer.prototype.loadingFile = false;
+
+	bbcomposer.prototype.checkFiles = function ()
+		{
+		if(navigator.onLine&&this.myBBComposerManager.myBBComposerPreferences.getBoolOption('upload.on')&&this.importedFiles.length&&!this.loadingFile)
+			{
+			this.loadingFile=true;
+			var uri=(this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site'):this.base)
+				+ "/" + this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder')
+				+ (this.importedFiles[0].file.name.replace(new RegExp('(.*)(?:[\.])(?:[^\.]+)','i'),'$1').replace(new RegExp('[^a-z0-9]','gi'),'_'))+'.'+(this.importedFiles[0].file.name.replace(new RegExp('(?:.*)(?:[\.])([^\.]+)','i'),'$1'));
+			this._xhr = new XMLHttpRequest();
+			this._xhr.open("HEAD", uri);
+			this._xhr.addEventListener('readystatechange', this.fileExistsHandler);
+			this._xhr.send();
+			}
+		}
+
+	bbcomposer.prototype.fileExists = function ()
+		{
+		if (this._xhr.readyState == 4)
+			{  
+			if ((this._xhr.status >= 200 && this._xhr.status <= 200) || this._xhr.status == 304)
+				{
+				if(window.confirm(this.importedFiles[0].file.name + this.myBBComposerManager.myBBComposerProperties.getString('file_upload')))
+					this.uploadFile();
+				else
+					{
+					this.fileUpdateUri((this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site'):this.base)
+						+ "/" + this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder')
+						+ (this.importedFiles[0].file.name.replace(new RegExp('(.*)(?:[\.])(?:[^\.]+)','i'),'$1').replace(new RegExp('[^a-z0-9]','gi'),'_'))+'.'+(this.importedFiles[0].file.name.replace(new RegExp('(?:.*)(?:[\.])([^\.]+)','i'),'$1')));
+					}
+				}
+			else
+				this.uploadFile();
+			}
+		}
+
+	bbcomposer.prototype.uploadFile = function ()
+		{
+		var formData = new FormData();
+		var postparams=this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.postparams').split(/(?:[=\-]{1})/);
+		for(var i=0; i<postparams.length; i=i+2)
+			{
+			formData.append(postparams[i], (postparams[i+1] ? postparams[i+1] : ''));
+			}
+		formData.append(this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.postname'), this.importedFiles[0].file);
+		var uri=(this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site'):this.base) + '/' + this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.url');
+		this._xhr = new XMLHttpRequest();
+		this._xhr.open("POST", uri);
+		this._xhr.addEventListener('readystatechange', this.fileUploadedHandler);
+		this._xhr.send(formData);
+		}
+
+	bbcomposer.prototype.fileUploaded = function ()
+		{
+		if (this._xhr.readyState == 4)
+			{  
+			if ((this._xhr.status >= 200 && this._xhr.status <= 200) || this._xhr.status == 304)
+				{
+				if (this._xhr.responseText != "")
+					{ 
+					var fileName=this.importedFiles[0].file.name;
+					if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.type')=="text")
+						{
+						if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.error')!='false'&&new RegExp(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.error')).test(this._xhr.responseText))
+							{
+							alert(new RegExp(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice'), 'mi').exec(this._xhr.responseText)[1]);
+							fileName=false;
+							}
+						if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice')!='false'&&new RegExp(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice')).test(this._xhr.responseText))
+							{
+							alert(new RegExp(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice'), 'mi').exec(this._xhr.responseText)[1]);
+							}
+						if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename')!='false'&&new RegExp(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename'), 'mi').test(this._xhr.responseText))
+							{
+							fileName=new RegExp(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename'), 'mi').exec(this._xhr.responseText)[1];
+							}
+						}
+					else
+						{
+						if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.error')!='false'&&this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.error'))[0])
+							{
+							for(var i=0; i<this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.error')).length; i++)
+								alert(this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.error'))[i].textContent);
+							fileName=false;
+							}
+						if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice')!='false'&&this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice'))[0])
+							{
+							for(var i=0; i<this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice')).length; i++)
+								alert(this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice'))[i].textContent);
+							}
+						if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename')!='false'&&this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename'))[0])
+							{
+							fileName=this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename'))[0].textContent;
+							alert(fileName);
+							}
+						}
+					if(fileName)
+						{
+						this.fileUpdateUri((this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')||this.base) + "/" + this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder') + fileName);
+						}
+					}
+				}
+			}
+		}
+
+	bbcomposer.prototype.fileUpdateUri = function (uri)
+		{
+		var images = this.editor.contentDocument.getElementsByTagName('img');
+		var x = images.length;
+		for(var i=0; i<x; i++)
+			{
+			if(images[i].src==this.importedFiles[0].uri)
+				{
+				images[i].setAttribute('src',uri);
+				}
+			}
+		window.URL.revokeObjectURL(this.importedFiles[0].uri);
+		this.importedFiles.splice(0,1);
+		this.loadingFile=false;
+		this.checkFiles();
+		}
+
+/*	bbcomposer.prototype.checkFiles = function ()
 		{
 		var images = this.editor.contentDocument.getElementsByTagName('img');
 		var x = images.length;
@@ -4734,20 +4871,21 @@ function bbcomposer(editor, language, textarea, manager)
 				if(filename)
 					images[i].setAttribute('src',myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site') + "/" + myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder') + filename); //images[i].src.replace(/file:\/\/\/(?:.+)\/([^\/]+)\.([a-zA-Z]+)/, '$1.$2').replace('/', '\\')
 				else
-					images[i].src=src;*/
+					images[i].src=src;*//*
 				}
 			}
 		}
 
 	bbcomposer.prototype.checkImage = function (curImage)
 		{
-		if(navigator.onLine&&this.myBBComposerManager.myBBComposerPreferences.getBoolOption('upload.on')&&/file:\/\/\/(.+)/.test(curImage.src))
+		//if(navigator.onLine&&this.myBBComposerManager.myBBComposerPreferences.getBoolOption('upload.on')&&/file:\/\/\/(.+)/.test(curImage.src))
+		if(navigator.onLine&&this.myBBComposerManager.myBBComposerPreferences.getBoolOption('upload.on')&&/moz-filedata:(.+)/.test(curImage.src))
 			return true;
 		else
 			return false;
 		}
 
-	bbcomposer.prototype.uploadImage = function (curImage)
+/*	bbcomposer.prototype.uploadImage = function (curImage)
 		{
 		var uploadSite=myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')||this.base;
 		var image = new Image();

@@ -730,7 +730,6 @@ function bbcManager()
 		else
 			return "";
 		}
-
 	bbcManager.prototype.getClipboardContent = function ()
 		{
 		var clip = Components.classes["@mozilla.org/widget/clipboard;1"]
@@ -741,12 +740,15 @@ function bbcManager()
 			.createInstance(Components.interfaces.nsITransferable);
 		if (!trans)
 			return null;
-		trans.addDataFlavor("text/x-moz-url");
-		trans.addDataFlavor("text/html");
-		trans.addDataFlavor("text/uri-list");
-		trans.addDataFlavor("text/unicode");
 		trans.addDataFlavor("application/x-moz-file");
 		trans.addDataFlavor("image/jpg");
+		trans.addDataFlavor("image/png");
+		trans.addDataFlavor("image/jpeg");
+		trans.addDataFlavor("image/gif");
+		trans.addDataFlavor("text/html");
+		trans.addDataFlavor("text/x-moz-url");
+		trans.addDataFlavor("text/uri-list");
+		trans.addDataFlavor("text/unicode");
 		clip.getData(trans,clip.kGlobalClipboard);
 		var flavor = new Object();
 		var str = new Object();
@@ -775,10 +777,12 @@ function bbcManager()
 			}
 		else if(flavor.value=='application/x-moz-file')
 			{
+			alert('text/x-moz-file');
 			if (str) str = str.value.QueryInterface(Components.interfaces.nsIFile);
 			if (str)
 				uri = this._ios.newFileURI(str);
 				alert('application/x-moz-file'+uri);
+			return this.focusedBBComposer.importFiles(new Array(new File(uri)));
 			}
 		else if(flavor.value=='image/jpg')
 			{
@@ -786,88 +790,10 @@ function bbcManager()
 			var myFile = new ewkFile(null);
 			if(myFile.fromUserProfile('moz-screenshot.jpg')||myFile.create())
 				myFile.writeFromStream(str);
-			return this.focusedBBComposer.importContent(myFile.getUri(),"text/unicode");
+			return this.focusedBBComposer.importFiles(new Array(new File(myFile.file)));
+			//return this.focusedBBComposer.importContent(myFile.getUri(),"text/unicode");
 			}
 		this.displayStatusText('Can\'t paste this content !');
-		return null;
-		}
-
-	/*------ Drag n' drop interactions  for FF 3.0------*/
-	bbcManager.prototype.getDroppedContent = function ()
-		{
-		var newNode;
-		const nsIDragService = Components.interfaces.nsIDragService;
-		var dragService = Components.classes["@mozilla.org/widget/dragservice;1"].
-			getService(nsIDragService);
-		var dragSession = dragService.getCurrentSession();
-		if (dragSession.isDataFlavorSupported("text/x-moz-url"))
-			{
-			var trans = Components.classes["@mozilla.org/widget/transferable;1"].
-				createInstance(Components.interfaces.nsITransferable);
-			trans.addDataFlavor("text/x-moz-url");
-			dragService.getCurrentSession().getData(trans, 0);
-			var str = { }, strlen = { };
-			trans.getTransferData("text/x-moz-url", str, strlen);
-			if (!str.value)
-				return null;
-			var strisupports = str.value.QueryInterface(Components.interfaces.nsISupportsString);
-			return this.focusedBBComposer.importContent(strisupports.data,"text/x-moz-url");
-			}
-		else if(dragSession.isDataFlavorSupported("text/html"))
-			{
-			var trans = Components.classes["@mozilla.org/widget/transferable;1"].
-				createInstance(Components.interfaces.nsITransferable);
-			trans.addDataFlavor("text/html");
-			dragService.getCurrentSession().getData(trans, 0);
-			var str = { }, strlen = { };
-			trans.getTransferData("text/html", str, strlen);
-			if (!str.value)
-				return null;
-			var strisupports = str.value.QueryInterface(Components.interfaces.nsISupportsString);
-			var html = strisupports.data;
-			return this.focusedBBComposer.importContent(strisupports.data,"text/html");
-			}
-		else if (dragSession.isDataFlavorSupported("text/uri-list"))
-			{
-			var trans = Components.classes["@mozilla.org/widget/transferable;1"].
-				createInstance(Components.interfaces.nsITransferable);
-			trans.addDataFlavor("text/unicode");
-			dragService.getCurrentSession().getData(trans, 0);
-			var str = { }, strlen = { };
-			trans.getTransferData("text/uri-list", str, strlen);
-			if (!str.value)
-				return null;
-			var strisupports = str.value.QueryInterface(Components.interfaces.nsISupportsString);
-			return this.focusedBBComposer.importContent(strisupports.data,"text/unicode");
-			}
-		else if (dragSession.isDataFlavorSupported("text/unicode"))
-			{
-			var trans = Components.classes["@mozilla.org/widget/transferable;1"].
-				createInstance(Components.interfaces.nsITransferable);
-			trans.addDataFlavor("text/unicode");
-			dragService.getCurrentSession().getData(trans, 0);
-			var str = { }, strlen = { };
-			trans.getTransferData("text/unicode", str, strlen);
-			if (!str.value)
-				return null;
-			var strisupports = str.value.QueryInterface(Components.interfaces.nsISupportsString);
-			return this.focusedBBComposer.importContent(strisupports.data,"text/unicode");
-			}
-		else if (dragSession.isDataFlavorSupported("application/x-moz-file"))
-			{
-			alert('application/x-moz-file');
-			/*var trans = Components.classes["@mozilla.org/widget/transferable;1"].
-				createInstance(Components.interfaces.nsITransferable);
-			trans.addDataFlavor("text/unicode");
-			dragService.getCurrentSession().getData(trans, 0);
-			var str = { }, strlen = { };
-			trans.getTransferData("text/unicode", str, strlen);
-			if (!str.value)
-				return null;
-			var strisupports = str.value.QueryInterface(Components.interfaces.nsISupportsString);
-			return this.focusedBBComposer.importContent(strisupports.data,"text/unicode");*/
-			}
-		this.displayStatusText('Can\'t drop this content !');
 		return null;
 		}
 
@@ -892,71 +818,6 @@ function bbcManager()
 		}
 
 	/*------ Filesystem interactions ------*/
-	bbcManager.prototype.sendFile = function (url)
-		{
-		var filename = '';
-		var uploadSite=(this.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerPreferences.getCharOption('upload.site'):this.focusedBBComposer.base);
-		var myFile = new ewkFile(null);
-		myFile.fromUri(url);
-		if(this.myBBComposerPreferences.getBoolOption('upload.unique')===true)
-			{
-			var range = "abcdefghijklmnopqrstxyz0123456789";
-			while((!filename)||myFile.isOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('upload.folder') + filename))
-				{
-				filename = '';
-				for(i=0; i<5; i++)
-					filename += range.charAt(Math.floor(Math.random() * range.length-2));
-				filename += '_' + myFile.file.leafName.replace(new RegExp('[^a-z0-9\.]','gi'),'_').toLowerCase();
-				}
-			var response = myFile.putOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('upload.url'), this.myBBComposerPreferences.getCharOption('upload.postname'), filename, this.myBBComposerPreferences.getCharOption('upload.postparams'));
-			}
-		else if((!myFile.isOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('upload.folder') + myFile.file.leafName.replace(new RegExp('[^a-z0-9]','gi'),'_')))
-			|| window.confirm(myFile.file.leafName + this.myBBComposerProperties.getString('file_upload')))
-			{
-			filename = myFile.file.leafName.replace(new RegExp('[^a-z0-9\.]','gi'),'_').toLowerCase();
-			var response = myFile.putOnline(uploadSite + "/" + this.myBBComposerPreferences.getCharOption('upload.url'), this.myBBComposerPreferences.getCharOption('upload.postname'), filename, this.myBBComposerPreferences.getCharOption('upload.postparams'));
-			}
-		else { return true; }
-		if(response)
-			{
-			if(this.myBBComposerPreferences.getCharOption('response.type')=="text")
-				{
-				if(this.myBBComposerPreferences.getCharOption('response.error')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('response.error')).test(response.responseText))
-					{
-					alert(new RegExp(this.myBBComposerPreferences.getCharOption('response.notice'), 'mi').exec(response.responseText)[1]);
-					return false;
-					}
-				if(this.myBBComposerPreferences.getCharOption('response.notice')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('response.notice')).test(response.responseText))
-					{
-					alert(new RegExp(this.myBBComposerPreferences.getCharOption('response.notice'), 'mi').exec(response.responseText)[1]);
-					}
-				if(this.myBBComposerPreferences.getCharOption('response.filename')!='false'&&new RegExp(this.myBBComposerPreferences.getCharOption('response.filename'), 'mi').test(response.responseText))
-					{
-					return new RegExp(this.myBBComposerPreferences.getCharOption('response.filename'), 'mi').exec(response.responseText)[1];
-					}
-				}
-			else
-				{
-				if(this.myBBComposerPreferences.getCharOption('response.error')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.error'))[0])
-					{
-					for(var i=0; i<response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.error')).length; i++)
-						alert(response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.error'))[i].textContent);
-					return false;
-					}
-				if(this.myBBComposerPreferences.getCharOption('response.notice')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.notice'))[0])
-					{
-					for(var i=0; i<response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.notice')).length; i++)
-						alert(response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.notice'))[i].textContent);
-					}
-				if(this.myBBComposerPreferences.getCharOption('response.filename')!='false'&&response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.filename'))[0])
-					{
-					return response.responseXML.getElementsByTagName(this.myBBComposerPreferences.getCharOption('response.filename'))[0];
-					}
-				}
-			return filename;
-			}
-		else { return false; }
-		}
 	bbcManager.prototype.saveToFile = function (content, auto)
 		{
 		var myFile = new ewkFile(null);
