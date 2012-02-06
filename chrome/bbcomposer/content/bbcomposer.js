@@ -1740,10 +1740,13 @@ function bbcomposer(editor, language, textarea, manager)
 							}
 						}
 					}
-				else // Should add a verification to not add textnodes into img, br, hr elements and alert the user (or add textnode after ?)...
+				else // Should add generic element verification to test if they can contain text
 					{
 					var newTextNode = this.editor.contentDocument.createTextNode(String.fromCharCode(typedChar));
-					this.doAction({actionFunction: this.insertElement, parentElement: node, theElement: newTextNode, focusNode:newTextNode, focusOffset:1, traceMessage:'doWrite 4'});
+					if(node.nodeName.toLowerCase('img')||node.nodeName.toLowerCase('br'))
+						this.doAction({actionFunction: this.insertElement, nextElement: node, theElement: newTextNode, focusNode:newTextNode, focusOffset:1, traceMessage:'doWrite 4'});
+					else
+						this.doAction({actionFunction: this.insertElement, parentElement: node, theElement: newTextNode, focusNode:newTextNode, focusOffset:1, traceMessage:'doWrite 4'});
 					}
 				}
 			else if(this.getParentBlock(node)||this.getParentSuperblock(node))
