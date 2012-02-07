@@ -63,9 +63,9 @@ bbcXhtmlnbSupport.acceptedMarkups =
 	"tt":
 		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups},
 	"acronym":
-		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups,"attributes":[{"name":"title","default":""}]},
+		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups,"attributes":[{"name":"title","default":"","type":"pleased"}]},
 	"abbr":
-		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups,"attributes":[{"name":"title","default":""}]},
+		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups,"attributes":[{"name":"title","default":"","type":"pleased"}]},
 	"cite":
 		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups},
 	"strong":
@@ -75,9 +75,9 @@ bbcXhtmlnbSupport.acceptedMarkups =
 	"br":
 		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups},
 	"a":
-		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""},{"name":"rel","default":""},{"name":"rev","default":""}]},
+		{"type":"inline","childs":bbcXhtmlSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://","type":"needed"},{"name":"title","default":"","type":"pleased"},{"name":"hreflang","default":""},{"name":"rel","default":""},{"name":"rev","default":""}]},
 	"img":
-		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups,"attributes":[{"name":"src","default":""},{"name":"alt","default":""},{"name":"style","default":""}]},
+		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups,"attributes":[{"name":"src","default":"","type":"needed"},{"name":"alt","default":"","type":"pleased"},{"name":"style","default":""}]},
 	"sub":
 		{"type":"inline","childs":bbcXhtmlnbSupport.inlineMarkups},
 	"sup":

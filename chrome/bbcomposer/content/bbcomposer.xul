@@ -294,6 +294,7 @@
 							<menuitem label="&bbcomp.help.label;" id="bbcomposer-help-button" tooltiptext="&bbcomp.help.tooltiptext;" oncommand="myBBComposerManager.goToURLWithOptions('&bbcomp.manual;')"/>
 							<menuitem label="&bbcomp.forum.label;" id="bbcomposer-forum-button" tooltiptext="&bbcomp.forum.tooltiptext;" oncommand="myBBComposerManager.goToURLWithOptions('&bbcomp.forum;')"/>
 							<menuitem label="&bbcomp.debug.label;" id="bbcomposer-debug-button" tooltiptext="&bbcomp.debug.tooltiptext;" oncommand="myBBComposerManager.focusedBBComposer.reportCommand()"/>
+							<menuitem label="&bbcomp.debug.label;" id="bbcomposer-debug-button" tooltiptext="&bbcomp.debug.tooltiptext;" oncommand="myBBComposerManager.focusedBBComposer.debug()"/>
 							<menuitem label="&bbcomp.about.label;" id="bbcomposer-about-button" tooltiptext="&bbcomp.about.tooltiptext;" oncommand="window.openDialog('chrome://bbcomposer/content/about.xul','About','centerscreen, chrome').focus();"/>
 						</menupopup>
 					</toolbarbutton>

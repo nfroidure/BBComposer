@@ -158,9 +158,9 @@ bbcSkyblogSupport.acceptedMarkups =
 	"em":
 		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups},
 	"acronym":
-		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups,"attributes":[{"name":"title","default":""}]},
+		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups,"attributes":[{"name":"title","default":"","type":"pleased"}]},
 	"abbr":
-		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups,"attributes":[{"name":"title","default":""}]},
+		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups,"attributes":[{"name":"title","default":"","type":"pleased"}]},
 	"cite":
 		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups},
 	"strong":
@@ -170,7 +170,7 @@ bbcSkyblogSupport.acceptedMarkups =
 	"br":
 		{"type":"inline","childs":[]},
 	"a":
-		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""}]},
+		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://","type":"needed"},{"name":"title","default":"","type":"pleased"},{"name":"hreflang","default":""}]},
 	"span":
 		{"type":"inline","childs":bbcSkyblogSupport.inlineMarkups,"attributes":[{"name":"title","default":""}]},
 	};

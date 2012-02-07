@@ -574,7 +574,7 @@ bbcSpipSupport.acceptedMarkups =
 	"em":
 		{"type":"inline","childs":bbcSpipSupport.inlineMarkups},
 	"abbr":
-		{"type":"inline","childs":bbcSpipSupport.inlineMarkups,"attributes":[{"name":"title","default":""}]},
+		{"type":"inline","childs":bbcSpipSupport.inlineMarkups,"attributes":[{"name":"title","default":"","type":"pleased"}]},
 	"strong":
 		{"type":"inline","childs":bbcSpipSupport.inlineMarkups},
 	"q":
@@ -582,9 +582,9 @@ bbcSpipSupport.acceptedMarkups =
 	"br":
 		{"type":"inline","childs":[]},
 	"a":
-		{"type":"inline","childs":bbcSpipSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://"},{"name":"title","default":""},{"name":"hreflang","default":""}]},
+		{"type":"inline","childs":bbcSpipSupport.inlineMarkups,"attributes":[{"name":"onclick","default":""},{"name":"href","default":"http://","type":"needed"},{"name":"title","default":"","type":"pleased"},{"name":"hreflang","default":""}]},
 	"img":
-		{"type":"inline","childs":[],"attributes":[{"name":"src","default":""},{"name":"alt","default":""},{"name":"style","default":""}]},
+		{"type":"inline","childs":[],"attributes":[{"name":"src","default":"","type":"needed"},{"name":"alt","default":"","type":"pleased"},{"name":"style","default":""}]},
 	"code":
 		{"type":"inline","childs":bbcSpipSupport.inlineMarkups},
 	"span":

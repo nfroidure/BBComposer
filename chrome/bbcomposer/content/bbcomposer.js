@@ -3075,7 +3075,7 @@ function bbcomposer(editor, language, textarea, manager)
 				attributes = new Array();
 				for(var i=0; i<x; i++)
 					{
-					if(this.myBBComposerManager.myBBComposerProperties.getString(markup + "_" + this.bbcLanguageSupport.acceptedMarkups[markup]['attributes'][i]['name']))
+					if(this.bbcLanguageSupport.acceptedMarkups[markup]['attributes'][i]['type'])
 						attributes[this.bbcLanguageSupport.acceptedMarkups[markup]['attributes'][i]['name']] = window.prompt(this.myBBComposerManager.myBBComposerProperties.getString(markup + "_" + this.bbcLanguageSupport.acceptedMarkups[markup]['attributes'][i]['name']), this.bbcLanguageSupport.acceptedMarkups[markup]['attributes'][i]['default']);
 					}
 				}
@@ -4088,6 +4088,11 @@ function bbcomposer(editor, language, textarea, manager)
 		return false;
 		}
 
+	bbcomposer.prototype.debug = function ()
+		{
+		this.displaySelection();
+		}
+
 	bbcomposer.prototype.reportCommand = function ()
 		{
 		var report='';
@@ -4116,6 +4121,7 @@ function bbcomposer(editor, language, textarea, manager)
 				}
 			}
 		this.myBBComposerManager.saveToFile(report);
+		alert(report);
 		}
 
 	bbcomposer.prototype.canUseReportCommand = function ()
