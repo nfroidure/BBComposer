@@ -48,6 +48,8 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "Cartoon/manga icons library">
 <!ENTITY bbcomp.css.label "Stylesheets">
 <!ENTITY bbcomp.css.tooltiptext "Edit CSS">
+<!ENTITY bbcomp.anchors.label "Anchors">
+<!ENTITY bbcomp.anchors.tooltiptext "View document anchors">
 <!ENTITY bbcomp.degradx.label "Degradees">
 <!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
 <!ENTITY bbcomp.toolbar.label "Toolbars">

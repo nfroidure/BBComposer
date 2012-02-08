@@ -48,6 +48,8 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "Collection cartoon/manga">
 <!ENTITY bbcomp.css.label "Styles">
 <!ENTITY bbcomp.css.tooltiptext "Édition des CSS">
+<!ENTITY bbcomp.anchors.label "Ancres">
+<!ENTITY bbcomp.anchors.tooltiptext "Voir la liste des ancres">
 <!ENTITY bbcomp.degradx.label "Dégradés">
 <!ENTITY bbcomp.degradx.tooltiptext "Édition de dégradés">
 <!ENTITY bbcomp.toolbar.label "Barres d'outils">

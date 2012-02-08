@@ -621,6 +621,10 @@ function bbcManager()
 		{
 		if(this.sidebar&&typeof this[this.sidebarName + 'Display'] == 'function')
 			this[this.sidebarName + 'Display']();
+		var evt = document.createEvent('Event');
+		evt.initEvent('display', true, true);
+		if(this.sidebar&&this.sidebar.contentDocument)
+			this.sidebar.contentDocument.dispatchEvent(evt);
 		}
 
 	bbcManager.prototype.cssDisplay = function ()

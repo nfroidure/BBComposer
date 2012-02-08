@@ -107,6 +107,7 @@
 
 	<broadcasterset id="mainBroadcasterSet">
 		<broadcaster autoCheck="false" type="checkbox"  group="sidebar" id="bbcomp-css-sidebar" label="&bbcomp.style.label;" sidebarurl="chrome://bbcomposer/content/sidebar/style.xul" oncommand="myBBComposerManager.toggleSidebar('css')"/>
+		<broadcaster autoCheck="false" type="checkbox"  group="sidebar" id="bbcomp-anchors-sidebar" label="&bbcomp.anchors.label;" sidebarurl="chrome://bbcomposer/content/sidebar/anchors.xul" oncommand="myBBComposerManager.toggleSidebar('anchors')"/>
 		<broadcaster autoCheck="false" type="checkbox" group="sidebar" id="bbcomp-degradx-sidebar" label="&bbcomp.degradx.label;" sidebarurl="chrome://bbcomposer/content/sidebar/degradx.xul" oncommand="myBBComposerManager.toggleSidebar('degradx')"/>
 	</broadcasterset>
 
@@ -275,6 +276,7 @@
 					<toolbarbutton label="&bbcomp.sidebar.label;" class="bbcomposer-toolbar-button" id="bbcomposer-sidebar-button" tooltiptext="&bbcomp.sidebar.tooltiptext;" type="menu">
 						<menupopup id="bbcomposer-sidebar-button-mpopup" onpopupshowing="myBBComposerManager.sidebarMenuPopup(this)">
 							<menuitem label="&bbcomp.css.label;" id="bbcomposer-css-sidebar-button" observes="bbcomp-css-sidebar" tooltiptext="&bbcomp.css.tooltiptext;"/>
+							<menuitem label="&bbcomp.anchors.label;" id="bbcomposer-anchors-sidebar-button" observes="bbcomp-anchors-sidebar" tooltiptext="&bbcomp.anchors.tooltiptext;"/>
 							<menuitem label="&bbcomp.degradx.label;" id="bbcomposer-degradx-sidebar-button" observes="bbcomp-degradx-sidebar" tooltiptext="&bbcomp.degradx.tooltiptext;"/>
 							<menuitem label="&bbcomp.smileys.label;" id="bbcomposer-smileys-sidebar-button" tooltiptext="&bbcomp.smileys.tooltiptext;" oncommand="openWebPanel(this.getAttribute('label'),'http://collection.smiley.free.fr/', true);"/>
 							<menuitem label="&bbcomp.cartoon.label;" id="bbcomposer-cartoon-sidebar-button" tooltiptext="&bbcomp.cartoon.tooltiptext;" oncommand="openWebPanel(this.getAttribute('label'),'http://library.images.free.fr/', true);"/>
