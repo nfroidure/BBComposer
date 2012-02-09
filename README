@@ -1,7 +1,7 @@
-# Welcome on BBComposer sources : Image editor for Firefox
+# Welcome on BBComposer sources : Wysiwyg editor for Firefox
 
 ## About BBComposer
-BBComposer is a Firefox add-on enabling you to modify your websites in WYSIWYG.
+BBComposer is a Firefox add-on enabling you to modify your websites in a WYSIWYG mode.
 
 To get BBComposer for production go there https://addons.mozilla.org/fr/firefox/addon/bbcomposer/ . For the development version, follow the above quick start guide.
 
@@ -34,4 +34,4 @@ PS : Take a look at my other add-ons:
 - CanImage : https://github.com/nfroidure/CanImage
 - KGen : https://github.com/nfroidure/KGen
 
-PS2 : Have news on Twitter http://twiter.com/nfroidure
+PS2 : Have news on Twitter http://twitter.com/nfroidure
