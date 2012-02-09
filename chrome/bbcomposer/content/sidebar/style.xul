@@ -6,10 +6,11 @@
 
 <window id="style_sidebar" title="&bbcomp.css.dialog.title;"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/ewk/ewkLib.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/sidebar/style.js"/>
 	<toolbar>
 		<label value="&bbcomp.css.lockon.label;"/>
-		<menulist id="bbcomposer-lockon-menu" oncommand="window.parent.myBBComposerManager.focusedBBComposer.getElementStyle(document.getElementById('bbcomposer-lockon-menu').value);">
+		<menulist id="bbcomposer-lockon-menu">
 			<menupopup>
 				<menuitem label="&bbcomp.css.lockon.all;" value=""/>
 				<menuitem label="&bbcomp.css.lockon.block;" value="block"/>
@@ -18,11 +19,11 @@
 		</menulist>
 		<toolbarspring/>
 		<toolbarseparator/>
-		<toolbarbutton label="&bbcomp.css.apply.label;" class="bbcomposer-sidebar-button" id="bbcomposer-apply-button" tooltiptext="&bbcomp.css.apply.tooltiptext;" oncommand="window.parent.myBBComposerManager.focusedBBComposer.setElementStyle(document.getElementById('bbcomposer-lockon-menu').value);"/>
+		<toolbarbutton label="&bbcomp.css.apply.label;" class="bbcomposer-sidebar-button" id="bbcomposer-apply-button" tooltiptext="&bbcomp.css.apply.tooltiptext;"/>
 		<toolbarseparator/>
-		<toolbarbutton label="&bbcomp.css.cancel.label;" class="bbcomposer-sidebar-button" id="bbcomposer-cancel-button" tooltiptext="&bbcomp.css.cancel.tooltiptext;" oncommand="window.parent.myBBComposerManager.focusedBBComposer.getElementStyle(document.getElementById('bbcomposer-lockon-menu').value);"/>
+		<toolbarbutton label="&bbcomp.css.cancel.label;" class="bbcomposer-sidebar-button" id="bbcomposer-cancel-button" tooltiptext="&bbcomp.css.cancel.tooltiptext;"/>
 		<toolbarseparator/>
-		<toolbarbutton label="&bbcomp.css.reset.label;" class="bbcomposer-sidebar-button" id="bbcomposer-reset-button" tooltiptext="&bbcomp.css.reset.tooltiptext;" oncommand="window.parent.myBBComposerManager.focusedBBComposer.resetElementStyle(document.getElementById('bbcomposer-lockon-menu').value);"/>
+		<toolbarbutton label="&bbcomp.css.reset.label;" class="bbcomposer-sidebar-button" id="bbcomposer-reset-button" tooltiptext="&bbcomp.css.reset.tooltiptext;"/>
 	</toolbar>
 
 	<tabbox>
@@ -40,17 +41,17 @@
 					<label control="color" value="&bbcomp.css.color.label;"/>
 					<hbox>
 						<colorpicker id="color" type="button" flex="1"/>
-						<button label="&bbcomp.css.color.none.label;" oncommand="document.getElementById('color').color='transparent';"/>
+						<button label="&bbcomp.css.color.none.label;" id="document.getElementById('color').color='transparent';"/>
 					</hbox>
 					<label control="font-family" value="&bbcomp.css.font.family.label;"/>
 					<hbox>
 						<textbox id="font-family" value="" flex="1"/>
-						<button label="+" oncommand="setProperty('font-family');"/>
+						<button label="+" id="font-family-button"/>
 					</hbox>
 					<label control="font-size" value="&bbcomp.css.font.size.label;"/>
 					<hbox>
 						<textbox id="font-size" value="" flex="1"/>
-						<button label="+" oncommand="setProperty('font-size');"/>
+						<button label="+" id="font-size-button"/>
 					</hbox>
 					<label control="font-weight" value="&bbcomp.css.font.weight.label;"/>
 					<menulist id="font-weight">
@@ -150,22 +151,22 @@
 					<label control="line-height" value="&bbcomp.css.line.height.label;"/>
 					<hbox>
 						<textbox id="line-height" value="" flex="1"/>
-						<button label="+" oncommand="setSize('line-height');"/>
+						<button label="+" id="line-height-button"/>
 					</hbox>
 					<label control="text-indent" value="&bbcomp.css.text.indent.label;"/>
 					<hbox>
 						<textbox id="text-indent" value="" flex="1"/>
-						<button label="+" oncommand="setSize('text-indent');"/>
+						<button label="+" id="text-indent-button"/>
 					</hbox>
 					<label control="word-spacing" value="&bbcomp.css.word.spacing.label;"/>
 					<hbox>
 						<textbox id="word-spacing" value="" flex="1"/>
-						<button label="+" oncommand="setSize('word-spacing');"/>
+						<button label="+" id="word-spacing-button"/>
 					</hbox>
 					<label control="letter-spacing" value="&bbcomp.css.letter.spacing.label;"/>
 					<hbox>
 						<textbox id="letter-spacing" value="" flex="1"/>
-						<button label="+" oncommand="setSize('letter-spacing');"/>
+						<button label="+" id="letter-spacing-button"/>
 					</hbox>
 					<label control="white-space" value="&bbcomp.css.white.space.label;"/>
 					<menulist id="white-space">
@@ -179,7 +180,7 @@
 					<label control="text-shadow" value="&bbcomp.css.text.shadow.label;"/>
 					<hbox>
 						<textbox id="text-shadow" value="" flex="1"/>
-						<button label="+" oncommand="setSize('text-shadow');"/>
+						<button label="+" id="text-shadow-button"/>
 					</hbox>
 					<label control="direction" value="&bbcomp.css.direction.label;"/>
 					<menulist id="direction">
@@ -208,48 +209,48 @@
 					<label control="padding-top" value="&bbcomp.css.padding.top.label;"/>
 					<hbox>
 						<textbox id="padding-top" value="" flex="1"/>
-						<button label="+" oncommand="setSize('padding-top');"/>
+						<button label="+" id="padding-top-button"/>
 					</hbox>
 					<label control="padding-right" value="&bbcomp.css.padding.right.label;"/>
 					<hbox>
 						<textbox id="padding-right" value="" flex="1"/>
-						<button label="+" oncommand="setSize('padding-right');"/>
+						<button label="+" id="padding-right-button"/>
 					</hbox>
 					<label control="padding-bottom" value="&bbcomp.css.padding.bottom.label;"/>
 					<hbox>
 						<textbox id="padding-bottom" value="" flex="1"/>
-						<button label="+" oncommand="setSize('padding-bottom');"/>
+						<button label="+" id="padding-bottom-button"/>
 					</hbox>
 					<label control="padding-left" value="&bbcomp.css.padding.left.label;"/>
 					<hbox>
 						<textbox id="padding-left" value="" flex="1"/>
-						<button label="+" oncommand="setSize('padding-left');"/>
+						<button label="+" id="padding-left-button"/>
 					</hbox>
-					<button label="&bbcomp.css.padding.all;" oncommand="setAllSizes('padding');"/>
+					<button label="&bbcomp.css.padding.all;" id="padding-button"/>
 				</groupbox>
 				<groupbox>
 				<caption label="&bbcomp.css.margin.label;"/>
 					<label control="margin-top" value="&bbcomp.css.margin.top.label;"/>
 					<hbox>
 						<textbox id="margin-top" value="" flex="1"/>
-						<button label="+" oncommand="setSize('margin-top');"/>
+						<button label="+" id="margin-top-button"/>
 					</hbox>
 					<label control="margin-right" value="&bbcomp.css.margin.right.label;"/>
 					<hbox>
 						<textbox id="margin-right" value="" flex="1"/>
-						<button label="+" oncommand="setSize('margin-right');"/>
+						<button label="+" id="margin-right-button"/>
 					</hbox>
 					<label control="margin-bottom" value="&bbcomp.css.margin.bottom.label;"/>
 					<hbox>
 						<textbox id="margin-bottom" value="" flex="1"/>
-						<button label="+" oncommand="setSize('margin-bottom');"/>
+						<button label="+" id="margin-bottom-button"/>
 					</hbox>
 					<label control="margin-left" value="&bbcomp.css.margin.left.label;"/>
 					<hbox>
 						<textbox id="margin-left" value="" flex="1"/>
-						<button label="+" oncommand="setSize('margin-left');"/>
+						<button label="+" id="margin-left-button"/>
 					</hbox>
-					<button label="&bbcomp.css.padding.all;" oncommand="setAllSizes('margin');"/>
+					<button label="&bbcomp.css.padding.all;" id="margin-button"/>
 				</groupbox>
 			</vbox>
 			</tabpanel>
@@ -261,17 +262,17 @@
 					<label control="background-color" value="&bbcomp.css.background.color.label;"/>
 					<hbox>
 						<colorpicker id="background-color" type="button" flex="1"/>
-						<button label="&bbcomp.css.background.color.none.label;" oncommand="document.getElementById('background-color').color='transparent';"/>
+						<button label="&bbcomp.css.background.color.none.label;" id="document.getElementById('background-color').color='transparent';"/>
 					</hbox>
 					<label control="background-image" value="&bbcomp.css.background.image.label;" />
 					<hbox>
 						<textbox id="background-image" value="" flex="1"/>
-						<button label="+" oncommand="setProperty('background-image');"/>
+						<button label="+" id="background-image-button"/>
 					</hbox>
 					<label control="background-position" value="&bbcomp.css.background.position.label;" />
 					<hbox>
 						<textbox id="background-position" value="" flex="1"/>
-						<button label="+" oncommand="setProperty('background-position');"/>
+						<button label="+" id="background-position-button"/>
 					</hbox>
 					<label control="background-repeat" value="&bbcomp.css.background.repeat.label;" />
 					<menulist id="background-repeat">
@@ -297,12 +298,12 @@
 					<label control="border-color" value="&bbcomp.css.border.color.label;"/>
 					<hbox>
 						<colorpicker id="border-color" type="button" flex="1"/>
-						<button label="&bbcomp.css.border.color.none.label;" oncommand="document.getElementById('border-color').color='transparent';"/>
+						<button label="&bbcomp.css.border.color.none.label;" id="document.getElementById('border-color').color='transparent';"/>
 					</hbox>
 					<label control="border-width" value="&bbcomp.css.border.width.label;" />
 					<hbox>
 						<textbox id="border-width" value="" flex="1"/>
-						<button label="+" oncommand="setSize('border-width');"/>
+						<button label="+" id="border-width-button"/>
 					</hbox>
 					<label control="border-style" value="&bbcomp.css.border.style.label;" />
 					<menulist id="border-style">
@@ -329,12 +330,12 @@
 					<label control="width" value="&bbcomp.css.width.label;" />
 					<hbox>
 						<textbox id="width" value="" flex="1"/>
-						<button label="+" oncommand="setSize('width');"/>
+						<button label="+" id="width-button"/>
 					</hbox>
 					<label control="height" value="&bbcomp.css.height.label;" />
 					<hbox>
 						<textbox id="height" value="" flex="1"/>
-						<button label="+" oncommand="setSize('height');"/>
+						<button label="+" id="height-button"/>
 					</hbox>
 					<label control="float" value="&bbcomp.css.float.label;" />
 					<menulist id="float">
@@ -382,22 +383,22 @@
 					<label control="top" value="&bbcomp.css.top.label;" />
 					<hbox>
 						<textbox id="top" value="" flex="1"/>
-						<button label="+" oncommand="setSize('top');"/>
+						<button label="+" id="top-button"/>
 					</hbox>
 					<label control="right" value="&bbcomp.css.right.label;" />
 					<hbox>
 						<textbox id="right" value="" flex="1"/>
-						<button label="+" oncommand="setSize('right');"/>
+						<button label="+" id="right-button"/>
 					</hbox>
 					<label control="bottom" value="&bbcomp.css.bottom.label;" />
 					<hbox>
 						<textbox id="bottom" value="" flex="1"/>
-						<button label="+" oncommand="setSize('bottom');"/>
+						<button label="+" id="bottom-button"/>
 					</hbox>
 					<label control="left" value="&bbcomp.css.left.label;" />
 					<hbox>
 						<textbox id="left" value="" flex="1"/>
-						<button label="+" oncommand="setSize('left');"/>
+						<button label="+" id="left-button"/>
 					</hbox>
 					<label control="z-index" value="&bbcomp.css.z-index.label;" />
 					<textbox id="z-index" value=""/>
