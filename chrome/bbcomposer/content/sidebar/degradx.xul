@@ -8,6 +8,7 @@
 
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcUtils.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/bbcColor.js"/>
+	<script type="application/x-javascript" src="chrome://bbcomposer/content/ewk/ewkLib.js"/>
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/sidebar/degradx.js"/>
 
 	<tabbox>
@@ -19,15 +20,15 @@
 			<tabpanel>
 			<vbox flex="1">
 			<vbox id="x-colorpickers"><colorpicker id="color0" palettename="standard" type="button" flex="1"/></vbox>
-				<hbox><button label="-" oncommand="degradx_minus('x');"/><button label="+" oncommand="degradx_plus('x');"/></hbox>
-				<hbox><button label="&degradx.button.delete;" oncommand="degradx_remove('x');"/><button label="&degradx.button.apply;" oncommand="degradx_apply('x');"/></hbox>
+				<hbox><button label="-" oncommand="degradx.minus('x');"/><button label="+" oncommand="degradx.plus('x');"/></hbox>
+				<hbox><button label="&degradx.button.delete;" oncommand="degradx.remove('x');"/><button label="&degradx.button.apply;" oncommand="degradx.apply('x');"/></hbox>
 			</vbox>
 			</tabpanel>
 			<tabpanel>
 			<vbox flex="1">
 				<vbox id="y-colorpickers"><colorpicker id="color0" palettename="standard" type="button" flex="1"/></vbox>
-				<hbox><button label="-" oncommand="degradx_minus('y');"/><button label="+" oncommand="degradx_plus('y');"/></hbox>
-				<hbox><button label="&degradx.button.delete;" oncommand="degradx_remove('y');"/><button label="&degradx.button.apply;" oncommand="degradx_apply('y');"/></hbox>
+				<hbox><button label="-" oncommand="degradx.minus('y');"/><button label="+" oncommand="degradx.plus('y');"/></hbox>
+				<hbox><button label="&degradx.button.delete;" oncommand="degradx.remove('y');"/><button label="&degradx.button.apply;" oncommand="degradx.apply('y');"/></hbox>
 			</vbox>
 			</tabpanel>
 		</tabpanels>
