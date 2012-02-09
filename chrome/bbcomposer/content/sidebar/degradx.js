@@ -60,7 +60,6 @@ DegradXManager.prototype.apply = function (code)
 					newElement.setAttribute('style','color: ' + colors + ';');
 				else if(code=='y')
 					newElement.setAttribute('style','background-color: ' + colors + ';');
-				ewkLib.dump('Ligne 63');
 				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: blocks[i], targetElement: newElement});
 				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.insertElement, parentElement: blocks[i], theElement: newElement, focusNode: newElement});
 				}
@@ -76,7 +75,6 @@ DegradXManager.prototype.apply = function (code)
 				var newElement = window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.createElement('span');
 				newElement.setAttribute('class',code);
 				newElement.setAttribute('title',colors);
-				ewkLib.dump('Ligne 79');
 				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: blocks[i], targetElement: newElement});
 				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.insertElement, parentElement: blocks[i], theElement: newElement, focusNode: newElement});
 				}
@@ -120,7 +118,6 @@ DegradXManager.prototype.remove = function (code)
 			{
 			if(spans[i].hasAttribute('class')&&spans[i].getAttribute('class')==code)
 				{
-				ewkLib.dump('Ligne 123');
 				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: spans[i], targetElement: spans[i].parentNode, nextElement: spans[i]});
 				/* UNKNOW BUG : Very strange !!!
 				if(spans[i].firstChild)
@@ -194,7 +191,6 @@ DegradXManager.prototype.degrad = function (element)
 				newElement.style.color = this.getColor(i,max,colors);
 			else
 				newElement.setAttribute("style", "background-color: "+this.getColor(i,max,colors)+";");
-				ewkLib.dump('Ligne 194');
 			window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: BRElements[0].parentNode, targetElement: newElement, startAfter: (i>0?BRElements[i-1]:null), stopAt: (i<max?BRElements[i]:null)});
 			window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.insertElement, theElement: newElement, nextElement: (i<max?BRElements[i]:null), parentElement: (i==max?BRElements[0].parentNode:null)});
 			}
@@ -203,11 +199,9 @@ DegradXManager.prototype.degrad = function (element)
 
 DegradXManager.prototype.clear = function ()
 	{
-	//var elements = getElementsByAttributeValue(window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.body, 'title', 't');
 	var elements = window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.body.querySelectorAll('span[title="t"]');
 	for(var i=0; i<elements.length; i++)
 		{
-				ewkLib.dump('Ligne 207');
 		window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: elements[i], targetElement: elements[i].parentNode, nextElement: elements[i]});
 		window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.removeElement, theElement: elements[i]});
 		}
@@ -236,6 +230,7 @@ var degradx=new DegradXManager();
 
 function getElementsByNodeName(parent, nodeName, elements)
 	{
+//NodeFilter.SHOW_TEXT    https://developer.mozilla.org/en/DOM/document.createTreeWalker
 	if(!elements)
 		elements = new Array();
 	for (var i=0; i<parent.childNodes.length; i++)
@@ -247,4 +242,3 @@ function getElementsByNodeName(parent, nodeName, elements)
 		}
 	return elements;
 	}
-//NodeFilter.SHOW_TEXT    https://developer.mozilla.org/en/DOM/document.createTreeWalker
