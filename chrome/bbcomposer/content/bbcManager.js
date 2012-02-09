@@ -278,6 +278,16 @@ function bbcManager()
 					}
 				}
 			}
+		// Display sidebar content
+		if(this.sidebar&&typeof this[this.sidebarName + 'Display'] == 'function') // Remove soon
+			this[this.sidebarName + 'Display'](); // Remove soon
+		var evt = document.createEvent('Event');
+		evt.initEvent('display', true, true);
+		evt.target=element;
+		evt.focusedBBComposer=this.focusedBBComposer;
+		if(this.sidebar&&this.sidebar.contentDocument)
+			this.sidebar.contentDocument.dispatchEvent(evt);
+		// Display status text
 		var statustext='';
 		if(element && element!=this.focusedBBComposer.rootElement.parentNode)
 			{
@@ -294,7 +304,7 @@ function bbcManager()
 		else
 			statustext="body";
 		this.displayStatusText(statustext);
-		this.executeSidebarCommand();
+		
 		var selectedBlock = this.focusedBBComposer.getSelectedBlock();
 		this.checkBlockButton((selectedBlock?selectedBlock.tagName.toLowerCase():null));
 		if(this.myBBComposerPreferences.getBoolOption('spellchecker'))
@@ -615,21 +625,6 @@ function bbcManager()
 					return true;
 			}
 		return false;
-		}
-
-	bbcManager.prototype.executeSidebarCommand = function ()
-		{
-		if(this.sidebar&&typeof this[this.sidebarName + 'Display'] == 'function')
-			this[this.sidebarName + 'Display']();
-		var evt = document.createEvent('Event');
-		evt.initEvent('display', true, true);
-		if(this.sidebar&&this.sidebar.contentDocument)
-			this.sidebar.contentDocument.dispatchEvent(evt);
-		}
-
-	bbcManager.prototype.cssDisplay = function ()
-		{
-		this.focusedBBComposer.getElementStyle();
 		}
 
 	bbcManager.prototype.sidebarMenuPopup = function (menupopup)
