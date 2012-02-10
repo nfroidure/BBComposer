@@ -1,14 +1,25 @@
-function StyleManager()
+(function()
 	{
-	this.loadHandler=ewkLib.newEventHandler(this,this.load);
-	window.addEventListener('load', this.loadHandler, false);
-	};
-
-StyleManager.prototype.load = function ()
-	{
-	document.removeEventListener('load', this.loadHandler, false);
-	if(window.parent.myBBComposerManager.toggleSidebar('css', true))
+	function StyleManager()
 		{
+		this.loadHandler=ewkLib.newEventHandler(this,this.load);
+		window.addEventListener('load', this.loadHandler, false);
+		};
+
+	StyleManager.prototype.load = function ()
+		{
+		document.removeEventListener('load', this.loadHandler, false);
+		var evt = window.parent.document.createEvent('Events');
+		evt.initEvent('sidebarload', true, true);
+		evt.sidebarWindow=this;
+		evt.sidebarName='css';
+		if(window.parent)
+			window.parent.dispatchEvent(evt);
+		}
+
+	StyleManager.prototype.run = function (editorManager)
+		{
+		this.editorManager=editorManager;
 		this.unLoadHandler=ewkLib.newEventHandler(this,this.unLoad);
 		document.addEventListener('unload', this.unLoadHandler, false);
 		this.displayHandler=ewkLib.newEventHandler(this,this.display);
@@ -52,75 +63,75 @@ StyleManager.prototype.load = function ()
 		document.getElementById('margin-button').addEventListener('command', this.setSizesHandler, false);
 		this.display();
 		}
-	}
 
-StyleManager.prototype.display = function ()
-	{
-	this.getElementStyle(this.lockOnMenu.value);
-	}
-
-StyleManager.prototype.apply = function ()
-	{
-	window.parent.myBBComposerManager.focusedBBComposer.setElementStyle(this.lockOnMenu.value);
-	}
-
-StyleManager.prototype.reset = function ()
-	{
-	window.parent.myBBComposerManager.focusedBBComposer.resetElementStyle(this.lockOnMenu.value);
-	}
-
-StyleManager.prototype.getElementStyle = function (type)
-	{
-	window.parent.myBBComposerManager.focusedBBComposer.getElementStyle(type);
-	}
-
-StyleManager.prototype.openPropertyDialog = function (file, value)
-	{
-	var params = {inn:{property:value}, out:null};
-	window.openDialog(file, "", "chrome, dialog, modal, resizable=no", params).focus();
-	if(params.out&&params.out.property)
-	{
-	return params.out.property;
-	}
-	else
-	return false;
-	}
-
-StyleManager.prototype.setProperty = function (event)
-	{
-	var property=event.target.getAttribute('id').replace('-button','');
-	var element=document.getElementById(property);
-	var value = this.openPropertyDialog("chrome://bbcomposer/content/style/"+property+".xul", element.value);
-	if(value)
-		element.value = value;
-	}
-
-StyleManager.prototype.setSize = function (event)
-	{
-	var property=event.target.getAttribute('id').replace('-button','');
-	var element=document.getElementById(property);
-	var value = this.openPropertyDialog("chrome://bbcomposer/content/style/size.xul", element.value)
-	if(value)
-		element.value = value;
-	}
-
-StyleManager.prototype.setSizes = function (event)
-	{
-	var property=event.target.getAttribute('id').replace('-button','');
-	var size = this.openPropertyDialog("chrome://bbcomposer/content/style/size.xul", "");
-	if(size)
+	StyleManager.prototype.display = function (hEvent)
 		{
-		document.getElementById(property + "-left").value = size;
-		document.getElementById(property + "-right").value = size;
-		document.getElementById(property + "-top").value = size;
-		document.getElementById(property + "-bottom").value = size;
+		this.getElementStyle(this.lockOnMenu.value);
 		}
-	}
 
-StyleManager.prototype.unLoad = function ()
-	{
-	document.removeEventListener('unload', this.unLoadHandler, false);
-	window.parent.myBBComposerManager.toggleSidebar('css',false);
-	}
+	StyleManager.prototype.apply = function ()
+		{
+		this.editorManager.focusedBBComposer.setElementStyle(this.lockOnMenu.value);
+		}
 
-new StyleManager();
+	StyleManager.prototype.reset = function ()
+		{
+		this.editorManager.focusedBBComposer.resetElementStyle(this.lockOnMenu.value);
+		}
+
+	StyleManager.prototype.getElementStyle = function (type)
+		{
+		this.editorManager.focusedBBComposer.getElementStyle(type);
+		}
+
+	StyleManager.prototype.openPropertyDialog = function (file, value)
+		{
+		var params = {inn:{property:value}, out:null};
+		window.openDialog(file, "", "chrome, dialog, modal, resizable=no", params).focus();
+		if(params.out&&params.out.property)
+		{
+		return params.out.property;
+		}
+		else
+		return false;
+		}
+
+	StyleManager.prototype.setProperty = function (event)
+		{
+		var property=event.target.getAttribute('id').replace('-button','');
+		var element=document.getElementById(property);
+		var value = this.openPropertyDialog("chrome://bbcomposer/content/style/"+property+".xul", element.value);
+		if(value)
+			element.value = value;
+		}
+
+	StyleManager.prototype.setSize = function (event)
+		{
+		var property=event.target.getAttribute('id').replace('-button','');
+		var element=document.getElementById(property);
+		var value = this.openPropertyDialog("chrome://bbcomposer/content/style/size.xul", element.value)
+		if(value)
+			element.value = value;
+		}
+
+	StyleManager.prototype.setSizes = function (event)
+		{
+		var property=event.target.getAttribute('id').replace('-button','');
+		var size = this.openPropertyDialog("chrome://bbcomposer/content/style/size.xul", "");
+		if(size)
+			{
+			document.getElementById(property + "-left").value = size;
+			document.getElementById(property + "-right").value = size;
+			document.getElementById(property + "-top").value = size;
+			document.getElementById(property + "-bottom").value = size;
+			}
+		}
+
+	StyleManager.prototype.unLoad = function ()
+		{
+		document.removeEventListener('unload', this.unLoadHandler, false);
+		this.editorManager.toggleSidebar('css',false);
+		}
+
+	new StyleManager();
+	})();

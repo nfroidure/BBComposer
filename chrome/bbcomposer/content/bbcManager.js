@@ -32,6 +32,8 @@ function bbcManager()
 		window.getBrowser().tabContainer.addEventListener("TabClose", this.browserTabCloseHandler, true);
 		this.browserCloseHandler=this.newEventHandler(this, this.browserClose,'browserCloseHandler');
 		window.addEventListener("close", this.browserCloseHandler, true);
+		this.browserSidebarHandler=this.newEventHandler(this, this.browserSidebarLoad,'browserSidebarHandler');
+		window.addEventListener("sidebarload", this.browserSidebarHandler, true);
 		// ContentWindow Events
 		this.documentSubmitHandler=this.newEventHandler(this, this.documentSubmit,'documentSubmitHandler');
 		window.getBrowser().addEventListener("submit", this.documentSubmitHandler, true);
@@ -84,6 +86,17 @@ function bbcManager()
 			return false;
 			}
 		return false;
+		}
+	bbcManager.prototype.browserSidebarLoad = function (hEvent)
+		{
+		if(hEvent&&hEvent.sidebarName)
+			{
+			this.toggleSidebar(hEvent.sidebarName,true);
+			if(hEvent.sidebarWindow&&hEvent.sidebarWindow.run)
+				hEvent.sidebarWindow.run(this);
+			}
+		else
+			this.toggleSidebar('',false);
 		}
 
 	/*------ Document events ------*/
@@ -195,7 +208,7 @@ function bbcManager()
 		if(command=="show"||(this.editionPanel.collapsed&&command!='hide'))
 			{
 			if(this.sidebarName)
-				this.toggleSidebar(this.sidebarName,'show');
+				this.toggleSidebar(this.sidebarName,true);
 			this.toggleToolbarButtons(true);
 			this.toggleToolbarButtons(false);
 			var curToolbarName;
@@ -215,7 +228,7 @@ function bbcManager()
 			this.editionSplitter.collapsed = true;
 			this.editionPanel.collapsed = true;
 			if(this.sidebar)
-				this.toggleSidebar('',"hide");
+				this.toggleSidebar('',false);
 			for(var i=this.toolbox.childNodes.length-1; i>=0; i--)
 				{
 				curToolbarName=this.toolbox.childNodes[i].getAttribute('id').replace(/^bbcomposer-([a-z]+)-toolbar$/, '$1');
@@ -281,12 +294,15 @@ function bbcManager()
 		// Display sidebar content
 		if(this.sidebar&&typeof this[this.sidebarName + 'Display'] == 'function') // Remove soon
 			this[this.sidebarName + 'Display'](); // Remove soon
-		var evt = document.createEvent('Event');
-		evt.initEvent('display', true, true);
-		evt.target=element;
-		evt.focusedBBComposer=this.focusedBBComposer;
+			
 		if(this.sidebar&&this.sidebar.contentDocument)
+			{
+			var evt = this.sidebar.contentDocument.createEvent('Event');
+			evt.initEvent('display', true, true);
+			evt.selectedElement=element;
+			evt.editorManager=this;
 			this.sidebar.contentDocument.dispatchEvent(evt);
+			}
 		// Display status text
 		var statustext='';
 		if(element && element!=this.focusedBBComposer.rootElement.parentNode)
@@ -349,6 +365,7 @@ function bbcManager()
 			if(this.bbcomposers[i])
 				this.closeBBComposer(this.bbcomposers[i]);
 			}
+		this.toggleSidebar('',false)
 		}
 
 	bbcManager.prototype.menuPopup = function (menupopup)

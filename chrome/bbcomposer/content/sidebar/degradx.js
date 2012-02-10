@@ -7,21 +7,29 @@ function DegradXManager()
 DegradXManager.prototype.load = function ()
 	{
 	document.removeEventListener('load', this.loadHandler, false);
-	if(window.parent.myBBComposerManager.toggleSidebar('degradx', true))
-		{
-		this.unLoadHandler=ewkLib.newEventHandler(this,this.unLoad);
-		document.addEventListener('unload', this.unLoadHandler, false);
-		this.displayHandler=ewkLib.newEventHandler(this,this.display);
-		document.addEventListener('display', this.displayHandler, false);
-		this.refreshHandler=ewkLib.newEventHandler(this,this.refresh);
-		this.display();
-		this.refresh();
-		}
+	var evt = window.parent.document.createEvent('Events');
+	evt.initEvent('sidebarload', true, true);
+	evt.sidebarWindow=this;
+	evt.sidebarName='degradx';
+	if(window.parent)
+		window.parent.dispatchEvent(evt);
+	}
+
+DegradXManager.prototype.run = function (editorManager)
+	{
+	this.editorManager=editorManager;
+	this.unLoadHandler=ewkLib.newEventHandler(this,this.unLoad);
+	document.addEventListener('unload', this.unLoadHandler, false);
+	this.displayHandler=ewkLib.newEventHandler(this,this.display);
+	document.addEventListener('display', this.displayHandler, false);
+	this.refreshHandler=ewkLib.newEventHandler(this,this.refresh);
+	this.display();
+	this.refresh();
 	}
 
 DegradXManager.prototype.display = function ()
 	{
-	var curElement = window.parent.myBBComposerManager.focusedBBComposer.getSelectedElement();
+	var curElement = this.editorManager.focusedBBComposer.getSelectedElement();
 	while(curElement&&curElement.nodeName.toLowerCase()!='body')
 		{
 		if(curElement.hasAttribute('class')&&(curElement.getAttribute('class')=='x'||curElement.getAttribute('class')=='y'))
@@ -41,7 +49,7 @@ DegradXManager.prototype.display = function ()
 DegradXManager.prototype.apply = function (code)
 	{
 	var box = document.getElementById(code + '-colorpickers');
-	var blocks = window.parent.myBBComposerManager.focusedBBComposer.getSelectedBlocks();
+	var blocks = this.editorManager.focusedBBComposer.getSelectedBlocks();
 	var colors="";
 	var i=0;
 	while(box.childNodes[i]&&box.childNodes[i].color&&box.childNodes[i].color!='transparent')
@@ -55,13 +63,13 @@ DegradXManager.prototype.apply = function (code)
 			{
 			if(blocks[i].toString().length)
 				{
-				var newElement = window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.createElement('span');
+				var newElement = this.editorManager.focusedBBComposer.editor.contentDocument.createElement('span');
 				if(code=='x')
 					newElement.setAttribute('style','color: ' + colors + ';');
 				else if(code=='y')
 					newElement.setAttribute('style','background-color: ' + colors + ';');
-				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: blocks[i], targetElement: newElement});
-				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.insertElement, parentElement: blocks[i], theElement: newElement, focusNode: newElement});
+				this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: blocks[i], targetElement: newElement});
+				this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.insertElement, parentElement: blocks[i], theElement: newElement, focusNode: newElement});
 				}
 			}
 		}
@@ -72,11 +80,11 @@ DegradXManager.prototype.apply = function (code)
 			{
 			if(blocks[i].toString().length)
 				{
-				var newElement = window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.createElement('span');
+				var newElement = this.editorManager.focusedBBComposer.editor.contentDocument.createElement('span');
 				newElement.setAttribute('class',code);
 				newElement.setAttribute('title',colors);
-				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: blocks[i], targetElement: newElement});
-				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.insertElement, parentElement: blocks[i], theElement: newElement, focusNode: newElement});
+				this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: blocks[i], targetElement: newElement});
+				this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.insertElement, parentElement: blocks[i], theElement: newElement, focusNode: newElement});
 				}
 			}
 		}
@@ -110,7 +118,7 @@ DegradXManager.prototype.getColor = function (pos,max,colors)
 
 DegradXManager.prototype.remove = function (code)
 	{
-	var blocks = window.parent.myBBComposerManager.focusedBBComposer.getSelectedBlocks();
+	var blocks = this.editorManager.focusedBBComposer.getSelectedBlocks();
 	for(var i=0; i<blocks.length; i++)
 		{
 		var spans = blocks[i].getElementsByTagName('span');
@@ -118,11 +126,11 @@ DegradXManager.prototype.remove = function (code)
 			{
 			if(spans[i].hasAttribute('class')&&spans[i].getAttribute('class')==code)
 				{
-				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: spans[i], targetElement: spans[i].parentNode, nextElement: spans[i]});
+				this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: spans[i], targetElement: spans[i].parentNode, nextElement: spans[i]});
 				/* UNKNOW BUG : Very strange !!!
 				if(spans[i].firstChild)
 					alert(spans[i].firstChild.nodeName+' '+spans[i].firstChild.textContent);*/
-				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.removeElement, theElement: spans[i]});
+				this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.removeElement, theElement: spans[i]});
 				}
 			}
 		}
@@ -168,51 +176,51 @@ DegradXManager.prototype.degrad = function (element)
 			{
 			for(var j=0; j<textNodes[i].length; j++)
 				{
-				var newElement = window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.createElement('span');
+				var newElement = this.editorManager.focusedBBComposer.editor.contentDocument.createElement('span');
 				newElement.innerHTML = textNodes[i].data.charAt(j);
 				newElement.setAttribute('title', 't');
 				if(element.getAttribute('class')=='x')
 					newElement.style.color = this.getColor(k,max,colors);
 				else
 					newElement.setAttribute("style", "background-color: "+this.getColor(k,max,colors)+";");
-				window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.insertElement, nextElement: textNodes[i], theElement: newElement});
+				this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.insertElement, nextElement: textNodes[i], theElement: newElement});
 				k++;
 				}
-			window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.removeElement, theElement: textNodes[i]});
+			this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.removeElement, theElement: textNodes[i]});
 			}
 		}
 	else
 		{
 		for(var i=0; i<=max; i++)
 			{
-			var newElement = window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.createElement('span');
+			var newElement = this.editorManager.focusedBBComposer.editor.contentDocument.createElement('span');
 			newElement.setAttribute('title', 't');
 			if(element.getAttribute('class')=='x')
 				newElement.style.color = this.getColor(i,max,colors);
 			else
 				newElement.setAttribute("style", "background-color: "+this.getColor(i,max,colors)+";");
-			window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: BRElements[0].parentNode, targetElement: newElement, startAfter: (i>0?BRElements[i-1]:null), stopAt: (i<max?BRElements[i]:null)});
-			window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.insertElement, theElement: newElement, nextElement: (i<max?BRElements[i]:null), parentElement: (i==max?BRElements[0].parentNode:null)});
+			this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: BRElements[0].parentNode, targetElement: newElement, startAfter: (i>0?BRElements[i-1]:null), stopAt: (i<max?BRElements[i]:null)});
+			this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.insertElement, theElement: newElement, nextElement: (i<max?BRElements[i]:null), parentElement: (i==max?BRElements[0].parentNode:null)});
 			}
 		}
 	}
 
 DegradXManager.prototype.clear = function ()
 	{
-	var elements = window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.body.querySelectorAll('span[title="t"]');
+	var elements = this.editorManager.focusedBBComposer.editor.contentDocument.body.querySelectorAll('span[title="t"]');
 	for(var i=0; i<elements.length; i++)
 		{
-		window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: elements[i], targetElement: elements[i].parentNode, nextElement: elements[i]});
-		window.parent.myBBComposerManager.focusedBBComposer.doAction({actionFunction: window.parent.myBBComposerManager.focusedBBComposer.removeElement, theElement: elements[i]});
+		this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.exchangeElementChildNodes, sourceElement: elements[i], targetElement: elements[i].parentNode, nextElement: elements[i]});
+		this.editorManager.focusedBBComposer.doAction({actionFunction: this.editorManager.focusedBBComposer.removeElement, theElement: elements[i]});
 		}
 	}
 
 DegradXManager.prototype.refresh = function (event)
 	{
-	if(window.parent.myBBComposerManager.focusedBBComposer&&window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument)
+	if(this.editorManager.focusedBBComposer&&this.editorManager.focusedBBComposer.editor.contentDocument)
 		{
 		this.clear();
-		var elements = window.parent.myBBComposerManager.focusedBBComposer.editor.contentDocument.querySelectorAll(".x, .y");
+		var elements = this.editorManager.focusedBBComposer.editor.contentDocument.querySelectorAll(".x, .y");
 		for(var i=0; i<elements.length; i++)
 			this.degrad(elements[i]);
 		}
@@ -223,7 +231,7 @@ DegradXManager.prototype.unLoad = function ()
 	{
 	window.clearTimeout(this.refreshInterval);
 	document.removeEventListener('unload', this.unLoadHandler, false);
-	window.parent.myBBComposerManager.toggleSidebar('degradx',false);
+	this.editorManager.toggleSidebar('degradx',false);
 	}
 
 var degradx=new DegradXManager();
