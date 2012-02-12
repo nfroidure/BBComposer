@@ -91,7 +91,7 @@ function bbcManager()
 		{
 		if(hEvent&&hEvent.sidebarName)
 			{
-			this.toggleSidebar(hEvent.sidebarName,true);
+			this.toggleSidebar(hEvent.sidebarName,true,hEvent.standAlone);
 			if(hEvent.sidebarWindow&&hEvent.sidebarWindow.run)
 				hEvent.sidebarWindow.run(this);
 			}
@@ -603,9 +603,9 @@ function bbcManager()
 		}
 
 	/*------ Sidebar functions ------*/
-	bbcManager.prototype.toggleSidebar = function (sidebarName, showState, testDisplayRule)
+	bbcManager.prototype.toggleSidebar = function (sidebarName, showState, standAlone)
 		{
-		if(showState===false||(!this.sidebarIsAllowed(sidebarName))||(this.sidebar&&this.sidebarName==sidebarName&&showState!==true))
+		if(showState===false||((!standAlone)&&!this.sidebarIsAllowed(sidebarName))||(this.sidebar&&this.sidebarName==sidebarName&&showState!==true))
 			{
 			this.sidebar = false;
 			this.sidebarName = false;

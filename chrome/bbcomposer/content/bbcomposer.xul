@@ -106,9 +106,9 @@
 	</commandset>
 
 	<broadcasterset id="mainBroadcasterSet">
-		<broadcaster autoCheck="false" type="checkbox"  group="sidebar" id="bbcomp-css-sidebar" label="&bbcomp.style.label;" sidebarurl="chrome://bbcomposer/content/sidebar/style.xul" oncommand="myBBComposerManager.toggleSidebar('css')"/>
-		<broadcaster autoCheck="false" type="checkbox"  group="sidebar" id="bbcomp-anchors-sidebar" label="&bbcomp.anchors.label;" sidebarurl="chrome://bbcomposer/content/sidebar/anchors.xul" oncommand="myBBComposerManager.toggleSidebar('anchors')"/>
-		<broadcaster autoCheck="false" type="checkbox" group="sidebar" id="bbcomp-degradx-sidebar" label="&bbcomp.degradx.label;" sidebarurl="chrome://bbcomposer/content/sidebar/degradx.xul" oncommand="myBBComposerManager.toggleSidebar('degradx')"/>
+		<broadcaster autoCheck="false" type="checkbox"  group="sidebar" id="bbcomp-css-sidebar" label="&bbcomp.style.label;" sidebarurl="chrome://bbcomposer/content/sidebar/style.xul" oncommand="toggleSidebar('bbcomp-css-sidebar');"/>
+		<broadcaster autoCheck="false" type="checkbox"  group="sidebar" id="bbcomp-anchors-sidebar" label="&bbcomp.anchors.label;" sidebarurl="chrome://bbcomposer/content/sidebar/anchors.xul" oncommand="toggleSidebar('bbcomp-anchors-sidebar');"/>
+		<broadcaster autoCheck="false" type="checkbox" group="sidebar" id="bbcomp-degradx-sidebar" label="&bbcomp.degradx.label;" sidebarurl="chrome://bbcomposer/content/sidebar/degradx.xul" oncommand="toggleSidebar('bbcomp-degradx-sidebar');"/>
 	</broadcasterset>
 
 	<popup id="contentAreaContextMenu">

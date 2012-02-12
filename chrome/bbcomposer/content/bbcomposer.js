@@ -3352,7 +3352,6 @@ function bbcomposer(editor, language, textarea, manager)
 	bbcomposer.prototype.paste = function ()
 		{
 		this.insertContent(this.myBBComposerManager.getClipboardContent());
-		this.checkFiles();
 		}
 
 	bbcomposer.prototype.pasteIn = function (markup)
@@ -3431,7 +3430,6 @@ function bbcomposer(editor, language, textarea, manager)
 			this.sanitizeContent(documentFragment, true);
 			this.insertContent(documentFragment);
 			}
-		this.checkFiles();
 		}
 
 	bbcomposer.prototype.copy = function ()
@@ -3463,7 +3461,6 @@ function bbcomposer(editor, language, textarea, manager)
 			}
 		if(content)
 			this.insertContent(content,(hEvent.rangeParent?hEvent.rangeParent:null), (hEvent.rangeOffset?hEvent.rangeOffset:null));
-		this.checkFiles();
 		}
 
 	bbcomposer.prototype.setEditorContent = function (content)
@@ -3701,6 +3698,7 @@ function bbcomposer(editor, language, textarea, manager)
 				this.doAction({actionFunction: this.insertElement, theElement: newBlock, parentElement: this.rootElement, focusNode: newBlock, traceMessage:'insertContent 15'});
 				}
 			}
+		this.checkFiles();
 		}
 
 	bbcomposer.prototype.sanitizeContent = function (documentFragment, blockLevel, dontDeletedEmptyNodes)
