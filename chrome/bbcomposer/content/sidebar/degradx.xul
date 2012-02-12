@@ -20,15 +20,15 @@
 			<tabpanel>
 			<vbox flex="1">
 			<vbox id="x-colorpickers"><colorpicker id="color0" palettename="standard" type="button" flex="1"/></vbox>
-				<hbox><button label="-" oncommand="degradx.minus('x');"/><button label="+" oncommand="degradx.plus('x');"/></hbox>
-				<hbox><button label="&degradx.button.delete;" oncommand="degradx.remove('x');"/><button label="&degradx.button.apply;" oncommand="degradx.apply('x');"/></hbox>
+				<hbox><button label="-" id="x-minus-button"/><button label="+" id="x-plus-button"/></hbox>
+				<hbox><button label="&degradx.button.delete;" id="x-remove-button"/><button label="&degradx.button.apply;" id="x-apply-button"/></hbox>
 			</vbox>
 			</tabpanel>
 			<tabpanel>
 			<vbox flex="1">
 				<vbox id="y-colorpickers"><colorpicker id="color0" palettename="standard" type="button" flex="1"/></vbox>
-				<hbox><button label="-" oncommand="degradx.minus('y');"/><button label="+" oncommand="degradx.plus('y');"/></hbox>
-				<hbox><button label="&degradx.button.delete;" oncommand="degradx.remove('y');"/><button label="&degradx.button.apply;" oncommand="degradx.apply('y');"/></hbox>
+				<hbox><button label="-" id="y-minus-button"/><button label="+" id="y-plus-button"/></hbox>
+				<hbox><button label="&degradx.button.delete;" id="y-remove-button"/><button label="&degradx.button.apply;" id="y-apply-button"/></hbox>
 			</vbox>
 			</tabpanel>
 		</tabpanels>

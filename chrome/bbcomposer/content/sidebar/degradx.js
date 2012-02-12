@@ -22,6 +22,18 @@ DegradXManager.prototype.run = function (editorManager)
 	document.addEventListener('unload', this.unLoadHandler, false);
 	this.displayHandler=ewkLib.newEventHandler(this,this.display);
 	document.addEventListener('display', this.displayHandler, false);
+	this.minusHandler=ewkLib.newEventHandler(this,this.minus);
+	document.getElementById('x-minus-button').addEventListener('command', this.minusHandler, false);
+	document.getElementById('y-minus-button').addEventListener('command', this.minusHandler, false);
+	this.plusHandler=ewkLib.newEventHandler(this,this.plus);
+	document.getElementById('x-plus-button').addEventListener('command', this.plusHandler, false);
+	document.getElementById('y-plus-button').addEventListener('command', this.plusHandler, false);
+	this.removeHandler=ewkLib.newEventHandler(this,this.remove);
+	document.getElementById('x-remove-button').addEventListener('command', this.removeHandler, false);
+	document.getElementById('y-remove-button').addEventListener('command', this.removeHandler, false);
+	this.applyHandler=ewkLib.newEventHandler(this,this.apply);
+	document.getElementById('x-apply-button').addEventListener('command', this.applyHandler, false);
+	document.getElementById('y-apply-button').addEventListener('command', this.applyHandler, false);
 	this.refreshHandler=ewkLib.newEventHandler(this,this.refresh);
 	this.display();
 	this.refresh();
@@ -40,14 +52,15 @@ DegradXManager.prototype.display = function ()
 				box.removeChild(box.lastChild);
 			box.firstChild.color = colors[0];
 			for(var i=1; i<colors.length; i++)
-				this.plus(curElement.getAttribute('class'), colors[i]);
+				this.doPlus(curElement.getAttribute('class'), colors[i]);
 			}
 		curElement = curElement.parentNode;
 		}
 	}
 
-DegradXManager.prototype.apply = function (code)
+DegradXManager.prototype.apply = function (hEvent)
 	{
+	var code=hEvent.target.getAttribute('id').charAt(0);
 	var box = document.getElementById(code + '-colorpickers');
 	var blocks = this.editorManager.focusedBBComposer.getSelectedBlocks();
 	var colors="";
@@ -75,7 +88,7 @@ DegradXManager.prototype.apply = function (code)
 		}
 	if(blocks.length&&box.childNodes.length>1&&colors!="")
 		{
-		this.remove(code);
+		this.doRemove(code);
 		for(var i=0; i<blocks.length; i++)
 			{
 			if(blocks[i].toString().length)
@@ -116,7 +129,12 @@ DegradXManager.prototype.getColor = function (pos,max,colors)
 	return cC.getRGB();
 	}
 
-DegradXManager.prototype.remove = function (code)
+DegradXManager.prototype.remove = function (hEvent)
+	{
+	this.doRemove(hEvent.target.getAttribute('id').charAt(0));
+	}
+
+DegradXManager.prototype.doRemove = function (code)
 	{
 	var blocks = this.editorManager.focusedBBComposer.getSelectedBlocks();
 	for(var i=0; i<blocks.length; i++)
@@ -136,8 +154,9 @@ DegradXManager.prototype.remove = function (code)
 		}
 	}
 
-DegradXManager.prototype.minus = function (code)
+DegradXManager.prototype.minus  = function (hEvent)
 	{
+	var code=hEvent.target.getAttribute('id').charAt(0);
 	var box = document.getElementById(code + '-colorpickers');
 	if(box.childNodes.length>1)
 		box.removeChild(box.lastChild);
@@ -145,7 +164,13 @@ DegradXManager.prototype.minus = function (code)
 		box.firstChild.color='transparent';
 	}
 
-DegradXManager.prototype.plus = function (code,color)
+DegradXManager.prototype.plus  = function (hEvent)
+	{
+	var code=hEvent.target.getAttribute('id').charAt(0);
+	this.doPlus(code);
+	}
+
+DegradXManager.prototype.doPlus = function (code,color)
 	{
 	var box = document.getElementById(code + '-colorpickers');
 	var colorpicker = document.createElement('colorpicker');
