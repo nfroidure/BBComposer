@@ -829,3 +829,27 @@
 	{
 	-moz-image-region: rect(32px 1008px 48px 992px) !important;
 	}
+#bbcomposer-float-right-button
+	{
+	-moz-image-region: rect(0 1024px 16px 1008px);
+	}
+#bbcomposer-float-right-button:hover, #bbcomposer-float-right-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 1024px 32px 1008px);
+	}
+#bbcomposer-float-right-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 1024px 48px 1008px) !important;
+	}
+#bbcomposer-float-left-button
+	{
+	-moz-image-region: rect(0 1040px 16px 1024px);
+	}
+#bbcomposer-float-left-button:hover, #bbcomposer-float-left-button[checked="true"]
+	{
+	-moz-image-region: rect(16px 1040px 32px 1024px);
+	}
+#bbcomposer-float-left-button[disabled="true"]
+	{
+	-moz-image-region: rect(32px 1040px 48px 1024px) !important;
+	}

@@ -22,17 +22,13 @@ EDITORS CORE CHANGES
 - Find a way to make the content of particular html element undeditable (in order to make representation of element structures like youtube videos).
 - GetSelectedElement should cache selected element while no changes in the selection is done.
 -> Low priority
-- look for image resize functions into FF for resizing images before uploading them.
 - maybe increment margin-top when user try to create new paragraph in an empty paragraph instead of alerting users.
 - maybe we could do a "table of contents generator" in popup folder using document titles.
 - maybe use image url autocompletion too with the help of navigator cache
 - maybe purpose to encode in base64 files instead to upload them.
-- add increase/decrease margin/padding left/right/bottom/top buttons
-- add float left/right buttons
 
 EDITOR SIDEBAR / TOOLBAR / EXTENSIONS IDEAS
 - Add a sidebar to load CSS and apply classes to elements or directly load CSS stylesheets of the edited site
-- Add a sidebar to display document anchors
 - Create toolbar to edit : Table, list, relative/absolute positionning, forms etc...
 
 EDITOR UI CHANGES

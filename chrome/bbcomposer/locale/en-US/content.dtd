@@ -184,6 +184,10 @@
 <!ENTITY bbcomp.alignrigh.tooltiptext "Align the text to the right">
 <!ENTITY bbcomp.alignjust.label "Justify">
 <!ENTITY bbcomp.alignjust.tooltiptext "Justify the text">
+<!ENTITY bbcomp.floatleft.label "To the left">
+<!ENTITY bbcomp.floatleft.tooltiptext "Float to the left">
+<!ENTITY bbcomp.floatright.label "To the right>
+<!ENTITY bbcomp.floatright.tooltiptext "Float to the right">
 <!ENTITY bbcomp.dirltr.label "Left to right">
 <!ENTITY bbcomp.dirltr.tooltiptext "Left-to-right orientation">
 <!ENTITY bbcomp.dirrtl.label "Right to left">

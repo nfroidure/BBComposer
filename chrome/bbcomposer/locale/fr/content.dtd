@@ -184,6 +184,10 @@
 <!ENTITY bbcomp.alignrigh.tooltiptext "Aligner le texte à droite">
 <!ENTITY bbcomp.alignjust.label "Justifier">
 <!ENTITY bbcomp.alignjust.tooltiptext "Justifier le texte">
+<!ENTITY bbcomp.floatleft.label "Disposer à gauche">
+<!ENTITY bbcomp.floatleft.tooltiptext "Faire flotter cet élément sur la gauche">
+<!ENTITY bbcomp.floatright.label "Disposer à droite">
+<!ENTITY bbcomp.floatright.tooltiptext "Faire flotter cet élément sur la droite">
 <!ENTITY bbcomp.dirltr.label "Gauche à droite">
 <!ENTITY bbcomp.dirltr.tooltiptext "Orienter le texte de gauche à droite">
 <!ENTITY bbcomp.dirrtl.label "Droite à gauche">

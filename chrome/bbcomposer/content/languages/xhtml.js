@@ -1,7 +1,7 @@
 var bbcXhtmlSupport =
 	{
 	/* User Interface */
-	allowedButtons : new Array('blocks', 'fonts', 'color', 'br', 'undo', 'redo', 'font-size-increase', 'font-size-decrease', 'margin-top-increase', 'margin-top-decrease', 'margin-right-increase', 'margin-right-decrease', 'margin-bottom-increase', 'margin-bottom-decrease', 'margin-left-increase', 'margin-left-decrease', 'align-left', 'align-center', 'align-right', 'align-justify', 'direction-ltr', 'direction-rtl', 'cleancss', 'attclass', 'attlang', 'indent', 'deindent', 'em', 'strong', 'q', 'cite', 'del', 'ins', 'dfn', 'a', 'img', 'table', 'kbd', 'samp', 'var', 'anchor', 'span', 'sub', 'sup', 'code', 'hr', 'acronym', 'abbr', 'blockquote', 'div'),
+	allowedButtons : new Array('blocks', 'fonts', 'color', 'br', 'undo', 'redo', 'font-size-increase', 'font-size-decrease', 'margin-top-increase', 'margin-top-decrease', 'margin-right-increase', 'margin-right-decrease', 'margin-bottom-increase', 'margin-bottom-decrease', 'margin-left-increase', 'margin-left-decrease', 'align-left', 'align-center', 'float-left', 'float-right', 'align-right', 'align-justify', 'direction-ltr', 'direction-rtl', 'cleancss', 'attclass', 'attlang', 'indent', 'deindent', 'em', 'strong', 'q', 'cite', 'del', 'ins', 'dfn', 'a', 'img', 'table', 'kbd', 'samp', 'var', 'anchor', 'span', 'sub', 'sup', 'code', 'hr', 'acronym', 'abbr', 'blockquote', 'div'),
 	allowedBlocks : new Array('p','h1','h2','h3','h4','h5','h6','ul','ol','dl','pre','address'),
 	allowedToolbars : new Array('edition','css'),
 	displayedToolbars : new Array('edition','css'),
