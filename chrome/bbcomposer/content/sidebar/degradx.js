@@ -6,7 +6,7 @@ function DegradXManager()
 
 DegradXManager.prototype.load = function ()
 	{
-	document.removeEventListener('load', this.loadHandler, false);
+	window.removeEventListener('load', this.loadHandler, false);
 	var evt = window.parent.document.createEvent('Events');
 	evt.initEvent('sidebarload', true, true);
 	evt.sidebarWindow=this;
@@ -19,7 +19,7 @@ DegradXManager.prototype.run = function (editorManager)
 	{
 	this.editorManager=editorManager;
 	this.unLoadHandler=ewkLib.newEventHandler(this,this.unLoad);
-	document.addEventListener('unload', this.unLoadHandler, false);
+	window.addEventListener('unload', this.unLoadHandler, false);
 	this.displayHandler=ewkLib.newEventHandler(this,this.display);
 	document.addEventListener('display', this.displayHandler, false);
 	this.minusHandler=ewkLib.newEventHandler(this,this.minus);
@@ -255,7 +255,7 @@ DegradXManager.prototype.refresh = function (event)
 DegradXManager.prototype.unLoad = function ()
 	{
 	window.clearTimeout(this.refreshInterval);
-	document.removeEventListener('unload', this.unLoadHandler, false);
+	window.removeEventListener('unload', this.unLoadHandler, false);
 	this.editorManager.toggleSidebar('degradx',false);
 	}
 
