@@ -5,7 +5,7 @@ var bbcSpipSupport =
 	allowedBlocks : new Array('p', 'h2', 'ul', 'ol'),
 	allowedToolbars : new Array('edition'),
 	displayedToolbars : new Array('edition'),
-	allowedSidebars : new Array('tags'),
+	allowedSidebars : new Array('kgen'),
 	/* Language */
 	sourceToEditor : function (string)
 		{
@@ -567,6 +567,7 @@ bbcSpipSupport.acceptedMarkups =
 		{"type":"block","childs":['li']},
 	"ol":
 		{"type":"block","childs":['li']},
+
 	// Listitems
 	"li":
 		{"type":"list-item","childs":['ul','ol','dl'].concat(bbcSpipSupport.inlineMarkups)},

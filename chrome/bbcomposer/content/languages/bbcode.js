@@ -5,7 +5,7 @@ var bbcBbcodeSupport =
 	allowedBlocks : new Array('p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'dl', 'pre'),
 	allowedToolbars : new Array('edition','css'),
 	displayedToolbars : new Array('edition','css'),
-	allowedSidebars : new Array('degradx', 'gallery', 'smileys', 'cartoon', 'tags', 'canimage'),
+	allowedSidebars : new Array('degradx', 'gallery', 'smileys', 'cartoon', 'kgen', 'canimage'),
 	/* Language */
 	sourceToEditor : function (string)
 		{

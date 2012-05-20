@@ -605,18 +605,27 @@ function bbcManager()
 	/*------ Sidebar functions ------*/
 	bbcManager.prototype.toggleSidebar = function (sidebarName, showState, standAlone)
 		{
-		if(showState===false||((!standAlone)&&!this.sidebarIsAllowed(sidebarName))||(this.sidebar&&this.sidebarName==sidebarName&&showState!==true))
+		if(showState===false||((!standAlone)&&!this.sidebarIsAllowed(sidebarName))||(this.sidebar&&this.sidebarName==sidebarName&&showState!==true)&&(document.getElementById('bbcomp-' + sidebarName + '-sidebar')||document.getElementById(sidebarName + '-sidebar')))
 			{
 			this.sidebar = false;
 			this.sidebarName = false;
 			toggleSidebar("", false);
 			}
-		else if(showState===true||((!this.sidebar)&&showState!==false)||(!this.sidebar.hasAttribute('id'))||this.sidebar.getAttribute('id')!='bbcomp-' + sidebarName + '-sidebar')
+		else if(showState===true||((!this.sidebar)&&showState!==false)||(!this.sidebar.hasAttribute('id'))||(this.sidebar.getAttribute('id')!='bbcomp-' + sidebarName + '-sidebar'&&this.sidebar.getAttribute('id')!=sidebarName + '-sidebar'))
 			{
 			this.sidebar = document.getElementById("sidebar");
 			this.sidebarName = sidebarName;
 			document.getElementById("sidebar").hidden = false;
-			toggleSidebar('bbcomp-' + sidebarName + '-sidebar', true);
+			if(document.getElementById('bbcomp-' + sidebarName + '-sidebar'))
+				{
+				toggleSidebar('bbcomp-' + sidebarName + '-sidebar', true);
+				}
+			else if(document.getElementById(sidebarName + '-sidebar'))
+				{
+				toggleSidebar(sidebarName + '-sidebar', true);
+				}
+			else
+				return false;
 			return true;
 			}
 		return false;
@@ -648,7 +657,7 @@ function bbcManager()
 		{
 		for(var i=0; i<menupopup.childNodes.length; i++)
 			{
-			if(this.sidebarIsAllowed(menupopup.childNodes[i].getAttribute('id').replace(/bbcomposer-([a-z]+)-sidebar-(?:[a-z]+)/, '$1')))
+			if(this.sidebarIsAllowed(menupopup.childNodes[i].getAttribute('id').replace(/(?:bbcomposer-|)([a-z]+)-sidebar-(?:[a-z]+)/, '$1')))
 				menupopup.childNodes[i].setAttribute("disabled", false);
 			else
 				menupopup.childNodes[i].setAttribute("disabled", true);	

@@ -5,7 +5,7 @@ var bbcCreolewikiSupport =
 	allowedBlocks : new Array('p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol'),
 	allowedToolbars : new Array('edition'),
 	displayedToolbars : new Array('edition'),
-	allowedSidebars : new Array('gallery', 'tags'),
+	allowedSidebars : new Array('gallery', 'kgen'),
 	/* Language */
 	sourceToEditor : function (string)
 		{

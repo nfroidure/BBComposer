@@ -5,7 +5,7 @@ var bbcSpip2Support =
 	allowedBlocks : new Array('p', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol'),
 	allowedToolbars : new Array('edition','spip','css'),
 	displayedToolbars : new Array('edition','spip','css'),
-	allowedSidebars : new Array('tags'),
+	allowedSidebars : new Array('kgen'),
 	/* Language */
 	sourceToEditor : function (string)
 		{

@@ -5,7 +5,7 @@ var bbcXulfrSupport =
 	allowedBlocks : new Array('p','ul','ol','h1','h2','h3','pre'),
 	allowedToolbars : new Array('edition'),
 	displayedToolbars : new Array('edition'),
-	allowedSidebars : new Array('tags'),
+	allowedSidebars : new Array('kgen'),
 	/* Language */
 	sourceToEditor : function (string)
 		{

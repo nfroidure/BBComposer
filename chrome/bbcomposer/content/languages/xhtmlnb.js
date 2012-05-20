@@ -5,7 +5,7 @@ var bbcXhtmlnbSupport =
 	allowedBlocks : new Array(),
 	allowedToolbars : new Array('edition'),
 	displayedToolbars : new Array('edition'),
-	allowedSidebars : new Array('css','degradx', 'gallery', 'smileys', 'cartoon', 'tags', 'canimage'),
+	allowedSidebars : new Array('css','degradx', 'gallery', 'smileys', 'cartoon', 'kgen', 'canimage'),
 	/* Language */
 	sourceToEditor : function (string)
 		{
