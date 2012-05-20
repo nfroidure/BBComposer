@@ -4800,7 +4800,7 @@ function bbcomposer(editor, language, textarea, manager)
 			if ((this._xhr.status >= 200 && this._xhr.status <= 200) || this._xhr.status == 304)
 				{
 				if (this._xhr.responseText != "")
-					{ 
+					{
 					var fileName=this.importedFiles[0].file.name;
 					if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.type')=="text")
 						{
@@ -4831,10 +4831,11 @@ function bbcomposer(editor, language, textarea, manager)
 							for(var i=0; i<this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice')).length; i++)
 								alert(this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.notice'))[i].textContent);
 							}
-						if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename')!='false'&&this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename'))[0])
+						if(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename')!='false'
+							&&this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename'))
+							&&this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename'))[0])
 							{
 							fileName=this._xhr.responseXML.getElementsByTagName(this.myBBComposerManager.myBBComposerPreferences.getCharOption('response.filename'))[0].textContent;
-							alert(fileName);
 							}
 						}
 					if(fileName)

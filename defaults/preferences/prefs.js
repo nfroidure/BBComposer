@@ -10,7 +10,7 @@ pref("extensions.bbcomposer@elitwork.com.save.delay","30000");
 pref("extensions.bbcomposer@elitwork.com.site.css","none");
 pref("extensions.bbcomposer@elitwork.com.upload.folder","images/");
 pref("extensions.bbcomposer@elitwork.com.upload.on",true);
-pref("extensions.bbcomposer@elitwork.com.upload.url","index.php3?href=administration&context=module1&action=connected&order=upload&type=xcmsml");
+pref("extensions.bbcomposer@elitwork.com.upload.url","index.php3?href=administration&context=module1&action=uploaded&order=upload&type=xcmsml");
 pref("extensions.bbcomposer@elitwork.com.upload.postname","bbfile");
 pref("extensions.bbcomposer@elitwork.com.upload.postparams","");
 pref("extensions.bbcomposer@elitwork.com.upload.unique",true);
@@ -18,7 +18,7 @@ pref("extensions.bbcomposer@elitwork.com.upload.site","http://skyhell3.free.fr")
 pref("extensions.bbcomposer@elitwork.com.response.type","xml");
 pref("extensions.bbcomposer@elitwork.com.response.error","error");
 pref("extensions.bbcomposer@elitwork.com.response.notice","notice");
-pref("extensions.bbcomposer@elitwork.com.response.filename","");
+pref("extensions.bbcomposer@elitwork.com.response.filename","filename");
 pref("extensions.bbcomposer@elitwork.com.xhtml.ascii",false);
 pref("extensions.bbcomposer@elitwork.com.xhtml.indent",false);
 pref("extensions.bbcomposer@elitwork.com.fields.0","(.+)!(fcontain|fanswer)!xbbcode");
