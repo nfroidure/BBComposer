@@ -609,23 +609,18 @@ function bbcManager()
 			{
 			this.sidebar = false;
 			this.sidebarName = false;
-			toggleSidebar("", false);
+			if(!document.getElementById("sidebar").hidden)
+				toggleSidebar("", false);
 			}
 		else if(showState===true||((!this.sidebar)&&showState!==false)||(!this.sidebar.hasAttribute('id'))||(this.sidebar.getAttribute('id')!='bbcomp-' + sidebarName + '-sidebar'&&this.sidebar.getAttribute('id')!=sidebarName + '-sidebar'))
 			{
 			this.sidebar = document.getElementById("sidebar");
 			this.sidebarName = sidebarName;
 			document.getElementById("sidebar").hidden = false;
-			if(document.getElementById('bbcomp-' + sidebarName + '-sidebar'))
-				{
-				toggleSidebar('bbcomp-' + sidebarName + '-sidebar', true);
-				}
-			else if(document.getElementById(sidebarName + '-sidebar'))
-				{
+			if(document.getElementById(sidebarName + '-sidebar'))
 				toggleSidebar(sidebarName + '-sidebar', true);
-				}
 			else
-				return false;
+				toggleSidebar('bbcomp-' + sidebarName + '-sidebar', true);
 			return true;
 			}
 		return false;
