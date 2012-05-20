@@ -32,9 +32,9 @@ pref("extensions.bbcomposer@elitwork.com.fields.7","(.*)blogger.com(.*)!^comment
 pref("extensions.bbcomposer@elitwork.com.fields.8","(.*)drupal(.*)!^edit\-body$!xhtml");
 pref("extensions.bbcomposer@elitwork.com.fields.9","(.*)yahoo(.*)!^rteCnt$!xhtml");
 pref("extensions.bbcomposer@elitwork.com.fields.10","(.*)admin/addcontent(.*)!^content_en$!xhtml");
-pref("extensions.bbcomposer@elitwork.com.fields.11","(.*)!(xhtml|html)(.*)!xhtml");
-pref("extensions.bbcomposer@elitwork.com.fields.12","(.*)!bbcode(.*)!bbcode");
-pref("extensions.bbcomposer@elitwork.com.fields.13","(.*)!xbbcode(.*)!xbbcode");
+pref("extensions.bbcomposer@elitwork.com.fields.11","(.*)!^(xhtml|html)(.*)!xhtml");
+pref("extensions.bbcomposer@elitwork.com.fields.12","(.*)!^bbcode(.*)!bbcode");
+pref("extensions.bbcomposer@elitwork.com.fields.13","(.*)!^xbbcode(.*)!xbbcode");
 pref("extensions.bbcomposer@elitwork.com.fields.14","(.+)!(fcontent)!xhtml");
 pref("extensions.bbcomposer@elitwork.com.fields.15","(.+)!^text_area$!spip");
 pref("extensions.bbcomposer@elitwork.com.fields.16","^(.+)(skyblog|skyrock)(.+)!article_text!skyblog");

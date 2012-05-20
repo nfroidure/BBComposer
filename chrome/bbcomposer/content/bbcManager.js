@@ -182,9 +182,23 @@ function bbcManager()
 			for(var j=0; this.myBBComposerPreferences.defaultOptionIsset('fields.'+j)&&this.myBBComposerPreferences.getCharOption('fields.'+j).length!=0; j++)
 				{
 				var curPref = this.myBBComposerPreferences.getArrayOption('fields.'+j);
-				if(new RegExp(curPref[0]).test(current_site)&&new RegExp(curPref[1]).test(textarea.getAttribute('id')))
+				if(new RegExp(curPref[0]).test(current_site))
 					{
-					return curPref[2];
+					if(new RegExp(curPref[1]).test(textarea.getAttribute('id')))
+						{
+						return curPref[2];
+						}
+					if(textarea.hasAttribute('class'))
+						{
+						var classes=textarea.getAttribute('class').split(' ');
+						for(var i=classes.length-1; i>=0; i--)
+							{
+							if(new RegExp(curPref[1]).test(classes[i]))
+								{
+								return curPref[2];
+								}
+							}
+						}
 					}
 				}
 			}
