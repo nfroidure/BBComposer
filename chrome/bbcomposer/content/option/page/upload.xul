@@ -16,6 +16,8 @@
 		<textbox id="upload.url" value="index.php3"/>
 		<label control="upload.postname" value="&bbcomp.opt.upd.postname.label;"/>
 		<textbox id="upload.postname" value="bbfile"/>
+		<label control="upload.postfilename" value="&bbcomp.opt.upd.postfilename.label;"/>
+		<textbox id="upload.postfilename" value="bbfilename"/>
 		<label control="upload.postparams" value="&bbcomp.opt.upd.postparams.label;"/>
 		<textbox id="upload.postparams" value="bbfile"/>
 		<checkbox id="upload.unique" label="&bbcomp.opt.upd.unique.label;" checked="true"/>

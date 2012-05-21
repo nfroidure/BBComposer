@@ -4749,7 +4749,7 @@ function bbcomposer(editor, language, textarea, manager)
 			this.loadingFile=true;
 			var uri=(this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site'):this.base)
 				+ "/" + this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.folder')
-				+ (this.importedFiles[0].file.name.replace(new RegExp('(.*)(?:[\.])(?:[^\.]+)','i'),'$1').replace(new RegExp('[^a-z0-9]','gi'),'_'))+'.'+(this.importedFiles[0].file.name.replace(new RegExp('(?:.*)(?:[\.])([^\.]+)','i'),'$1'));
+				+ this.importedFiles[0].name +'.'+ this.importedFiles[0].ext;
 			this._xhr = new XMLHttpRequest();
 			this._xhr.open("HEAD", uri);
 			this._xhr.addEventListener('readystatechange', this.fileExistsHandler);
@@ -4760,10 +4760,18 @@ function bbcomposer(editor, language, textarea, manager)
 	bbcomposer.prototype.fileExists = function ()
 		{
 		if (this._xhr.readyState == 4)
-			{  
+			{
 			if ((this._xhr.status >= 200 && this._xhr.status <= 200) || this._xhr.status == 304)
 				{
-				if(window.confirm(this.importedFiles[0].file.name + this.myBBComposerManager.myBBComposerProperties.getString('file_upload')))
+				if(this.myBBComposerManager.myBBComposerPreferences.getBoolOption('upload.unique'))
+					{
+					this.importedFiles[0].name = '_'+this.importedFiles[0].name;
+					var range = "abcdefghijklmnopqrstxyz0123456789";
+					for(i=0; i<5; i++)
+						this.importedFiles[0].name = range.charAt(Math.floor(Math.random() * range.length-2))+this.importedFiles[0].name;
+					this.uploadFile();
+					}
+				else if(window.confirm(this.importedFiles[0].file.name +' '+ this.myBBComposerManager.myBBComposerProperties.getString('file_upload')))
 					this.uploadFile();
 				else
 					{
@@ -4785,6 +4793,7 @@ function bbcomposer(editor, language, textarea, manager)
 			{
 			formData.append(postparams[i], (postparams[i+1] ? postparams[i+1] : ''));
 			}
+		formData.append(this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.postfilename'), this.importedFiles[0].name);
 		formData.append(this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.postname'), this.importedFiles[0].file);
 		var uri=(this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site')?this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.site'):this.base) + '/' + this.myBBComposerManager.myBBComposerPreferences.getCharOption('upload.url');
 		this._xhr = new XMLHttpRequest();
@@ -4796,7 +4805,7 @@ function bbcomposer(editor, language, textarea, manager)
 	bbcomposer.prototype.fileUploaded = function ()
 		{
 		if (this._xhr.readyState == 4)
-			{  
+			{
 			if ((this._xhr.status >= 200 && this._xhr.status <= 200) || this._xhr.status == 304)
 				{
 				if (this._xhr.responseText != "")
@@ -4867,7 +4876,9 @@ function bbcomposer(editor, language, textarea, manager)
 	bbcomposer.prototype.addImportedFile = function (file)
 		{
 		var uri=window.URL.createObjectURL(file);
-		this.importedFiles.push({'file':file,'uri':uri});
+		this.importedFiles.push({'file':file,'uri':uri,
+			'name':(file.name.replace(new RegExp('(.*)(?:[\.])(?:[^\.]+)','i'),'$1').replace(new RegExp('[^a-z0-9]+','gi'),'_')).toLowerCase(),
+			'ext':file.name.replace(new RegExp('(?:.*)(?:[\.])([^\.]+)','i'),'$1').toLowerCase()});
 		return uri;
 		}
 

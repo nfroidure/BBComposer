@@ -11,6 +11,7 @@ pref("extensions.bbcomposer@elitwork.com.site.css","none");
 pref("extensions.bbcomposer@elitwork.com.upload.folder","images/");
 pref("extensions.bbcomposer@elitwork.com.upload.on",true);
 pref("extensions.bbcomposer@elitwork.com.upload.url","index.php3?href=administration&context=module1&action=uploaded&order=upload&type=xcmsml");
+pref("extensions.bbcomposer@elitwork.com.upload.postfilename","bbfilename");
 pref("extensions.bbcomposer@elitwork.com.upload.postname","bbfile");
 pref("extensions.bbcomposer@elitwork.com.upload.postparams","");
 pref("extensions.bbcomposer@elitwork.com.upload.unique",true);

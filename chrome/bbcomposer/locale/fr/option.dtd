@@ -30,6 +30,7 @@
 <!ENTITY bbcomp.opt.upd.site.label "Site de t&#233;l&#233;chargement">
 <!ENTITY bbcomp.opt.upd.folder.label "Dossier de t&#233;l&#233;chargement">
 <!ENTITY bbcomp.opt.upd.url.label "Adresse de t&#233;l&#233;chargement">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Champs du nom de fichier">
 <!ENTITY bbcomp.opt.upd.postname.label "Nom du champs du fichier">
 <!ENTITY bbcomp.opt.upd.postparams.label "Param&#232;tres POST">
 <!ENTITY bbcomp.opt.upd.unique.label "Nom de fichier unique">

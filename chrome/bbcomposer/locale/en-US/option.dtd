@@ -30,6 +30,7 @@
 <!ENTITY bbcomp.opt.upd.site.label "Upload site">
 <!ENTITY bbcomp.opt.upd.folder.label "Upload folder">
 <!ENTITY bbcomp.opt.upd.url.label "Upload URL">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Field name of the file">
 <!ENTITY bbcomp.opt.upd.postparams.label "POST parameters">
 <!ENTITY bbcomp.opt.upd.unique.label "Filename must be unique">
