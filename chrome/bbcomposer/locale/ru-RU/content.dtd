@@ -1,7 +1,7 @@
 <!ENTITY bbcomp.name "BBComposer">
-<!ENTITY bbcomp.copy "">
-<!ENTITY bbcomp.cut "">
-<!ENTITY bbcomp.paste "">
+<!ENTITY bbcomp.copy "Copy">
+<!ENTITY bbcomp.cut "Cut">
+<!ENTITY bbcomp.paste "Paste">
 <!ENTITY bbcomp.pasteas "Вставить как">
 <!ENTITY bbcomp.pasteas.div "разделение документов">
 <!ENTITY bbcomp.pasteas.blockquote "цитату">
@@ -14,9 +14,9 @@
 <!ENTITY bbcomp.pastefrom.bbcode "BBCode">
 <!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
 <!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
-<!ENTITY bbcomp.pastefrom.spip "">
-<!ENTITY bbcomp.pastefrom.spip2 "">
-<!ENTITY bbcomp.pastefrom.skyblog "">
+<!ENTITY bbcomp.pastefrom.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.delete "Удалить">
 <!ENTITY bbcomp.selectall "Выбрать все">
 <!ENTITY bbcomp.edit.textarea.xhtml "Редактировать в HTML4">
@@ -24,9 +24,9 @@
 <!ENTITY bbcomp.edit.textarea.xbbcode "Редактировать в XBBCode">
 <!ENTITY bbcomp.edit.textarea.xhtmlnb "Edit with XHTML (no blocks)">
 <!ENTITY bbcomp.edit.textarea.mediawiki "Редактировать в Mediawiki">
-<!ENTITY bbcomp.edit.textarea.spip "">
-<!ENTITY bbcomp.edit.textarea.spip2 "">
-<!ENTITY bbcomp.edit.textarea.skyblog "">
+<!ENTITY bbcomp.edit.textarea.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "Редактировать и сохранить">
 <!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-ru">
 <!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-ru">
@@ -48,14 +48,16 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "Библиотека иконок сartoon/manga">
 <!ENTITY bbcomp.css.label "CSS">
 <!ENTITY bbcomp.css.tooltiptext "Редактировать CSS">
-<!ENTITY bbcomp.degradx.label "">
-<!ENTITY bbcomp.degradx.tooltiptext "">
+<!ENTITY bbcomp.anchors.label "Anchors">
+<!ENTITY bbcomp.anchors.tooltiptext "View document anchors">
+<!ENTITY bbcomp.degradx.label "Degradees">
+<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
 <!ENTITY bbcomp.toolbar.label "Панель инструментов">
 <!ENTITY bbcomp.toolbar.tooltiptext "Показать/Скрыть панель инструментов">
 <!ENTITY bbcomp.edition.label "Элементы">
 <!ENTITY bbcomp.edition.tooltiptext "Редактировать элементы">
-<!ENTITY bbcomp.spip.label "">
-<!ENTITY bbcomp.spip.tooltiptext "">
+<!ENTITY bbcomp.spip.label "Spip Typo">
+<!ENTITY bbcomp.spip.tooltiptext "Edit Spip Typo syntax">
 <!ENTITY bbcomp.options.label "Инструменты">
 <!ENTITY bbcomp.options.tooltiptext "Смотреть инструменты">
 <!ENTITY bbcomp.option.label "Настройки">
@@ -158,22 +160,22 @@
 <!ENTITY bbcomp.fontsizedec.tooltiptext "Уменьшить размер шрифта">
 <!ENTITY bbcomp.fontsizeinc.label "Увеличение размера">
 <!ENTITY bbcomp.fontsizeinc.tooltiptext "Увеличить размер шрифта">
-<!ENTITY bbcomp.margintopdec.label "">
-<!ENTITY bbcomp.margintopdec.tooltiptext "">
-<!ENTITY bbcomp.margintopinc.label "">
-<!ENTITY bbcomp.margintopinc.tooltiptext "">
-<!ENTITY bbcomp.marginrightdec.label "">
-<!ENTITY bbcomp.marginrightdec.tooltiptext "">
-<!ENTITY bbcomp.marginrightinc.label "">
-<!ENTITY bbcomp.marginrightinc.tooltiptext "">
-<!ENTITY bbcomp.marginbottomdec.label "">
-<!ENTITY bbcomp.marginbottomdec.tooltiptext "">
-<!ENTITY bbcomp.marginbottominc.label "">
-<!ENTITY bbcomp.marginbottominc.tooltiptext "">
-<!ENTITY bbcomp.marginleftdec.label "">
-<!ENTITY bbcomp.marginleftdec.tooltiptext "">
-<!ENTITY bbcomp.marginleftinc.label "">
-<!ENTITY bbcomp.marginleftinc.tooltiptext "">
+<!ENTITY bbcomp.margintopdec.label "Decrease margin top">
+<!ENTITY bbcomp.margintopdec.tooltiptext "Decrease margin top of the element">
+<!ENTITY bbcomp.margintopinc.label "Increase margin top">
+<!ENTITY bbcomp.margintopinc.tooltiptext "Increase margin top of the element">
+<!ENTITY bbcomp.marginrightdec.label "Decrease margin right">
+<!ENTITY bbcomp.marginrightdec.tooltiptext "Decrease margin right of the element">
+<!ENTITY bbcomp.marginrightinc.label "Increase margin right">
+<!ENTITY bbcomp.marginrightinc.tooltiptext "Increase margin right of the element">
+<!ENTITY bbcomp.marginbottomdec.label "Decrease margin bottom">
+<!ENTITY bbcomp.marginbottomdec.tooltiptext "Decrease margin bottom of the element">
+<!ENTITY bbcomp.marginbottominc.label "Increase margin bottom">
+<!ENTITY bbcomp.marginbottominc.tooltiptext "Increase margin bottom of the element">
+<!ENTITY bbcomp.marginleftdec.label "Decrease margin margin left">
+<!ENTITY bbcomp.marginleftdec.tooltiptext "Decrease margin left of the element">
+<!ENTITY bbcomp.marginleftinc.label "Increase margin left">
+<!ENTITY bbcomp.marginleftinc.tooltiptext "Increase margin left of the element">
 <!ENTITY bbcomp.alignleft.label "Слева">
 <!ENTITY bbcomp.alignleft.tooltiptext "Выравнивание текста по левому краю">
 <!ENTITY bbcomp.aligncent.label "По центру">
@@ -182,6 +184,12 @@
 <!ENTITY bbcomp.alignrigh.tooltiptext "Выравнивание текста по правому краю">
 <!ENTITY bbcomp.alignjust.label "Выравнивание">
 <!ENTITY bbcomp.alignjust.tooltiptext "Выравнивание текста">
+<!ENTITY bbcomp.floatleft.label "To the left">
+<!ENTITY bbcomp.floatleft.tooltiptext "Float to the left">
+<!ENTITY bbcomp.floatright.label "To the right&gt;
+
+">
+<!ENTITY bbcomp.floatright.tooltiptext "Float to the right">
 <!ENTITY bbcomp.dirltr.label "Слева направо">
 <!ENTITY bbcomp.dirltr.tooltiptext "Ориентация текста слева направо">
 <!ENTITY bbcomp.dirrtl.label "Справа налево">
@@ -189,5 +197,5 @@
 <!ENTITY bbcomp.cleancss.label "Очистить CSS">
 <!ENTITY bbcomp.cleancss.tooltiptext "Удалить все стили текущего элемента">
 <!ENTITY bbcomp.style.label "Стили">
-<!ENTITY bbcomp.poetry.label "">
-<!ENTITY bbcomp.poetry.tooltip "">
+<!ENTITY bbcomp.poetry.label "Poetry">
+<!ENTITY bbcomp.poetry.tooltip "Insert poetry">

@@ -1,7 +1,7 @@
-<!ENTITY bbcomp.font.family.dialog.title "">
-<!ENTITY bbcomp.font.family.usual.label "">
-<!ENTITY bbcomp.font.family.add.label "">
-<!ENTITY bbcomp.font.family.selected.label "">
-<!ENTITY bbcomp.font.family.up.label "">
-<!ENTITY bbcomp.font.family.down.label "">
-<!ENTITY bbcomp.font.family.remove.label "">
+<!ENTITY bbcomp.font.family.dialog.title "Font family">
+<!ENTITY bbcomp.font.family.usual.label "Usual fonts">
+<!ENTITY bbcomp.font.family.add.label "Add">
+<!ENTITY bbcomp.font.family.selected.label "Selected fonts">
+<!ENTITY bbcomp.font.family.up.label "Up">
+<!ENTITY bbcomp.font.family.down.label "Down">
+<!ENTITY bbcomp.font.family.remove.label "Remove">

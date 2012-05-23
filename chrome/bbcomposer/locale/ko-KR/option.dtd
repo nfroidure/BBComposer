@@ -30,9 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "업로드 사이트">
 <!ENTITY bbcomp.opt.upd.folder.label "업로드 폴더">
 <!ENTITY bbcomp.opt.upd.url.label "업로드 URL">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "파일 필드명">
 <!ENTITY bbcomp.opt.upd.postparams.label "POST 매개변수">
 <!ENTITY bbcomp.opt.upd.unique.label "파일명은 유일해야만 합니다.">
+<!ENTITY bbcomp.opt.upd.ewk.label "Param�tres Elitwork">
+<!ENTITY bbcomp.opt.upd.default.label "Param�tres par d�faut">
 <!ENTITY bbcomp.opt.rsp.caption "응답">
 <!ENTITY bbcomp.opt.rsp.description "응답 처리 매개변수">
 <!ENTITY bbcomp.opt.rsp.type.label "응답 형식">

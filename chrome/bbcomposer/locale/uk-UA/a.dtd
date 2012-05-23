@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "Посилання">
 <!ENTITY bbcomp.link.href.label "Розміщення">
 <!ENTITY bbcomp.link.title.label "Текст підказки">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
 <!ENTITY bbcomp.link.target.label "Ціль">
 <!ENTITY bbcomp.link.target.normal.label "Нормальний">
 <!ENTITY bbcomp.link.target.popup.label "Нове вікно">

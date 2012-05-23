@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "Ссылка">
 <!ENTITY bbcomp.link.href.label "Адрес">
 <!ENTITY bbcomp.link.title.label "Вспывающая подсказка">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
 <!ENTITY bbcomp.link.target.label "Перенаправление">
 <!ENTITY bbcomp.link.target.normal.label "Нормально">
 <!ENTITY bbcomp.link.target.popup.label "Новое окно">

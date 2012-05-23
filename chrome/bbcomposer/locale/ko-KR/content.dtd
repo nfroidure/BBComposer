@@ -48,8 +48,10 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "카툰/만화 아이콘 라이브러리">
 <!ENTITY bbcomp.css.label "스타일시트">
 <!ENTITY bbcomp.css.tooltiptext "CSS 편집">
-<!ENTITY bbcomp.degradx.label "">
-<!ENTITY bbcomp.degradx.tooltiptext "">
+<!ENTITY bbcomp.anchors.label "Anchors">
+<!ENTITY bbcomp.anchors.tooltiptext "View document anchors">
+<!ENTITY bbcomp.degradx.label "Degradees">
+<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
 <!ENTITY bbcomp.toolbar.label "도구막대">
 <!ENTITY bbcomp.toolbar.tooltiptext "도구막대 표시/숨기기">
 <!ENTITY bbcomp.edition.label "요소">
@@ -182,6 +184,12 @@
 <!ENTITY bbcomp.alignrigh.tooltiptext "오른쪽으로 글 정렬">
 <!ENTITY bbcomp.alignjust.label "자리맞춤">
 <!ENTITY bbcomp.alignjust.tooltiptext "글 자리맞춤">
+<!ENTITY bbcomp.floatleft.label "To the left">
+<!ENTITY bbcomp.floatleft.tooltiptext "Float to the left">
+<!ENTITY bbcomp.floatright.label "To the right&gt;
+
+">
+<!ENTITY bbcomp.floatright.tooltiptext "Float to the right">
 <!ENTITY bbcomp.dirltr.label "왼쪽에서 오른쪽으로">
 <!ENTITY bbcomp.dirltr.tooltiptext "왼쪽에서 오른쪽으로 글을 진행">
 <!ENTITY bbcomp.dirrtl.label "오른쪽에서 왼쪽으로">

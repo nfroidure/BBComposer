@@ -17,9 +17,9 @@
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (Semantischer BBCode)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "Normaler BBCode">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki-Syntax">
-<!ENTITY bbcomp.opt.lng.spip.label "">
-<!ENTITY bbcomp.opt.lng.spip2.label "">
-<!ENTITY bbcomp.opt.lng.skyblog.label "">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "AusgewÃ¤hlte Code-Sprache merken">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML-Einstellungen">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Zeileneinzug verwenden">
@@ -30,9 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Upload-Site (Host)">
 <!ENTITY bbcomp.opt.upd.folder.label "Upload-Ordner">
 <!ENTITY bbcomp.opt.upd.url.label "Upload-Adresse">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Feldname der Datei">
 <!ENTITY bbcomp.opt.upd.postparams.label "POST-Parameter">
 <!ENTITY bbcomp.opt.upd.unique.label "Der Dateiname darf nur einmal vorkommen">
+<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
+<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
 <!ENTITY bbcomp.opt.rsp.caption "Response">
 <!ENTITY bbcomp.opt.rsp.description "Parameter zur Response-Behandlung.">
 <!ENTITY bbcomp.opt.rsp.type.label "Response type">

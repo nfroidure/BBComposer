@@ -1,7 +1,7 @@
-<!ENTITY degradx.name "">
-<!ENTITY degradx.tooltiptext "">
-<!ENTITY degradx.tabs.text "">
-<!ENTITY degradx.tabs.background "">
-<!ENTITY degradx.refresh.delay "">
-<!ENTITY degradx.button.delete "">
-<!ENTITY degradx.button.apply "">
+<!ENTITY degradx.name "DegradX">
+<!ENTITY degradx.tooltiptext "Add color ranges">
+<!ENTITY degradx.tabs.text "Text">
+<!ENTITY degradx.tabs.background "Background">
+<!ENTITY degradx.refresh.delay "View refresh delay (in seconds):">
+<!ENTITY degradx.button.delete "Delete">
+<!ENTITY degradx.button.apply "Apply">

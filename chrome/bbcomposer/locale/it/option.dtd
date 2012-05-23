@@ -17,9 +17,9 @@
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCode">
 <!ENTITY bbcomp.opt.lng.bbcode.label "BBCode (normale)">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "Sintassi Wiki">
-<!ENTITY bbcomp.opt.lng.spip.label "">
-<!ENTITY bbcomp.opt.lng.spip2.label "">
-<!ENTITY bbcomp.opt.lng.skyblog.label "">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "Ricorda l&apos;ultimo linguaggio selezionato">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "Opzioni XHTML">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indentatura">
@@ -30,9 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Carica sito">
 <!ENTITY bbcomp.opt.upd.folder.label "Cartella di caricamento">
 <!ENTITY bbcomp.opt.upd.url.label "URL per caricamento">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Nome del file">
 <!ENTITY bbcomp.opt.upd.postparams.label "Parametri POST">
 <!ENTITY bbcomp.opt.upd.unique.label "Nome del file unico">
+<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
+<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
 <!ENTITY bbcomp.opt.rsp.caption "Risposta">
 <!ENTITY bbcomp.opt.rsp.description "Indica i parametri di trattamento delle risposte.">
 <!ENTITY bbcomp.opt.rsp.type.label "Tipologia della risposta">

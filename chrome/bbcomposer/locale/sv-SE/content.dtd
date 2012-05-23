@@ -1,7 +1,7 @@
 <!ENTITY bbcomp.name "BBComposer">
-<!ENTITY bbcomp.copy "">
-<!ENTITY bbcomp.cut "">
-<!ENTITY bbcomp.paste "">
+<!ENTITY bbcomp.copy "Copy">
+<!ENTITY bbcomp.cut "Cut">
+<!ENTITY bbcomp.paste "Paste">
 <!ENTITY bbcomp.pasteas "Klistra in som">
 <!ENTITY bbcomp.pasteas.div "en sektion i dokumentet">
 <!ENTITY bbcomp.pasteas.blockquote "ett blockquote">
@@ -14,9 +14,9 @@
 <!ENTITY bbcomp.pastefrom.bbcode "BBCode">
 <!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
 <!ENTITY bbcomp.pastefrom.mediawiki "MediaWiki">
-<!ENTITY bbcomp.pastefrom.spip "">
-<!ENTITY bbcomp.pastefrom.spip2 "">
-<!ENTITY bbcomp.pastefrom.skyblog "">
+<!ENTITY bbcomp.pastefrom.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.delete "Ta bort">
 <!ENTITY bbcomp.selectall "Markera alla">
 <!ENTITY bbcomp.edit.textarea.xhtml "Redigera som XHTML">
@@ -24,9 +24,9 @@
 <!ENTITY bbcomp.edit.textarea.xbbcode "Redigera som XBBCode">
 <!ENTITY bbcomp.edit.textarea.xhtmlnb "Redigera som XHTML (inga block)">
 <!ENTITY bbcomp.edit.textarea.mediawiki "Redigera som MediaWiki">
-<!ENTITY bbcomp.edit.textarea.spip "">
-<!ENTITY bbcomp.edit.textarea.spip2 "">
-<!ENTITY bbcomp.edit.textarea.skyblog "">
+<!ENTITY bbcomp.edit.textarea.spip "Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "Redigera och spara">
 <!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-en">
 <!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-en">
@@ -48,14 +48,16 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "Bibliotek med seriefigur- och mangaikoner">
 <!ENTITY bbcomp.css.label "Formatmallar">
 <!ENTITY bbcomp.css.tooltiptext "Redigera CSS">
-<!ENTITY bbcomp.degradx.label "">
-<!ENTITY bbcomp.degradx.tooltiptext "">
+<!ENTITY bbcomp.anchors.label "Anchors">
+<!ENTITY bbcomp.anchors.tooltiptext "View document anchors">
+<!ENTITY bbcomp.degradx.label "Degradees">
+<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
 <!ENTITY bbcomp.toolbar.label "Verktygsfält">
 <!ENTITY bbcomp.toolbar.tooltiptext "Visa/Dölj verktygsfält">
 <!ENTITY bbcomp.edition.label "Element">
 <!ENTITY bbcomp.edition.tooltiptext "Redigera element">
-<!ENTITY bbcomp.spip.label "">
-<!ENTITY bbcomp.spip.tooltiptext "">
+<!ENTITY bbcomp.spip.label "Spip Typo">
+<!ENTITY bbcomp.spip.tooltiptext "Edit Spip Typo syntax">
 <!ENTITY bbcomp.options.label "Verktyg">
 <!ENTITY bbcomp.options.tooltiptext "Visa verktygen">
 <!ENTITY bbcomp.option.label "Inställningar">
@@ -158,22 +160,22 @@
 <!ENTITY bbcomp.fontsizedec.tooltiptext "Minska fontstorleken">
 <!ENTITY bbcomp.fontsizeinc.label "Öka storlek">
 <!ENTITY bbcomp.fontsizeinc.tooltiptext "Öka fontstorleken">
-<!ENTITY bbcomp.margintopdec.label "">
-<!ENTITY bbcomp.margintopdec.tooltiptext "">
-<!ENTITY bbcomp.margintopinc.label "">
-<!ENTITY bbcomp.margintopinc.tooltiptext "">
-<!ENTITY bbcomp.marginrightdec.label "">
-<!ENTITY bbcomp.marginrightdec.tooltiptext "">
-<!ENTITY bbcomp.marginrightinc.label "">
-<!ENTITY bbcomp.marginrightinc.tooltiptext "">
-<!ENTITY bbcomp.marginbottomdec.label "">
-<!ENTITY bbcomp.marginbottomdec.tooltiptext "">
-<!ENTITY bbcomp.marginbottominc.label "">
-<!ENTITY bbcomp.marginbottominc.tooltiptext "">
-<!ENTITY bbcomp.marginleftdec.label "">
-<!ENTITY bbcomp.marginleftdec.tooltiptext "">
-<!ENTITY bbcomp.marginleftinc.label "">
-<!ENTITY bbcomp.marginleftinc.tooltiptext "">
+<!ENTITY bbcomp.margintopdec.label "Decrease margin top">
+<!ENTITY bbcomp.margintopdec.tooltiptext "Decrease margin top of the element">
+<!ENTITY bbcomp.margintopinc.label "Increase margin top">
+<!ENTITY bbcomp.margintopinc.tooltiptext "Increase margin top of the element">
+<!ENTITY bbcomp.marginrightdec.label "Decrease margin right">
+<!ENTITY bbcomp.marginrightdec.tooltiptext "Decrease margin right of the element">
+<!ENTITY bbcomp.marginrightinc.label "Increase margin right">
+<!ENTITY bbcomp.marginrightinc.tooltiptext "Increase margin right of the element">
+<!ENTITY bbcomp.marginbottomdec.label "Decrease margin bottom">
+<!ENTITY bbcomp.marginbottomdec.tooltiptext "Decrease margin bottom of the element">
+<!ENTITY bbcomp.marginbottominc.label "Increase margin bottom">
+<!ENTITY bbcomp.marginbottominc.tooltiptext "Increase margin bottom of the element">
+<!ENTITY bbcomp.marginleftdec.label "Decrease margin margin left">
+<!ENTITY bbcomp.marginleftdec.tooltiptext "Decrease margin left of the element">
+<!ENTITY bbcomp.marginleftinc.label "Increase margin left">
+<!ENTITY bbcomp.marginleftinc.tooltiptext "Increase margin left of the element">
 <!ENTITY bbcomp.alignleft.label "Vänsterjustera">
 <!ENTITY bbcomp.alignleft.tooltiptext "Justera texten åt vänster">
 <!ENTITY bbcomp.aligncent.label "Centrera">
@@ -182,6 +184,12 @@
 <!ENTITY bbcomp.alignrigh.tooltiptext "Justera texten åt höger">
 <!ENTITY bbcomp.alignjust.label "Marginaljustera">
 <!ENTITY bbcomp.alignjust.tooltiptext "Marginaljustera texten">
+<!ENTITY bbcomp.floatleft.label "To the left">
+<!ENTITY bbcomp.floatleft.tooltiptext "Float to the left">
+<!ENTITY bbcomp.floatright.label "To the right&gt;
+
+">
+<!ENTITY bbcomp.floatright.tooltiptext "Float to the right">
 <!ENTITY bbcomp.dirltr.label "Vänster till höger">
 <!ENTITY bbcomp.dirltr.tooltiptext "Orientera texten från vänster till höger">
 <!ENTITY bbcomp.dirrtl.label "Höger till vänster">
@@ -189,5 +197,5 @@
 <!ENTITY bbcomp.cleancss.label "Rensa CSS">
 <!ENTITY bbcomp.cleancss.tooltiptext "Ta bort all formatering av det aktuella elementet">
 <!ENTITY bbcomp.style.label "Stilar">
-<!ENTITY bbcomp.poetry.label "">
-<!ENTITY bbcomp.poetry.tooltip "">
+<!ENTITY bbcomp.poetry.label "Poetry">
+<!ENTITY bbcomp.poetry.tooltip "Insert poetry">

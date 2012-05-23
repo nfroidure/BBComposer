@@ -1,12 +1,14 @@
-<!ENTITY bbcomp.link.dialog.title "">
-<!ENTITY bbcomp.link.href.label "">
-<!ENTITY bbcomp.link.title.label "">
-<!ENTITY bbcomp.link.target.label "">
-<!ENTITY bbcomp.link.target.normal.label "">
-<!ENTITY bbcomp.link.target.popup.label "">
-<!ENTITY bbcomp.link.hreflang.label "">
-<!ENTITY bbcomp.link.hreflang.normal.label "">
-<!ENTITY bbcomp.link.hreflang.en.label "">
-<!ENTITY bbcomp.link.hreflang.de.label "">
-<!ENTITY bbcomp.link.hreflang.es.label "">
-<!ENTITY bbcomp.link.hreflang.fr.label "">
+<!ENTITY bbcomp.link.dialog.title "Link">
+<!ENTITY bbcomp.link.href.label "Location">
+<!ENTITY bbcomp.link.title.label "Tool tip text">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
+<!ENTITY bbcomp.link.target.label "Target">
+<!ENTITY bbcomp.link.target.normal.label "Normal">
+<!ENTITY bbcomp.link.target.popup.label "New window">
+<!ENTITY bbcomp.link.hreflang.label "Target language">
+<!ENTITY bbcomp.link.hreflang.normal.label "Same language">
+<!ENTITY bbcomp.link.hreflang.en.label "English">
+<!ENTITY bbcomp.link.hreflang.de.label "German">
+<!ENTITY bbcomp.link.hreflang.es.label "Spanish">
+<!ENTITY bbcomp.link.hreflang.fr.label "French">

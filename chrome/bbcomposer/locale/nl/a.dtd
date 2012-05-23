@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "Koppeling">
 <!ENTITY bbcomp.link.href.label "Locatie">
 <!ENTITY bbcomp.link.title.label "Tooltiptekst">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
 <!ENTITY bbcomp.link.target.label "Doel">
 <!ENTITY bbcomp.link.target.normal.label "Normaal">
 <!ENTITY bbcomp.link.target.popup.label "Nieuw venster">

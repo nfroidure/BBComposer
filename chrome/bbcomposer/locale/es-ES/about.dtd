@@ -3,6 +3,6 @@
 <!ENTITY bbcomp.abt.contributor "Colaborador">
 <!ENTITY bbcomp.abt.home.page "Página principal">
 <!ENTITY bbcomp.abt.manual.page "Manual">
-<!ENTITY bbcomp.abt.translator "">
-<!ENTITY bbcomp.abt.translator.name "">
-<!ENTITY bbcomp.abt.translator.url "">
+<!ENTITY bbcomp.abt.translator "Translator en-US">
+<!ENTITY bbcomp.abt.translator.name "Nicolas Froidure">
+<!ENTITY bbcomp.abt.translator.url "http://www.babelzilla.org">

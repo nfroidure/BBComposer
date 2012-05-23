@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "Länk">
 <!ENTITY bbcomp.link.href.label "Plats">
 <!ENTITY bbcomp.link.title.label "Verktygstipstext">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
 <!ENTITY bbcomp.link.target.label "Mål">
 <!ENTITY bbcomp.link.target.normal.label "Standard">
 <!ENTITY bbcomp.link.target.popup.label "Nytt fönster">

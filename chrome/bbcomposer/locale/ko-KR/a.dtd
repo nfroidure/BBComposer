@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "링크">
 <!ENTITY bbcomp.link.href.label "위치">
 <!ENTITY bbcomp.link.title.label "툴팁 내용">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
 <!ENTITY bbcomp.link.target.label "대상">
 <!ENTITY bbcomp.link.target.normal.label "일반">
 <!ENTITY bbcomp.link.target.popup.label "새 창">

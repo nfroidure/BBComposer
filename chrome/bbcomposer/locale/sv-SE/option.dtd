@@ -17,9 +17,9 @@
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCode (semantisk BBCode)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "Vanlig BBCode">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "MediaWiki-syntax">
-<!ENTITY bbcomp.opt.lng.spip.label "">
-<!ENTITY bbcomp.opt.lng.spip2.label "">
-<!ENTITY bbcomp.opt.lng.skyblog.label "">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "Kom ihåg språk när det har valts">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML-inställningar">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indrag">
@@ -30,9 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Uppladdningswebbplats">
 <!ENTITY bbcomp.opt.upd.folder.label "Uppladdningsmapp">
 <!ENTITY bbcomp.opt.upd.url.label "Uppladdnings-URL">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Fältnamn för filen">
 <!ENTITY bbcomp.opt.upd.postparams.label "POST-parametrar">
 <!ENTITY bbcomp.opt.upd.unique.label "Filnamn måste vara unika">
+<!ENTITY bbcomp.opt.upd.ewk.label "Param�tres Elitwork">
+<!ENTITY bbcomp.opt.upd.default.label "Param�tres par d�faut">
 <!ENTITY bbcomp.opt.rsp.caption "Svar">
 <!ENTITY bbcomp.opt.rsp.description "Svarar på behandlingsparametrar.">
 <!ENTITY bbcomp.opt.rsp.type.label "Svarstyp">

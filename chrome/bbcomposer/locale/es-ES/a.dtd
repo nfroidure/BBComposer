@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "Enlace">
 <!ENTITY bbcomp.link.href.label "Localización">
 <!ENTITY bbcomp.link.title.label "Tool tip text">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
 <!ENTITY bbcomp.link.target.label "Objetivo">
 <!ENTITY bbcomp.link.target.normal.label "Normal">
 <!ENTITY bbcomp.link.target.popup.label "Nueva ventana">

@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "Odnośnik">
 <!ENTITY bbcomp.link.href.label "Lokalizacja">
 <!ENTITY bbcomp.link.title.label "Dymek">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
 <!ENTITY bbcomp.link.target.label "Otwórz">
 <!ENTITY bbcomp.link.target.normal.label "Normalnie">
 <!ENTITY bbcomp.link.target.popup.label "W nowym oknie">

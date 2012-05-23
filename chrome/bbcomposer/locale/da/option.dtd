@@ -17,9 +17,9 @@
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBkoder (Semantiske BBkoder)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "Almindelige BBkoder">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "MediaWiki-syntaks">
-<!ENTITY bbcomp.opt.lng.spip.label "">
-<!ENTITY bbcomp.opt.lng.spip2.label "">
-<!ENTITY bbcomp.opt.lng.skyblog.label "">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "Husk sprog nÃ¥r valgt">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML indstillinger">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indryk">
@@ -30,9 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Upload-side">
 <!ENTITY bbcomp.opt.upd.folder.label "Upload-mappe">
 <!ENTITY bbcomp.opt.upd.url.label "Upload-URL">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Feltnavne for filen">
 <!ENTITY bbcomp.opt.upd.postparams.label "POST-parametre">
 <!ENTITY bbcomp.opt.upd.unique.label "Filnavnet skal vÃ¦re unikt">
+<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
+<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
 <!ENTITY bbcomp.opt.rsp.caption "Svar">
 <!ENTITY bbcomp.opt.rsp.description "Svar-behandlingsparametre">
 <!ENTITY bbcomp.opt.rsp.type.label "Svartype">

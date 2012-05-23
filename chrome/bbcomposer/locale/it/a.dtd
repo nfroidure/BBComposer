@@ -1,6 +1,8 @@
 <!ENTITY bbcomp.link.dialog.title "Collegamento">
 <!ENTITY bbcomp.link.href.label "Percorso">
 <!ENTITY bbcomp.link.title.label "Titolo">
+<!ENTITY bbcomp.link.rel.label "Relationship">
+<!ENTITY bbcomp.link.rev.label "Reverse relationship">
 <!ENTITY bbcomp.link.target.label "Destinazione">
 <!ENTITY bbcomp.link.target.normal.label "Normale">
 <!ENTITY bbcomp.link.target.popup.label "Nuova finestra">

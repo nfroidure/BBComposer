@@ -17,9 +17,9 @@
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (BBCodes semántico)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "BBCodes habituales">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "Sintaxis Mediawiki">
-<!ENTITY bbcomp.opt.lng.spip.label "">
-<!ENTITY bbcomp.opt.lng.spip2.label "">
-<!ENTITY bbcomp.opt.lng.skyblog.label "">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "Recordar el idioma seleccionado">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "Opciones XHTML">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indentación">
@@ -30,9 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Subir site">
 <!ENTITY bbcomp.opt.upd.folder.label "Carpeta de carga">
 <!ENTITY bbcomp.opt.upd.url.label "Cargar URL">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Campo nombre del fichero">
 <!ENTITY bbcomp.opt.upd.postparams.label "Parámetros POST">
 <!ENTITY bbcomp.opt.upd.unique.label "El nombre de fichero ha de ser único">
+<!ENTITY bbcomp.opt.upd.ewk.label "Param�tres Elitwork">
+<!ENTITY bbcomp.opt.upd.default.label "Param�tres par d�faut">
 <!ENTITY bbcomp.opt.rsp.caption "Respuesta">
 <!ENTITY bbcomp.opt.rsp.description "Parámetros de tratamiento de respuesta.">
 <!ENTITY bbcomp.opt.rsp.type.label "Tipo de Respuesta">

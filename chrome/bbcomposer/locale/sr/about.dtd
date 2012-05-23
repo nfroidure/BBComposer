@@ -1,8 +1,8 @@
-<!ENTITY bbcomp.abt.dialog.title "">
-<!ENTITY bbcomp.abt.author "">
-<!ENTITY bbcomp.abt.contributor "">
-<!ENTITY bbcomp.abt.home.page "">
-<!ENTITY bbcomp.abt.manual.page "">
-<!ENTITY bbcomp.abt.translator "">
-<!ENTITY bbcomp.abt.translator.name "">
-<!ENTITY bbcomp.abt.translator.url "">
+<!ENTITY bbcomp.abt.dialog.title "BBComposer : About">
+<!ENTITY bbcomp.abt.author "Author">
+<!ENTITY bbcomp.abt.contributor "Contributor">
+<!ENTITY bbcomp.abt.home.page "Home page">
+<!ENTITY bbcomp.abt.manual.page "Manual">
+<!ENTITY bbcomp.abt.translator "Translator en-US">
+<!ENTITY bbcomp.abt.translator.name "Nicolas Froidure">
+<!ENTITY bbcomp.abt.translator.url "http://www.babelzilla.org">
