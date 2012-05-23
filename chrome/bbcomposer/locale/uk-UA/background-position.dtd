@@ -1,16 +1,16 @@
 <!ENTITY bbcomp.background.position.dialog.title "Розміщення підкладки">
-<!ENTITY bbcomp.background.position.orient.label "Alignement">
-<!ENTITY bbcomp.background.position.horizontal.label "Horizontal">
+<!ENTITY bbcomp.background.position.orient.label "">
+<!ENTITY bbcomp.background.position.horizontal.label "">
 <!ENTITY bbcomp.background.position.horizontal.empty.label "">
-<!ENTITY bbcomp.background.position.horizontal.left.label "Left">
-<!ENTITY bbcomp.background.position.horizontal.right.label "Right">
-<!ENTITY bbcomp.background.position.vertical.label "Vertical">
+<!ENTITY bbcomp.background.position.horizontal.left.label "">
+<!ENTITY bbcomp.background.position.horizontal.right.label "">
+<!ENTITY bbcomp.background.position.vertical.label "">
 <!ENTITY bbcomp.background.position.vertical.empty.label "">
-<!ENTITY bbcomp.background.position.vertical.top.label "Top">
-<!ENTITY bbcomp.background.position.vertical.bottom.label "Bottom">
-<!ENTITY bbcomp.background.position.center.label "Center">
+<!ENTITY bbcomp.background.position.vertical.top.label "">
+<!ENTITY bbcomp.background.position.vertical.bottom.label "">
+<!ENTITY bbcomp.background.position.center.label "">
 <!ENTITY bbcomp.background.position.coord.label "">
-<!ENTITY bbcomp.background.position.x.label "Abscissa">
-<!ENTITY bbcomp.background.position.y.label "Ordinate">
+<!ENTITY bbcomp.background.position.x.label "">
+<!ENTITY bbcomp.background.position.y.label "">
 <!ENTITY bbcomp.background.position.pixel.label "Піксел">
 <!ENTITY bbcomp.background.position.percent.label "Процент">

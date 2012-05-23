@@ -1,54 +1,54 @@
-<!ENTITY bbcomp.opt.dialog.title "BBComposer : Options">
-<!ENTITY bbcomp.opt.gnr.label "General">
-<!ENTITY bbcomp.opt.lng.label "Language">
-<!ENTITY bbcomp.opt.upd.label "Upload">
-<!ENTITY bbcomp.opt.rsp.label "Response">
-<!ENTITY bbcomp.opt.avd.label "Advanced">
-<!ENTITY bbcomp.opt.fld.label "Fields">
-<!ENTITY bbcomp.opt.gnr.caption "General options">
-<!ENTITY bbcomp.opt.gnr.site.css.label "CSS file directory (.css)">
-<!ENTITY bbcomp.opt.gnr.site.css.none.label "Use default CSS">
-<!ENTITY bbcomp.opt.cmp.automode.label "Enters Edit Mode automaticaly">
-<!ENTITY bbcomp.opt.cmp.spellchecker.label "Always enable the spellchecker">
-<!ENTITY bbcomp.opt.cmp.sidebar.label "Open the sidebar in the edition mode">
-<!ENTITY bbcomp.opt.lng.default.label "Default language :">
-<!ENTITY bbcomp.opt.lng.xhtml.label "XHTML">
-<!ENTITY bbcomp.opt.lng.xhtmlnb.label "XHTML (no blocks)">
-<!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCodes (Semantic BBCodes)">
-<!ENTITY bbcomp.opt.lng.bbcode.label "Usual BBCodes">
-<!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki Syntax (beta)">
-<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
-<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
-<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
-<!ENTITY bbcomp.opt.lng.remember.label "Remember langage when selected">
-<!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML Options">
-<!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indent">
-<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Convert non-ASCII characters to HTML entities">
-<!ENTITY bbcomp.opt.upd.caption "Advanced Options">
-<!ENTITY bbcomp.opt.upd.description "Those options allows you to modify upload parameters.">
-<!ENTITY bbcomp.opt.upd.on.label "Enable upload">
-<!ENTITY bbcomp.opt.upd.site.label "Upload site">
-<!ENTITY bbcomp.opt.upd.folder.label "Upload folder">
-<!ENTITY bbcomp.opt.upd.url.label "Upload URL">
-<!ENTITY bbcomp.opt.upd.postname.label "Field name of the file">
-<!ENTITY bbcomp.opt.upd.postparams.label "POST parameters">
-<!ENTITY bbcomp.opt.upd.unique.label "Filename must be unique">
-<!ENTITY bbcomp.opt.rsp.caption "Response">
-<!ENTITY bbcomp.opt.rsp.description "Responses treatment parameters.">
-<!ENTITY bbcomp.opt.rsp.type.label "Response type">
-<!ENTITY bbcomp.opt.rsp.type.xml.label "XML">
-<!ENTITY bbcomp.opt.rsp.type.text.label "Text">
-<!ENTITY bbcomp.opt.rsp.error.label "Error recognizer">
-<!ENTITY bbcomp.opt.rsp.notice.label "Notice recognizer">
-<!ENTITY bbcomp.opt.rsp.filename.label "Filename recognizer">
-<!ENTITY bbcomp.opt.avd.caption "Advanced Options">
-<!ENTITY bbcomp.opt.avd.description "Do not modify advanced options if you do not know how.">
-<!ENTITY bbcomp.opt.avd.save.label "Automatic save delay">
-<!ENTITY bbcomp.opt.avd.defcont.label "Default contain of the editor">
-<!ENTITY bbcomp.opt.fld.caption.label "Saved fields">
-<!ENTITY bbcomp.opt.fld.site.label "URL Filter">
-<!ENTITY bbcomp.opt.fld.id.label "ID Filter">
-<!ENTITY bbcomp.opt.fld.language.label "Language">
-<!ENTITY bbcomp.opt.fld.target.label "Target">
-<!ENTITY bbcomp.opt.fld.delete.label "Delete">
-<!ENTITY bbcomp.opt.fld.add.label "Add">
+<!ENTITY bbcomp.opt.dialog.title "">
+<!ENTITY bbcomp.opt.gnr.label "">
+<!ENTITY bbcomp.opt.lng.label "">
+<!ENTITY bbcomp.opt.upd.label "">
+<!ENTITY bbcomp.opt.rsp.label "">
+<!ENTITY bbcomp.opt.avd.label "">
+<!ENTITY bbcomp.opt.fld.label "">
+<!ENTITY bbcomp.opt.gnr.caption "">
+<!ENTITY bbcomp.opt.gnr.site.css.label "">
+<!ENTITY bbcomp.opt.gnr.site.css.none.label "">
+<!ENTITY bbcomp.opt.cmp.automode.label "">
+<!ENTITY bbcomp.opt.cmp.spellchecker.label "">
+<!ENTITY bbcomp.opt.cmp.sidebar.label "">
+<!ENTITY bbcomp.opt.lng.default.label "">
+<!ENTITY bbcomp.opt.lng.xhtml.label "">
+<!ENTITY bbcomp.opt.lng.xhtmlnb.label "">
+<!ENTITY bbcomp.opt.lng.xbbcode.label "">
+<!ENTITY bbcomp.opt.lng.bbcode.label "">
+<!ENTITY bbcomp.opt.lng.mediawiki.label "">
+<!ENTITY bbcomp.opt.lng.spip.label "">
+<!ENTITY bbcomp.opt.lng.spip2.label "">
+<!ENTITY bbcomp.opt.lng.skyblog.label "">
+<!ENTITY bbcomp.opt.lng.remember.label "">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "">
+<!ENTITY bbcomp.opt.lng.xhtml.indent.label "">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "">
+<!ENTITY bbcomp.opt.upd.caption "">
+<!ENTITY bbcomp.opt.upd.description "">
+<!ENTITY bbcomp.opt.upd.on.label "">
+<!ENTITY bbcomp.opt.upd.site.label "">
+<!ENTITY bbcomp.opt.upd.folder.label "">
+<!ENTITY bbcomp.opt.upd.url.label "">
+<!ENTITY bbcomp.opt.upd.postname.label "">
+<!ENTITY bbcomp.opt.upd.postparams.label "">
+<!ENTITY bbcomp.opt.upd.unique.label "">
+<!ENTITY bbcomp.opt.rsp.caption "">
+<!ENTITY bbcomp.opt.rsp.description "">
+<!ENTITY bbcomp.opt.rsp.type.label "">
+<!ENTITY bbcomp.opt.rsp.type.xml.label "">
+<!ENTITY bbcomp.opt.rsp.type.text.label "">
+<!ENTITY bbcomp.opt.rsp.error.label "">
+<!ENTITY bbcomp.opt.rsp.notice.label "">
+<!ENTITY bbcomp.opt.rsp.filename.label "">
+<!ENTITY bbcomp.opt.avd.caption "">
+<!ENTITY bbcomp.opt.avd.description "">
+<!ENTITY bbcomp.opt.avd.save.label "">
+<!ENTITY bbcomp.opt.avd.defcont.label "">
+<!ENTITY bbcomp.opt.fld.caption.label "">
+<!ENTITY bbcomp.opt.fld.site.label "">
+<!ENTITY bbcomp.opt.fld.id.label "">
+<!ENTITY bbcomp.opt.fld.language.label "">
+<!ENTITY bbcomp.opt.fld.target.label "">
+<!ENTITY bbcomp.opt.fld.delete.label "">
+<!ENTITY bbcomp.opt.fld.add.label "">

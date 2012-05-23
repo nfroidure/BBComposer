@@ -1,7 +1,7 @@
-<!ENTITY bbcomp.tbl.dialog.title "Table">
-<!ENTITY bbcomp.tbl.caption.label "Caption">
-<!ENTITY bbcomp.tbl.summary.label "Summary">
-<!ENTITY bbcomp.tbl.hrows.label "Header rows">
-<!ENTITY bbcomp.tbl.rows.label "Rows">
-<!ENTITY bbcomp.tbl.frows.label "Footer rows">
-<!ENTITY bbcomp.tbl.cols.label "Columns">
+<!ENTITY bbcomp.tbl.dialog.title "">
+<!ENTITY bbcomp.tbl.caption.label "">
+<!ENTITY bbcomp.tbl.summary.label "">
+<!ENTITY bbcomp.tbl.hrows.label "">
+<!ENTITY bbcomp.tbl.rows.label "">
+<!ENTITY bbcomp.tbl.frows.label "">
+<!ENTITY bbcomp.tbl.cols.label "">

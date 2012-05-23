@@ -7,6 +7,6 @@
 <!ENTITY bbcomp.save.language.bbcode.label "BBCode">
 <!ENTITY bbcomp.save.language.xbbcode.label "XBBCode">
 <!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki">
-<!ENTITY bbcomp.save.language.spip.label "Spip Typo (beta)">
-<!ENTITY bbcomp.save.language.spip2.label "Rich Spip Typo (beta)">
-<!ENTITY bbcomp.save.language.skyblog.label "Skyrock blog (beta)">
+<!ENTITY bbcomp.save.language.spip.label "">
+<!ENTITY bbcomp.save.language.spip2.label "">
+<!ENTITY bbcomp.save.language.skyblog.label "">

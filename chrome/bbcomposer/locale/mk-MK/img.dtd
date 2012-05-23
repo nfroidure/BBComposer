@@ -1,8 +1,8 @@
-<!ENTITY bbcomp.img.dialog.title "Image">
-<!ENTITY bbcomp.img.src.label "Directory">
-<!ENTITY bbcomp.img.browse.label "Browse">
-<!ENTITY bbcomp.img.alt.label "Alternate text">
-<!ENTITY bbcomp.img.align.label "Alignement">
-<!ENTITY bbcomp.img.align.normal.label "Normal">
-<!ENTITY bbcomp.img.align.left.label "Left">
-<!ENTITY bbcomp.img.align.right.label "Right">
+<!ENTITY bbcomp.img.dialog.title "">
+<!ENTITY bbcomp.img.src.label "">
+<!ENTITY bbcomp.img.browse.label "">
+<!ENTITY bbcomp.img.alt.label "">
+<!ENTITY bbcomp.img.align.label "">
+<!ENTITY bbcomp.img.align.normal.label "">
+<!ENTITY bbcomp.img.align.left.label "">
+<!ENTITY bbcomp.img.align.right.label "">

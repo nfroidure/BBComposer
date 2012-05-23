@@ -1,7 +1,7 @@
 <!ENTITY bbcomp.name "BBComposer">
-<!ENTITY bbcomp.copy "Copy">
-<!ENTITY bbcomp.cut "Cut">
-<!ENTITY bbcomp.paste "Paste">
+<!ENTITY bbcomp.copy "Kopiëren">
+<!ENTITY bbcomp.cut "Knippen">
+<!ENTITY bbcomp.paste "Plakken">
 <!ENTITY bbcomp.pasteas "Plakken als">
 <!ENTITY bbcomp.pasteas.div "een deel van het document">
 <!ENTITY bbcomp.pasteas.blockquote "een blokaanhaling">
@@ -14,9 +14,9 @@
 <!ENTITY bbcomp.pastefrom.bbcode "BBCode">
 <!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
 <!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
-<!ENTITY bbcomp.pastefrom.spip "Spip Typo (beta)">
-<!ENTITY bbcomp.pastefrom.spip2 "Rich Spip Typo (beta)">
-<!ENTITY bbcomp.pastefrom.skyblog "Skyrock blog (beta)">
+<!ENTITY bbcomp.pastefrom.spip "Spip Typo (bèta)">
+<!ENTITY bbcomp.pastefrom.spip2 "Rijke Spip Typo (bèta)">
+<!ENTITY bbcomp.pastefrom.skyblog "Skyrock-blog (bèta)">
 <!ENTITY bbcomp.delete "Verwijderen">
 <!ENTITY bbcomp.selectall "Alles selecteren">
 <!ENTITY bbcomp.edit.textarea.xhtml "Bewerken met XHTML">
@@ -25,8 +25,8 @@
 <!ENTITY bbcomp.edit.textarea.xhtmlnb "Bewerken met XHTML (geen blokken)">
 <!ENTITY bbcomp.edit.textarea.mediawiki "Bewerken met Mediawiki">
 <!ENTITY bbcomp.edit.textarea.spip "Spip Typo (beta)">
-<!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
-<!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
+<!ENTITY bbcomp.edit.textarea.spip2 "Rijke Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.skyblog "Skyrock-blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "Bewerken en opslaan">
 <!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-nl">
 <!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-nl">
@@ -43,19 +43,19 @@
 <!ENTITY bbcomp.sidebar.label "Zijbalken">
 <!ENTITY bbcomp.sidebar.tooltiptext "Zijbalken weergeven/verbergen">
 <!ENTITY bbcomp.smileys.label "Smilies">
-<!ENTITY bbcomp.smileys.tooltiptext "Smilies bibliotheek">
+<!ENTITY bbcomp.smileys.tooltiptext "Smilies-bibliotheek">
 <!ENTITY bbcomp.cartoon.label "Cartoon">
-<!ENTITY bbcomp.cartoon.tooltiptext "Cartoon/manga pictogrammenbibliotheek">
-<!ENTITY bbcomp.css.label "CSS">
+<!ENTITY bbcomp.cartoon.tooltiptext "Cartoon/manga-pictogrammenbibliotheek">
+<!ENTITY bbcomp.css.label "Stijlbladen">
 <!ENTITY bbcomp.css.tooltiptext "CSS bewerken">
-<!ENTITY bbcomp.degradx.label "Degradees">
-<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
+<!ENTITY bbcomp.degradx.label "Gradiënten">
+<!ENTITY bbcomp.degradx.tooltiptext "Gradiënten bewerken">
 <!ENTITY bbcomp.toolbar.label "Werkbalken">
 <!ENTITY bbcomp.toolbar.tooltiptext "Werkbalken weergeven/verbergen">
 <!ENTITY bbcomp.edition.label "Elementen">
 <!ENTITY bbcomp.edition.tooltiptext "Elementen bewerken">
 <!ENTITY bbcomp.spip.label "Spip Typo">
-<!ENTITY bbcomp.spip.tooltiptext "Edit Spip Typo syntax">
+<!ENTITY bbcomp.spip.tooltiptext "Spip Typo-syntax bewerken">
 <!ENTITY bbcomp.options.label "Hulpmiddelen">
 <!ENTITY bbcomp.options.tooltiptext "Zie de hulpmiddelen">
 <!ENTITY bbcomp.option.label "Opties">
@@ -74,7 +74,7 @@
 <!ENTITY bbcomp.lists.tooltiptext "Lijstblokken">
 <!ENTITY bbcomp.ul.label "Ongesorteerde lijst">
 <!ENTITY bbcomp.ol.label "Gesorteerde lijst">
-<!ENTITY bbcomp.dl.label "Definitie lijst">
+<!ENTITY bbcomp.dl.label "Definitielijst">
 <!ENTITY bbcomp.texts.label "Teksten">
 <!ENTITY bbcomp.texts.tooltiptext "Tekstblokken">
 <!ENTITY bbcomp.h1.label "Hoofdtitel">
@@ -131,7 +131,7 @@
 <!ENTITY bbcomp.kbd.label "Toetsaanslagen">
 <!ENTITY bbcomp.kbd.tooltiptext "Als toetsaanslagen markeren">
 <!ENTITY bbcomp.var.label "Variabele">
-<!ENTITY bbcomp.var.tooltiptext "Als code variabele markeren">
+<!ENTITY bbcomp.var.tooltiptext "Als codevariabele markeren">
 <!ENTITY bbcomp.code.label "Computercode">
 <!ENTITY bbcomp.code.tooltiptext "Als broncode markeren">
 <!ENTITY bbcomp.del.label "Verwijderen">
@@ -144,12 +144,12 @@
 <!ENTITY bbcomp.span.tooltiptext "Span toevoegen/verwijderen">
 <!ENTITY bbcomp.div.label "Scheiding">
 <!ENTITY bbcomp.div.tooltiptext "In een scheidingsblok opnemen">
-<!ENTITY bbcomp.blockquote.label "Quote">
-<!ENTITY bbcomp.blockquote.tooltiptext "In een quoteblok opnemen">
+<!ENTITY bbcomp.blockquote.label "Citaat">
+<!ENTITY bbcomp.blockquote.tooltiptext "In een citaatblok opnemen">
 <!ENTITY bbcomp.attclass.label "Klassen">
-<!ENTITY bbcomp.attclass.tooltiptext "Modifier les classes de cet élément">
+<!ENTITY bbcomp.attclass.tooltiptext "De klassen van dit element aanpassen">
 <!ENTITY bbcomp.attlang.label "Taal">
-<!ENTITY bbcomp.attlang.tooltiptext "Définir la langue du texte contenu dans cet élément">
+<!ENTITY bbcomp.attlang.tooltiptext "De taal van de tekst in dit element definiëren">
 <!ENTITY bbcomp.deindent.label "Inspringen verwijderen">
 <!ENTITY bbcomp.deindent.tooltiptext "Inspringen van tekst verwijderen">
 <!ENTITY bbcomp.indent.label "Inspringen">
@@ -158,22 +158,22 @@
 <!ENTITY bbcomp.fontsizedec.tooltiptext "Lettertype verkleinen">
 <!ENTITY bbcomp.fontsizeinc.label "Vergroten">
 <!ENTITY bbcomp.fontsizeinc.tooltiptext "Lettertype vergroten">
-<!ENTITY bbcomp.margintopdec.label "Decrease margin top">
-<!ENTITY bbcomp.margintopdec.tooltiptext "Decrease margin top of the element">
-<!ENTITY bbcomp.margintopinc.label "Increase margin top">
-<!ENTITY bbcomp.margintopinc.tooltiptext "Increase margin top of the element">
-<!ENTITY bbcomp.marginrightdec.label "Decrease margin right">
-<!ENTITY bbcomp.marginrightdec.tooltiptext "Decrease margin right of the element">
-<!ENTITY bbcomp.marginrightinc.label "Increase margin right">
-<!ENTITY bbcomp.marginrightinc.tooltiptext "Increase margin right of the element">
-<!ENTITY bbcomp.marginbottomdec.label "Decrease margin bottom">
-<!ENTITY bbcomp.marginbottomdec.tooltiptext "Decrease margin bottom of the element">
-<!ENTITY bbcomp.marginbottominc.label "Increase margin bottom">
-<!ENTITY bbcomp.marginbottominc.tooltiptext "Increase margin bottom of the element">
-<!ENTITY bbcomp.marginleftdec.label "Decrease margin margin left">
-<!ENTITY bbcomp.marginleftdec.tooltiptext "Decrease margin left of the element">
-<!ENTITY bbcomp.marginleftinc.label "Increase margin left">
-<!ENTITY bbcomp.marginleftinc.tooltiptext "Increase margin left of the element">
+<!ENTITY bbcomp.margintopdec.label "Bovenmarge verkleinen">
+<!ENTITY bbcomp.margintopdec.tooltiptext "Bovenmarge element verkleinen">
+<!ENTITY bbcomp.margintopinc.label "Bovenmarge vergroten">
+<!ENTITY bbcomp.margintopinc.tooltiptext "Bovenmarge element vergroten">
+<!ENTITY bbcomp.marginrightdec.label "Rechtermarge verkleinen">
+<!ENTITY bbcomp.marginrightdec.tooltiptext "Rechtermarge element verkleinen">
+<!ENTITY bbcomp.marginrightinc.label "Rechtermarge vergroten">
+<!ENTITY bbcomp.marginrightinc.tooltiptext "Rechtermarge element vergroten">
+<!ENTITY bbcomp.marginbottomdec.label "Ondermarge verkleinen">
+<!ENTITY bbcomp.marginbottomdec.tooltiptext "Ondermarge element verkleinen">
+<!ENTITY bbcomp.marginbottominc.label "Ondermarge vergroten">
+<!ENTITY bbcomp.marginbottominc.tooltiptext "Ondermarge element vergroten">
+<!ENTITY bbcomp.marginleftdec.label "Linkermarge verkleinen">
+<!ENTITY bbcomp.marginleftdec.tooltiptext "Linkermarge element verkleinen">
+<!ENTITY bbcomp.marginleftinc.label "Linkermarge vergroten">
+<!ENTITY bbcomp.marginleftinc.tooltiptext "Linkermarge element vergroten">
 <!ENTITY bbcomp.alignleft.label "Links">
 <!ENTITY bbcomp.alignleft.tooltiptext "Tekst links uitlijnen">
 <!ENTITY bbcomp.aligncent.label "Midden">
@@ -189,5 +189,5 @@
 <!ENTITY bbcomp.cleancss.label "CSS opschonen">
 <!ENTITY bbcomp.cleancss.tooltiptext "Alle stijlen van het huidige element verwijderen">
 <!ENTITY bbcomp.style.label "Stijlen">
-<!ENTITY bbcomp.poetry.label "Poetry">
-<!ENTITY bbcomp.poetry.tooltip "Insert poetry">
+<!ENTITY bbcomp.poetry.label "Poëzie">
+<!ENTITY bbcomp.poetry.tooltip "Poëzie invoegen">

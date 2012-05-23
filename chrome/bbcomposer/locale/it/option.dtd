@@ -17,9 +17,9 @@
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCode">
 <!ENTITY bbcomp.opt.lng.bbcode.label "BBCode (normale)">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "Sintassi Wiki">
-<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
-<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
-<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
+<!ENTITY bbcomp.opt.lng.spip.label "">
+<!ENTITY bbcomp.opt.lng.spip2.label "">
+<!ENTITY bbcomp.opt.lng.skyblog.label "">
 <!ENTITY bbcomp.opt.lng.remember.label "Ricorda l&apos;ultimo linguaggio selezionato">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "Opzioni XHTML">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Indentatura">

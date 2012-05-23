@@ -17,9 +17,9 @@
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBB kódy (sémantické BB kódy)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "Bežné BB kódy">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "Syntax Mediawiki">
-<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
-<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
-<!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
+<!ENTITY bbcomp.opt.lng.spip.label "">
+<!ENTITY bbcomp.opt.lng.spip2.label "">
+<!ENTITY bbcomp.opt.lng.skyblog.label "">
 <!ENTITY bbcomp.opt.lng.remember.label "Zapamätať jazyk, ak je vybraný">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "Voľby XHTML">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Odsadenie">

@@ -1,7 +1,7 @@
 <!ENTITY bbcomp.name "BBComposer">
-<!ENTITY bbcomp.copy "Copy">
-<!ENTITY bbcomp.cut "Cut">
-<!ENTITY bbcomp.paste "Paste">
+<!ENTITY bbcomp.copy "복사">
+<!ENTITY bbcomp.cut "잘라내기">
+<!ENTITY bbcomp.paste "붙여넣기">
 <!ENTITY bbcomp.pasteas "다음으로 붙여넣기">
 <!ENTITY bbcomp.pasteas.div "문서의 한 부분">
 <!ENTITY bbcomp.pasteas.blockquote "인용구">
@@ -14,8 +14,8 @@
 <!ENTITY bbcomp.pastefrom.bbcode "BBCode">
 <!ENTITY bbcomp.pastefrom.xbbcode "XBBCode">
 <!ENTITY bbcomp.pastefrom.mediawiki "Mediawiki">
-<!ENTITY bbcomp.pastefrom.spip "Spip Typo (beta)">
-<!ENTITY bbcomp.pastefrom.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.pastefrom.spip "Spip 입력 (beta)">
+<!ENTITY bbcomp.pastefrom.spip2 "Spip 편집기 입력 (beta)">
 <!ENTITY bbcomp.pastefrom.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.delete "삭제">
 <!ENTITY bbcomp.selectall "모두 선택">
@@ -24,8 +24,8 @@
 <!ENTITY bbcomp.edit.textarea.xbbcode "XBBCode로 편집">
 <!ENTITY bbcomp.edit.textarea.xhtmlnb "XHTML로 편집 (블럭 없음)">
 <!ENTITY bbcomp.edit.textarea.mediawiki "Mediawiki로 편집">
-<!ENTITY bbcomp.edit.textarea.spip "Spip Typo (beta)">
-<!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.edit.textarea.spip "Spip 입력 (beta)">
+<!ENTITY bbcomp.edit.textarea.spip2 "Spip 편집기 입력 (beta)">
 <!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "편집 후 저장">
 <!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-ko">
@@ -48,14 +48,14 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "카툰/만화 아이콘 라이브러리">
 <!ENTITY bbcomp.css.label "스타일시트">
 <!ENTITY bbcomp.css.tooltiptext "CSS 편집">
-<!ENTITY bbcomp.degradx.label "Degradees">
-<!ENTITY bbcomp.degradx.tooltiptext "Edit degradees">
+<!ENTITY bbcomp.degradx.label "">
+<!ENTITY bbcomp.degradx.tooltiptext "">
 <!ENTITY bbcomp.toolbar.label "도구막대">
 <!ENTITY bbcomp.toolbar.tooltiptext "도구막대 표시/숨기기">
 <!ENTITY bbcomp.edition.label "요소">
 <!ENTITY bbcomp.edition.tooltiptext "요소 편집">
-<!ENTITY bbcomp.spip.label "Spip Typo">
-<!ENTITY bbcomp.spip.tooltiptext "Edit Spip Typo syntax">
+<!ENTITY bbcomp.spip.label "Spip 형식">
+<!ENTITY bbcomp.spip.tooltiptext "Spip 형식 문법 편집">
 <!ENTITY bbcomp.options.label "도구">
 <!ENTITY bbcomp.options.tooltiptext "도구 보기">
 <!ENTITY bbcomp.option.label "선택사항">
@@ -72,9 +72,9 @@
 <!ENTITY bbcomp.about.tooltiptext "BBComposer 정보">
 <!ENTITY bbcomp.lists.label "목록">
 <!ENTITY bbcomp.lists.tooltiptext "목록 구역">
-<!ENTITY bbcomp.ul.label "Unordered List">
-<!ENTITY bbcomp.ol.label "Ordered List">
-<!ENTITY bbcomp.dl.label "Definition List">
+<!ENTITY bbcomp.ul.label "비순차 목록">
+<!ENTITY bbcomp.ol.label "순차 목록">
+<!ENTITY bbcomp.dl.label "정의 목록">
 <!ENTITY bbcomp.texts.label "본문">
 <!ENTITY bbcomp.texts.tooltiptext "문장 구역">
 <!ENTITY bbcomp.h1.label "주 제목">
@@ -118,8 +118,8 @@
 <!ENTITY bbcomp.img.tooltiptext "그림 추가">
 <!ENTITY bbcomp.table.label "표">
 <!ENTITY bbcomp.table.tooltiptext "표 추가">
-<!ENTITY bbcomp.special.label "전문의">
-<!ENTITY bbcomp.special.tooltiptext "의미상의 전문화">
+<!ENTITY bbcomp.special.label "특수">
+<!ENTITY bbcomp.special.tooltiptext "특별한 의미">
 <!ENTITY bbcomp.sup.label "윗 첨자">
 <!ENTITY bbcomp.sup.tooltiptext "윗 첨자로 표시">
 <!ENTITY bbcomp.sub.label "아래 첨자">
@@ -131,7 +131,7 @@
 <!ENTITY bbcomp.kbd.label "키스트로크">
 <!ENTITY bbcomp.kbd.tooltiptext "키스트로크로 표시">
 <!ENTITY bbcomp.var.label "변수">
-<!ENTITY bbcomp.var.tooltiptext "변수로 표시">
+<!ENTITY bbcomp.var.tooltiptext "코드 변수로 표시">
 <!ENTITY bbcomp.code.label "컴퓨터 코드">
 <!ENTITY bbcomp.code.tooltiptext "소스 코드로 표시">
 <!ENTITY bbcomp.del.label "삭제">
@@ -147,9 +147,9 @@
 <!ENTITY bbcomp.blockquote.label "인용">
 <!ENTITY bbcomp.blockquote.tooltiptext "인용 구역내 삽입">
 <!ENTITY bbcomp.attclass.label "클래스">
-<!ENTITY bbcomp.attclass.tooltiptext "Modifier les classes de cet élément">
+<!ENTITY bbcomp.attclass.tooltiptext "이 요소의 클래스 수정">
 <!ENTITY bbcomp.attlang.label "언어">
-<!ENTITY bbcomp.attlang.tooltiptext "Définir la langue du texte contenu dans cet élément">
+<!ENTITY bbcomp.attlang.tooltiptext "이 요소내 글 언어 지정">
 <!ENTITY bbcomp.deindent.label "내어쓰기">
 <!ENTITY bbcomp.deindent.tooltiptext "글을 내어 씁니다">
 <!ENTITY bbcomp.indent.label "들여쓰기">
@@ -158,22 +158,22 @@
 <!ENTITY bbcomp.fontsizedec.tooltiptext "글꼴 크기 줄임">
 <!ENTITY bbcomp.fontsizeinc.label "크기 늘임">
 <!ENTITY bbcomp.fontsizeinc.tooltiptext "글꼴 크기 늘임">
-<!ENTITY bbcomp.margintopdec.label "Decrease margin top">
-<!ENTITY bbcomp.margintopdec.tooltiptext "Decrease margin top of the element">
-<!ENTITY bbcomp.margintopinc.label "Increase margin top">
-<!ENTITY bbcomp.margintopinc.tooltiptext "Increase margin top of the element">
-<!ENTITY bbcomp.marginrightdec.label "Decrease margin right">
-<!ENTITY bbcomp.marginrightdec.tooltiptext "Decrease margin right of the element">
-<!ENTITY bbcomp.marginrightinc.label "Increase margin right">
-<!ENTITY bbcomp.marginrightinc.tooltiptext "Increase margin right of the element">
-<!ENTITY bbcomp.marginbottomdec.label "Decrease margin bottom">
-<!ENTITY bbcomp.marginbottomdec.tooltiptext "Decrease margin bottom of the element">
-<!ENTITY bbcomp.marginbottominc.label "Increase margin bottom">
-<!ENTITY bbcomp.marginbottominc.tooltiptext "Increase margin bottom of the element">
-<!ENTITY bbcomp.marginleftdec.label "Decrease margin margin left">
-<!ENTITY bbcomp.marginleftdec.tooltiptext "Decrease margin left of the element">
-<!ENTITY bbcomp.marginleftinc.label "Increase margin left">
-<!ENTITY bbcomp.marginleftinc.tooltiptext "Increase margin left of the element">
+<!ENTITY bbcomp.margintopdec.label "상단 여백 축소">
+<!ENTITY bbcomp.margintopdec.tooltiptext "이 요소의 상단 여백을 줄입니다">
+<!ENTITY bbcomp.margintopinc.label "상단 여백 증가">
+<!ENTITY bbcomp.margintopinc.tooltiptext "이 요소의 상단 여백을 넓힙니다">
+<!ENTITY bbcomp.marginrightdec.label "우측 여백 감소">
+<!ENTITY bbcomp.marginrightdec.tooltiptext "이 요소의 오른쪽 여백을 줄입니다">
+<!ENTITY bbcomp.marginrightinc.label "우측 여백 증가">
+<!ENTITY bbcomp.marginrightinc.tooltiptext "이 요소의 오른쪽 여백을 넓힙니다">
+<!ENTITY bbcomp.marginbottomdec.label "하단 여백 감소">
+<!ENTITY bbcomp.marginbottomdec.tooltiptext "이 요소의 하단 여백을 줄입니다">
+<!ENTITY bbcomp.marginbottominc.label "하단 여백 증가">
+<!ENTITY bbcomp.marginbottominc.tooltiptext "이 요소의 하단 여백을 넓힙니다.">
+<!ENTITY bbcomp.marginleftdec.label "좌측 여백 축소">
+<!ENTITY bbcomp.marginleftdec.tooltiptext "이 요소의 왼쪽 여백을 줄입니다">
+<!ENTITY bbcomp.marginleftinc.label "좌측 여백 증가">
+<!ENTITY bbcomp.marginleftinc.tooltiptext "이 요소의 왼쪽 여백을 넓힙니다">
 <!ENTITY bbcomp.alignleft.label "왼쪽">
 <!ENTITY bbcomp.alignleft.tooltiptext "왼쪽으로 글 정렬">
 <!ENTITY bbcomp.aligncent.label "중앙">
@@ -189,5 +189,5 @@
 <!ENTITY bbcomp.cleancss.label "CSS 지우기">
 <!ENTITY bbcomp.cleancss.tooltiptext "현재 요소의 모든 스타일을 지웁니다">
 <!ENTITY bbcomp.style.label "스타일">
-<!ENTITY bbcomp.poetry.label "Poetry">
-<!ENTITY bbcomp.poetry.tooltip "Insert poetry">
+<!ENTITY bbcomp.poetry.label "시">
+<!ENTITY bbcomp.poetry.tooltip "시 삽입">

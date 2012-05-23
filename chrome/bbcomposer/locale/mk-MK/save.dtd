@@ -1,12 +1,12 @@
-<!ENTITY bbcomp.save.dialog.title "Edit and save">
-<!ENTITY bbcomp.save.href.label "URL Filter">
-<!ENTITY bbcomp.save.id.label "Identifier Filter">
-<!ENTITY bbcomp.save.language.label "Language">
-<!ENTITY bbcomp.save.language.xhtml.label "XHTML">
-<!ENTITY bbcomp.save.language.xhtmlnb.label "XHTML (no blocks)">
-<!ENTITY bbcomp.save.language.bbcode.label "BBCodes">
-<!ENTITY bbcomp.save.language.xbbcode.label "XBBCodes">
-<!ENTITY bbcomp.save.language.mediawiki.label "Mediawiki (beta)">
-<!ENTITY bbcomp.save.language.spip.label "Spip Typo (beta)">
-<!ENTITY bbcomp.save.language.spip2.label "Rich Spip Typo (beta)">
-<!ENTITY bbcomp.save.language.skyblog.label "Skyrock blog (beta)">
+<!ENTITY bbcomp.save.dialog.title "">
+<!ENTITY bbcomp.save.href.label "">
+<!ENTITY bbcomp.save.id.label "">
+<!ENTITY bbcomp.save.language.label "">
+<!ENTITY bbcomp.save.language.xhtml.label "">
+<!ENTITY bbcomp.save.language.xhtmlnb.label "">
+<!ENTITY bbcomp.save.language.bbcode.label "">
+<!ENTITY bbcomp.save.language.xbbcode.label "">
+<!ENTITY bbcomp.save.language.mediawiki.label "">
+<!ENTITY bbcomp.save.language.spip.label "">
+<!ENTITY bbcomp.save.language.spip2.label "">
+<!ENTITY bbcomp.save.language.skyblog.label "">

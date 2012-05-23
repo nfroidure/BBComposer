@@ -17,8 +17,8 @@
 <!ENTITY bbcomp.opt.lng.xbbcode.label "XBBCode (BBCode)">
 <!ENTITY bbcomp.opt.lng.bbcode.label "일반 BBCode">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki 구문">
-<!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
-<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip.label "Spip 방식 (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Spip 방식 편집기 (beta)">
 <!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "선택시 언어 기억">
 <!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML 선택사항">

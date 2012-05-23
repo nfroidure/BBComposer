@@ -1,4 +1,4 @@
-<!ENTITY bbcomp.opt.dialog.title "BBComposer opties">
+<!ENTITY bbcomp.opt.dialog.title "BBComposer-opties">
 <!ENTITY bbcomp.opt.gnr.label "Algemeen">
 <!ENTITY bbcomp.opt.lng.label "Taal">
 <!ENTITY bbcomp.opt.upd.label "Uploaden">
@@ -6,7 +6,7 @@
 <!ENTITY bbcomp.opt.avd.label "Geavanceerd">
 <!ENTITY bbcomp.opt.fld.label "Velden">
 <!ENTITY bbcomp.opt.gnr.caption "Algemene opties">
-<!ENTITY bbcomp.opt.gnr.site.css.label "Map met CSS bestand (.css)">
+<!ENTITY bbcomp.opt.gnr.site.css.label "Map met CSS-bestand (.css)">
 <!ENTITY bbcomp.opt.gnr.site.css.none.label "Standaard CSS gebruiken">
 <!ENTITY bbcomp.opt.cmp.automode.label "Bewerkingsmodus wordt automatisch ingeschakeld">
 <!ENTITY bbcomp.opt.cmp.spellchecker.label "Spellingscontrole altijd inschakelen">
@@ -18,16 +18,16 @@
 <!ENTITY bbcomp.opt.lng.bbcode.label "Gebruikelijke BBCodes">
 <!ENTITY bbcomp.opt.lng.mediawiki.label "Mediawiki syntax">
 <!ENTITY bbcomp.opt.lng.spip.label "Spip Typo (beta)">
-<!ENTITY bbcomp.opt.lng.spip2.label "Rich Spip Typo (beta)">
+<!ENTITY bbcomp.opt.lng.spip2.label "Rijke Spip Typo (beta)">
 <!ENTITY bbcomp.opt.lng.skyblog.label "Skyrock blog (beta)">
 <!ENTITY bbcomp.opt.lng.remember.label "Taal onthouden wanneer geselecteerd">
-<!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML opties">
+<!ENTITY bbcomp.opt.lng.xhtml.caption "XHTML-opties">
 <!ENTITY bbcomp.opt.lng.xhtml.indent.label "Inspringen">
-<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "niet-ASCII karakters naar HTML-entiteiten omvormen">
+<!ENTITY bbcomp.opt.lng.xhtml.ascii.label "Niet-ASCII karakters naar HTML-entiteiten omvormen">
 <!ENTITY bbcomp.opt.upd.caption "Geavanceerde opties">
 <!ENTITY bbcomp.opt.upd.description "Wijzig geen geavanceerde opties als u niet weet hoe.">
 <!ENTITY bbcomp.opt.upd.on.label "Uploaden inschakelen">
-<!ENTITY bbcomp.opt.upd.site.label "Uploadsite">
+<!ENTITY bbcomp.opt.upd.site.label "Uploadwebsite">
 <!ENTITY bbcomp.opt.upd.folder.label "Uploadmap">
 <!ENTITY bbcomp.opt.upd.url.label "Upload-URL">
 <!ENTITY bbcomp.opt.upd.postname.label "Veldnaam van het bestand">
@@ -47,7 +47,7 @@
 <!ENTITY bbcomp.opt.avd.defcont.label "Standaardinhoud van de editor">
 <!ENTITY bbcomp.opt.fld.caption.label "Opgeslagen velden">
 <!ENTITY bbcomp.opt.fld.site.label "URL-filter">
-<!ENTITY bbcomp.opt.fld.id.label "ID filter">
+<!ENTITY bbcomp.opt.fld.id.label "ID-filter">
 <!ENTITY bbcomp.opt.fld.language.label "Taal">
 <!ENTITY bbcomp.opt.fld.target.label "Doel">
 <!ENTITY bbcomp.opt.fld.delete.label "Verwijderen">
