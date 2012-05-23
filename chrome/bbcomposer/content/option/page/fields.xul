@@ -3,9 +3,7 @@
 
 <!DOCTYPE page SYSTEM "chrome://bbcomposer/locale/option.dtd">
 <page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-
 	<script type="application/x-javascript" src="chrome://bbcomposer/content/option/listbox/listbox.js"/>
-
 	<groupbox>
 		<caption label="&bbcomp.opt.fld.caption.label;"/>
 		<listbox flex="1" id="fields" rows="10" onselect="document.getElementById('delete.button').disabled=false;">

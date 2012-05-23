@@ -34,6 +34,8 @@
 <!ENTITY bbcomp.opt.upd.postname.label "Field name of the file">
 <!ENTITY bbcomp.opt.upd.postparams.label "POST parameters">
 <!ENTITY bbcomp.opt.upd.unique.label "Filename must be unique">
+<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
+<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
 <!ENTITY bbcomp.opt.rsp.caption "Response">
 <!ENTITY bbcomp.opt.rsp.description "Responses treatment parameters.">
 <!ENTITY bbcomp.opt.rsp.type.label "Response type">
