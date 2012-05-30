@@ -4,8 +4,9 @@
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="bbcomposer@elitwork.com"
-                   em:version="3.3"
+                   em:version="3.4"
                    em:name="BBComposer"
+                   em:description="BBComposer is a Wysiwyg editor for multiple language allowing you to edit textareas contents."
                    em:creator="Nicolas FROIDURE"
                    em:homepageURL="http://bbcomposer.elitwork.com"
                    em:optionsURL="chrome://bbcomposer/content/option/options.xul"
@@ -16,6 +17,6 @@
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$arpP13"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="1.0"
-                   em:maxVersion="10.*" />
+                   em:minVersion="4.0"
+                   em:maxVersion="13.*" />
 </RDF:RDF>

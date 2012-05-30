@@ -30,12 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Uploadwebsite">
 <!ENTITY bbcomp.opt.upd.folder.label "Uploadmap">
 <!ENTITY bbcomp.opt.upd.url.label "Upload-URL">
-<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Veld voor bestandsnaam">
 <!ENTITY bbcomp.opt.upd.postname.label "Veldnaam van het bestand">
 <!ENTITY bbcomp.opt.upd.postparams.label "POST parameters">
 <!ENTITY bbcomp.opt.upd.unique.label "Bestandsnaam moet uniek zijn">
-<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
-<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
+<!ENTITY bbcomp.opt.upd.ewk.label "Elitwork params">
+<!ENTITY bbcomp.opt.upd.default.label "Default params">
 <!ENTITY bbcomp.opt.rsp.caption "Antwoord">
 <!ENTITY bbcomp.opt.rsp.description "Parameters voor afhandelen van antwoorden">
 <!ENTITY bbcomp.opt.rsp.type.label "Antwoordtype">

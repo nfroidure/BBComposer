@@ -4,7 +4,6 @@
 
 <!DOCTYPE dialog SYSTEM "chrome://bbcomposer/locale/option.dtd">
 
-
 <dialog buttons="accept, cancel" id="option_dialog" title="&bbcomp.opt.dialog.title;"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 	onload="new ewkOptionManager('extensions.bbcomposer@elitwork.com.','','option_dialog','option_menu','option_iframe');">

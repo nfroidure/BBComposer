@@ -30,12 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Strona wysyłu">
 <!ENTITY bbcomp.opt.upd.folder.label "Katalog wysyłu">
 <!ENTITY bbcomp.opt.upd.url.label "URL wysyłu">
-<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the name of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Nazwa pliku">
 <!ENTITY bbcomp.opt.upd.postparams.label "Parametry POST">
 <!ENTITY bbcomp.opt.upd.unique.label "Nazwa pliku musi być unikatowa">
-<!ENTITY bbcomp.opt.upd.ewk.label "Param�tres Elitwork">
-<!ENTITY bbcomp.opt.upd.default.label "Param�tres par d�faut">
+<!ENTITY bbcomp.opt.upd.ewk.label "Elitwork params">
+<!ENTITY bbcomp.opt.upd.default.label "Default params">
 <!ENTITY bbcomp.opt.rsp.caption "Odpowiedź">
 <!ENTITY bbcomp.opt.rsp.description "Parametry obchodzenia się z odpowiedziami">
 <!ENTITY bbcomp.opt.rsp.type.label "Typ odpowiedzi">

@@ -30,12 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Сайт загрузки">
 <!ENTITY bbcomp.opt.upd.folder.label "Папка загрузки">
 <!ENTITY bbcomp.opt.upd.url.label "Загрузка URL">
-<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the name of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Поле название файла">
 <!ENTITY bbcomp.opt.upd.postparams.label "Параметры POST">
 <!ENTITY bbcomp.opt.upd.unique.label "Имя файла должно быть уникальным">
-<!ENTITY bbcomp.opt.upd.ewk.label "Param�tres Elitwork">
-<!ENTITY bbcomp.opt.upd.default.label "Param�tres par d�faut">
+<!ENTITY bbcomp.opt.upd.ewk.label "Elitwork params">
+<!ENTITY bbcomp.opt.upd.default.label "Default params">
 <!ENTITY bbcomp.opt.rsp.caption "Ответ">
 <!ENTITY bbcomp.opt.rsp.description "Параметры обработки ответов">
 <!ENTITY bbcomp.opt.rsp.type.label "Тип ответа">

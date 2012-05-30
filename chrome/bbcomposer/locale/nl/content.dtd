@@ -48,8 +48,8 @@
 <!ENTITY bbcomp.cartoon.tooltiptext "Cartoon/manga-pictogrammenbibliotheek">
 <!ENTITY bbcomp.css.label "Stijlbladen">
 <!ENTITY bbcomp.css.tooltiptext "CSS bewerken">
-<!ENTITY bbcomp.anchors.label "Anchors">
-<!ENTITY bbcomp.anchors.tooltiptext "View document anchors">
+<!ENTITY bbcomp.anchors.label "Ankers">
+<!ENTITY bbcomp.anchors.tooltiptext "Documentankers bekijken">
 <!ENTITY bbcomp.degradx.label "Gradiënten">
 <!ENTITY bbcomp.degradx.tooltiptext "Gradiënten bewerken">
 <!ENTITY bbcomp.toolbar.label "Werkbalken">
@@ -184,12 +184,10 @@
 <!ENTITY bbcomp.alignrigh.tooltiptext "Tekst rechts uitlijnen">
 <!ENTITY bbcomp.alignjust.label "Uitvullen">
 <!ENTITY bbcomp.alignjust.tooltiptext "Tekst uitvullen">
-<!ENTITY bbcomp.floatleft.label "To the left">
-<!ENTITY bbcomp.floatleft.tooltiptext "Float to the left">
-<!ENTITY bbcomp.floatright.label "To the right&gt;
-
-">
-<!ENTITY bbcomp.floatright.tooltiptext "Float to the right">
+<!ENTITY bbcomp.floatleft.label "Naar links">
+<!ENTITY bbcomp.floatleft.tooltiptext "Naar links drijven">
+<!ENTITY bbcomp.floatright.label "Naar rechts&gt;">
+<!ENTITY bbcomp.floatright.tooltiptext "Naar rechts drijven">
 <!ENTITY bbcomp.dirltr.label "Links-naar-rechts">
 <!ENTITY bbcomp.dirltr.tooltiptext "Tekst van links naar rechts oriënteren">
 <!ENTITY bbcomp.dirrtl.label "Rechts-naar-links">

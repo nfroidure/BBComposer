@@ -30,12 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Site de Upload">
 <!ENTITY bbcomp.opt.upd.folder.label "Enviar pasta">
 <!ENTITY bbcomp.opt.upd.url.label "Enviar URL">
-<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the name of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Nome de campo do arquivo">
 <!ENTITY bbcomp.opt.upd.postparams.label "ParÃ¢metros de POST">
 <!ENTITY bbcomp.opt.upd.unique.label "O nome do arquivo precisa ser Ãºnico">
-<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
-<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
+<!ENTITY bbcomp.opt.upd.ewk.label "Elitwork params">
+<!ENTITY bbcomp.opt.upd.default.label "Default params">
 <!ENTITY bbcomp.opt.rsp.caption "Resposta">
 <!ENTITY bbcomp.opt.rsp.description "Responde parÃ¢metros de tratamento.">
 <!ENTITY bbcomp.opt.rsp.type.label "Tipo de resposta">

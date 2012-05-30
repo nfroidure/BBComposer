@@ -34,8 +34,8 @@
 <!ENTITY bbcomp.opt.upd.postname.label "Nom du champs du fichier">
 <!ENTITY bbcomp.opt.upd.postparams.label "Param&#232;tres POST">
 <!ENTITY bbcomp.opt.upd.unique.label "Nom de fichier unique">
-<!ENTITY bbcomp.opt.upd.ewk.label "Elitwork params">
-<!ENTITY bbcomp.opt.upd.default.label "Default params">
+<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
+<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
 <!ENTITY bbcomp.opt.rsp.caption "R&#233;ponses">
 <!ENTITY bbcomp.opt.rsp.description "R&#233;glages du type de r&#233;ponse du serveur.">
 <!ENTITY bbcomp.opt.rsp.type.label "R&#233;ponse du type">

@@ -30,12 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Uppladdningswebbplats">
 <!ENTITY bbcomp.opt.upd.folder.label "Uppladdningsmapp">
 <!ENTITY bbcomp.opt.upd.url.label "Uppladdnings-URL">
-<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the name of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "FÃ¤ltnamn fÃ¶r filen">
 <!ENTITY bbcomp.opt.upd.postparams.label "POST-parametrar">
 <!ENTITY bbcomp.opt.upd.unique.label "Filnamn mÃ¥ste vara unika">
-<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
-<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
+<!ENTITY bbcomp.opt.upd.ewk.label "Elitwork params">
+<!ENTITY bbcomp.opt.upd.default.label "Default params">
 <!ENTITY bbcomp.opt.rsp.caption "Svar">
 <!ENTITY bbcomp.opt.rsp.description "Svarar pÃ¥ behandlingsparametrar.">
 <!ENTITY bbcomp.opt.rsp.type.label "Svarstyp">

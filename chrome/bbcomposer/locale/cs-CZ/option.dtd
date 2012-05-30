@@ -30,12 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Upload ze stránky">
 <!ENTITY bbcomp.opt.upd.folder.label "Upload ze složky">
 <!ENTITY bbcomp.opt.upd.url.label "Upload z odkazu">
-<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the name of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Název souboru">
 <!ENTITY bbcomp.opt.upd.postparams.label "Parametry odesílání">
 <!ENTITY bbcomp.opt.upd.unique.label "Jméno soubor musí být jedinečné">
-<!ENTITY bbcomp.opt.upd.ewk.label "Param�tres Elitwork">
-<!ENTITY bbcomp.opt.upd.default.label "Param�tres par d�faut">
+<!ENTITY bbcomp.opt.upd.ewk.label "Elitwork params">
+<!ENTITY bbcomp.opt.upd.default.label "Default params">
 <!ENTITY bbcomp.opt.rsp.caption "Odezva">
 <!ENTITY bbcomp.opt.rsp.description "Parametry odezvy">
 <!ENTITY bbcomp.opt.rsp.type.label "Typ odezvy">

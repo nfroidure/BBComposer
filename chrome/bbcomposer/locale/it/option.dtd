@@ -30,12 +30,12 @@
 <!ENTITY bbcomp.opt.upd.site.label "Carica sito">
 <!ENTITY bbcomp.opt.upd.folder.label "Cartella di caricamento">
 <!ENTITY bbcomp.opt.upd.url.label "URL per caricamento">
-<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the filename of the file">
+<!ENTITY bbcomp.opt.upd.postfilename.label "Field for the name of the file">
 <!ENTITY bbcomp.opt.upd.postname.label "Nome del file">
 <!ENTITY bbcomp.opt.upd.postparams.label "Parametri POST">
 <!ENTITY bbcomp.opt.upd.unique.label "Nome del file unico">
-<!ENTITY bbcomp.opt.upd.ewk.label "Paramètres Elitwork">
-<!ENTITY bbcomp.opt.upd.default.label "Paramètres par défaut">
+<!ENTITY bbcomp.opt.upd.ewk.label "Elitwork params">
+<!ENTITY bbcomp.opt.upd.default.label "Default params">
 <!ENTITY bbcomp.opt.rsp.caption "Risposta">
 <!ENTITY bbcomp.opt.rsp.description "Indica i parametri di trattamento delle risposte.">
 <!ENTITY bbcomp.opt.rsp.type.label "Tipologia della risposta">

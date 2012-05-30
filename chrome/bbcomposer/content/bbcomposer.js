@@ -4767,7 +4767,7 @@ function bbcomposer(editor, language, textarea, manager)
 					{
 					this.importedFiles[0].name = '_'+this.importedFiles[0].name;
 					var range = "abcdefghijklmnopqrstxyz0123456789";
-					for(i=0; i<5; i++)
+					for(var i=0; i<5; i++)
 						this.importedFiles[0].name = range.charAt(Math.floor(Math.random() * range.length-2))+this.importedFiles[0].name;
 					this.uploadFile();
 					}
