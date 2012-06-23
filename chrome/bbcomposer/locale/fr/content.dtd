@@ -28,7 +28,7 @@
 <!ENTITY bbcomp.edit.textarea.spip2 "Typo Spip Enrichie (beta)">
 <!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "Éditer et sauver">
-<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-fr">
+<!ENTITY bbcomp.forum "https://github.com/nfroidure/BBComposer/issues">
 <!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manuel.html?from=bbcomposer-fr">
 <!ENTITY bbcomp.mode.label "Appliquer">
 <!ENTITY bbcomp.mode.tooltiptext "Appliquer les changements à la zone de texte">
@@ -43,7 +43,7 @@
 <!ENTITY bbcomp.sidebar.label "Barres latérales">
 <!ENTITY bbcomp.sidebar.tooltiptext "Afficher/Masquer les barres latérales">
 <!ENTITY bbcomp.smileys.label "Avatars">
-<!ENTITY bbcomp.smileys.tooltiptext "Collection d&apos;avatars">
+<!ENTITY bbcomp.smileys.tooltiptext "Collection d'avatars">
 <!ENTITY bbcomp.cartoon.label "Cartoon">
 <!ENTITY bbcomp.cartoon.tooltiptext "Collection cartoon/manga">
 <!ENTITY bbcomp.css.label "Styles">
@@ -133,7 +133,7 @@
 <!ENTITY bbcomp.kbd.label "Clavier">
 <!ENTITY bbcomp.kbd.tooltiptext "Marquer comme une touche clavier">
 <!ENTITY bbcomp.var.label "Variable">
-<!ENTITY bbcomp.var.tooltiptext "Marquer comme une variable d&apos;un programme">
+<!ENTITY bbcomp.var.tooltiptext "Marquer comme une variable d'un programme">
 <!ENTITY bbcomp.code.label "Code">
 <!ENTITY bbcomp.code.tooltiptext "Marquer comme du code">
 <!ENTITY bbcomp.del.label "Supprimé">

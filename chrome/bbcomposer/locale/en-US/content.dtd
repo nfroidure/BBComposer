@@ -28,7 +28,7 @@
 <!ENTITY bbcomp.edit.textarea.spip2 "Rich Spip Typo (beta)">
 <!ENTITY bbcomp.edit.textarea.skyblog "Skyrock blog (beta)">
 <!ENTITY bbcomp.edit.remember.label "Edit and save">
-<!ENTITY bbcomp.forum "http://www.bitbucket.org/nfroidure/bbcomposer/issues/?from=bbcomposer-en">
+<!ENTITY bbcomp.forum "https://github.com/nfroidure/BBComposer/issues">
 <!ENTITY bbcomp.manual "http://bbcomposer.elitwork.com/manual.html?from=bbcomposer-en">
 <!ENTITY bbcomp.mode.label "Apply">
 <!ENTITY bbcomp.mode.tooltiptext "Apply editor content to the textarea">
@@ -42,8 +42,8 @@
 <!ENTITY bbcomp.backup.tooltiptext "Load content from last autosave">
 <!ENTITY bbcomp.sidebar.label "Sidebars">
 <!ENTITY bbcomp.sidebar.tooltiptext "Show/Hide sidebars">
-<!ENTITY bbcomp.smileys.label "Smiley&apos;s">
-<!ENTITY bbcomp.smileys.tooltiptext "Smiley&apos;s library">
+<!ENTITY bbcomp.smileys.label "Smiley's">
+<!ENTITY bbcomp.smileys.tooltiptext "Smiley's library">
 <!ENTITY bbcomp.cartoon.label "Cartoon">
 <!ENTITY bbcomp.cartoon.tooltiptext "Cartoon/manga icons library">
 <!ENTITY bbcomp.css.label "Stylesheets">
@@ -149,9 +149,9 @@
 <!ENTITY bbcomp.blockquote.label "Quote">
 <!ENTITY bbcomp.blockquote.tooltiptext "Include in a quote block">
 <!ENTITY bbcomp.attclass.label "Classes">
-<!ENTITY bbcomp.attclass.tooltiptext "Modifier les classes de cet élément">
-<!ENTITY bbcomp.attlang.label "Langue">
-<!ENTITY bbcomp.attlang.tooltiptext "Définir la langue du texte contenu dans cet élément">
+<!ENTITY bbcomp.attclass.tooltiptext "Modify this elements class">
+<!ENTITY bbcomp.attlang.label "Language">
+<!ENTITY bbcomp.attlang.tooltiptext "Define the language used in this element">
 <!ENTITY bbcomp.deindent.label "Deindent">
 <!ENTITY bbcomp.deindent.tooltiptext "Deindent the text">
 <!ENTITY bbcomp.indent.label "Indent">
@@ -186,7 +186,7 @@
 <!ENTITY bbcomp.alignjust.tooltiptext "Justify the text">
 <!ENTITY bbcomp.floatleft.label "To the left">
 <!ENTITY bbcomp.floatleft.tooltiptext "Float to the left">
-<!ENTITY bbcomp.floatright.label "To the right>
+<!ENTITY bbcomp.floatright.label "To the right">
 <!ENTITY bbcomp.floatright.tooltiptext "Float to the right">
 <!ENTITY bbcomp.dirltr.label "Left to right">
 <!ENTITY bbcomp.dirltr.tooltiptext "Left-to-right orientation">
