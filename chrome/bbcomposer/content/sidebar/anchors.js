@@ -58,7 +58,13 @@
 	AnchorManager.prototype.unLoad = function ()
 		{
 		window.removeEventListener('unload', this.unLoadHandler, false);
-		this.editorManager.toggleSidebar('anchors',false);
+		var evt = window.parent.document.createEvent('Events');
+		evt.initEvent('sidebarunload', true, true);
+		evt.sidebarWindow=this;
+		evt.sidebarName='anchors';
+		evt.standAlone=true;
+		if(window.parent)
+			window.parent.dispatchEvent(evt);
 		}
 
 	new AnchorManager();

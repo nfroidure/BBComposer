@@ -34,6 +34,8 @@ function bbcManager()
 		window.addEventListener("close", this.browserCloseHandler, true);
 		this.browserSidebarHandler=this.newEventHandler(this, this.browserSidebarLoad,'browserSidebarHandler');
 		window.addEventListener("sidebarload", this.browserSidebarHandler, true);
+		this.browserSidebarUnloadHandler=this.newEventHandler(this, this.browserSidebarUnload,'browserSidebarUnloadHandler');
+		window.addEventListener("sidebarunload", this.browserSidebarUnloadHandler, true);
 		// ContentWindow Events
 		this.documentSubmitHandler=this.newEventHandler(this, this.documentSubmit,'documentSubmitHandler');
 		window.getBrowser().addEventListener("submit", this.documentSubmitHandler, true);
@@ -91,12 +93,23 @@ function bbcManager()
 		{
 		if(hEvent&&hEvent.sidebarName)
 			{
-			this.toggleSidebar(hEvent.sidebarName,true,hEvent.standAlone);
+			ewkLib.dump('Sidebar load event: '+hEvent.sidebarName);
+			this.registerSidebar(hEvent.sidebarName,true,hEvent.standAlone);
 			if(hEvent.sidebarWindow&&hEvent.sidebarWindow.run)
 				hEvent.sidebarWindow.run(this);
 			}
 		else
-			this.toggleSidebar('',false);
+			{
+			ewkLib.dump('Sidebar load event: Did not find the property hEvent.sidebarName');
+			}
+		}
+	bbcManager.prototype.browserSidebarUnload = function (hEvent)
+		{
+		if(hEvent&&hEvent.sidebarName&&this.sidebar&&this.sidebarName&&this.sidebarName==hEvent.sidebarName)
+			{
+			ewkLib.dump('Sidebar unload event: '+hEvent.sidebarName);
+			this.unregisterSidebar(hEvent.sidebarName);
+			}
 		}
 
 	/*------ Document events ------*/
@@ -617,17 +630,35 @@ function bbcManager()
 		}
 
 	/*------ Sidebar functions ------*/
+	bbcManager.prototype.registerSidebar = function (sidebarName)
+		{
+		ewkLib.dump('Sidebar register: '+sidebarName);
+		this.sidebarName = sidebarName;
+		this.sidebar = document.getElementById("sidebar");
+		}
+	bbcManager.prototype.unregisterSidebar = function (sidebarName)
+		{
+		ewkLib.dump('Sidebar unregister: '+sidebarName);
+		if(this.sidebarName == sidebarName)
+			{
+			this.sidebarName = '';
+			this.sidebar = null;
+			}
+		}
 	bbcManager.prototype.toggleSidebar = function (sidebarName, showState, standAlone)
 		{
+		ewkLib.dump('Sidebar toggle: '+sidebarName);
 		if(showState===false||((!standAlone)&&!this.sidebarIsAllowed(sidebarName))||(this.sidebar&&this.sidebarName==sidebarName&&showState!==true)&&(document.getElementById('bbcomp-' + sidebarName + '-sidebar')||document.getElementById(sidebarName + '-sidebar')))
 			{
-			this.sidebar = false;
-			this.sidebarName = false;
+			ewkLib.dump('Sidebar toggle: 1');
+			this.sidebar = null;
+			this.sidebarName = '';
 			if(!document.getElementById("sidebar").hidden)
 				toggleSidebar("", false);
 			}
 		else if(showState===true||((!this.sidebar)&&showState!==false)||(!this.sidebar.hasAttribute('id'))||(this.sidebar.getAttribute('id')!='bbcomp-' + sidebarName + '-sidebar'&&this.sidebar.getAttribute('id')!=sidebarName + '-sidebar'))
 			{
+			ewkLib.dump('Sidebar toggle: 2');
 			this.sidebar = document.getElementById("sidebar");
 			this.sidebarName = sidebarName;
 			document.getElementById("sidebar").hidden = false;
