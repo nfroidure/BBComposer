@@ -12,7 +12,7 @@
             <vbox>
                 <hbox>
                     <description>BBComposer</description>
-                    <description>3.0</description>
+                    <description>3.4</description>
                 </hbox>
                 <description value="&bbcomp.abt.author;"/>
                 <description>Nicolas FROIDURE</description>
