@@ -9,14 +9,13 @@ EDITORS BUGS
 --> DoWrite function is bugged when redoingActions (focusOffset decal)
 --> Some problems with the newline command (to much BR n' nbsp).
 --> doDelete and doBackward problems with multilevel lists
---> When doing a selection, toolbars aren't refreshed.
 --> Adapt toggleTable function to editor actions
 --> To avoid perf problems, use selected element.elementstyle caching
 
 EDITORS CORE CHANGES
 -> Important :
 - cleanup preferences
-- use bookmarks and history to autocomplete url and suggest document anchors too
+- autocomplete url with document anchors
 - find a way to include the dictionnary to the editor actions.
 - Should think on a way to display scripts, maps area, objects, noscript etc...
 - Find a way to make the content of particular html element undeditable (in order to make representation of element structures like youtube videos).
@@ -42,7 +41,7 @@ EDITOR TRANSACTIONS
 
 BROWSER BUILD EDITOR STANDARDIZATION
 - standardization of the language detection
-- standardize the upload protocol detection (meta tag for specify it, rest ?)
+- standardize the upload protocol detection (meta tag for specifying it, rest ?)
 - retrieve page directory (check if there are a <base> tag).
 
 CODE BEAUTY
