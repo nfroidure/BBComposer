@@ -30,14 +30,16 @@ var bbcXbbcodeSupport =
 		string = string.replace(']', ']] ', 'g');
 		string = string.replace('&#91;', '[[', 'g');
 		string = string.replace('&#93;', ']]', 'g');
-		string = bbcUtils.doRegExp(string, /\<([^>]+)"([^>]*)>/mg, '<$1$2>');
+		string = bbcUtils.doRegExp(string, /\<([^\>]+)"([^\>]*)\>/mg, '<$1$2>');
+		string = bbcUtils.doRegExp(string, /\<([^>]+)"([^>]*)\>/mg, '<$1$2>'); // Strange bug
 		string = string.replace('<', '[', 'g');
 		string = string.replace('>', ']', 'g');
 		string = string.replace('&quot;', '"', 'g');
 		string = string.replace('&nbsp;', ' ', 'g');
 		string = string.replace('&amp;', '&', 'g');
 		string = string.replace('&gt;', '>', 'g');
-		return string.replace('&lt;', '<', 'g');
+		string = string.replace('&lt;', '<', 'g');
+		return string;
 		},
 	inlineMarkups : bbcXhtmlSupport.inlineMarkups,
 	blockMarkups : bbcXhtmlSupport.blockMarkups,

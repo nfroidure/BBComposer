@@ -5,10 +5,9 @@ var ewkLib=
 	newEventHandler: function(obj,method)
 		{
 		var index=ewkLib.eventHandlerMethods.indexOf(method);
-		var args=arguments;
 		if(index===-1)
 			{
-			var fx=function () { return method.apply(obj, args); }
+			var fx=function () {	var args=arguments; return method.apply(obj, args); }
 			ewkLib.eventHandlerMethods.push(method);
 			ewkLib.eventHandlers.push(fx);
 			index=ewkLib.eventHandlerMethods.length-1;
