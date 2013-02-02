@@ -4,7 +4,10 @@ var bbcUtils =
 	doRegExp : function (string, regExp, pattern)
 		{
 		while(regExp.test(string))
+			{
 			string = string.replace(regExp, pattern);
+			regExp.lastIndex=0;
+			}
 		return string;
 		},
 	dec2hex : function (dec)

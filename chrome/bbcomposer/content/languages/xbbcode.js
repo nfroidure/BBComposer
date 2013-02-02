@@ -27,11 +27,10 @@ var bbcXbbcodeSupport =
 		{
 		var string = bbcXhtmlSupport.editorToSource(editor);
 		string = string.replace('[', '[[', 'g');
-		string = string.replace(']', ']] ', 'g');
+		string = string.replace(']', ']]', 'g');
 		string = string.replace('&#91;', '[[', 'g');
 		string = string.replace('&#93;', ']]', 'g');
-		string = bbcUtils.doRegExp(string, /\<([^\>]+)"([^\>]*)\>/mg, '<$1$2>');
-		string = bbcUtils.doRegExp(string, /\<([^>]+)"([^>]*)\>/mg, '<$1$2>'); // Strange bug
+		string = bbcUtils.doRegExp(string, /<([^>]+)"([^>]*)>/mg, '<$1$2>');
 		string = string.replace('<', '[', 'g');
 		string = string.replace('>', ']', 'g');
 		string = string.replace('&quot;', '"', 'g');

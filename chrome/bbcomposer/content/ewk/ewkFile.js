@@ -162,7 +162,7 @@ ewkFile.prototype.writeFromStream = function (is,handler)
 	listener.init(bos, observer);
 	pump.asyncRead(listener, null);
 	}
-ewkFile.prototype.writeFromDataURL = function (dataURL)
+ewkFile.prototype.writeFromDataURL = function (dataURL,sourceWindow)
 	{
 	var io = Components.classes["@mozilla.org/network/io-service;1"]  
 		.getService(Components.interfaces.nsIIOService);  
@@ -172,7 +172,10 @@ ewkFile.prototype.writeFromDataURL = function (dataURL)
 		.createInstance(Components.interfaces.nsIWebBrowserPersist);
 	persist.persistFlags = Components.interfaces.nsIWebBrowserPersist.PERSIST_FLAGS_REPLACE_EXISTING_FILES;
 	persist.persistFlags |= Components.interfaces.nsIWebBrowserPersist.PERSIST_FLAGS_AUTODETECT_APPLY_CONVERSION;
-	persist.saveURI(source, null, null, null, null, this.file);  
+	var privacyContext = sourceWindow.QueryInterface(Components.interfaces.nsIInterfaceRequestor)
+		.getInterface(Components.interfaces.nsIWebNavigation)
+		.QueryInterface(nsILoadContext);
+	persist.saveURI(source, null, null, null, null, this.file, privacyContext);
 	}
 ewkFile.prototype.create = function ()
 	{
